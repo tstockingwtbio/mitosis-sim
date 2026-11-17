@@ -2,7 +2,7 @@ import type { PairTask, PartContent } from '../../content/schema';
 import { h } from '../dom';
 import { t } from '../../i18n';
 import { getSettings } from '../settings';
-import { recordResult } from '../progress';
+import { progress, recordResult } from '../progress';
 import { pairError } from '../model/chromosome';
 import { CellScene } from '../stage/cellScene';
 import type { ChromosomeView } from '../stage/chromosomeView';
@@ -15,13 +15,18 @@ interface PairMemo {
   pairs?: [string, string][];
   wrongs?: number;
   done?: boolean;
-  fb?: { kind: 'good' | 'warn'; text: string; mis?: string };
+  fb?: { kind: 'good' | 'warn' | 'info'; text: string; mis?: string };
 }
 
 export function pairTask(ctx: StepContext, task: PairTask, content: PartContent): StepView {
   const memo = ctx.memo as PairMemo;
   memo.pairs ??= [];
   memo.wrongs ??= 0;
+  if (task.phase === 'checkpoint' && !memo.done && progress().results[task.id]) {
+    memo.done = true;
+    memo.pairs = task.answer.map(([a, b]) => [a, b] as [string, string]);
+    memo.fb = { kind: 'info', text: 'ui.task.firstTry' };
+  }
   const scene = new CellScene(ctx.stage, task.cell, { layout: 'tray', slots: task.answer.length });
   const home = new Map(task.cell.chromosomes.map((c) => [c.id, { x: c.x ?? 0, y: c.y ?? 0, a: c.angle ?? 0 }]));
   const counts = scene.counts();

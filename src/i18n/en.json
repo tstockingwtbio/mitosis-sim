@@ -292,19 +292,19 @@
   "A1.G1.step2": { "building": "Each single rod is one DNA molecule.", "beginning": "One rod is one DNA molecule." },
   "A1.G1.hint1": { "building": "Each chromosome has one centromere (the dot).", "beginning": "One dot is one chromosome." },
   "A1.G1.hint2": { "building": "A single rod has not been copied, so it is one DNA molecule.", "beginning": "One rod is one DNA molecule." },
-  "A1.G1.fb.correct": { "building": "Right: 4 chromosomes, 4 DNA molecules. Before copying, the two counts match.", "beginning": "Yes! 4 and 4." },
+  "A1.G1.fb.correct": { "building": "4 chromosomes, 4 DNA molecules. Before copying, the two counts match.", "beginning": "4 and 4." },
 
   "A1.G2.prompt": { "building": "Match each chromosome with its partner. Select one, then select its partner.", "beginning": "Find the pairs. Select one. Then select its partner." },
   "A1.G2.step1": { "building": "Look for two chromosomes that are the same length and carry the same gene letters.", "beginning": "Find two that are the same length." },
-  "A1.G2.fb.correct": { "building": "Both pairs matched: same genes, one from each parent.", "beginning": "Yes! Each pair has one M and one P." },
+  "A1.G2.fb.correct": { "building": "Both pairs matched: same genes, one from each parent.", "beginning": "Each pair has one M and one P." },
 
   "A1.G3.prompt": { "building": "These chromosomes have been copied. Count the chromosomes and the DNA molecules.", "beginning": "These are copied. Count chromosomes. Count DNA molecules." },
   "A1.G3.step1": { "building": "Count centromeres for chromosomes.", "beginning": "Count the dots." },
   "A1.G3.step2": { "building": "Count the halves of the Xs for DNA molecules.", "beginning": "Count the halves." },
-  "A1.G3.fb.correct": { "building": "4 chromosomes, 8 DNA molecules. Copying doubles the DNA, not the number of chromosomes.", "beginning": "Yes! 4 chromosomes. 8 DNA molecules." },
+  "A1.G3.fb.correct": { "building": "4 chromosomes, 8 DNA molecules. Copying doubles the DNA, not the number of chromosomes.", "beginning": "4 chromosomes. 8 DNA molecules." },
 
   "A1.I1.prompt": { "building": "Count the chromosomes and the DNA molecules in this cell.", "beginning": "Count chromosomes. Count DNA molecules." },
-  "A1.I1.fb.correct": { "building": "Right: 4 chromosomes and 8 DNA molecules, however they are turned.", "beginning": "Yes! 4 and 8." },
+  "A1.I1.fb.correct": { "building": "4 chromosomes and 8 DNA molecules, however they are turned.", "beginning": "4 and 8." },
 
   "A1.I1GF.prompt": { "building": "A cell has 12 DNA molecules, and every chromosome in it is an X. How many chromosomes does it have?", "beginning": "A cell has 12 DNA molecules. All chromosomes are X shapes. How many chromosomes?" },
   "A1.I1GF.opt12": "12",
@@ -312,12 +312,12 @@
   "A1.I1GF.opt3": "3",
   "A1.I1GF.opt24": "24",
   "A1.I1GF.fb12": { "building": "12 is the number of DNA molecules. Each X holds 2 of them, so there are fewer chromosomes than that.", "beginning": "Each X has 2 DNA molecules." },
-  "A1.I1GF.fb6": { "building": "Right: 12 DNA molecules ÷ 2 per X = 6 chromosomes.", "beginning": "Yes! 12 ÷ 2 = 6." },
+  "A1.I1GF.fb6": { "building": "12 DNA molecules ÷ 2 per X = 6 chromosomes.", "beginning": "12 ÷ 2 = 6." },
   "A1.I1GF.fb3": { "building": "3 is the number of pairs. Each pair is 2 chromosomes.", "beginning": "A pair is 2 chromosomes." },
   "A1.I1GF.fb24": { "building": "Copying doubles the DNA, not the chromosomes. Divide by 2 instead.", "beginning": "Divide by 2." },
 
   "A1.I2.prompt": { "building": "These chromosomes have been copied. Match each one with its partner.", "beginning": "These are copied. Find the pairs." },
-  "A1.I2.fb.correct": { "building": "Matched. Copied or not, partners have the same genes and come from different parents.", "beginning": "Yes! Each pair has one M and one P." },
+  "A1.I2.fb.correct": { "building": "Matched. Copied or not, partners have the same genes and come from different parents.", "beginning": "Each pair has one M and one P." },
 
   "A1.I3.prompt": { "building": "Which of these is a gene?", "beginning": "What is a gene?" },
   "A1.I3.hint1": { "building": "Think back to the zoom: chromosome, then gene, then DNA.", "beginning": "Remember the zoom." },
@@ -327,16 +327,16 @@
   "A1.I3.optCell": "A type of cell",
   "A1.I3.fbChromosome": { "building": "A chromosome holds many genes. A gene is only one section of it.", "beginning": "A chromosome has many genes." },
   "A1.I3.fbChromatid": { "building": "Each half of an X is a whole DNA molecule with many genes on it.", "beginning": "Half of an X has many genes." },
-  "A1.I3.fbSection": { "building": "Right: a gene is a section of a chromosome, like one recipe in a cookbook.", "beginning": "Yes! A gene is a part of a chromosome." },
+  "A1.I3.fbSection": { "building": "A gene is a section of a chromosome, like one recipe in a cookbook.", "beginning": "A gene is a part of a chromosome." },
   "A1.I3.fbCell": { "building": "Cells hold chromosomes, and genes are sections of chromosomes.", "beginning": "Genes are in chromosomes." },
 
   "A1.check.title": "Checkpoint",
   "A1.check.body": { "building": "Three questions about cells from a different animal. Show what you know on your own: hints and worked steps are off.", "beginning": "Three questions. Work on your own." },
 
   "A1.C1.prompt": { "building": "This cell comes from a different animal. Count its chromosomes and DNA molecules.", "beginning": "This is a different animal. Count chromosomes. Count DNA molecules." },
-  "A1.C1.fb.correct": { "building": "Right: 6 chromosomes, 12 DNA molecules.", "beginning": "Yes! 6 and 12." },
+  "A1.C1.fb.correct": { "building": "6 chromosomes, 12 DNA molecules.", "beginning": "6 and 12." },
   "A1.C2.prompt": { "building": "Match the chromosomes from this animal into pairs.", "beginning": "Find the pairs." },
-  "A1.C2.fb.correct": { "building": "All three pairs matched.", "beginning": "Yes! Three pairs." },
+  "A1.C2.fb.correct": { "building": "All three pairs matched.", "beginning": "Three pairs." },
   "A1.C3.prompt": { "building": "What is true about the two chromosomes in a pair?", "beginning": "What is true about a pair?" },
   "A1.C3.optCopies": "They are exact copies of each other.",
   "A1.C3.optMother": "Both of them come from the mother.",
@@ -345,7 +345,7 @@
   "A1.C3.fbCopies": { "building": "Exact copies are the two halves of an X. Partners come from two parents, so their versions can differ.", "beginning": "Partners come from two parents." },
   "A1.C3.fbMother": { "building": "One partner comes from the mother and one from the father.", "beginning": "One is from the mother. One is from the father." },
   "A1.C3.fbDifferent": { "building": "Partners carry the same genes in the same places.", "beginning": "Partners have the same genes." },
-  "A1.C3.fbSame": { "building": "Right: same genes, and the versions can differ (like A and a).", "beginning": "Yes! Same genes. Versions can be different." },
+  "A1.C3.fbSame": { "building": "Same genes, and the versions can differ (like A and a).", "beginning": "Same genes. Versions can be different." },
 
   "A1.end.title": "Chromosome primer: done",
   "A1.end.body1": { "building": "Genes are sections of chromosomes. Chromosomes come in pairs, one from each parent.", "beginning": "Genes are on chromosomes. Chromosomes come in pairs." },

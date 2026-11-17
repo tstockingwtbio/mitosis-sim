@@ -2,7 +2,7 @@ import type { ChoiceTask, PartContent } from '../../content/schema';
 import { h } from '../dom';
 import { t } from '../../i18n';
 import { getSettings } from '../settings';
-import { recordResult } from '../progress';
+import { progress, recordResult } from '../progress';
 import { paragraph, type Spoken } from '../ui/text';
 import type { StepContext, StepView } from '../types';
 import { MAX_ATTEMPTS, Supports, feedback, setFeedback, supportsOn } from './common';
@@ -12,12 +12,16 @@ interface ChoiceMemo {
   wrong?: string[];
   attempts?: number;
   done?: boolean;
-  fb?: { kind: 'good' | 'warn'; text: string; mis?: string };
+  fb?: { kind: 'good' | 'warn' | 'info'; text: string; mis?: string };
 }
 
 export function choiceTask(ctx: StepContext, task: ChoiceTask, content: PartContent): StepView {
   const memo = ctx.memo as ChoiceMemo;
   memo.wrong ??= [];
+  if (task.phase === 'checkpoint' && !memo.done && progress().results[task.id]) {
+    memo.done = true;
+    memo.fb = { kind: 'info', text: 'ui.task.firstTry' };
+  }
   ctx.counts.set({ chromosomes: null, dnaMolecules: null, same: null });
 
   const prompt = paragraph(task.prompt);

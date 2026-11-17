@@ -1,7 +1,7 @@
 import type { CountTask, PartContent, WorkedAction } from '../../content/schema';
 import { h } from '../dom';
 import { t } from '../../i18n';
-import { recordResult } from '../progress';
+import { progress, recordResult } from '../progress';
 import { CellScene } from '../stage/cellScene';
 import { paragraph } from '../ui/text';
 import type { StepContext, StepView } from '../types';
@@ -12,7 +12,7 @@ interface CountMemo {
   attempts?: number;
   done?: boolean;
   correct?: boolean;
-  fb?: { kind: 'good' | 'warn'; text: string; mis?: string; vars?: Record<string, number> };
+  fb?: { kind: 'good' | 'warn' | 'info'; text: string; mis?: string; vars?: Record<string, number> };
 }
 
 function numberStepper(id: string, labelText: string, value: number, onChange: (v: number) => void): { el: HTMLElement; input: HTMLInputElement; set: (v: number) => void; disable: () => void } {
@@ -53,6 +53,11 @@ export function countTask(ctx: StepContext, task: CountTask, content: PartConten
   const memo = ctx.memo as CountMemo;
   const scene = new CellScene(ctx.stage, task.cell, { layout: 'cell' });
   const answer = task.answer;
+  // A checkpoint answer is final, even after a reload.
+  if (task.phase === 'checkpoint' && !memo.done && progress().results[task.id]) {
+    memo.done = true;
+    memo.fb = { kind: 'info', text: 'ui.task.firstTry' };
+  }
 
   const doAction = (a: WorkedAction) => {
     if (a === 'centromeres') scene.tagCentromeres();

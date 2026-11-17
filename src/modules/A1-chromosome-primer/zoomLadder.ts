@@ -241,7 +241,7 @@ export function zoomLadder(ctx: StepContext): StepView {
   };
 
   // Panel: ladder of levels, zoom buttons, and the text for the current level.
-  const ladder = h('ol', { class: 'seg-options stack', 'aria-label': t('A1.zoom.levels'), style: { listStyle: 'none', padding: '0', margin: '0' } });
+  const ladder = h('ol', { class: 'seg-options', 'aria-label': t('A1.zoom.levels'), style: { listStyle: 'none', padding: '0', margin: '0' } });
   const levelText = h('div', { 'aria-live': 'polite' });
   const outBtn = h('button', { class: 'btn', type: 'button' }, h('span', { 'aria-hidden': 'true' }, '−'), t('A1.zoom.out'));
   const inBtn = h('button', { class: 'btn primary', type: 'button' }, h('span', { 'aria-hidden': 'true' }, '+'), t('A1.zoom.in'));

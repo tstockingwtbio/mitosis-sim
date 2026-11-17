@@ -21,16 +21,19 @@ export function speakIfOn(items: Spoken[]): void {
 
 export function feedback(
   content: PartContent,
-  kind: 'good' | 'warn',
+  kind: 'good' | 'warn' | 'info',
   textKey: string,
   misconception?: string,
   vars?: Record<string, string | number>,
 ): { el: HTMLElement; spoken: Spoken[] } {
   const spoken: Spoken[] = [];
-  const lead = renderWords(kind === 'good' ? t('ui.task.correct') : t('ui.task.notYet'), 'p', false);
-  lead.el.style.fontWeight = '700';
-  spoken.push(lead);
-  const body = h('div', {}, lead.el);
+  const body = h('div', {});
+  if (kind !== 'info') {
+    const lead = renderWords(kind === 'good' ? t('ui.task.correct') : t('ui.task.notYet'), 'p', false);
+    lead.el.style.fontWeight = '700';
+    spoken.push(lead);
+    body.appendChild(lead.el);
+  }
   if (misconception && content.misconceptions[misconception]) {
     const mix = renderWords(`${t('ui.task.mixup')} “${t(content.misconceptions[misconception])}”`, 'p', false);
     mix.el.classList.add('mixup');
@@ -42,11 +45,11 @@ export function feedback(
   body.appendChild(main.el);
   const el = h(
     'div',
-    { class: `feedback ${kind}`, role: 'status' },
-    h('span', { class: 'mark', 'aria-hidden': 'true' }, kind === 'good' ? '✓' : '✗'),
+    { class: `feedback ${kind === 'info' ? '' : kind}`, role: 'status' },
+    h('span', { class: 'mark', 'aria-hidden': 'true' }, kind === 'good' ? '✓' : kind === 'warn' ? '✗' : '✎'),
     body,
   );
-  playSfx(kind === 'good' ? 'SFX-04' : 'SFX-05');
+  if (kind !== 'info') playSfx(kind === 'good' ? 'SFX-04' : 'SFX-05');
   return { el, spoken };
 }
 
