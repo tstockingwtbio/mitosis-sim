@@ -213,6 +213,18 @@ p, h1, h2, h3, label, legend, .label, .text, .stage-of, .line-of { unicode-bidi:
 }
 .anim-controls .stage-of { padding: 0 8px; font-weight: 700; }
 
+.stage-note {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: calc(var(--pad) * 2);
+  text-align: center;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+.stage-note > div { max-width: 28em; }
+
 .legend {
   position: absolute;
   inset-inline-end: var(--pad);

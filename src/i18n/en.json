@@ -65,6 +65,7 @@
   "ui.retrieve.got": "I remembered it",
   "ui.retrieve.notYet": "Not yet",
   "ui.retrieve.itemOf": "Question {n} of {total}",
+  "ui.retrieve.stageNote": { "building": "The model appears after the warm-up. Show all {total} answers, then press Next.", "beginning": "Show all {total} answers. Then press Next. Then you will see the model." },
 
   "ui.task.check": "Check",
   "ui.task.correct": "Correct!",
