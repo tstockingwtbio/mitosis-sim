@@ -49,6 +49,13 @@ const ART: Partial<Record<Rung, ArtSpec>> = {
   tissue: { id: 'IMG-B08', aspect: 1536 / 1024, height: 6.2, focus: [0.605, 0.107], targetRadius: 0.28 },
   // The nucleus.
   cell: { id: 'IMG-B09', aspect: 1536 / 1024, height: 6.7, focus: [0.496, 0.503], targetRadius: 1.55 },
+  // Optional art for the code-built levels (IMG-B10 to B13). Each level stays
+  // code-built until its file exists. Dive points assume the layout in the
+  // bible prompt; re-check them when the images arrive.
+  nucleus: { id: 'IMG-B10', aspect: 1536 / 1024, height: 7, focus: [0.5, 0.5], targetRadius: 0.8 },
+  chromosome: { id: 'IMG-B11', aspect: 1536 / 1024, height: 7, focus: [0.5, 0.3], targetRadius: 0.5 },
+  gene: { id: 'IMG-B12', aspect: 1536 / 1024, height: 6.5, focus: [0.5, 0.5], targetRadius: 1.0 },
+  dna: { id: 'IMG-B13', aspect: 1536 / 1024, height: 6.5, focus: [0.5, 0.5], targetRadius: 0 },
 };
 
 function artRung(spec: ArtSpec, onChange: () => void): Built {
@@ -256,7 +263,8 @@ function buildDna(): Built {
   const freq = 1.5;
   const depth = 0.6;
   const at = (x: number, phase: number) =>
-    new THREE.Vector3(x, Math.sin(x * freq + phase) * amp, Math.cos(x * freq + phase) * depth);
+    // Minus sign: the helix turns right-handed, like real DNA.
+    new THREE.Vector3(x, Math.sin(x * freq + phase) * amp, -Math.cos(x * freq + phase) * depth);
   const fillMat = () => {
     const m = new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.DoubleSide });
     useGrain(m);

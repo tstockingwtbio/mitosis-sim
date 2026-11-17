@@ -23,7 +23,7 @@ Every image prompt starts with the style block below, and every prompt that show
 - **Story panels** may be busy; they appear only between tasks, never during one.
 - **Aspect ratio:** 16:9 for scenes and backgrounds, 1:1 for cutouts and textures.
 - **Outline weight:** thick on characters and scenery, thinner on small props. Check every render against the reference image before accepting it.
-- **Science check before accepting:** toe counts, chromosome shapes (if any appear), and nothing that contradicts the model built in code.
+- **Science check before accepting:** toe counts, chromosome shapes (if any appear), and nothing that contradicts the model built in code. For IMG-B10 to B13: the nucleus shows loose threads (not rods or X shapes); the chromosome is a single rod (not an X); the DNA has exactly two strands with a right-handed twist and rungs made of two halves.
 
 ## 2. Story bible
 
@@ -217,7 +217,7 @@ Keep the ambience loops at about 20% of the narrator's volume in the mix, and ad
 
 ## 5. Image prompts (ChatGPT)
 
-36 images. For each one, paste the style block from section 1, then the character lock if Fig appears, then the subject text below. Textures (T-rows) are the exception: they use their own prompt with no style block, because they must have no outlines or shadows.
+40 images. For each one, paste the style block from section 1, then the character lock if Fig appears, then the subject text below. Textures (T-rows) are the exception: they use their own prompt with no style block, because they must have no outlines or shadows.
 
 ### Characters (1:1, transparent background)
 
@@ -248,6 +248,10 @@ Keep the ambience loops at about 20% of the narrator's volume in the mix, and ad
 | IMG-B07 | Station at night (B5) | The tank room at night: rain on the window, one desk lamp making a warm pool of light on the counter, tanks glowing faintly teal. |
 | IMG-B08 | Inside the tail (A1 zoom) | A simplified cross-section of a newt tail as stacked paper layers: an outer skin layer, bundles of muscle, and a small round bone in the center. Clean and readable, no blood. |
 | IMG-B09 | Inside a cell (A1 zoom) | A simplified animal cell as layered paper: a cell membrane edge, cream cytoplasm, a few bean-shaped mitochondria, and a large round nucleus in the center with a double-layered envelope. The nucleus interior is empty (chromosomes are added in code). |
+| IMG-B10 | Inside the nucleus (A1 zoom) | A large round cell nucleus seen straight on, as layered paper: a deep-blue double-layered envelope with a few small pores, and a pale blue-grey interior. Inside, exactly four long, thin, loose paper threads wander and tangle across the whole nucleus like loose yarn: two teal and two orange, one of each colour a slightly darker shade. The threads are not rods and not X shapes. Plain dark background around the nucleus. The nucleus is centred and fills about 80% of the frame height. |
+| IMG-B11 | One chromosome (A1 zoom) | A single chromosome as a thick, rounded teal paper rod, tilted slightly, built from a tightly coiled paper strip so the coils show as ridges along its whole length. One orange paper band across the upper third. One single rod, not an X shape. Plain dark background. Centred, filling about 85% of the frame height. |
+| IMG-B12 | One gene (A1 zoom) | A close-up of the same teal coiled paper strip running straight across the frame from left to right, coils showing as ridges. In the middle, one orange band raised as its own paper layer. Plain dark background above and below the strip. |
+| IMG-B13 | DNA double helix (A1 zoom) | A DNA double helix as cut paper running straight across the frame from left to right: exactly two continuous paper ribbons, one teal and one orange, twisting around each other in a right-handed twist, with the parts that turn away slightly darker. Between the ribbons, evenly spaced rungs, about ten per full turn; each rung is two short paper pieces of different colours that meet in the middle like puzzle pieces. No letters. Plain dark background. |
 
 ### Story panels (16:9, shown between tasks only)
 
@@ -290,7 +294,7 @@ Everything students count, move, compare or read is built in Three.js, so it sta
 | Cells, nuclei, spindle pull | A2, B2, B3 | Division is animated step by step and must show exact counts. |
 | Count strip (chromosomes, DNA molecules, same as parent?) | All modules | Live numbers that update with every action. |
 | Gene switch panel | A3 | Students toggle genes; the cell type changes to match. |
-| Zoom ladder camera | A1 | Flies from Fig into the tail (IMG-B08), the cell (IMG-B09), then the code-built nucleus and chromosomes. |
+| Zoom ladder camera | A1 | Flies from Fig into the tail (IMG-B08), the cell (IMG-B09), the nucleus (IMG-B10), one chromosome (IMG-B11), one gene (IMG-B12) and the DNA (IMG-B13). Each level is drawn in code until its image exists. |
 | Tail regrowth time-lapse | A0, A3 | Cross-fades the four stages of IMG-C03 in sync with SFX-20. |
 | Gametes and fertilization | B2 | Halving, shuffling and crossing over must be exact; students count the possible combinations. |
 | Side-by-side mitosis vs. meiosis | B3 | Both run from the same starting cell at the same time. |
