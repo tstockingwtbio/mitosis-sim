@@ -79,6 +79,20 @@ p, h1, h2, h3, label, legend, .label, .text, .stage-of, .line-of { unicode-bidi:
   white-space: nowrap; border: 0;
 }
 
+/* ---------- Paper grain (from IMG-T01, set by engine/stage/grain.ts) ---------- */
+:root[data-grain=on]:not([data-contrast=true]) body,
+:root[data-grain=on]:not([data-contrast=true]) .topbar,
+:root[data-grain=on]:not([data-contrast=true]) .stage,
+:root[data-grain=on]:not([data-contrast=true]) .panel,
+:root[data-grain=on]:not([data-contrast=true]) .count-cell,
+:root[data-grain=on]:not([data-contrast=true]) .card,
+:root[data-grain=on]:not([data-contrast=true]) .settings-section,
+:root[data-grain=on]:not([data-contrast=true]) dialog.settings {
+  background-image: var(--grain);
+  background-size: 256px 256px;
+  background-blend-mode: multiply;
+}
+
 /* ---------- Buttons ---------- */
 .btn {
   min-height: var(--target);

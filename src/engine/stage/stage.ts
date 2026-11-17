@@ -38,7 +38,9 @@ export class Stage {
 
   constructor() {
     this.el = h('div', { class: 'stage' });
-    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'low-power' });
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'low-power' });
+    // Transparent clear: the stage card (with its paper grain) shows through.
+    this.renderer.setClearColor(0x000000, 0);
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.domElement.setAttribute('aria-hidden', 'true');
@@ -53,7 +55,6 @@ export class Stage {
     this.persp = new THREE.PerspectiveCamera(50, 16 / 9, 0.05, 400);
     this.persp.position.set(0, 0, 10);
 
-    this.scene.background = new THREE.Color('#fbf5e8');
 
     if (DEV_MODE) {
       this.fpsEl = h('div', { class: 'dev-fps', 'aria-hidden': 'true' }, '— fps');
@@ -61,6 +62,7 @@ export class Stage {
     }
 
     new ResizeObserver(() => this.resize()).observe(this.el);
+    window.addEventListener('mm:grain', () => this.invalidate());
     this.loop = this.loop.bind(this);
     this.raf = requestAnimationFrame(this.loop);
   }
@@ -80,7 +82,7 @@ export class Stage {
   }
 
   /** Remove everything from the scene, including label elements. */
-  reset(background = '#fbf5e8'): void {
+  reset(): void {
     this.ticks.clear();
     this.resizeListeners.clear();
     const old = this.scene;
@@ -93,7 +95,6 @@ export class Stage {
       else mat?.dispose();
     });
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color(background);
     this.mode = 'ortho';
     this.viewHeight = VIEW_HEIGHT;
     this.ortho.position.set(0, 0, 50);

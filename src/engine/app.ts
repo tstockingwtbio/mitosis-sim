@@ -4,6 +4,7 @@ import { t, voKey } from '../i18n';
 import { applySettings, getSettings, onSettings, type Settings } from './settings';
 import { progress, saveProgress } from './progress';
 import { Stage } from './stage/stage';
+import { loadGrain } from './stage/grain';
 import { CountStrip } from './ui/countStrip';
 import { Captions } from './ui/captions';
 import { SettingsMenu } from './ui/settingsMenu';
@@ -101,6 +102,8 @@ export class App {
     const p = progress();
     const beat = this.content.beats.find((b) => b.id === p.beat && b.built) ?? this.content.beats.find((b) => b.built)!;
     await this.openBeat(beat.id, p.step[beat.id] ?? 0);
+    // Paper grain is a nice-to-have: load it once the first screen is up.
+    window.setTimeout(loadGrain, 300);
   }
 
   private relabel(): void {

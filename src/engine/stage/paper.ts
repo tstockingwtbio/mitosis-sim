@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { grainCanvas, onGrain, useGrain } from './grain';
 
 // Flat cut-paper pieces: a fill, a hand-inked outline drawn as real geometry
 // (not a screen-space pass) and a small offset drop shadow.
@@ -21,6 +22,8 @@ export interface PaperOptions {
   opacity?: number;
   /** Explicit outline colour (defaults to ink). */
   ink?: THREE.ColorRepresentation;
+  /** Paper grain on the fill (default on). */
+  grain?: boolean;
 }
 
 const stripeCache = new Map<string, THREE.Texture>();
@@ -31,24 +34,37 @@ export function stripeTexture(color: THREE.ColorRepresentation): THREE.Texture {
   const hit = stripeCache.get(key);
   if (hit) return hit;
   const c = document.createElement('canvas');
-  c.width = c.height = 64;
+  c.width = c.height = 128;
   const g = c.getContext('2d')!;
   const base = new THREE.Color(color);
   const dark = base.clone().multiplyScalar(0.62);
-  g.fillStyle = `#${base.getHexString()}`;
-  g.fillRect(0, 0, 64, 64);
-  g.strokeStyle = `#${dark.getHexString()}`;
-  g.lineWidth = 12;
-  for (let i = -64; i <= 128; i += 32) {
-    g.beginPath();
-    g.moveTo(i, 64);
-    g.lineTo(i + 64, 0);
-    g.stroke();
-  }
+  const draw = () => {
+    g.globalCompositeOperation = 'source-over';
+    g.fillStyle = `#${base.getHexString()}`;
+    g.fillRect(0, 0, 128, 128);
+    g.strokeStyle = `#${dark.getHexString()}`;
+    g.lineWidth = 24;
+    for (let i = -128; i <= 256; i += 64) {
+      g.beginPath();
+      g.moveTo(i, 128);
+      g.lineTo(i + 128, 0);
+      g.stroke();
+    }
+    const grain = grainCanvas();
+    if (grain) {
+      g.globalCompositeOperation = 'multiply';
+      g.drawImage(grain, 0, 0, 128, 128);
+    }
+  };
+  draw();
   const tex = new THREE.CanvasTexture(c);
+  onGrain(() => {
+    draw();
+    tex.needsUpdate = true;
+  });
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
   tex.colorSpace = THREE.SRGBColorSpace;
-  tex.repeat.set(2.2, 2.2);
+  tex.repeat.set(1.1, 1.1);
   stripeCache.set(key, tex);
   return tex;
 }
@@ -106,9 +122,13 @@ export function paper(shape: THREE.Shape, opts: PaperOptions): THREE.Group {
   const outline = opts.outline ?? 0.07;
   const opacity = opts.opacity ?? 1;
   const fillGeo = new THREE.ShapeGeometry(shape, 24);
-  const fillMat = opts.striped
-    ? new THREE.MeshBasicMaterial({ map: stripeTexture(opts.color), side: THREE.DoubleSide, transparent: opacity < 1, opacity })
-    : basic(opts.color, opacity);
+  let fillMat: THREE.MeshBasicMaterial;
+  if (opts.striped) {
+    fillMat = new THREE.MeshBasicMaterial({ map: stripeTexture(opts.color), side: THREE.DoubleSide, transparent: opacity < 1, opacity });
+  } else {
+    fillMat = basic(opts.color, opacity);
+    if (opts.grain !== false) useGrain(fillMat);
+  }
   const fill = new THREE.Mesh(fillGeo, fillMat);
   fill.name = 'fill';
   fill.position.z = 0.002;
