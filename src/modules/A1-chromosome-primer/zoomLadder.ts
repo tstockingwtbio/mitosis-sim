@@ -40,6 +40,7 @@ interface ArtSpec {
   /** Where to dive in, as fractions of the shown image from the top left. */
   focus: [number, number];
   targetRadius: number;
+  rotate90?: boolean;
 }
 
 const ART: Partial<Record<Rung, ArtSpec>> = {
@@ -55,12 +56,13 @@ const ART: Partial<Record<Rung, ArtSpec>> = {
   nucleus: { id: 'IMG-B10', aspect: 1536 / 1024, height: 7, focus: [0.5, 0.5], targetRadius: 0.8 },
   chromosome: { id: 'IMG-B11', aspect: 1536 / 1024, height: 7, focus: [0.5, 0.3], targetRadius: 0.5 },
   gene: { id: 'IMG-B12', aspect: 1536 / 1024, height: 6.5, focus: [0.5, 0.5], targetRadius: 1.0 },
-  dna: { id: 'IMG-B13', aspect: 1536 / 1024, height: 6.5, focus: [0.5, 0.5], targetRadius: 0 },
+  // Portrait image (helix running top to bottom), turned sideways on screen.
+  dna: { id: 'IMG-B13', aspect: 1536 / 1024, height: 6.5, focus: [0.5, 0.5], targetRadius: 0, rotate90: true },
 };
 
 function artRung(spec: ArtSpec, onChange: () => void): Built {
   const w = spec.height * spec.aspect;
-  const group = assetSlot(spec.id, new THREE.Group(), { size: { w, h: spec.height }, crop: spec.crop }, onChange);
+  const group = assetSlot(spec.id, new THREE.Group(), { size: { w, h: spec.height }, crop: spec.crop, rotate90: spec.rotate90 }, onChange);
   return {
     group,
     focus: new THREE.Vector2((spec.focus[0] - 0.5) * w, (0.5 - spec.focus[1]) * spec.height),

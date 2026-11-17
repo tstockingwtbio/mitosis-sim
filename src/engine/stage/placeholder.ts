@@ -15,6 +15,8 @@ export interface SlotOptions {
    * the placeholder.
    */
   align?: { image: [number, number]; local: THREE.Vector2 };
+  /** Turn the image a quarter turn clockwise (a portrait image shown landscape). */
+  rotate90?: boolean;
 }
 
 /**
@@ -43,7 +45,10 @@ export function assetSlot(id: string, placeholder: THREE.Group, opts: SlotOption
         tex.offset.set(l, 1 - b);
         const img = tex.image as { width: number; height: number };
         const aspect = (img.width * (r - l)) / (img.height * (b - t));
-        const w = Math.min(size.w, size.h * aspect);
+        // Fit the image as it will appear on screen (after any rotation).
+        const shown = opts.rotate90 ? 1 / aspect : aspect;
+        const sw = Math.min(size.w, size.h * shown);
+        const w = opts.rotate90 ? sw / shown : sw;
         const hh = w / aspect;
         const plane = new THREE.Mesh(
           new THREE.PlaneGeometry(w, hh),
@@ -53,6 +58,7 @@ export function assetSlot(id: string, placeholder: THREE.Group, opts: SlotOption
           const [fx, fy] = opts.align.image;
           plane.position.set(opts.align.local.x - (fx - 0.5) * w, opts.align.local.y + (fy - 0.5) * hh, 0);
         }
+        if (opts.rotate90) plane.rotation.z = -Math.PI / 2;
         placeholder.visible = false;
         group.add(plane);
         onChange();
