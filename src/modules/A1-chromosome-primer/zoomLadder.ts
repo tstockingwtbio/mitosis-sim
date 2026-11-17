@@ -66,7 +66,7 @@ function buildFig(onChange: () => void): Built {
   lid.position.set(-2.6, 0.38, 0.07);
   g.add(lid);
   g.scale.setScalar(1.25);
-  return { group: assetSlot('IMG-C01', g, { w: 7, h: 4 }, onChange), focus: new THREE.Vector2(3.2, 0.05) };
+  return { group: assetSlot('IMG-C01', g, { size: { w: 7, h: 6 }, crop: [0.19, 0, 0.5, 1], align: { image: [0.85, 0.68], local: new THREE.Vector2(3.2, 0.05) } }, onChange), focus: new THREE.Vector2(3.2, 0.05) };
 }
 
 function buildTissue(onChange: () => void): Built {
@@ -98,7 +98,7 @@ function buildTissue(onChange: () => void): Built {
   const nuc = paper(circleShape(0.12, fx, fy), { color: PALETTE.blue, outline: 0.03, shadow: false });
   nuc.position.z = 0.05;
   g.add(nuc);
-  return { group: assetSlot('IMG-B08', g, { w: 6.6, h: 6.6 }, onChange), focus: new THREE.Vector2(fx, fy) };
+  return { group: assetSlot('IMG-B08', g, { size: { w: 7.5, h: 6.6 }, align: { image: [0.605, 0.105], local: new THREE.Vector2(fx, fy) } }, onChange), focus: new THREE.Vector2(fx, fy) };
 }
 
 function buildCell(onChange: () => void): Built {
@@ -116,7 +116,7 @@ function buildCell(onChange: () => void): Built {
   const inner = paper(circleShape(1.17, 0.3, 0.2), { color: '#dfe6ef', outline: 0.04, shadow: false });
   inner.position.z = 0.04;
   g.add(inner);
-  return { group: assetSlot('IMG-B09', g, { w: 7, h: 6.2 }, onChange), focus: new THREE.Vector2(0.3, 0.2) };
+  return { group: assetSlot('IMG-B09', g, { size: { w: 8, h: 6.2 }, align: { image: [0.496, 0.503], local: new THREE.Vector2(0.3, 0.2) } }, onChange), focus: new THREE.Vector2(0.3, 0.2) };
 }
 
 function buildNucleus(): Built {

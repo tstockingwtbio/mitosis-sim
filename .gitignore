@@ -3,3 +3,6 @@ dist/
 *.log
 .DS_Store
 .vite/
+
+# Teacher art sources and reference renders (not published)
+art-source/
