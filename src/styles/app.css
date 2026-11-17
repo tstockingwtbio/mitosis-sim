@@ -239,6 +239,20 @@ p, h1, h2, h3, label, legend, .label, .text, .stage-of, .line-of { unicode-bidi:
 }
 .stage-note > div { max-width: 28em; }
 
+.zoom-scale {
+  position: absolute;
+  inset-inline-end: var(--pad);
+  inset-block-start: var(--pad);
+  padding: 4px 10px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  background: var(--card);
+  font-size: 0.9rem;
+  font-weight: 700;
+  unicode-bidi: plaintext;
+}
+.stage-label.target-label { background: #ffd866; }
+
 .legend {
   position: absolute;
   inset-inline-end: var(--pad);

@@ -54,6 +54,13 @@ Notes for the teacher and for comparing pilot results. Students never see this f
 
 These ideas come back in A2: mitosis error states (missing or extra chromosome) reuse the count strip and the X = 1 chromosome rule.
 
+### Visual model notes
+
+- **Zoom ladder.** Your art is used for Fig (side view cropped from IMG-C01), the tail slice (IMG-B08) and the cell (IMG-B09). The nucleus, chromosome, gene and DNA levels are built in code. A dashed yellow ring marks where the camera dives next, and each level states its real size (Fig about 10 cm long, tail slice about 5 mm, cell about 20 µm, nucleus about 6 µm, DNA 2 nm wide). The gene level says "not to scale" because gene lengths vary a lot.
+- **Nucleus shows loose threads, not rods.** In a cell that is not dividing, chromosomes are long, loose threads. They coil into the familiar rods only before division. This avoids the misconception that chromosomes are always X- or rod-shaped.
+- **Band patterns.** Partner chromosomes share a pattern of light bands, as in a stained karyotype, and non-partners differ. This is a second pairing clue besides length and gene letters; hint 1 for the pairing tasks mentions it.
+- **Paper grain** comes from your cream texture (IMG-T01). T02 to T07 are not used yet: the bible says the working area should hold no decorative images, so the tape and torn-strip pieces wait for story and title screens.
+
 ### How the supports behave
 
 - **Worked steps fade.** Two correct answers in a row hide one more worked step on the next guided task. A student can still reveal each step with "Show the next step". "Show all steps" in Settings turns fading off.
