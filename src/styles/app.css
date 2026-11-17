@@ -119,6 +119,20 @@ p, h1, h2, h3, label, legend, .label, .text, .stage-of, .line-of { unicode-bidi:
 :root[data-motion='reduce'] .btn { transition: none; }
 [dir='rtl'] .flip { display: inline-block; transform: scaleX(-1); }
 
+/* ---------- Liquid tab highlight (engine/ui/liquidTabs.ts) ---------- */
+.liquid-wrap { position: relative; }
+.liquid-blob {
+  position: absolute;
+  z-index: 0;
+  border-radius: 999px;
+  background: var(--primary);
+  pointer-events: none;
+}
+.liquid-wrap ol { position: relative; z-index: 1; }
+.liquid-wrap .chapter { background: transparent; }
+.liquid-wrap .chapter[aria-current=step] { color: var(--on-primary); }
+.liquid-wrap .chapter[aria-current=step]:disabled { opacity: 1; }
+
 /* ---------- Layout ---------- */
 .app {
   display: grid;

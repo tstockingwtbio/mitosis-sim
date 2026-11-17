@@ -9,7 +9,7 @@ Notes for the teacher and for comparing pilot results. Students never see this f
 | A1 | Chromosome structure: an X is one chromosome with two DNA molecules | New representation | Explicit first | New vocabulary (centromere, chromatid) and a new counting procedure. Order: zoom ladder, pairs, copying animation, worked example, guided practice, independent practice. |
 | A1 | Genes are sections of chromosomes; chromosomes come in pairs (one from each parent) | New vocabulary and representation | Explicit first | Students need the model (lengths, gene letters, solid M and striped P) before they can reason with it. |
 
-## A1: Chromosome primer (SC.HS.6.1.d)
+## A1: Meet the chromosomes (chromosome primer, SC.HS.6.1.d)
 
 **Status: draft.** All task text in `src/content/partA.json` and `src/i18n/en.json` is marked `"status": "draft"`. The story bible gives A1's narration (VO-A04 to VO-A08) but no Retrieve items, practice items, answers or feedback, so Claude drafted these for your review.
 

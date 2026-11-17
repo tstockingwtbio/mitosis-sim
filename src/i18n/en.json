@@ -5,7 +5,7 @@
   "app.part": "Part A",
 
   "beat.A0.title": "Cold open",
-  "beat.A1.title": "Chromosome primer",
+  "beat.A1.title": "Meet the chromosomes",
   "beat.A2.title": "Copy a cell",
   "beat.A2b.title": "Clock the cycle",
   "beat.A3.title": "Build a body",
@@ -360,7 +360,7 @@
   "A1.C3.fbDifferent": { "building": "Partners carry the same genes in the same places.", "beginning": "Partners have the same genes." },
   "A1.C3.fbSame": { "building": "Same genes, and the versions can differ (like A and a).", "beginning": "Same genes. Versions can be different." },
 
-  "A1.end.title": "Chromosome primer: done",
+  "A1.end.title": "Meet the chromosomes: done",
   "A1.end.body1": { "building": "Genes are sections of chromosomes. Chromosomes come in pairs, one from each parent.", "beginning": "Genes are on chromosomes. Chromosomes come in pairs." },
   "A1.end.body2": { "building": "An X is one chromosome, copied: 1 chromosome, 2 DNA molecules. Next: how does one cell become two?", "beginning": "An X is one chromosome with 2 DNA molecules." }
 }

@@ -9,6 +9,7 @@ import { CountStrip } from './ui/countStrip';
 import { Captions } from './ui/captions';
 import { SettingsMenu } from './ui/settingsMenu';
 import { closeGlossary } from './ui/glossary';
+import { liquidTabs, type LiquidTabs } from './ui/liquidTabs';
 import { paragraph, type Spoken } from './ui/text';
 import { readAloud, stopReading } from './ui/reader';
 import { playSfx } from './sfx';
@@ -43,6 +44,7 @@ export class App {
   private nextBtn = h('button', { class: 'btn primary', type: 'button' });
   private panel: HTMLElement;
   private workspace!: HTMLElement;
+  private chapterTabs: LiquidTabs | null = null;
 
   private beat!: Beat;
   private stepIndex = 0;
@@ -120,7 +122,8 @@ export class App {
   }
 
   private renderChapters(): void {
-    clear(this.chaptersNav);
+    this.chaptersNav.querySelector('ol')?.remove();
+    this.chapterTabs ??= liquidTabs('chapters', this.chaptersNav);
     this.chaptersNav.setAttribute('aria-label', t('ui.chapters'));
     const ol = h('ol');
     this.content.beats.forEach((b, i) => {
@@ -145,6 +148,7 @@ export class App {
       ol.appendChild(h('li', {}, btn));
     });
     this.chaptersNav.appendChild(ol);
+    this.chapterTabs.moveTo(ol.querySelector<HTMLElement>('[aria-current="step"]'));
   }
 
   async openBeat(id: string, step: number): Promise<void> {

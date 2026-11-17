@@ -10,6 +10,7 @@ import { useGrain } from '../../engine/stage/grain';
 import { label } from '../../engine/stage/stage';
 import { playSfx } from '../../engine/sfx';
 import { paragraph } from '../../engine/ui/text';
+import { liquidTabs } from '../../engine/ui/liquidTabs';
 import type { StepContext, StepView } from '../../engine/types';
 
 const RUNGS = ['fig', 'tissue', 'cell', 'nucleus', 'chromosome', 'gene', 'dna'] as const;
@@ -390,7 +391,9 @@ export function zoomLadder(ctx: StepContext): StepView {
   const levelText = h('div', { 'aria-live': 'polite' });
   const outBtn = h('button', { class: 'btn', type: 'button' }, h('span', { 'aria-hidden': 'true' }, '−'), t('A1.zoom.out'));
   const inBtn = h('button', { class: 'btn primary', type: 'button' }, h('span', { 'aria-hidden': 'true' }, '+'), t('A1.zoom.in'));
-  ctx.body.append(h('div', { class: 'card' }, h('div', { style: { display: 'flex', gap: '8px', flexWrap: 'wrap' } }, outBtn, inBtn), levelText), ladder);
+    const ladderWrap = h('div', {}, ladder);
+  ctx.body.append(h('div', { class: 'card' }, h('div', { style: { display: 'flex', gap: '8px', flexWrap: 'wrap' } }, outBtn, inBtn), levelText), ladderWrap);
+  const levelTabs = liquidTabs('zoom-levels', ladderWrap);
   const readables = ctx.getReadables();
   ctx.captions.setLines((ctx.step as { lines: string[] }).lines, { autoAdvance: false, autoplay: getSettings().readAloud });
 
@@ -465,6 +468,7 @@ export function zoomLadder(ctx: StepContext): StepView {
         b.setAttribute('aria-current', i === current ? 'step' : 'false');
         b.disabled = animating;
       });
+      if (!animating) levelTabs.moveTo(ladderBtns[current]);
       const txt = paragraph(`A1.zoom.${RUNGS[current]}.text`);
       levelText.replaceChildren(h('h3', { style: { margin: '0 0 4px' } }, t(`A1.zoom.${RUNGS[current]}`)), txt.el);
       scaleNote.textContent = t(`A1.zoom.scale.${RUNGS[current]}`);
@@ -488,6 +492,8 @@ export function zoomLadder(ctx: StepContext): StepView {
       // Fly through the marked spot: the current level fades as the next one grows.
       animating = true;
       playSfx('SFX-18');
+      // The tab highlight slides right away, while the camera flies.
+      levelTabs.moveTo(ladderBtns[target]);
       const from = current;
       const to = target;
       refreshUi(false);
