@@ -6,6 +6,7 @@ import { getSettings } from '../../engine/settings';
 import { fileExists, imageUrl } from '../../engine/assets';
 import { PALETTE, basic, circleShape, ellipseShape, easeInOut, paper, roundRectShape, setOpacity, strokeGeometry } from '../../engine/stage/paper';
 import { assetSlot } from '../../engine/stage/placeholder';
+import { useGrain } from '../../engine/stage/grain';
 import { label } from '../../engine/stage/stage';
 import { playSfx } from '../../engine/sfx';
 import { paragraph } from '../../engine/ui/text';
@@ -202,69 +203,106 @@ function buildGene(): Built {
 }
 
 /**
- * DNA: two strands twisting round each other. Each strand is split into the
- * parts in front and the parts behind (darker), so the twist reads in 3D.
- * Rungs are base pairs, drawn as two halves that fit together.
- * On arrival the helix stretches out from a tight coil.
+ * A flat ribbon along a 3D path: constant width in the picture plane, with
+ * each point keeping its own depth. Two strands that cross are then sorted by
+ * the depth buffer, so the helix has no seams or breaks.
+ */
+function ribbon(points: THREE.Vector3[], width: number, colors?: THREE.Color[]): THREE.BufferGeometry {
+  const pos: number[] = [];
+  const col: number[] = [];
+  const uv: number[] = [];
+  const idx: number[] = [];
+  const half = width / 2;
+  for (let i = 0; i < points.length; i++) {
+    const prev = points[Math.max(0, i - 1)];
+    const next = points[Math.min(points.length - 1, i + 1)];
+    const dx = next.x - prev.x;
+    const dy = next.y - prev.y;
+    const l = Math.hypot(dx, dy) || 1;
+    const nx = (-dy / l) * half;
+    const ny = (dx / l) * half;
+    const p = points[i];
+    pos.push(p.x + nx, p.y + ny, p.z, p.x - nx, p.y - ny, p.z);
+    uv.push(p.x + nx, p.y + ny, p.x - nx, p.y - ny);
+    const c = colors?.[i];
+    if (c) col.push(c.r, c.g, c.b, c.r, c.g, c.b);
+    if (i > 0) {
+      const a = (i - 1) * 2;
+      const b = i * 2;
+      idx.push(a, a + 1, b, a + 1, b + 1, b);
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+  if (colors) g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  g.setIndex(idx);
+  return g;
+}
+
+/**
+ * DNA: two continuous strands twisting round each other, shaded darker where
+ * they turn away, with base pairs as rungs made of two halves that fit
+ * together. On arrival the helix stretches out from a tight coil.
  */
 function buildDna(): Built {
   const g = new THREE.Group();
   const helix = new THREE.Group();
   g.add(helix);
-  const n = 240;
+  const n = 360;
   const x0 = -4.4;
   const len = 8.8;
   const amp = 1.05;
   const freq = 1.5;
-  const strands: { color: string; back: string; phase: number }[] = [
-    { color: PALETTE.teal, back: '#1d5858', phase: 0 },
-    { color: PALETTE.orange, back: '#97501f', phase: Math.PI },
-  ];
-  const pointAt = (i: number, phase: number) => {
-    const x = x0 + (len * i) / n;
-    return { p: new THREE.Vector2(x, Math.sin(x * freq + phase) * amp), front: Math.cos(x * freq + phase) > 0 };
+  const depth = 0.6;
+  const at = (x: number, phase: number) =>
+    new THREE.Vector3(x, Math.sin(x * freq + phase) * amp, Math.cos(x * freq + phase) * depth);
+  const fillMat = () => {
+    const m = new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.DoubleSide });
+    useGrain(m);
+    return m;
   };
-  // Base pairs first (they sit between the strands).
+  const inkMat = basic(PALETTE.ink);
+
+  const strands = [
+    { front: new THREE.Color(PALETTE.teal), back: new THREE.Color('#174b4b'), phase: 0 },
+    { front: new THREE.Color(PALETTE.orange), back: new THREE.Color('#7c4219'), phase: Math.PI },
+  ];
+  for (const s of strands) {
+    const pts: THREE.Vector3[] = [];
+    const cols: THREE.Color[] = [];
+    for (let i = 0; i <= n; i++) {
+      const p = at(x0 + (len * i) / n, s.phase);
+      pts.push(p);
+      cols.push(s.back.clone().lerp(s.front, (p.z / depth + 1) / 2));
+    }
+    const ink = new THREE.Mesh(ribbon(pts.map((p) => p.clone().setZ(p.z - 0.02)), 0.46), inkMat);
+    const fill = new THREE.Mesh(ribbon(pts, 0.3, cols), fillMat());
+    helix.add(ink, fill);
+  }
+
+  // Base pairs: two halves meeting in the middle.
   const pairColors: [string, string][] = [
     [PALETTE.moss, PALETTE.cream],
     [PALETTE.blue, '#f2c14e'],
   ];
-  for (let i = 4; i < n; i += 8) {
-    const a = pointAt(i, 0).p;
-    const b = pointAt(i, Math.PI).p;
+  const step = (Math.PI / freq) / 5;
+  let k = 0;
+  for (let x = x0 + step / 2; x < x0 + len; x += step, k++) {
+    const a = at(x, 0);
+    const b = at(x, Math.PI);
     const mid = a.clone().lerp(b, 0.5);
-    const [c1, c2] = pairColors[(i / 8) % 2 < 1 ? 0 : 1];
-    const flip = Math.floor(i / 16) % 2 === 0;
-    for (const [from, to, c] of [[a, mid, flip ? c1 : c2], [mid, b, flip ? c2 : c1]] as [THREE.Vector2, THREE.Vector2, string][]) {
-      const ink = new THREE.Mesh(strokeGeometry([from, to], 0.17, false), basic(PALETTE.ink));
-      const fill = new THREE.Mesh(strokeGeometry([from, to], 0.1, false), basic(c));
-      ink.position.z = -0.02;
-      fill.position.z = -0.01;
+    const [c1, c2] = pairColors[k % 2];
+    const swap = Math.floor(k / 3) % 2 === 1;
+    for (const [from, to, c] of [[a, mid, swap ? c2 : c1], [mid, b, swap ? c1 : c2]] as [THREE.Vector3, THREE.Vector3, string][]) {
+      const seg = [from, to];
+      const shade = new THREE.Color(c).lerp(new THREE.Color(PALETTE.ink), Math.max(0, -(from.z + to.z) / 2 / depth) * 0.35);
+      const ink = new THREE.Mesh(ribbon(seg.map((p) => p.clone().setZ(p.z - 0.02)), 0.17), inkMat);
+      const fill = new THREE.Mesh(ribbon(seg, 0.1, [shade, shade]), fillMat());
       helix.add(ink, fill);
     }
   }
-  for (const s of strands) {
-    let run: THREE.Vector2[] = [];
-    let front = pointAt(0, s.phase).front;
-    const flush = () => {
-      if (run.length < 2) return;
-      const ink = new THREE.Mesh(strokeGeometry(run, 0.44, false), basic(PALETTE.ink));
-      const fill = new THREE.Mesh(strokeGeometry(run, 0.3, false), basic(front ? s.color : s.back));
-      ink.position.z = front ? 0.04 : -0.06;
-      fill.position.z = front ? 0.05 : -0.05;
-      helix.add(ink, fill);
-    };
-    for (let i = 0; i <= n; i++) {
-      const { p, front: f } = pointAt(i, s.phase);
-      if (f !== front) {
-        run.push(p);
-        flush();
-        run = [p];
-        front = f;
-      } else run.push(p);
-    }
-    flush();
-  }
+
   let untick: (() => void) | null = null;
   return {
     group: g,
@@ -278,7 +316,7 @@ function buildDna(): Built {
       }
       helix.scale.set(0.22, 0.7, 1);
       let p = 0;
-      const stage = (g.userData.stage as { addTick: (f: (dt: number) => boolean) => () => void } | undefined);
+      const stage = g.userData.stage as { addTick: (f: (dt: number) => boolean) => () => void } | undefined;
       untick =
         stage?.addTick((dt) => {
           p = Math.min(1, p + dt / 1.3);
