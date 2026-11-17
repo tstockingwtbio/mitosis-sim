@@ -57,8 +57,12 @@ export interface FeedbackRule {
   text: string;
 }
 
+export type WorkedAction = 'centromeres' | 'chromosomeCount' | 'chromatids' | 'dnaCount' | 'none';
+
 export interface Supports {
   worked?: string[];
+  /** What the model shows as each worked step is revealed. */
+  workedActions?: WorkedAction[];
   hints?: string[];
   frames?: string;
   wordBank?: string;

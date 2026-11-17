@@ -1,0 +1,21 @@
+{
+  "_note": "File slugs for the asset slots. Names follow the story bible: mm_<type>_<num>_<slug>.<ext>. Drop a file with this name into public/ and it replaces the placeholder with no code change.",
+  "img": {
+    "IMG-C01": "mm_img_C01_fig-turnaround.png",
+    "IMG-B08": "mm_img_B08_inside-the-tail.png",
+    "IMG-B09": "mm_img_B09_inside-a-cell.png"
+  },
+  "sfx": {
+    "SFX-01": "mm_sfx_01_button-tap",
+    "SFX-02": "mm_sfx_02_panel-opens",
+    "SFX-03": "mm_sfx_03_panel-closes",
+    "SFX-04": "mm_sfx_04_correct-answer",
+    "SFX-05": "mm_sfx_05_try-again",
+    "SFX-06": "mm_sfx_06_footnote-pops-open",
+    "SFX-07": "mm_sfx_07_hint-revealed",
+    "SFX-09": "mm_sfx_09_chromosome-picked-up",
+    "SFX-10": "mm_sfx_10_chromosome-placed",
+    "SFX-11": "mm_sfx_11_chromosome-copy",
+    "SFX-18": "mm_sfx_18_zoom-into-a-cell"
+  }
+}

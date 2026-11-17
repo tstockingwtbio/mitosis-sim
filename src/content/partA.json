@@ -99,6 +99,7 @@
       "id": "A1-W1", "beat": "A1", "standard": "SC.HS.6.1.d", "phase": "worked", "status": "draft", "kind": "count",
       "prompt": "A1.W1.prompt",
       "worked": ["A1.W1.step1", "A1.W1.step2", "A1.W1.step3", "A1.W1.step4"],
+      "workedActions": ["centromeres", "chromosomeCount", "chromatids", "dnaCount"],
       "cell": { "chromosomes": [
         { "id": "1M", "pair": 1, "parent": "M", "state": "replicated", "length": "long", "alleles": ["A", "D"], "x": -2.6, "y": 0.4, "angle": 10 },
         { "id": "1P", "pair": 1, "parent": "P", "state": "replicated", "length": "long", "alleles": ["a", "D"], "x": -0.9, "y": -0.3, "angle": -15 },
@@ -113,6 +114,7 @@
       "id": "A1-G1", "beat": "A1", "standard": "SC.HS.6.1.d", "phase": "guided", "status": "draft", "kind": "count",
       "prompt": "A1.G1.prompt",
       "worked": ["A1.G1.step1", "A1.G1.step2"],
+      "workedActions": ["centromeres", "chromatids"],
       "hints": ["A1.G1.hint1", "A1.G1.hint2"],
       "frames": "frame.count", "wordBank": "bank.count",
       "cell": { "chromosomes": [
@@ -154,6 +156,7 @@
       "id": "A1-G3", "beat": "A1", "standard": "SC.HS.6.1.d", "phase": "guided", "status": "draft", "kind": "count",
       "prompt": "A1.G3.prompt",
       "worked": ["A1.G3.step1", "A1.G3.step2"],
+      "workedActions": ["centromeres", "chromatids"],
       "hints": ["hint.x1", "hint.x2"],
       "frames": "frame.count", "wordBank": "bank.count",
       "cell": { "chromosomes": [
@@ -176,7 +179,6 @@
       "id": "A1-I1", "beat": "A1", "standard": "SC.HS.6.1.d", "phase": "independent", "status": "draft", "kind": "count",
       "prompt": "A1.I1.prompt",
       "goFurther": "A1-I1-GF",
-      "worked": ["A1.G3.step1", "A1.G3.step2"],
       "hints": ["hint.x1", "hint.x2"],
       "frames": "frame.count", "wordBank": "bank.count",
       "cell": { "chromosomes": [
