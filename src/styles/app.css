@@ -625,6 +625,11 @@ fieldset.seg legend { font-weight: 700; padding: 0; margin-bottom: 4px; }
 .hit[aria-pressed='true'] { outline: 4px dashed var(--blue); outline-offset: 2px; }
 .hit:focus-visible { outline: 4px solid var(--focus); outline-offset: 2px; }
 
+/* Steps without a model: the panel takes the space, centred and readable. */
+.workspace.no-stage { grid-template-columns: minmax(0, 960px); justify-content: center; }
+.workspace.no-stage .stage-col { display: none; }
+.workspace.no-counts .count-strip { display: none; }
+
 /* ---------- Narrow screens (e.g. small embeds) ---------- */
 @media (max-width: 900px) {
   body { overflow: auto; }

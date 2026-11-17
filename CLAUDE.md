@@ -58,7 +58,7 @@ Build beats A0, A1, A2, A2b, A3, A4 and A-end, in that order. Part B comes later
 
 - Model organism: 2n = 4 (two homologous pairs). Real newts have more; the A4 limits card says so.
 - Chromosome states: unreplicated (single rod) and replicated (X: two sister chromatids joined at the centromere).
-- Count strip, always visible and updated live: **Chromosomes** = number of centromeres; **DNA molecules** = number of chromatids; **Same info as parent?** = yes/no.
+- Count strip, shown and updated live on every step with a chromosome model (hidden on steps without one, such as warm-ups and multiple choice; the model area hides too): **Chromosomes** = number of centromeres; **DNA molecules** = number of chromatids; **Same info as parent?** = yes/no.
 - Mitosis output: two cells, each identical to the parent. Show error states (missing or extra chromosome) with feedback.
 - A2b cell cycle: stained-slide fields of 36 cells, each drawn in an exact phase; a different random field per student; 24-hour cycle; percent of cells × 24 h = estimated hours per phase.
 

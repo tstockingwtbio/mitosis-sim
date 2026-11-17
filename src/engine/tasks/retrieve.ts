@@ -19,10 +19,6 @@ export function retrieveStep(ctx: StepContext, ids: string[], content: PartConte
   memo.shown ??= {};
   memo.rated ??= {};
   ctx.counts.set({ chromosomes: null, dnaMolecules: null, same: null });
-  // The stage has no model during the warm-up; say so, so it does not look broken.
-  const note = paragraph('ui.retrieve.stageNote', { total: ids.length }, 'div');
-  const noteBox = h('div', { class: 'stage-note' }, note.el);
-  ctx.stage.el.appendChild(noteBox);
   const intro = paragraph('ui.retrieve.intro');
   const readables: Spoken[] = [intro];
   ctx.body.appendChild(intro.el);
@@ -97,5 +93,5 @@ export function retrieveStep(ctx: StepContext, ids: string[], content: PartConte
   ctx.setReadables(readables);
   update();
   ctx.autoRead();
-  return { dispose: () => noteBox.remove() };
+  return { dispose: () => undefined };
 }

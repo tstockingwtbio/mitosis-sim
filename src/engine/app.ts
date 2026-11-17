@@ -42,6 +42,7 @@ export class App {
   private backBtn = h('button', { class: 'btn', type: 'button' });
   private nextBtn = h('button', { class: 'btn primary', type: 'button' });
   private panel: HTMLElement;
+  private workspace!: HTMLElement;
 
   private beat!: Beat;
   private stepIndex = 0;
@@ -67,7 +68,7 @@ export class App {
         'div',
         { class: 'app' },
         h('header', { class: 'topbar' }, this.titleEl, this.chaptersNav, h('div', { class: 'spacer' }), this.settingsBtn),
-        h('main', { class: 'workspace' }, h('div', { class: 'stage-col' }, this.stage.el, this.counts.el, this.captions.el), this.panel),
+        (this.workspace = h('main', { class: 'workspace no-stage no-counts' }, h('div', { class: 'stage-col' }, this.stage.el, this.counts.el, this.captions.el), this.panel)),
       ),
       this.settingsMenu.dialog,
     );
@@ -177,6 +178,13 @@ export class App {
     return base;
   }
 
+  /** Which parts of the workspace a step needs. */
+  private layoutFor(step: Step, task?: Task): { stage: boolean; counts: boolean } {
+    if (step.type === 'explain') return { stage: true, counts: step.scene !== 'zoom-ladder' };
+    if (step.type === 'task' && task && (task.kind === 'count' || task.kind === 'pair')) return { stage: true, counts: true };
+    return { stage: false, counts: false };
+  }
+
   private phaseOf(step: Step, task?: Task): PhaseLabel {
     if (step.type === 'retrieve') return 'retrieve';
     if (step.type === 'task' && task) return task.phase as PhaseLabel;
@@ -202,6 +210,10 @@ export class App {
     const step = beat.steps[this.stepIndex];
     const task = this.resolveTask(step);
     const phase = this.phaseOf(step, task);
+    // Show the model area and count strip only on steps that use them.
+    const layout = this.layoutFor(step, task);
+    this.workspace.classList.toggle('no-stage', !layout.stage);
+    this.workspace.classList.toggle('no-counts', !layout.counts);
     const memoKey = `${step.id}:${task?.id ?? ''}`;
     let memo = this.memos.get(memoKey);
     if (!memo) this.memos.set(memoKey, (memo = {}));
