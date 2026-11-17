@@ -42,7 +42,7 @@ Mossbank Amphibian Rescue Station: a small, cluttered research station beside a 
 | The hatchlings (6) | Fig and Barty's offspring | Each has a different spot pattern. Hatchling 5 has a white tail tip neither parent has. |
 | Dr. Noor Haddad | Station director | Dry, patient, has seen everything twice. Suspects the paperwork. |
 | Tomás Rivera | Keeper | Loyal to Fig, quick to suspect foul play. Is sure someone swapped the eggs. |
-| Mai Tran | Lab technician | Runs the DNA tests. Trusts data, distrusts conclusions. |
+| Ada Okafor | Lab technician | Runs the DNA tests. Trusts data, distrusts conclusions. |
 | The heron | Villain of Part A | Appears for exactly one scene and steals half a tail. |
 | The narrator | Voice-over only | Pratchett/Bryson: curious, warm, dry, with tappable footnotes. |
 
@@ -61,10 +61,10 @@ Mossbank Amphibian Rescue Station: a small, cluttered research station beside a 
 | A0 | Cold open | A heron raids the outdoor pond and leaves with half of Fig's tail. Weeks later, the tail is back: bone, muscle, skin, stripes. | The question: how does a body rebuild itself? |
 | A1 | Chromosome primer | The camera zooms from Fig into a tail cell: tissue, cell, nucleus, chromosome, gene, DNA. | Chromosome structure; genes sit on chromosomes; homologous pairs (one from each parent). |
 | A2 | Copy a cell (mitosis) | Students try to give two daughter cells everything the parent cell had. Mistakes produce cells with missing or extra chromosomes. | Mitosis makes two genetically identical cells. |
-| A2b | Clock the cycle (cell cycle) | Mai photographs a stained slice of Fig's regrowing tail tip. Students sort 36 cells into interphase, prophase, metaphase, anaphase and telophase (reference cards stay on screen), count them, convert counts to percentages, and estimate hours per phase from a 24-hour cycle. Then they count a slice of Fig's old tail (almost all interphase) and Noor's windowsill onion roots (transfer). | The cell cycle is continuous, and phase names are human dividing lines; cells spend most of the cycle in interphase, where DNA is copied; growing regions have more dividing cells than finished tissue; the share of cells in a phase estimates the share of time. Sequenced explicit first: narrator sorts 3 cells aloud, students sort 6 with feedback, then the rest alone. |
+| A2b | Clock the cycle (cell cycle) | Ada photographs a stained slice of Fig's regrowing tail tip. Students sort 36 cells into interphase, prophase, metaphase, anaphase and telophase (reference cards stay on screen), count them, convert counts to percentages, and estimate hours per phase from a 24-hour cycle. Then they count a slice of Fig's old tail (almost all interphase) and Noor's windowsill onion roots (transfer). | The cell cycle is continuous, and phase names are human dividing lines; cells spend most of the cycle in interphase, where DNA is copied; growing regions have more dividing cells than finished tissue; the share of cells in a phase estimates the share of time. Sequenced explicit first: narrator sorts 3 cells aloud, students sort 6 with feedback, then the rest alone. |
 | A3 | Build a body (differentiation) | A lump of undecided cells grows at the stump. Students switch genes on and off to make bone, muscle and skin from the same chromosomes. | Same DNA in every cell; different genes switched on. |
 | A4 | Model limits + checkpoint | A "where this model is wrong" card, then an unfamiliar case with supports off. | Model accuracy vs. the real process; independent evidence. |
-| A-end | Hook | Mai: "Breeding season next month. Good thing every cell in Fig has the same DNA. Makes the paperwork easy." | Plants the rule that Part B breaks. |
+| A-end | Hook | Ada: "Breeding season next month. Good thing every cell in Fig has the same DNA. Makes the paperwork easy." | Plants the rule that Part B breaks. |
 
 ### Part B beats (Unit 4, SC.HS.9.4.b)
 
@@ -119,14 +119,14 @@ The narrator voices every story line; characters speak only in on-screen speech 
 | VO-A12 | A3 | At the stump, a lump of cells grows that hasn't decided what to be yet. Every one has the full set of instructions. \[curious\] So how does one become bone and another become skin? | New cells grow. They all have the same DNA. Some become bone. Some become skin. How? |
 | VO-A13 | A3 | Here's the trick. Every cell has every gene, but each cell only uses some of them. Bone cells switch on bone genes; skin cells switch on skin genes. Same cookbook, different pages open. | Every cell has the same genes. Each kind of cell turns on different genes. |
 | VO-A14 | A4 | \[confiding\] A confession: this model is wrong in several ways. Real cells don't wait for you to drag anything, and real newts have far more chromosomes. Models are useful because they leave things out. | This model is simple. Real cells are different in some ways. |
-| VO-A15 | A-end | Breeding season is next month. Mai isn't worried: every cell in Fig has the same DNA, which makes the paperwork easy. \[pause\] \[dry\] Hold that thought. | Next month, Fig will have babies. Remember: every cell in Fig has the same DNA. |
+| VO-A15 | A-end | Breeding season is next month. Ada isn't worried: every cell in Fig has the same DNA, which makes the paperwork easy. \[pause\] \[dry\] Hold that thought. | Next month, Fig will have babies. Remember: every cell in Fig has the same DNA. |
 
 ### Part A: Clock the cycle (A2b)
 
 | ID | Beat | Building (English) | Beginning (translate) |
 | --- | --- | --- | --- |
 | VO-A16 | A2b | Mitosis looks dramatic, but it's the short part. Most of a cell's life is spent growing, working and copying its DNA. That stretch is called interphase, and despite the name, nothing about it is restful. | Most of the time, a cell grows and copies its DNA. This is called interphase. |
-| VO-A17 | A2b | Mai has photographed a slice of Fig's new tail tip, frozen mid-growth. Every cell was caught at a different moment, like a crowd photo at a marathon. | This is a photo of cells from Fig's new tail. Each cell is at a different stage. |
+| VO-A17 | A2b | Ada has photographed a slice of Fig's new tail tip, frozen mid-growth. Every cell was caught at a different moment, like a crowd photo at a marathon. | This is a photo of cells from Fig's new tail. Each cell is at a different stage. |
 | VO-A18 | A2b | Watch me sort the first three. Round nucleus, no visible chromosomes: interphase. Chromosomes lined up across the middle: metaphase. Two sets pulling apart: anaphase. | Look at this cell. The chromosomes are in a line in the middle. This is metaphase. |
 | VO-A19 | A2b | Here's the clever bit. If 3 cells out of 36 are in metaphase, a cell spends about 3/36 of its cycle in metaphase. Count the crowd, and you can time the race. | More cells in a stage means the stage takes more time. |
 | VO-A20 | A2b | Now a slice of Fig's old tail, the part the heron left alone. Almost every cell is in interphase. These cells finished growing and have jobs to do. | In the old tail, most cells are not dividing. They have jobs. |
@@ -137,7 +137,7 @@ The narrator voices every story line; characters speak only in on-screen speech 
 | ID | Beat | Building (English) | Beginning (translate) |
 | --- | --- | --- | --- |
 | VO-B01 | B0 | Breeding season. Barty has grown a crest the size of his ego, which for a newt is considerable. Fig lays her eggs, and six hatchlings emerge. | Fig lays eggs. Six babies hatch. |
-| VO-B02 | B0 | For the breeding records, Mai runs a routine DNA test on a tiny tail clip. The father is Barty. The mother is \[pause\] not Fig. | Mai tests the DNA. Barty is the father. The test says Fig is not the mother. |
+| VO-B02 | B0 | For the breeding records, Ada runs a routine DNA test on a tiny tail clip. The father is Barty. The mother is \[pause\] not Fig. | Ada tests the DNA. Barty is the father. The test says Fig is not the mother. |
 | VO-B03 | B0 | Tomás is certain someone swapped the eggs. Noor suspects the paperwork. \[dry\] Fig suspects nothing, because she is a newt. | Tomás thinks someone changed the eggs. |
 | VO-B04 | B1 | Before we accuse anyone, let's check what we already know. | What do you remember? |
 | VO-B05 | B2 | Eggs and sperm are made differently from tail cells. Each gets half the chromosomes, one from every pair, so egg plus sperm adds up to a full set again. | Eggs and sperm have half of the chromosomes. Egg plus sperm makes a full set. |
@@ -149,7 +149,7 @@ The narrator voices every story line; characters speak only in on-screen speech 
 | VO-B11 | B4 | This newt spent too long under the old UV lamp, and a patch of her skin changed. Her babies' skin did not. \[beat\] Skin cells, it turns out, don't make babies. | UV light changed this newt's skin. Her babies did not get the change. |
 | VO-B12 | B4 | So, the rule: only changes in egg-making or sperm-making cells get passed on. \[pause\] Which brings us back to Fig. | Only changes in egg cells or sperm cells go to the babies. |
 | VO-B13 | B5 | Fig laid those eggs; there's camera footage. The test says she isn't their mother. One of these facts is going to have to give. | The camera shows Fig laid the eggs. But the DNA does not match. Why? |
-| VO-B14 | B5 | Mai can test any tissue you choose. Choose carefully. \[dry\] Newts are not fond of being sampled. | Choose which parts of Fig to test. |
+| VO-B14 | B5 | Ada can test any tissue you choose. Choose carefully. \[dry\] Newts are not fond of being sampled. | Choose which parts of Fig to test. |
 | VO-B15 | B5 | Tail, skin, blood: all one DNA. Egg cells: a different DNA, and a perfect match for the hatchlings. \[pause\] \[quietly amazed\] Fig is two newts in one body. | Fig's tail, skin and blood have one DNA. Fig's egg cells have a different DNA. The egg cells match the babies. |
 | VO-B16 | B5 | Long before she hatched, two embryos fused into one. Each kept copying itself faithfully by mitosis. One built her tail and skin; the other built the cells that make her eggs. The test sampled the wrong Fig. | Two embryos joined together. One made her skin. One made her egg cells. |
 | VO-B17 | B6 | Now make your case. Tomás still thinks the eggs were swapped. Convince him. | Write your claim. Use evidence. |
@@ -230,7 +230,7 @@ Keep the ambience loops at about 20% of the narrator's volume in the mix, and ad
 | IMG-C05 | The hatchlings | Six newt larvae in one row, each small with feathery external gills on both sides of the head and a finned tail. Same body shape; each has a different pattern of dark spots. The fifth larva from the left has a white tail tip; no other larva does. Transparent background. |
 | IMG-C06 | Dr. Noor Haddad | Full-body paper-cutout woman in her 50s, station director: a deep-blue headscarf, lab coat over a teal cardigan, reading glasses on a cord, holding a clipboard, calm and faintly skeptical expression with one eyebrow slightly raised. Transparent background. |
 | IMG-C07 | Tomás Rivera | Full-body paper-cutout man in his 30s, animal keeper: dark-green overalls, rubber boots, holding a small aquarium net, earnest and slightly worried expression. Transparent background. |
-| IMG-C08 | Mai Tran | Full-body paper-cutout woman in her 20s, lab technician: lab coat, safety glasses pushed up on her head, holding a tiny sample tube up to the light, focused expression. Transparent background. |
+| IMG-C08 | Ada Okafor | Full-body paper-cutout Nigerian woman in her 20s, lab technician: braids tied back, lab coat, safety glasses pushed up on her head, holding a tiny sample tube up to the light, focused expression. Transparent background. |
 | IMG-C09 | The heron | Full-body paper-cutout grey heron, comically menacing: long dagger beak, one glinting eye, wings half spread, leaning forward. Cartoon villain, not frightening. Transparent background. |
 
 ### Backgrounds (16:9)
@@ -258,11 +258,11 @@ Keep the ambience loops at about 20% of the narrator's volume in the mix, and ad
 | IMG-P03 | A0 | Fig in her tank with a full new tail, unimpressed. Behind the glass, Tomás is applauding. |
 | IMG-P04 | B0 | Barty showing off his huge wavy crest in the tank, posing. Fig in the background, turned away, ignoring him completely. |
 | IMG-P05 | B0 | Six newt larvae in a hatchery tray (as in IMG-C05). Tomás leaning over the tray, delighted. |
-| IMG-P06 | B0 | Lab bench: Mai holding up a blank paper printout, puzzled. Tomás pointing accusingly toward the hatchery. Noor between them, one eyebrow raised. |
+| IMG-P06 | B0 | Lab bench: Ada holding up a blank paper printout, puzzled. Tomás pointing accusingly toward the hatchery. Noor between them, one eyebrow raised. |
 | IMG-P07 | B5 twist | Fig sitting alone under a single spotlight. Directly behind her, slightly offset, a second paper cutout in her exact shape but in a cool slate-blue paper, like a twin shadow. Mysterious and curious, not spooky. |
-| IMG-P08 | B7 | Fig on her rock with six larvae lined up in front of her, still unimpressed. Noor, Tomás and Mai behind the glass, laughing. |
+| IMG-P08 | B7 | Fig on her rock with six larvae lined up in front of her, still unimpressed. Noor, Tomás and Ada behind the glass, laughing. |
 | IMG-P09 | Title card | Fig on a mossy rock in the center-bottom of the frame, looking up at the viewer. The top 40% of the frame is plain deep blue for a title added in code. |
-| IMG-P10 | A2b | Mai at a microscope at the lab bench, one eye to the eyepiece, a glass slide on the stage, Fig watching from her tank in the background, unimpressed. |
+| IMG-P10 | A2b | Ada at a microscope at the lab bench, one eye to the eyepiece, a glass slide on the stage, Fig watching from her tank in the background, unimpressed. |
 | IMG-P11 | A2b | A sunny windowsill with a glass jar of water holding a brown onion, its white roots hanging down into the water. Noor's mug beside it. No text on the mug. |
 
 ### Paper textures (1:1, for the code)
