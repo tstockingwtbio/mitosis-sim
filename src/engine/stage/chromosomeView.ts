@@ -3,7 +3,7 @@ import type { CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import type { ChromSpec, LengthClass } from '../../content/schema';
 import { h } from '../dom';
 import { t } from '../../i18n';
-import { PALETTE, basic, circleShape, paper, roundRectShape, setOpacity } from './paper';
+import { PALETTE, basic, circleShape, paper, setOpacity } from './paper';
 import { label } from './stage';
 
 export const LENGTHS: Record<LengthClass, number> = { long: 2.6, medium: 2.0, short: 1.4 };
@@ -13,6 +13,41 @@ const PAIR_COLORS = [PALETTE.teal, PALETTE.orange, PALETTE.moss, PALETTE.blue];
 
 export function pairColor(pair: number): string {
   return PAIR_COLORS[(pair - 1) % PAIR_COLORS.length];
+}
+
+/**
+ * Light band pattern (fraction from the bottom, band height). Partners share a
+ * pattern and non-partners differ, as in a real stained karyotype, which gives
+ * a second clue for pairing besides length and gene letters.
+ */
+const BANDS: Record<number, [number, number][]> = {
+  1: [[0.09, 0.05], [0.18, 0.04], [0.45, 0.07], [0.9, 0.05]],
+  2: [[0.13, 0.07], [0.5, 0.04], [0.86, 0.05]],
+  3: [[0.12, 0.05], [0.42, 0.08], [0.92, 0.04]],
+  4: [[0.2, 0.05], [0.5, 0.05]],
+};
+
+/** One chromatid: a rounded rod pinched in at the centromere. */
+function chromatidShape(length: number, width: number, centromereY: number): THREE.Shape {
+  const hw = width / 2;
+  const top = length / 2;
+  const bot = -length / 2;
+  const pinch = hw * 0.3;
+  const reach = Math.min(0.26, length * 0.11);
+  const s = new THREE.Shape();
+  s.moveTo(0, bot);
+  s.absarc(0, bot + hw, hw, -Math.PI / 2, 0, false);
+  s.lineTo(hw, centromereY - reach);
+  s.quadraticCurveTo(hw, centromereY - reach * 0.25, pinch, centromereY);
+  s.quadraticCurveTo(hw, centromereY + reach * 0.25, hw, centromereY + reach);
+  s.lineTo(hw, top - hw);
+  s.absarc(0, top - hw, hw, 0, Math.PI, false);
+  s.lineTo(-hw, centromereY + reach);
+  s.quadraticCurveTo(-hw, centromereY + reach * 0.25, -pinch, centromereY);
+  s.quadraticCurveTo(-hw, centromereY - reach * 0.25, -hw, centromereY - reach);
+  s.lineTo(-hw, bot + hw);
+  s.absarc(0, bot + hw, hw, Math.PI, Math.PI * 1.5, false);
+  return s;
 }
 
 /** Allele positions along the chromosome, as a fraction from the bottom. */
@@ -46,8 +81,15 @@ export class ChromosomeView {
     const color = pairColor(spec.pair);
     const striped = spec.parent === 'P';
     for (const c of [this.chromatidA, this.chromatidB]) {
-      const piece = paper(roundRectShape(WIDTH, this.length, WIDTH / 2), { color, striped, outline: 0.07 });
+      const piece = paper(chromatidShape(this.length, WIDTH, this.centromereY), { color, striped, outline: 0.07 });
       c.add(piece);
+      // Band pattern shared by partners: light paper inlays.
+      for (const [f, hgt] of BANDS[((spec.pair - 1) % 4) + 1]) {
+        const y = -this.length / 2 + f * this.length;
+        const inlay = new THREE.Mesh(new THREE.PlaneGeometry(WIDTH * 0.8, hgt), basic(PALETTE.cream, 0.55));
+        inlay.position.set(0, y, 0.005);
+        c.add(inlay);
+      }
       // Gene bands: ink stripes across the chromatid.
       allelePositions(spec.alleles.length).forEach((f) => {
         const y = -this.length / 2 + f * this.length;

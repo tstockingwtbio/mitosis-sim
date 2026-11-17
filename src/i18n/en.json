@@ -233,7 +233,7 @@
   "fb.pairSameParent": { "building": "Those two both came from the same parent. A pair is one from the mother (M) and one from the father (P).", "beginning": "A pair has one M and one P." },
   "fb.pairByLook": { "building": "Those two carry different genes: look at the length and the letters. Partners are the same length with the same gene letters, even if the versions differ (A and a).", "beginning": "Partners are the same length. They have the same letters." },
 
-  "hint.pair1": { "building": "Partners are the same length and carry the same genes (the same letter, capital or small).", "beginning": "Find two that are the same length." },
+  "hint.pair1": { "building": "Partners are the same length, have the same pattern of light bands, and carry the same genes (the same letter, capital or small).", "beginning": "Find two that are the same length." },
   "hint.pair2": { "building": "Each pair has one M (solid paper) and one P (striped paper).", "beginning": "Each pair has one M and one P." },
   "hint.x1": { "building": "An X is one chromosome that has been copied. It has one centromere.", "beginning": "One X is one chromosome." },
   "hint.x2": { "building": "Each X has two halves. Each half is one DNA molecule.", "beginning": "One X has two DNA molecules." },
@@ -274,7 +274,7 @@
 
   "A1.pairs.title": "Chromosomes come in pairs",
   "A1.pairs.body1": { "building": "The two long chromosomes are one pair. The two short ones are the other pair. In each pair, M (solid paper) came from the mother and P (striped paper) came from the father.", "beginning": "Two long ones are a pair. Two short ones are a pair. M is from the mother. P is from the father." },
-  "A1.pairs.body2": { "building": "Partners carry the same genes in the same places. The letters show versions: A and a are two versions of the same gene.", "beginning": "Partners have the same genes. A and a are versions of one gene." },
+  "A1.pairs.body2": { "building": "Partners carry the same genes in the same places, and they share the same pattern of light bands. The letters show versions: A and a are two versions of the same gene.", "beginning": "Partners have the same genes. A and a are versions of one gene." },
   "A1.pairs.show": "Show the pairs",
   "A1.pairs.hide": "Hide the pairs",
 
