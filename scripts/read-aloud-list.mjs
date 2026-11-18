@@ -5,6 +5,8 @@ import fs from 'node:fs';
 
 const content = JSON.parse(fs.readFileSync('src/content/partA.json', 'utf8'));
 const en = JSON.parse(fs.readFileSync('src/i18n/en.json', 'utf8'));
+// ElevenLabs recording text with direction tags (Building lines).
+const tags = JSON.parse(fs.readFileSync('scripts/recording-tags.json', 'utf8'));
 
 const slug = (key) => key.replace(/[^A-Za-z0-9]+/g, '-');
 const fileFor = (key, level) => `mm_txt_${slug(key)}_en_${level}.mp3`;
@@ -65,6 +67,7 @@ for (const beat of content.beats.filter((b) => b.built)) {
 }
 
 const rows = [];
+const untagged = [];
 let need = { building: 0, beginning: 0 };
 let done = 0;
 for (const [key, where] of seen) {
@@ -73,13 +76,15 @@ for (const [key, where] of seen) {
     const ok = has('txt', file);
     if (ok) done++;
     else need[level]++;
-    rows.push({ key, level, file, ok, where, text: text(en[key], level) });
+    const record = level === 'building' ? tags[key] : undefined;
+    if (level === 'building' && !record) untagged.push(key);
+    rows.push({ key, level, file, ok, where, text: record ?? text(en[key], level) });
   }
 }
 
 const esc = (s) => String(s).replace(/\|/g, '\\|');
 const table = (list) =>
-  ['| Status | File | Text | Where |', '| --- | --- | --- | --- |', ...list.map((r) => `| ${r.ok ? '✓ recorded' : '**needed**'} | \`${r.file}\` | ${esc(r.text)} | ${esc(r.where)} |`)].join('\n');
+  ['| Status | File | Text to record | Where |', '| --- | --- | --- | --- |', ...list.map((r) => `| ${r.ok ? '✓ recorded' : '**needed**'} | \`${r.file}\` | ${esc(r.text)} | ${esc(r.where)} |`)].join('\n');
 
 // Story narration (voice-over) status, for completeness.
 const voRows = Object.keys(en)
@@ -107,7 +112,7 @@ Anything without a recording is read by the browser's built-in voice, so nothing
 - Panel text, Building (English): ${rows.filter((r) => r.level === 'building' && r.ok).length} of ${rows.filter((r) => r.level === 'building').length} recorded; **${need.building} needed**.
 - Panel text, Beginning (English): ${rows.filter((r) => r.level === 'beginning' && r.ok).length} of ${rows.filter((r) => r.level === 'beginning').length} recorded; **${need.beginning} needed**. Only used when a student picks the Beginning support level in English.
 
-Record each line exactly as written. You can add ElevenLabs direction tags to the text you paste in; the captions are not affected.
+Building lines are written for ElevenLabs v3 with direction tags (from scripts/recording-tags.json), following the bible's tag rules: paste them in as they are. A few words are spelled out where a voice would misread a symbol (blank, divided by, capital A and small a); the captions on screen do not change. Beginning lines have no tags: record them slowly, as written.
 
 ## Panel text: Building
 
@@ -129,4 +134,5 @@ ${voRows.some((r) => !r.ok) ? voRows.filter((r) => !r.ok).map((r) => `- **needed
 `;
 
 fs.writeFileSync('docs/read-aloud-script.md', md);
+if (untagged.length) console.warn(`No recording tags yet for: ${untagged.join(', ')}`);
 console.log(`Building: ${need.building} needed; Beginning: ${need.beginning} needed; recorded: ${done}. Wrote docs/read-aloud-script.md`);

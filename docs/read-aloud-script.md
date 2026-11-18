@@ -15,123 +15,123 @@ Anything without a recording is read by the browser's built-in voice, so nothing
 - Panel text, Building (English): 0 of 107 recorded; **107 needed**.
 - Panel text, Beginning (English): 0 of 78 recorded; **78 needed**. Only used when a student picks the Beginning support level in English.
 
-Record each line exactly as written. You can add ElevenLabs direction tags to the text you paste in; the captions are not affected.
+Building lines are written for ElevenLabs v3 with direction tags (from scripts/recording-tags.json), following the bible's tag rules: paste them in as they are. A few words are spelled out where a voice would misread a symbol (blank, divided by, capital A and small a); the captions on screen do not change. Beginning lines have no tags: record them slowly, as written.
 
 ## Panel text: Building
 
-| Status | File | Text | Where |
+| Status | File | Text to record | Where |
 | --- | --- | --- | --- |
-| **needed** | `mm_txt_ui-task-correct_en_building.mp3` | Correct! | Feedback (all checks) |
-| **needed** | `mm_txt_ui-task-notYet_en_building.mp3` | Not yet. | Feedback (all checks) |
-| **needed** | `mm_txt_ui-task-mixup_en_building.mp3` | Common mix-up: | Feedback (all checks) |
-| **needed** | `mm_txt_A0-title-body_en_building.mp3` | A story about a newt who regrows her tail, and what that tells us about every cell in her body. Press Next to begin. | A0 · A0-s01 |
-| **needed** | `mm_txt_A0-story-body_en_building.mp3` | Listen to the story, or read the captions. The arrows on the caption bar go line by line. | A0 · A0-s02 |
-| **needed** | `mm_txt_A0-regrow-body_en_building.mp3` | Step through the weeks and watch the tail come back: stump, bud, half a tail, the whole tail. | A0 · A0-s03 |
-| **needed** | `mm_txt_A0-P1-prompt_en_building.mp3` | Fig's new tail has bone, muscle, skin and even the stripes. Where do you think her body got the instructions to build it? Write your prediction. | A0 · A0-s04 (A0-P1) |
-| **needed** | `mm_txt_frame-predict_en_building.mp3` | I think Fig's body knew how to build the tail because ___. | A0 · A0-s04 (A0-P1) sentence starter |
-| **needed** | `mm_txt_ui-retrieve-intro_en_building.mp3` | Write what you remember. Then show the answer and check yourself. | A1 · A1-s01 |
-| **needed** | `mm_txt_A1-R1-prompt_en_building.mp3` | What is the smallest unit that is alive? | A1 · A1-s01 (A1-R1) |
-| **needed** | `mm_txt_A1-R2-prompt_en_building.mp3` | Name one part that plant cells have and animal cells do not. | A1 · A1-s01 (A1-R2) |
-| **needed** | `mm_txt_A1-R3-prompt_en_building.mp3` | What does the cell membrane do? | A1 · A1-s01 (A1-R3) |
-| **needed** | `mm_txt_A1-R4-prompt_en_building.mp3` | In the story, what grew back after the heron's attack? | A1 · A1-s01 (A1-R4) |
-| **needed** | `mm_txt_A1-zoom-body_en_building.mp3` | Use the zoom buttons to go from Fig down to her DNA, one level at a time. | A1 · A1-s02 |
-| **needed** | `mm_txt_A1-zoom-fig-text_en_building.mp3` | This is Fig. Her new tail is where we are going. | A1 · A1-s02 (zoom level) |
-| **needed** | `mm_txt_A1-zoom-tissue-text_en_building.mp3` | A slice of tail: skin on the outside, muscle, and bone in the middle. Each layer is a tissue made of cells. | A1 · A1-s02 (zoom level) |
-| **needed** | `mm_txt_A1-zoom-cell-text_en_building.mp3` | One tail cell. The big round part in the middle is the nucleus. | A1 · A1-s02 (zoom level) |
-| **needed** | `mm_txt_A1-zoom-nucleus-text_en_building.mp3` | Inside the nucleus are the chromosomes. Most of the time they are long, loose threads, tangled together. Our model newt has four. | A1 · A1-s02 (zoom level) |
-| **needed** | `mm_txt_A1-zoom-chromosome-text_en_building.mp3` | One chromosome: a long piece of DNA. Before a cell divides, each thread coils up tight into a short, thick chromosome like this one. | A1 · A1-s02 (zoom level) |
-| **needed** | `mm_txt_A1-zoom-gene-text_en_building.mp3` | The highlighted band is one gene. One chromosome carries many genes. | A1 · A1-s02 (zoom level) |
-| **needed** | `mm_txt_A1-zoom-dna-text_en_building.mp3` | Unwind the chromosome and you find DNA: two long strands twisted round each other, joined by pairs that fit together like puzzle pieces. | A1 · A1-s02 (zoom level) |
-| **needed** | `mm_txt_A1-pairs-body1_en_building.mp3` | The two long chromosomes are one pair. The two short ones are the other pair. In each pair, M (solid paper) came from the mother and P (striped paper) came from the father. | A1 · A1-s03 |
-| **needed** | `mm_txt_A1-pairs-body2_en_building.mp3` | Partners carry the same genes in the same places, and they share the same pattern of light bands. The letters show versions: A and a are two versions of the same gene. | A1 · A1-s03 |
-| **needed** | `mm_txt_A1-copy-body1_en_building.mp3` | Before a cell divides, it copies every chromosome. Step through the copying and watch the count strip. | A1 · A1-s04 |
-| **needed** | `mm_txt_A1-copy-body2_en_building.mp3` | The number of chromosomes stays at 4. The number of DNA molecules goes from 4 to 8. | A1 · A1-s04 |
-| **needed** | `mm_txt_A1-W1-prompt_en_building.mp3` | Watch how to count chromosomes and DNA molecules in a cell that has copied its DNA. | A1 · A1-s05 (A1-W1) |
-| **needed** | `mm_txt_A1-W1-step1_en_building.mp3` | Find the centromeres: the dot where the two halves of each X are joined. Each centromere marks one chromosome. | A1 · A1-s05 (A1-W1) worked step |
-| **needed** | `mm_txt_A1-W1-step2_en_building.mp3` | Count them: 1, 2, 3, 4. This cell has 4 chromosomes. | A1 · A1-s05 (A1-W1) worked step |
-| **needed** | `mm_txt_A1-W1-step3_en_building.mp3` | Now count the halves of the Xs. Each half is one DNA molecule. | A1 · A1-s05 (A1-W1) worked step |
-| **needed** | `mm_txt_A1-W1-step4_en_building.mp3` | 4 chromosomes with 2 halves each make 8 DNA molecules. | A1 · A1-s05 (A1-W1) worked step |
-| **needed** | `mm_txt_A1-G1-prompt_en_building.mp3` | This cell has not copied its DNA yet. Count the chromosomes and the DNA molecules. | A1 · A1-s06 (A1-G1) |
-| **needed** | `mm_txt_A1-G1-step1_en_building.mp3` | Count the centromeres (the dots) to count chromosomes. | A1 · A1-s06 (A1-G1) worked step |
+| **needed** | `mm_txt_ui-task-correct_en_building.mp3` | [pleased] Correct! | Feedback (all checks) |
+| **needed** | `mm_txt_ui-task-notYet_en_building.mp3` | [kindly] Not yet. | Feedback (all checks) |
+| **needed** | `mm_txt_ui-task-mixup_en_building.mp3` | [gently] Common mix-up: | Feedback (all checks) |
+| **needed** | `mm_txt_A0-title-body_en_building.mp3` | [warm] A story about a newt who regrows her tail, [pause] and what that tells us about every cell in her body. Press Next to begin. | A0 · A0-s01 |
+| **needed** | `mm_txt_A0-story-body_en_building.mp3` | [friendly] Listen to the story, or read the captions. The arrows on the caption bar go line by line. | A0 · A0-s02 |
+| **needed** | `mm_txt_A0-regrow-body_en_building.mp3` | [curious] Step through the weeks and watch the tail come back: stump, [pause] bud, [pause] half a tail, [pause] the whole tail. | A0 · A0-s03 |
+| **needed** | `mm_txt_A0-P1-prompt_en_building.mp3` | [curious] Fig's new tail has bone, muscle, skin, and even the stripes. Where do you think her body got the instructions to build it? [pause] Write your prediction. | A0 · A0-s04 (A0-P1) |
+| **needed** | `mm_txt_frame-predict_en_building.mp3` | [encouraging] I think Fig's body knew how to build the tail because [pause] blank. | A0 · A0-s04 (A0-P1) sentence starter |
+| **needed** | `mm_txt_ui-retrieve-intro_en_building.mp3` | [warm] Write what you remember. Then show the answer, and check yourself. | A1 · A1-s01 |
+| **needed** | `mm_txt_A1-R1-prompt_en_building.mp3` | [curious] What is the smallest unit that is alive? | A1 · A1-s01 (A1-R1) |
+| **needed** | `mm_txt_A1-R2-prompt_en_building.mp3` | [curious] Name one part that plant cells have, and animal cells do not. | A1 · A1-s01 (A1-R2) |
+| **needed** | `mm_txt_A1-R3-prompt_en_building.mp3` | [curious] What does the cell membrane do? | A1 · A1-s01 (A1-R3) |
+| **needed** | `mm_txt_A1-R4-prompt_en_building.mp3` | [curious] In the story, what grew back after the heron's attack? | A1 · A1-s01 (A1-R4) |
+| **needed** | `mm_txt_A1-zoom-body_en_building.mp3` | [warm] Use the zoom buttons to go from Fig down to her DNA, one level at a time. | A1 · A1-s02 |
+| **needed** | `mm_txt_A1-zoom-fig-text_en_building.mp3` | [warm] This is Fig. Her new tail is where we're going. | A1 · A1-s02 (zoom level) |
+| **needed** | `mm_txt_A1-zoom-tissue-text_en_building.mp3` | A slice of tail: skin on the outside, muscle, and bone in the middle. [pause] Each layer is a tissue, made of cells. | A1 · A1-s02 (zoom level) |
+| **needed** | `mm_txt_A1-zoom-cell-text_en_building.mp3` | One tail cell. The big round part in the middle [pause] is the nucleus. | A1 · A1-s02 (zoom level) |
+| **needed** | `mm_txt_A1-zoom-nucleus-text_en_building.mp3` | Inside the nucleus are the chromosomes. [curious] Most of the time they're long, loose threads, tangled together. Our model newt has four. | A1 · A1-s02 (zoom level) |
+| **needed** | `mm_txt_A1-zoom-chromosome-text_en_building.mp3` | One chromosome: a long piece of DNA. Before a cell divides, each thread coils up tight into a short, thick chromosome [pause] like this one. | A1 · A1-s02 (zoom level) |
+| **needed** | `mm_txt_A1-zoom-gene-text_en_building.mp3` | The highlighted band is one gene. [pause] One chromosome carries many genes. | A1 · A1-s02 (zoom level) |
+| **needed** | `mm_txt_A1-zoom-dna-text_en_building.mp3` | [impressed] Unwind the chromosome and you find DNA: two long strands twisted round each other, joined by pairs that fit together [pause] like puzzle pieces. | A1 · A1-s02 (zoom level) |
+| **needed** | `mm_txt_A1-pairs-body1_en_building.mp3` | The two long chromosomes are one pair. The two short ones are the other pair. In each pair, M, the solid paper, came from the mother, [pause] and P, the striped paper, came from the father. | A1 · A1-s03 |
+| **needed** | `mm_txt_A1-pairs-body2_en_building.mp3` | Partners carry the same genes in the same places, and they share the same pattern of light bands. The letters show versions: [pause] capital A and small a are two versions of the same gene. | A1 · A1-s03 |
+| **needed** | `mm_txt_A1-copy-body1_en_building.mp3` | Before a cell divides, it copies every chromosome. [pause] Step through the copying, and watch the count strip. | A1 · A1-s04 |
+| **needed** | `mm_txt_A1-copy-body2_en_building.mp3` | The number of chromosomes stays at four. [pause] The number of DNA molecules goes from four to eight. | A1 · A1-s04 |
+| **needed** | `mm_txt_A1-W1-prompt_en_building.mp3` | [teacherly] Watch how to count chromosomes and DNA molecules in a cell that has copied its DNA. | A1 · A1-s05 (A1-W1) |
+| **needed** | `mm_txt_A1-W1-step1_en_building.mp3` | [teacherly] Find the centromeres: the dot where the two halves of each X are joined. [pause] Each centromere marks one chromosome. | A1 · A1-s05 (A1-W1) worked step |
+| **needed** | `mm_txt_A1-W1-step2_en_building.mp3` | Count them: one, two, three, four. [pause] This cell has four chromosomes. | A1 · A1-s05 (A1-W1) worked step |
+| **needed** | `mm_txt_A1-W1-step3_en_building.mp3` | Now count the halves of the X's. [pause] Each half is one DNA molecule. | A1 · A1-s05 (A1-W1) worked step |
+| **needed** | `mm_txt_A1-W1-step4_en_building.mp3` | Four chromosomes, with two halves each, make [pause] eight DNA molecules. | A1 · A1-s05 (A1-W1) worked step |
+| **needed** | `mm_txt_A1-G1-prompt_en_building.mp3` | This cell hasn't copied its DNA yet. [pause] Count the chromosomes and the DNA molecules. | A1 · A1-s06 (A1-G1) |
+| **needed** | `mm_txt_A1-G1-step1_en_building.mp3` | Count the centromeres, the dots, to count chromosomes. | A1 · A1-s06 (A1-G1) worked step |
 | **needed** | `mm_txt_A1-G1-step2_en_building.mp3` | Each single rod is one DNA molecule. | A1 · A1-s06 (A1-G1) worked step |
-| **needed** | `mm_txt_A1-G1-hint1_en_building.mp3` | Each chromosome has one centromere (the dot). | A1 · A1-s06 (A1-G1) hint |
-| **needed** | `mm_txt_A1-G1-hint2_en_building.mp3` | A single rod has not been copied, so it is one DNA molecule. | A1 · A1-s06 (A1-G1) hint |
-| **needed** | `mm_txt_A1-G1-fb-correct_en_building.mp3` | 4 chromosomes, 4 DNA molecules. Before copying, the two counts match. | A1 · A1-s06 (A1-G1) feedback |
-| **needed** | `mm_txt_fb-pairsCountedAsOne_en_building.mp3` | You counted pairs. A pair is two chromosomes, so count every rod or X on its own. | A1 · A1-s06 (A1-G1) feedback |
+| **needed** | `mm_txt_A1-G1-hint1_en_building.mp3` | [helpful] Each chromosome has one centromere: [pause] the dot. | A1 · A1-s06 (A1-G1) hint |
+| **needed** | `mm_txt_A1-G1-hint2_en_building.mp3` | [helpful] A single rod hasn't been copied, so it's [pause] one DNA molecule. | A1 · A1-s06 (A1-G1) hint |
+| **needed** | `mm_txt_A1-G1-fb-correct_en_building.mp3` | [pleased] Four chromosomes, four DNA molecules. [pause] Before copying, the two counts match. | A1 · A1-s06 (A1-G1) feedback |
+| **needed** | `mm_txt_fb-pairsCountedAsOne_en_building.mp3` | [gently] You counted pairs. A pair is two chromosomes, [pause] so count every rod or X on its own. | A1 · A1-s06 (A1-G1) feedback |
 | **needed** | `mm_txt_mis-pairsCountedAsOne_en_building.mp3` | A pair counts as one chromosome. | A1 · A1-s06 (A1-G1) mix-up |
-| **needed** | `mm_txt_fb-dnaDoublesAlways_en_building.mp3` | These rods have not been copied yet. One single rod is one DNA molecule. | A1 · A1-s06 (A1-G1) feedback |
+| **needed** | `mm_txt_fb-dnaDoublesAlways_en_building.mp3` | [gently] These rods haven't been copied yet. [pause] One single rod is one DNA molecule. | A1 · A1-s06 (A1-G1) feedback |
 | **needed** | `mm_txt_mis-dnaDoublesAlways_en_building.mp3` | Every chromosome holds two DNA molecules. | A1 · A1-s06 (A1-G1) mix-up |
-| **needed** | `mm_txt_fb-recount_en_building.mp3` | Count again. Touch each centromere (the dot) once for chromosomes. Then count every rod or half of an X for DNA molecules. | A1 · A1-s06 (A1-G1) feedback |
-| **needed** | `mm_txt_A1-G2-prompt_en_building.mp3` | Match each chromosome with its partner. Select one, then select its partner. | A1 · A1-s07 (A1-G2) |
-| **needed** | `mm_txt_A1-G2-step1_en_building.mp3` | Look for two chromosomes that are the same length and carry the same gene letters. | A1 · A1-s07 (A1-G2) worked step |
-| **needed** | `mm_txt_hint-pair1_en_building.mp3` | Partners are the same length, have the same pattern of light bands, and carry the same genes (the same letter, capital or small). | A1 · A1-s07 (A1-G2) hint |
-| **needed** | `mm_txt_hint-pair2_en_building.mp3` | Each pair has one M (solid paper) and one P (striped paper). | A1 · A1-s07 (A1-G2) hint |
-| **needed** | `mm_txt_A1-G2-fb-correct_en_building.mp3` | Both pairs matched: same genes, one from each parent. | A1 · A1-s07 (A1-G2) feedback |
-| **needed** | `mm_txt_fb-pairSameParent_en_building.mp3` | Those two both came from the same parent. A pair is one from the mother (M) and one from the father (P). | A1 · A1-s07 (A1-G2) feedback |
+| **needed** | `mm_txt_fb-recount_en_building.mp3` | [encouraging] Count again. Touch each centromere, the dot, once for chromosomes. [pause] Then count every rod, or half of an X, for DNA molecules. | A1 · A1-s06 (A1-G1) feedback |
+| **needed** | `mm_txt_A1-G2-prompt_en_building.mp3` | Match each chromosome with its partner. [pause] Select one, then select its partner. | A1 · A1-s07 (A1-G2) |
+| **needed** | `mm_txt_A1-G2-step1_en_building.mp3` | Look for two chromosomes that are the same length, and carry the same gene letters. | A1 · A1-s07 (A1-G2) worked step |
+| **needed** | `mm_txt_hint-pair1_en_building.mp3` | [helpful] Partners are the same length, have the same pattern of light bands, and carry the same genes: [pause] the same letter, capital or small. | A1 · A1-s07 (A1-G2) hint |
+| **needed** | `mm_txt_hint-pair2_en_building.mp3` | [helpful] Each pair has one M, solid paper, [pause] and one P, striped paper. | A1 · A1-s07 (A1-G2) hint |
+| **needed** | `mm_txt_A1-G2-fb-correct_en_building.mp3` | [pleased] Both pairs matched: same genes, [pause] one from each parent. | A1 · A1-s07 (A1-G2) feedback |
+| **needed** | `mm_txt_fb-pairSameParent_en_building.mp3` | [gently] Those two both came from the same parent. [pause] A pair is one from the mother, M, and one from the father, P. | A1 · A1-s07 (A1-G2) feedback |
 | **needed** | `mm_txt_mis-pairSameParent_en_building.mp3` | Both chromosomes in a pair come from the same parent. | A1 · A1-s07 (A1-G2) mix-up |
-| **needed** | `mm_txt_fb-pairByLook_en_building.mp3` | Those two carry different genes: look at the length and the letters. Partners are the same length with the same gene letters, even if the versions differ (A and a). | A1 · A1-s07 (A1-G2) feedback |
+| **needed** | `mm_txt_fb-pairByLook_en_building.mp3` | [gently] Those two carry different genes: look at the length and the letters. Partners are the same length, with the same gene letters, [pause] even if the versions differ, like capital A and small a. | A1 · A1-s07 (A1-G2) feedback |
 | **needed** | `mm_txt_mis-pairByLook_en_building.mp3` | Any two chromosomes can be partners. | A1 · A1-s07 (A1-G2) mix-up |
-| **needed** | `mm_txt_ui-task-revealPairs_en_building.mp3` | Here are the pairs. Each pair is the same length with the same gene letters: one M and one P. | A1 · A1-s07 (A1-G2) (after 3 tries) |
-| **needed** | `mm_txt_A1-G3-prompt_en_building.mp3` | These chromosomes have been copied. Count the chromosomes and the DNA molecules. | A1 · A1-s08 (A1-G3) |
+| **needed** | `mm_txt_ui-task-revealPairs_en_building.mp3` | [kindly] Here are the pairs. Each pair is the same length, with the same gene letters: [pause] one M and one P. | A1 · A1-s07 (A1-G2) (after 3 tries) |
+| **needed** | `mm_txt_A1-G3-prompt_en_building.mp3` | These chromosomes have been copied. [pause] Count the chromosomes and the DNA molecules. | A1 · A1-s08 (A1-G3) |
 | **needed** | `mm_txt_A1-G3-step1_en_building.mp3` | Count centromeres for chromosomes. | A1 · A1-s08 (A1-G3) worked step |
-| **needed** | `mm_txt_A1-G3-step2_en_building.mp3` | Count the halves of the Xs for DNA molecules. | A1 · A1-s08 (A1-G3) worked step |
-| **needed** | `mm_txt_hint-x1_en_building.mp3` | An X is one chromosome that has been copied. It has one centromere. | A1 · A1-s08 (A1-G3) hint |
-| **needed** | `mm_txt_hint-x2_en_building.mp3` | Each X has two halves. Each half is one DNA molecule. | A1 · A1-s08 (A1-G3) hint |
-| **needed** | `mm_txt_A1-G3-fb-correct_en_building.mp3` | 4 chromosomes, 8 DNA molecules. Copying doubles the DNA, not the number of chromosomes. | A1 · A1-s08 (A1-G3) feedback |
-| **needed** | `mm_txt_fb-xIsTwoChromosomes_en_building.mp3` | You counted each half of an X as a chromosome. An X is one chromosome, copied: count centromeres, not arms. | A1 · A1-s08 (A1-G3) feedback |
+| **needed** | `mm_txt_A1-G3-step2_en_building.mp3` | Count the halves of the X's for DNA molecules. | A1 · A1-s08 (A1-G3) worked step |
+| **needed** | `mm_txt_hint-x1_en_building.mp3` | [helpful] An X is one chromosome that has been copied. [pause] It has one centromere. | A1 · A1-s08 (A1-G3) hint |
+| **needed** | `mm_txt_hint-x2_en_building.mp3` | [helpful] Each X has two halves. [pause] Each half is one DNA molecule. | A1 · A1-s08 (A1-G3) hint |
+| **needed** | `mm_txt_A1-G3-fb-correct_en_building.mp3` | [pleased] Four chromosomes, eight DNA molecules. [pause] Copying doubles the DNA, not the number of chromosomes. | A1 · A1-s08 (A1-G3) feedback |
+| **needed** | `mm_txt_fb-xIsTwoChromosomes_en_building.mp3` | [gently] You counted each half of an X as a chromosome. An X is one chromosome, [pause] copied. Count centromeres, not arms. | A1 · A1-s08 (A1-G3) feedback |
 | **needed** | `mm_txt_mis-xIsTwoChromosomes_en_building.mp3` | An X is two chromosomes. | A1 · A1-s08 (A1-G3) mix-up |
-| **needed** | `mm_txt_fb-xIsOneDna_en_building.mp3` | Each X holds two DNA molecules, one in each half. Count the halves. | A1 · A1-s08 (A1-G3) feedback |
+| **needed** | `mm_txt_fb-xIsOneDna_en_building.mp3` | [gently] Each X holds two DNA molecules, one in each half. [pause] Count the halves. | A1 · A1-s08 (A1-G3) feedback |
 | **needed** | `mm_txt_mis-xIsOneDna_en_building.mp3` | An X is one DNA molecule. | A1 · A1-s08 (A1-G3) mix-up |
 | **needed** | `mm_txt_A1-I1-prompt_en_building.mp3` | Count the chromosomes and the DNA molecules in this cell. | A1 · A1-s09 (A1-I1) |
-| **needed** | `mm_txt_A1-I1-fb-correct_en_building.mp3` | 4 chromosomes and 8 DNA molecules, however they are turned. | A1 · A1-s09 (A1-I1) feedback |
-| **needed** | `mm_txt_A1-I1GF-prompt_en_building.mp3` | A cell has 12 DNA molecules, and every chromosome in it is an X. How many chromosomes does it have? | A1 · A1-s09 (A1-I1-GF, Go further) |
-| **needed** | `mm_txt_A1-I1GF-opt12_en_building.mp3` | 12 | A1 · A1-s09 (A1-I1-GF, Go further) choice |
-| **needed** | `mm_txt_A1-I1GF-fb12_en_building.mp3` | 12 is the number of DNA molecules. Each X holds 2 of them, so there are fewer chromosomes than that. | A1 · A1-s09 (A1-I1-GF, Go further) choice feedback |
-| **needed** | `mm_txt_A1-I1GF-opt6_en_building.mp3` | 6 | A1 · A1-s09 (A1-I1-GF, Go further) choice |
-| **needed** | `mm_txt_A1-I1GF-fb6_en_building.mp3` | 12 DNA molecules ÷ 2 per X = 6 chromosomes. | A1 · A1-s09 (A1-I1-GF, Go further) choice feedback |
-| **needed** | `mm_txt_A1-I1GF-opt3_en_building.mp3` | 3 | A1 · A1-s09 (A1-I1-GF, Go further) choice |
-| **needed** | `mm_txt_A1-I1GF-fb3_en_building.mp3` | 3 is the number of pairs. Each pair is 2 chromosomes. | A1 · A1-s09 (A1-I1-GF, Go further) choice feedback |
-| **needed** | `mm_txt_A1-I1GF-opt24_en_building.mp3` | 24 | A1 · A1-s09 (A1-I1-GF, Go further) choice |
-| **needed** | `mm_txt_A1-I1GF-fb24_en_building.mp3` | Copying doubles the DNA, not the chromosomes. Divide by 2 instead. | A1 · A1-s09 (A1-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A1-I1-fb-correct_en_building.mp3` | [pleased] Four chromosomes and eight DNA molecules, [pause] however they're turned. | A1 · A1-s09 (A1-I1) feedback |
+| **needed** | `mm_txt_A1-I1GF-prompt_en_building.mp3` | [curious] A cell has twelve DNA molecules, and every chromosome in it is an X. [pause] How many chromosomes does it have? | A1 · A1-s09 (A1-I1-GF, Go further) |
+| **needed** | `mm_txt_A1-I1GF-opt12_en_building.mp3` | Twelve. | A1 · A1-s09 (A1-I1-GF, Go further) choice |
+| **needed** | `mm_txt_A1-I1GF-fb12_en_building.mp3` | [gently] Twelve is the number of DNA molecules. Each X holds two of them, [pause] so there are fewer chromosomes than that. | A1 · A1-s09 (A1-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A1-I1GF-opt6_en_building.mp3` | Six. | A1 · A1-s09 (A1-I1-GF, Go further) choice |
+| **needed** | `mm_txt_A1-I1GF-fb6_en_building.mp3` | [pleased] Twelve DNA molecules, divided by two per X, [pause] makes six chromosomes. | A1 · A1-s09 (A1-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A1-I1GF-opt3_en_building.mp3` | Three. | A1 · A1-s09 (A1-I1-GF, Go further) choice |
+| **needed** | `mm_txt_A1-I1GF-fb3_en_building.mp3` | [gently] Three is the number of pairs. [pause] Each pair is two chromosomes. | A1 · A1-s09 (A1-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A1-I1GF-opt24_en_building.mp3` | Twenty-four. | A1 · A1-s09 (A1-I1-GF, Go further) choice |
+| **needed** | `mm_txt_A1-I1GF-fb24_en_building.mp3` | [gently] Copying doubles the DNA, not the chromosomes. [pause] Divide by two instead. | A1 · A1-s09 (A1-I1-GF, Go further) choice feedback |
 | **needed** | `mm_txt_mis-copyDoublesChromosomes_en_building.mp3` | Copying doubles the number of chromosomes. | A1 · A1-s09 (A1-I1-GF, Go further) mix-up |
-| **needed** | `mm_txt_A1-I2-prompt_en_building.mp3` | These chromosomes have been copied. Match each one with its partner. | A1 · A1-s10 (A1-I2) |
-| **needed** | `mm_txt_A1-I2-fb-correct_en_building.mp3` | Matched. Copied or not, partners have the same genes and come from different parents. | A1 · A1-s10 (A1-I2) feedback |
-| **needed** | `mm_txt_A1-I3-prompt_en_building.mp3` | Which of these is a gene? | A1 · A1-s11 (A1-I3) |
-| **needed** | `mm_txt_A1-I3-hint1_en_building.mp3` | Think back to the zoom: chromosome, then gene, then DNA. | A1 · A1-s11 (A1-I3) hint |
-| **needed** | `mm_txt_A1-I3-optChromosome_en_building.mp3` | A whole chromosome | A1 · A1-s11 (A1-I3) choice |
-| **needed** | `mm_txt_A1-I3-fbChromosome_en_building.mp3` | A chromosome holds many genes. A gene is only one section of it. | A1 · A1-s11 (A1-I3) choice feedback |
+| **needed** | `mm_txt_A1-I2-prompt_en_building.mp3` | These chromosomes have been copied. [pause] Match each one with its partner. | A1 · A1-s10 (A1-I2) |
+| **needed** | `mm_txt_A1-I2-fb-correct_en_building.mp3` | [pleased] Matched. Copied or not, partners have the same genes, [pause] and come from different parents. | A1 · A1-s10 (A1-I2) feedback |
+| **needed** | `mm_txt_A1-I3-prompt_en_building.mp3` | [curious] Which of these is a gene? | A1 · A1-s11 (A1-I3) |
+| **needed** | `mm_txt_A1-I3-hint1_en_building.mp3` | [helpful] Think back to the zoom: chromosome, [pause] then gene, [pause] then DNA. | A1 · A1-s11 (A1-I3) hint |
+| **needed** | `mm_txt_A1-I3-optChromosome_en_building.mp3` | A whole chromosome. | A1 · A1-s11 (A1-I3) choice |
+| **needed** | `mm_txt_A1-I3-fbChromosome_en_building.mp3` | [gently] A chromosome holds many genes. [pause] A gene is only one section of it. | A1 · A1-s11 (A1-I3) choice feedback |
 | **needed** | `mm_txt_mis-geneIsChromosome_en_building.mp3` | A gene is a whole chromosome. | A1 · A1-s11 (A1-I3) mix-up |
-| **needed** | `mm_txt_A1-I3-optChromatid_en_building.mp3` | One half of an X | A1 · A1-s11 (A1-I3) choice |
-| **needed** | `mm_txt_A1-I3-fbChromatid_en_building.mp3` | Each half of an X is a whole DNA molecule with many genes on it. | A1 · A1-s11 (A1-I3) choice feedback |
+| **needed** | `mm_txt_A1-I3-optChromatid_en_building.mp3` | One half of an X. | A1 · A1-s11 (A1-I3) choice |
+| **needed** | `mm_txt_A1-I3-fbChromatid_en_building.mp3` | [gently] Each half of an X is a whole DNA molecule, [pause] with many genes on it. | A1 · A1-s11 (A1-I3) choice feedback |
 | **needed** | `mm_txt_mis-geneIsChromatid_en_building.mp3` | A gene is one half of an X. | A1 · A1-s11 (A1-I3) mix-up |
-| **needed** | `mm_txt_A1-I3-optSection_en_building.mp3` | A section of a chromosome | A1 · A1-s11 (A1-I3) choice |
-| **needed** | `mm_txt_A1-I3-fbSection_en_building.mp3` | A gene is a section of a chromosome, like one recipe in a cookbook. | A1 · A1-s11 (A1-I3) choice feedback |
-| **needed** | `mm_txt_A1-I3-optCell_en_building.mp3` | A type of cell | A1 · A1-s11 (A1-I3) choice |
-| **needed** | `mm_txt_A1-I3-fbCell_en_building.mp3` | Cells hold chromosomes, and genes are sections of chromosomes. | A1 · A1-s11 (A1-I3) choice feedback |
+| **needed** | `mm_txt_A1-I3-optSection_en_building.mp3` | A section of a chromosome. | A1 · A1-s11 (A1-I3) choice |
+| **needed** | `mm_txt_A1-I3-fbSection_en_building.mp3` | [pleased] A gene is a section of a chromosome, [pause] like one recipe in a cookbook. | A1 · A1-s11 (A1-I3) choice feedback |
+| **needed** | `mm_txt_A1-I3-optCell_en_building.mp3` | A type of cell. | A1 · A1-s11 (A1-I3) choice |
+| **needed** | `mm_txt_A1-I3-fbCell_en_building.mp3` | [gently] Cells hold chromosomes, [pause] and genes are sections of chromosomes. | A1 · A1-s11 (A1-I3) choice feedback |
 | **needed** | `mm_txt_mis-geneIsCell_en_building.mp3` | A gene is a kind of cell. | A1 · A1-s11 (A1-I3) mix-up |
-| **needed** | `mm_txt_A1-check-body_en_building.mp3` | Three questions about cells from a different animal. Show what you know on your own: hints and worked steps are off. | A1 · A1-s12 |
-| **needed** | `mm_txt_A1-C1-prompt_en_building.mp3` | This cell comes from a different animal. Count its chromosomes and DNA molecules. | A1 · A1-s13 (A1-C1) |
-| **needed** | `mm_txt_A1-C1-fb-correct_en_building.mp3` | 6 chromosomes, 12 DNA molecules. | A1 · A1-s13 (A1-C1) feedback |
-| **needed** | `mm_txt_ui-task-firstTry_en_building.mp3` | Saved: your first answer counts for the checkpoint. | A1 · A1-s13 (A1-C1) |
+| **needed** | `mm_txt_A1-check-body_en_building.mp3` | [encouraging] Three questions about cells from a different animal. [pause] Show what you know on your own: hints and worked steps are off. | A1 · A1-s12 |
+| **needed** | `mm_txt_A1-C1-prompt_en_building.mp3` | This cell comes from a different animal. [pause] Count its chromosomes and DNA molecules. | A1 · A1-s13 (A1-C1) |
+| **needed** | `mm_txt_A1-C1-fb-correct_en_building.mp3` | [pleased] Six chromosomes, [pause] twelve DNA molecules. | A1 · A1-s13 (A1-C1) feedback |
+| **needed** | `mm_txt_ui-task-firstTry_en_building.mp3` | [calm] Saved. Your first answer counts for the checkpoint. | A1 · A1-s13 (A1-C1) |
 | **needed** | `mm_txt_A1-C2-prompt_en_building.mp3` | Match the chromosomes from this animal into pairs. | A1 · A1-s14 (A1-C2) |
-| **needed** | `mm_txt_A1-C2-fb-correct_en_building.mp3` | All three pairs matched. | A1 · A1-s14 (A1-C2) feedback |
-| **needed** | `mm_txt_A1-C3-prompt_en_building.mp3` | What is true about the two chromosomes in a pair? | A1 · A1-s15 (A1-C3) |
+| **needed** | `mm_txt_A1-C2-fb-correct_en_building.mp3` | [pleased] All three pairs matched. | A1 · A1-s14 (A1-C2) feedback |
+| **needed** | `mm_txt_A1-C3-prompt_en_building.mp3` | [curious] What is true about the two chromosomes in a pair? | A1 · A1-s15 (A1-C3) |
 | **needed** | `mm_txt_A1-C3-optCopies_en_building.mp3` | They are exact copies of each other. | A1 · A1-s15 (A1-C3) choice |
-| **needed** | `mm_txt_A1-C3-fbCopies_en_building.mp3` | Exact copies are the two halves of an X. Partners come from two parents, so their versions can differ. | A1 · A1-s15 (A1-C3) choice feedback |
+| **needed** | `mm_txt_A1-C3-fbCopies_en_building.mp3` | [gently] Exact copies are the two halves of an X. Partners come from two parents, [pause] so their versions can differ. | A1 · A1-s15 (A1-C3) choice feedback |
 | **needed** | `mm_txt_mis-pairIsCopy_en_building.mp3` | The two chromosomes in a pair are exact copies. | A1 · A1-s15 (A1-C3) mix-up |
 | **needed** | `mm_txt_A1-C3-optMother_en_building.mp3` | Both of them come from the mother. | A1 · A1-s15 (A1-C3) choice |
-| **needed** | `mm_txt_A1-C3-fbMother_en_building.mp3` | One partner comes from the mother and one from the father. | A1 · A1-s15 (A1-C3) choice feedback |
+| **needed** | `mm_txt_A1-C3-fbMother_en_building.mp3` | [gently] One partner comes from the mother, [pause] and one from the father. | A1 · A1-s15 (A1-C3) choice feedback |
 | **needed** | `mm_txt_A1-C3-optDifferent_en_building.mp3` | They carry completely different genes. | A1 · A1-s15 (A1-C3) choice |
-| **needed** | `mm_txt_A1-C3-fbDifferent_en_building.mp3` | Partners carry the same genes in the same places. | A1 · A1-s15 (A1-C3) choice feedback |
+| **needed** | `mm_txt_A1-C3-fbDifferent_en_building.mp3` | [gently] Partners carry the same genes, [pause] in the same places. | A1 · A1-s15 (A1-C3) choice feedback |
 | **needed** | `mm_txt_mis-pairDifferentGenes_en_building.mp3` | Partners carry different genes. | A1 · A1-s15 (A1-C3) mix-up |
 | **needed** | `mm_txt_A1-C3-optSame_en_building.mp3` | They carry the same genes, but versions can differ. | A1 · A1-s15 (A1-C3) choice |
-| **needed** | `mm_txt_A1-C3-fbSame_en_building.mp3` | Same genes, and the versions can differ (like A and a). | A1 · A1-s15 (A1-C3) choice feedback |
-| **needed** | `mm_txt_A1-end-body1_en_building.mp3` | Genes are sections of chromosomes. Chromosomes come in pairs, one from each parent. | A1 · A1-s16 |
-| **needed** | `mm_txt_A1-end-body2_en_building.mp3` | An X is one chromosome, copied: 1 chromosome, 2 DNA molecules. Next: how does one cell become two? | A1 · A1-s16 |
+| **needed** | `mm_txt_A1-C3-fbSame_en_building.mp3` | [pleased] Same genes, and the versions can differ, [pause] like capital A and small a. | A1 · A1-s15 (A1-C3) choice feedback |
+| **needed** | `mm_txt_A1-end-body1_en_building.mp3` | [warm] Genes are sections of chromosomes. [pause] Chromosomes come in pairs, one from each parent. | A1 · A1-s16 |
+| **needed** | `mm_txt_A1-end-body2_en_building.mp3` | An X is one chromosome, copied: one chromosome, two DNA molecules. [pause] [curious] Next: how does one cell become two? | A1 · A1-s16 |
 
 ## Panel text: Beginning
 
-| Status | File | Text | Where |
+| Status | File | Text to record | Where |
 | --- | --- | --- | --- |
 | **needed** | `mm_txt_A0-title-body_en_beginning.mp3` | A story about a newt and her tail. Press Next. | A0 · A0-s01 |
 | **needed** | `mm_txt_A0-story-body_en_beginning.mp3` | Listen or read. Use the arrows to go on. | A0 · A0-s02 |
