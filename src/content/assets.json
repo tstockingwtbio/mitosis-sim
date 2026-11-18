@@ -50,9 +50,27 @@
     "SFX-05": "mm_sfx_05_try-again",
     "SFX-06": "mm_sfx_06_footnote-pops-open",
     "SFX-07": "mm_sfx_07_hint-revealed",
+    "SFX-08": "mm_sfx_08_evidence-card-filed",
     "SFX-09": "mm_sfx_09_chromosome-picked-up",
     "SFX-10": "mm_sfx_10_chromosome-placed",
     "SFX-11": "mm_sfx_11_chromosome-copy",
-    "SFX-18": "mm_sfx_18_zoom-into-a-cell"
+    "SFX-12": "mm_sfx_12_cell-divides",
+    "SFX-13": "mm_sfx_13_gene-switched-on",
+    "SFX-14": "mm_sfx_14_gene-switched-off",
+    "SFX-15": "mm_sfx_15_chromosomes-shuffle",
+    "SFX-16": "mm_sfx_16_segments-swap",
+    "SFX-17": "mm_sfx_17_egg-and-sperm-join",
+    "SFX-18": "mm_sfx_18_zoom-into-a-cell",
+    "SFX-19": "mm_sfx_19_heron-swoops",
+    "SFX-20": "mm_sfx_20_tail-regrows",
+    "SFX-21": "mm_sfx_21_eggs-hatch",
+    "SFX-22": "mm_sfx_22_dna-machine-result",
+    "SFX-23": "mm_sfx_23_uv-lamp-on",
+    "SFX-24": "mm_sfx_24_twist-reveal-sting",
+    "SFX-25": "mm_sfx_25_station-room-tone",
+    "SFX-26": "mm_sfx_26_pond-outdoors",
+    "SFX-27": "mm_sfx_27_cell-counted",
+    "SFX-28": "mm_sfx_28_microscope-focus",
+    "SFX-29": "mm_sfx_29_slide-placed"
   }
 }
