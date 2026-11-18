@@ -50,6 +50,19 @@ function chromatidShape(length: number, width: number, centromereY: number): THR
   return s;
 }
 
+/** The tip of a chromatid above y0 (a crossed-over segment). */
+function tipShape(length: number, width: number, y0: number): THREE.Shape {
+  const hw = width / 2;
+  const top = length / 2;
+  const s = new THREE.Shape();
+  s.moveTo(-hw, y0);
+  s.lineTo(hw, y0);
+  s.lineTo(hw, top - hw);
+  s.absarc(0, top - hw, hw, 0, Math.PI, false);
+  s.lineTo(-hw, y0);
+  return s;
+}
+
 /** Allele positions along the chromosome, as a fraction from the bottom. */
 function allelePositions(n: number): number[] {
   if (n === 1) return [0.3];
@@ -75,7 +88,11 @@ export class ChromosomeView {
   hit: HTMLButtonElement | null = null;
   private hitObj: CSS2DObject | null = null;
 
-  constructor(public spec: ChromSpec) {
+  /** tabs: false hides the M/P and allele tabs (small chromosomes in overview diagrams). */
+  constructor(
+    public spec: ChromSpec,
+    opts: { tabs?: boolean } = {},
+  ) {
     this.length = LENGTHS[spec.length];
     this.centromereY = this.length * 0.12;
     const color = pairColor(spec.pair);
@@ -83,6 +100,15 @@ export class ChromosomeView {
     for (const c of [this.chromatidA, this.chromatidB]) {
       const piece = paper(chromatidShape(this.length, WIDTH, this.centromereY), { color, striped, outline: 0.07 });
       c.add(piece);
+      // Crossing over: the tip came from the partner chromosome, so it has the partner's paper.
+      // On a copied chromosome only one of the two halves (chromatid B) swapped.
+      const swapped = spec.swap !== undefined && (c === this.chromatidB || spec.state === 'unreplicated');
+      if (swapped && spec.swap !== undefined) {
+        const y0 = -this.length / 2 + spec.swap * this.length;
+        const tip = paper(tipShape(this.length, WIDTH, y0), { color, striped: !striped, outline: 0.05, shadow: false });
+        tip.position.z = 0.003;
+        c.add(tip);
+      }
       // Band pattern shared by partners: light paper inlays.
       for (const [f, hgt] of BANDS[((spec.pair - 1) % 4) + 1]) {
         const y = -this.length / 2 + f * this.length;
@@ -113,6 +139,14 @@ export class ChromosomeView {
     this.group.add(this.centromere);
 
     // Parent tab at the top end, allele tabs beside the bands.
+    if (opts.tabs !== false) this.addTabs(spec);
+
+    this.group.position.set(spec.x ?? 0, spec.y ?? 0, 0);
+    this.group.rotation.z = THREE.MathUtils.degToRad(spec.angle ?? 0);
+    this.setReplication(spec.state === 'replicated' ? 1 : 0);
+  }
+
+  private addTabs(spec: ChromSpec): void {
     const parentTab = label(
       h('div', { class: 'chrom-tab parent', 'aria-hidden': 'true' }, t(`model.parent.${spec.parent}`)),
       { x: 0, y: this.length / 2 + 0.28 - this.centromereY, z: 0.03 },
@@ -123,10 +157,6 @@ export class ChromosomeView {
       const tab = label(h('div', { class: 'chrom-tab', 'aria-hidden': 'true' }, spec.alleles[i]), { x: -WIDTH / 2 - 0.32, y, z: 0.03 });
       this.chromatidA.add(tab);
     });
-
-    this.group.position.set(spec.x ?? 0, spec.y ?? 0, 0);
-    this.group.rotation.z = THREE.MathUtils.degToRad(spec.angle ?? 0);
-    this.setReplication(spec.state === 'replicated' ? 1 : 0);
   }
 
   /** 0 = single rod, 1 = full X. */

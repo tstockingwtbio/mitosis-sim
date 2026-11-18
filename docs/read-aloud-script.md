@@ -11,9 +11,9 @@ Anything without a recording is read by the browser's built-in voice, so nothing
 
 ## Summary
 
-- Story narration: 21 of 21 recorded.
-- Panel text, Building (English): 0 of 408 recorded; **408 needed**.
-- Panel text, Beginning (English): 0 of 284 recorded; **284 needed**. Only used when a student picks the Beginning support level in English.
+- Story narration: 39 of 39 recorded.
+- Panel text, Building (English): 0 of 732 recorded; **732 needed**.
+- Panel text, Beginning (English): 0 of 516 recorded; **516 needed**. Only used when a student picks the Beginning support level in English.
 
 Building lines are written for ElevenLabs v3 with direction tags (from scripts/recording-tags.json), following the bible's tag rules: paste them in as they are. A few words are spelled out where a voice would misread a symbol (blank, divided by, capital A and small a); the captions on screen do not change. Beginning lines have no tags: record them slowly, as written.
 
@@ -429,6 +429,330 @@ Building lines are written for ElevenLabs v3 with direction tags (from scripts/r
 | **needed** | `mm_txt_A-end-body2_en_building.mp3` | [warm] The grey half (making eggs and sperm, and fertilisation) is Part B. [pause] Something about it is going to surprise everyone. | A-end · Aend-s01 |
 | **needed** | `mm_txt_A-end-done-body1_en_building.mp3` | [warm] Every cell in Fig's body has the same DNA: [pause] mitosis copies it faithfully, and genes switched on or off make bone, muscle and skin. | A-end · Aend-s02 |
 | **needed** | `mm_txt_A-end-done-body2_en_building.mp3` | [warm] Hold that thought. [pause] In Part B, a DNA test says Fig is not the mother of her own hatchlings. | A-end · Aend-s02 |
+| **needed** | `mm_txt_B0-title-body_en_building.mp3` | [warm] Breeding season at Mossbank. [pause] Six hatchlings, one routine DNA test, and a result nobody expected. | B0 · B0-s01 |
+| **needed** | `mm_txt_B0-story1-body_en_building.mp3` | [warm] Barty and Fig are the only adults in the breeding tank. | B0 · B0-s02 |
+| **needed** | `mm_txt_B0-story2-body_en_building.mp3` | [warm] A DNA profile shows bands. [pause] A parent and a young newt share one band in every marker, because the young newt got half its DNA from each parent. | B0 · B0-s03 |
+| **needed** | `mm_txt_B0-T1-prompt_en_building.mp3` | [warm] Mark every band in Hatchling two's lane that matches a band in Barty's lane. | B0 · B0-s04 (B0-T1) |
+| **needed** | `mm_txt_B0-T1-step1_en_building.mp3` | [teacherly] Find Hatchling two's lane and Barty's lane. [pause] Each lane has two bands in every marker. | B0 · B0-s04 (B0-T1) worked step |
+| **needed** | `mm_txt_B0-T1-step2_en_building.mp3` | [teacherly] Look at marker one. [pause] Hatchling two's lower band sits at the same height as one of Barty's bands: that band matches. | B0 · B0-s04 (B0-T1) worked step |
+| **needed** | `mm_txt_B0-T1-step3_en_building.mp3` | [teacherly] Do the same for every marker. [pause] A father matches once in each marker. | B0 · B0-s04 (B0-T1) worked step |
+| **needed** | `mm_txt_B0-T1-hint1_en_building.mp3` | [helpful] Go one marker at a time. [pause] Is either of Hatchling two's bands at the same height as a Barty band? | B0 · B0-s04 (B0-T1) hint |
+| **needed** | `mm_txt_B0-T1-hint2_en_building.mp3` | [helpful] There is exactly one match in every marker: [pause] six in all. | B0 · B0-s04 (B0-T1) hint |
+| **needed** | `mm_txt_B0-T1-fb-correct_en_building.mp3` | [pleased] One band from Barty in every marker. [pause] Half of Hatchling two's DNA came from him: Barty is the father. | B0 · B0-s04 (B0-T1) feedback |
+| **needed** | `mm_txt_gel-fb-missed_en_building.mp3` | [gently] Some matching bands aren't marked yet. [pause] Check each marker again. | B0 · B0-s04 (B0-T1) feedback |
+| **needed** | `mm_txt_gel-fb-extra_en_building.mp3` | [gently] A marked band doesn't match. [pause] A band only matches if it sits at exactly the same height, in the same marker. | B0 · B0-s04 (B0-T1) feedback |
+| **needed** | `mm_txt_mis-b-band-near-match_en_building.mp3` | Bands that are close in height count as a match. | B0 · B0-s04 (B0-T1) mix-up |
+| **needed** | `mm_txt_B0-T2-prompt_en_building.mp3` | [warm] Now mark every band in Hatchling two's lane that matches Fig's tail clip. | B0 · B0-s05 (B0-T2) |
+| **needed** | `mm_txt_B0-T2-hint1_en_building.mp3` | [helpful] Compare Hatchling two with Fig's tail clip, one marker at a time. | B0 · B0-s05 (B0-T2) hint |
+| **needed** | `mm_txt_B0-T2-fb-correct_en_building.mp3` | [pleased] Only one band matches, in marker three. [pause] A mother should match once in every marker, so this test says Fig is not the mother. | B0 · B0-s05 (B0-T2) feedback |
+| **needed** | `mm_txt_B0-T3-prompt_en_building.mp3` | [curious] Five of Hatchling two's bands match neither Barty nor Fig's tail clip. [pause] Where must those bands have come from? | B0 · B0-s06 (B0-T3) |
+| **needed** | `mm_txt_B0-T3-opt-mother_en_building.mp3` | From the hatchling's mother, whoever she is. | B0 · B0-s06 (B0-T3) choice |
+| **needed** | `mm_txt_B0-T3-fb-mother_en_building.mp3` | [pleased] Every hatchling gets half its DNA from its mother. [pause] Those bands are the mother's half. | B0 · B0-s06 (B0-T3) choice feedback |
+| **needed** | `mm_txt_B0-T3-opt-itself_en_building.mp3` | The hatchling made new DNA for itself. | B0 · B0-s06 (B0-T3) choice |
+| **needed** | `mm_txt_B0-T3-fb-itself_en_building.mp3` | [gently] Young animals don't make new DNA; they get it all from their parents. | B0 · B0-s06 (B0-T3) choice feedback |
+| **needed** | `mm_txt_mis-b-dna-from-nowhere_en_building.mp3` | Young animals make new DNA for themselves. | B0 · B0-s06 (B0-T3) mix-up |
+| **needed** | `mm_txt_B0-T3-opt-barty_en_building.mp3` | From Barty, but they changed on the way. | B0 · B0-s06 (B0-T3) choice |
+| **needed** | `mm_txt_B0-T3-fb-barty_en_building.mp3` | [gently] Barty's half already matched, one band per marker. [pause] These are the other half. | B0 · B0-s06 (B0-T3) choice feedback |
+| **needed** | `mm_txt_mis-b-all-from-father_en_building.mp3` | All of a hatchling's DNA can come from one parent. | B0 · B0-s06 (B0-T3) mix-up |
+| **needed** | `mm_txt_B0-T3-opt-broken_en_building.mp3` | Nowhere: the test must be broken. | B0 · B0-s06 (B0-T3) choice |
+| **needed** | `mm_txt_B0-T3-fb-broken_en_building.mp3` | [gently] Barty's matches came from the same test, and they worked perfectly. | B0 · B0-s06 (B0-T3) choice feedback |
+| **needed** | `mm_txt_mis-b-test-error_en_building.mp3` | A surprising result means the test is wrong. | B0 · B0-s06 (B0-T3) mix-up |
+| **needed** | `mm_txt_B0-P1-prompt_en_building.mp3` | [warm] Tomás thinks someone swapped the eggs. What do you think could explain the test? [pause] Write your best idea. | B0 · B0-s07 (B0-P1) |
+| **needed** | `mm_txt_B0-P1-frame_en_building.mp3` | [encouraging] I think the test says Fig is not the mother because blank. | B0 · B0-s07 (B0-P1) sentence starter |
+| **needed** | `mm_txt_B1-body_en_building.mp3` | [warm] The evidence board is empty. [pause] Start with what you already know from Part A. | B1 · B1-s01 |
+| **needed** | `mm_txt_B1-R1-prompt_en_building.mp3` | [curious] What does mitosis make? | B1 · B1-s02 (B1-R1) |
+| **needed** | `mm_txt_B1-R2-prompt_en_building.mp3` | [curious] Fig's cells have two pairs of chromosomes. [pause] Where did the two chromosomes of a pair come from? | B1 · B1-s02 (B1-R2) |
+| **needed** | `mm_txt_B1-R3-prompt_en_building.mp3` | [curious] An X-shaped chromosome: [pause] how many DNA molecules does it hold? | B1 · B1-s02 (B1-R3) |
+| **needed** | `mm_txt_B1-R4-prompt_en_building.mp3` | [curious] A tail cell and a skin cell from Fig: same DNA or different? [pause] Why? | B1 · B1-s02 (B1-R4) |
+| **needed** | `mm_txt_B1-end-body1_en_building.mp3` | [encouraging] Every body cell has the same DNA, because mitosis copies it exactly. [pause] A hatchling gets half its DNA from each parent. | B1 · B1-s03 |
+| **needed** | `mm_txt_B1-end-body2_en_building.mp3` | [encouraging] So if Fig is the mother, Hatchling two should match her in every marker. It doesn't. [pause] Something in that reasoning has to give. | B1 · B1-s03 |
+| **needed** | `mm_txt_B2-R1-prompt_en_building.mp3` | [curious] How much of Hatchling two's DNA came from Barty? | B2 · B2-s01 (B2-R1) |
+| **needed** | `mm_txt_B2-R2-prompt_en_building.mp3` | [curious] What does mitosis do to the number of chromosomes? | B2 · B2-s01 (B2-R2) |
+| **needed** | `mm_txt_B2-R3-prompt_en_building.mp3` | [curious] What is a homologous pair? | B2 · B2-s01 (B2-R3) |
+| **needed** | `mm_txt_B2-meiosis-body1_en_building.mp3` | [warm] Watch one of Fig's egg-making cells. [pause] It copies its chromosomes, then divides twice, so each new cell gets one chromosome from every pair. | B2 · B2-s02 |
+| **needed** | `mm_txt_B2-meiosis-body2_en_building.mp3` | [warm] Keep an eye on the counts: [pause] four chromosomes in the starting cell, two in each new cell. | B2 · B2-s02 |
+| **needed** | `mm_txt_B2-G1-prompt_en_building.mp3` | [warm] Make one egg from Fig's egg-making cell. | B2 · B2-s03 (B2-G1) |
+| **needed** | `mm_txt_B2-G1-step1_en_building.mp3` | [teacherly] Pair one has two versions: the one from Fig's mother (A, E) and the one from her father (a, e). An egg gets one of them. [pause] Pick either. | B2 · B2-s03 (B2-G1) worked step |
+| **needed** | `mm_txt_B2-G1-step2_en_building.mp3` | [teacherly] Do the same for pair two: [pause] one of B or b. | B2 · B2-s03 (B2-G1) worked step |
+| **needed** | `mm_txt_B2-G1-step3_en_building.mp3` | [teacherly] Check: one chromosome from each pair, two in all. [pause] That is half of Fig's four. | B2 · B2-s03 (B2-G1) worked step |
+| **needed** | `mm_txt_B2-G1-hint1_en_building.mp3` | [helpful] An egg gets one chromosome from every pair: [pause] not both, and not none. | B2 · B2-s03 (B2-G1) hint |
+| **needed** | `mm_txt_B2-G1-hint2_en_building.mp3` | [helpful] Fig has two pairs, so an egg has two chromosomes. | B2 · B2-s03 (B2-G1) hint |
+| **needed** | `mm_txt_B2-G1-fb-correct_en_building.mp3` | [pleased] One from each pair: two chromosomes. [pause] When this egg meets a sperm with two more, the hatchling has four. | B2 · B2-s03 (B2-G1) feedback |
+| **needed** | `mm_txt_gamete-fb-full-set_en_building.mp3` | [gently] That is all of them: a full set. [pause] If eggs and sperm had full sets, the young would end up with twice as many chromosomes as their parents. | B2 · B2-s03 (B2-G1) feedback |
+| **needed** | `mm_txt_mis-b-gamete-full-set_en_building.mp3` | Eggs and sperm get a full set of chromosomes, like body cells. | B2 · B2-s03 (B2-G1) mix-up |
+| **needed** | `mm_txt_gamete-fb-both-of-pair_en_building.mp3` | [gently] This one has both chromosomes of a pair and is missing another pair. [pause] Every pair must send exactly one. | B2 · B2-s03 (B2-G1) feedback |
+| **needed** | `mm_txt_mis-b-gamete-both-of-pair_en_building.mp3` | An egg or sperm can get both chromosomes of a pair. | B2 · B2-s03 (B2-G1) mix-up |
+| **needed** | `mm_txt_gamete-fb-missing-pair_en_building.mp3` | [gently] One pair has no chromosome here. [pause] Every pair must send one, or the young would be missing those genes. | B2 · B2-s03 (B2-G1) feedback |
+| **needed** | `mm_txt_mis-b-gamete-missing-pair_en_building.mp3` | An egg or sperm can leave out a whole pair. | B2 · B2-s03 (B2-G1) mix-up |
+| **needed** | `mm_txt_B2-I1-prompt_en_building.mp3` | [warm] Make one sperm from Barty's sperm-making cell. | B2 · B2-s04 (B2-I1) |
+| **needed** | `mm_txt_B2-I1-hint1_en_building.mp3` | [helpful] Same rule as for eggs: [pause] one chromosome from every pair. | B2 · B2-s04 (B2-I1) hint |
+| **needed** | `mm_txt_B2-I1-fb-correct_en_building.mp3` | [pleased] A sperm with one chromosome from each pair: [pause] half of Barty's set. | B2 · B2-s04 (B2-I1) feedback |
+| **needed** | `mm_txt_B2-shuffle-body1_en_building.mp3` | [warm] Which chromosome from each pair goes into an egg is down to chance. [pause] Here, the mother's pair one went with the father's pair two. | B2 · B2-s05 |
+| **needed** | `mm_txt_B2-shuffle-body2_en_building.mp3` | [warm] Before they separate, partners swap matching sections. [pause] Look at pair one: each swapped tip has the other parent's paper and gene letter. | B2 · B2-s05 |
+| **needed** | `mm_txt_B2-I2-prompt_en_building.mp3` | [warm] Leaving crossing over aside, how many different eggs can Fig's cell make? [pause] Make every different one. | B2 · B2-s06 (B2-I2) |
+| **needed** | `mm_txt_B2-I2-hint1_en_building.mp3` | [helpful] Change one choice at a time: [pause] keep pair one the same and switch pair two. | B2 · B2-s06 (B2-I2) hint |
+| **needed** | `mm_txt_B2-I2-hint2_en_building.mp3` | [helpful] Pair one has two choices, and so does pair two. | B2 · B2-s06 (B2-I2) hint |
+| **needed** | `mm_txt_B2-I2-fb-correct_en_building.mp3` | [pleased] Four different eggs: two choices for pair one times two choices for pair two. [pause] Every extra pair doubles the number. | B2 · B2-s06 (B2-I2) feedback |
+| **needed** | `mm_txt_gamete-fb-duplicate-egg_en_building.mp3` | [gently] You already made that egg. [pause] Try a different mix. | B2 · B2-s06 (B2-I2) feedback |
+| **needed** | `mm_txt_B2-I3-prompt_en_building.mp3` | [warm] After crossing over in pair one, how many different versions of chromosome one can end up in Fig's eggs? ( [pause] (Before: A with E, and a with e. | B2 · B2-s07 (B2-I3) |
+| **needed** | `mm_txt_B2-I3-opt-two_en_building.mp3` | Two. | B2 · B2-s07 (B2-I3) choice |
+| **needed** | `mm_txt_B2-I3-fb-two_en_building.mp3` | [gently] Crossing over adds two new versions: [pause] A with e, and a with E. | B2 · B2-s07 (B2-I3) choice feedback |
+| **needed** | `mm_txt_mis-b-crossing-over-new-genes_en_building.mp3` | Crossing over makes brand-new genes (or makes nothing new). | B2 · B2-s07 (B2-I3) mix-up |
+| **needed** | `mm_txt_B2-I3-opt-four_en_building.mp3` | Four. | B2 · B2-s07 (B2-I3) choice |
+| **needed** | `mm_txt_B2-I3-fb-four_en_building.mp3` | [pleased] A with E, a with e, and the two swapped versions: [pause] A with e, and a with E. | B2 · B2-s07 (B2-I3) choice feedback |
+| **needed** | `mm_txt_B2-I3-opt-one_en_building.mp3` | One. | B2 · B2-s07 (B2-I3) choice |
+| **needed** | `mm_txt_B2-I3-fb-one_en_building.mp3` | [gently] Meiosis doesn't copy one version into every egg; each egg gets one of several. | B2 · B2-s07 (B2-I3) choice feedback |
+| **needed** | `mm_txt_mis-b-meiosis-is-copy_en_building.mp3` | Meiosis makes identical copies, like mitosis. | B2 · B2-s07 (B2-I3) mix-up |
+| **needed** | `mm_txt_B2-I3-opt-new_en_building.mp3` | Too many to count: it makes brand-new genes. | B2 · B2-s07 (B2-I3) choice |
+| **needed** | `mm_txt_B2-I3-fb-new_en_building.mp3` | [gently] Crossing over swaps sections between partners. [pause] It mixes genes that are already there. | B2 · B2-s07 (B2-I3) choice feedback |
+| **needed** | `mm_txt_B2-I3gf-prompt_en_building.mp3` | [warm] Real newts have about twelve pairs of chromosomes. Leaving crossing over aside, how many different eggs could one newt make? (two times two [pause] (two times two times two ... | B2 · B2-s07 (B2-I3gf, Go further) |
+| **needed** | `mm_txt_B2-I3gf-opt-24_en_building.mp3` | Twenty-four. | B2 · B2-s07 (B2-I3gf, Go further) choice |
+| **needed** | `mm_txt_B2-I3gf-fb-24_en_building.mp3` | [gently] Each pair doubles the number; it doesn't add two. [pause] Two multiplied by itself twelve times is four,ninety-six. | B2 · B2-s07 (B2-I3gf, Go further) choice feedback |
+| **needed** | `mm_txt_mis-b-combos-add_en_building.mp3` | Each new pair adds two combinations, instead of doubling them. | B2 · B2-s07 (B2-I3gf, Go further) mix-up |
+| **needed** | `mm_txt_B2-I3gf-opt-4096_en_building.mp3` | Four,ninety-six. | B2 · B2-s07 (B2-I3gf, Go further) choice |
+| **needed** | `mm_txt_B2-I3gf-fb-4096_en_building.mp3` | [pleased] Two choices for each of twelve pairs: [pause] four,ninety-six different eggs, before crossing over adds even more. | B2 · B2-s07 (B2-I3gf, Go further) choice feedback |
+| **needed** | `mm_txt_B2-I3gf-opt-12_en_building.mp3` | Twelve. | B2 · B2-s07 (B2-I3gf, Go further) choice |
+| **needed** | `mm_txt_B2-I3gf-fb-12_en_building.mp3` | [gently] Each pair doesn't make its own kind of egg; every egg has one chromosome from every pair. | B2 · B2-s07 (B2-I3gf, Go further) choice feedback |
+| **needed** | `mm_txt_mis-b-one-egg-per-pair_en_building.mp3` | Each pair of chromosomes makes its own kind of egg. | B2 · B2-s07 (B2-I3gf, Go further) mix-up |
+| **needed** | `mm_txt_B2-fert-body1_en_building.mp3` | [warm] An egg (two chromosomes) and a sperm (two) join into one cell with four: a full set again. [pause] In the hatchling, every chromosome from the egg counts as a mother's chromosome. | B2 · B2-s08 |
+| **needed** | `mm_txt_B2-fert-body2_en_building.mp3` | [warm] Three siblings, three different eggs and sperm: [pause] same parents, different shuffle. | B2 · B2-s08 |
+| **needed** | `mm_txt_B2-C1-prompt_en_building.mp3` | [warm] A moth's egg-making cell has three pairs of chromosomes. [pause] Make one egg. | B2 · B2-s09 (B2-C1) |
+| **needed** | `mm_txt_B2-C1-fb-correct_en_building.mp3` | [pleased] One from each of the three pairs: [pause] three chromosomes, half of the moth's six. | B2 · B2-s09 (B2-C1) feedback |
+| **needed** | `mm_txt_B2-C2-prompt_en_building.mp3` | [curious] Two kittens have the same mother and father but look different. [pause] Which is the best explanation? | B2 · B2-s10 (B2-C2) |
+| **needed** | `mm_txt_B2-C2-opt-blend_en_building.mp3` | Each kitten blends its parents in a different amount, like mixing paint. | B2 · B2-s10 (B2-C2) choice |
+| **needed** | `mm_txt_B2-C2-fb-blend_en_building.mp3` | [gently] Kittens don't get a blend; each gets a full set of chromosomes, one from each pair, from each parent. | B2 · B2-s10 (B2-C2) choice feedback |
+| **needed** | `mm_txt_mis-b-blending_en_building.mp3` | Children are a blend of their parents, like mixed paint. | B2 · B2-s10 (B2-C2) mix-up |
+| **needed** | `mm_txt_B2-C2-opt-shuffle_en_building.mp3` | Each kitten came from a different egg and sperm, shuffled differently in meiosis. | B2 · B2-s10 (B2-C2) choice |
+| **needed** | `mm_txt_B2-C2-fb-shuffle_en_building.mp3` | [pleased] Meiosis shuffles chromosomes and swaps sections, so every egg and sperm is different. | B2 · B2-s10 (B2-C2) choice feedback |
+| **needed** | `mm_txt_B2-C2-opt-same_en_building.mp3` | They got the same chromosomes; food made them look different. | B2 · B2-s10 (B2-C2) choice |
+| **needed** | `mm_txt_B2-C2-fb-same_en_building.mp3` | [gently] Siblings don't get the same chromosomes; each egg and sperm carries a different mix. | B2 · B2-s10 (B2-C2) choice feedback |
+| **needed** | `mm_txt_mis-b-siblings-identical_en_building.mp3` | Children of the same parents get the same chromosomes. | B2 · B2-s10 (B2-C2) mix-up |
+| **needed** | `mm_txt_B2-C2-opt-copy_en_building.mp3` | Meiosis copies the parents exactly, so one kitten must have different parents. | B2 · B2-s10 (B2-C2) choice |
+| **needed** | `mm_txt_B2-C2-fb-copy_en_building.mp3` | [gently] Meiosis halves and shuffles; it doesn't copy. [pause] Different-looking siblings are normal. | B2 · B2-s10 (B2-C2) choice feedback |
+| **needed** | `mm_txt_B2-end-body1_en_building.mp3` | [warm] Meiosis halves the chromosomes and shuffles them, so every egg and sperm is one of a kind. | B2 · B2-s11 |
+| **needed** | `mm_txt_B2-end-body2_en_building.mp3` | [warm] That shuffle is the first source of new variation: [pause] new combinations of the parents' genes. | B2 · B2-s11 |
+| **needed** | `mm_txt_B3-R1-prompt_en_building.mp3` | [curious] How many chromosomes does one of Fig's eggs have? | B3 · B3-s01 (B3-R1) |
+| **needed** | `mm_txt_B3-R2-prompt_en_building.mp3` | [curious] Give one reason why no two eggs are the same. | B3 · B3-s01 (B3-R2) |
+| **needed** | `mm_txt_B3-R3-prompt_en_building.mp3` | [curious] What does a cell do to its chromosomes before it divides? | B3 · B3-s01 (B3-R3) |
+| **needed** | `mm_txt_B3-P1-prompt_en_building.mp3` | [warm] Mitosis and meiosis start with the same cell. [pause] Predict two ways the new cells will be different. | B3 · B3-s02 (B3-P1) |
+| **needed** | `mm_txt_B3-P1-frame_en_building.mp3` | [encouraging] Mitosis makes blank. [pause] Meiosis makes blank. | B3 · B3-s02 (B3-P1) sentence starter |
+| **needed** | `mm_txt_B3-side-body1_en_building.mp3` | [warm] Step through both at once and read the counts under each side. | B3 · B3-s03 |
+| **needed** | `mm_txt_B3-side-body2_en_building.mp3` | [warm] Mitosis copies, then divides once. [pause] Meiosis copies, then divides twice, shuffling and swapping along the way. | B3 · B3-s03 |
+| **needed** | `mm_txt_B3-G1-prompt_en_building.mp3` | [curious] Sort each statement: [pause] is it true of mitosis, meiosis, or both? | B3 · B3-s04 (B3-G1) |
+| **needed** | `mm_txt_B3-G1-hint1_en_building.mp3` | [helpful] Step through the animation again and read the counts under each side. | B3 · B3-s04 (B3-G1) hint |
+| **needed** | `mm_txt_B3-G1-hint2_en_building.mp3` | [helpful] Only one of them swaps sections and halves the chromosomes. [pause] Both copy first. | B3 · B3-s04 (B3-G1) hint |
+| **needed** | `mm_txt_B3-G1-item-two_en_building.mp3` | Makes two new cells. | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-four_en_building.mp3` | Makes four new cells. | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-same_en_building.mp3` | The new cells are identical to the parent cell. | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-half_en_building.mp3` | Each new cell gets one chromosome from every pair. | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-copy_en_building.mp3` | The chromosomes are copied first. | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_mis-b-meiosis-no-copy_en_building.mp3` | Meiosis skips copying the chromosomes. | B3 · B3-s04 (B3-G1) mix-up |
+| **needed** | `mm_txt_B3-G1-item-swap_en_building.mp3` | Partners swap sections of DNA. | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_mis-b-swap-in-mitosis_en_building.mp3` | Mitosis also swaps sections between partners. | B3 · B3-s04 (B3-G1) mix-up |
+| **needed** | `mm_txt_B3-G1-item-body_en_building.mp3` | Builds and repairs the body, like Fig's tail. | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-eggs_en_building.mp3` | Makes eggs and sperm. | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-fb-correct_en_building.mp3` | [pleased] All sorted. [pause] Mitosis copies; meiosis halves and shuffles; both start by copying. | B3 · B3-s04 (B3-G1) feedback |
+| **needed** | `mm_txt_B3-I1-prompt_en_building.mp3` | [curious] A cell with six chromosomes (three pairs) goes through meiosis. [pause] How many chromosomes are in each new cell? | B3 · B3-s05 (B3-I1) |
+| **needed** | `mm_txt_B3-I1-opt-six_en_building.mp3` | Six. | B3 · B3-s05 (B3-I1) choice |
+| **needed** | `mm_txt_B3-I1-fb-six_en_building.mp3` | [gently] That would be mitosis. [pause] Meiosis gives each new cell one chromosome from every pair. | B3 · B3-s05 (B3-I1) choice feedback |
+| **needed** | `mm_txt_B3-I1-opt-three_en_building.mp3` | Three. | B3 · B3-s05 (B3-I1) choice |
+| **needed** | `mm_txt_B3-I1-fb-three_en_building.mp3` | [pleased] One from each of the three pairs: [pause] half the chromosomes. | B3 · B3-s05 (B3-I1) choice feedback |
+| **needed** | `mm_txt_B3-I1-opt-twelve_en_building.mp3` | Twelve. | B3 · B3-s05 (B3-I1) choice |
+| **needed** | `mm_txt_B3-I1-fb-twelve_en_building.mp3` | [gently] Copying makes each chromosome an X, but it is still one chromosome. [pause] Then meiosis halves the number. | B3 · B3-s05 (B3-I1) choice feedback |
+| **needed** | `mm_txt_B3-I1-opt-two_en_building.mp3` | Two. | B3 · B3-s05 (B3-I1) choice |
+| **needed** | `mm_txt_B3-I1-fb-two_en_building.mp3` | [gently] Each new cell needs one chromosome from every pair, and there are three pairs. | B3 · B3-s05 (B3-I1) choice feedback |
+| **needed** | `mm_txt_B3-C1-prompt_en_building.mp3` | [curious] A skin cell divides to heal a scrape. A cell in an ovary divides to make eggs. [pause] Which statement is true? | B3 · B3-s06 (B3-C1) |
+| **needed** | `mm_txt_B3-C1-opt-both-same_en_building.mp3` | Both make cells identical to the parent. | B3 · B3-s06 (B3-C1) choice |
+| **needed** | `mm_txt_B3-C1-fb-both-same_en_building.mp3` | [gently] Eggs are made by meiosis, which halves and shuffles. | B3 · B3-s06 (B3-C1) choice feedback |
+| **needed** | `mm_txt_B3-C1-opt-both-half_en_building.mp3` | Both halve the number of chromosomes. | B3 · B3-s06 (B3-C1) choice |
+| **needed** | `mm_txt_B3-C1-fb-both-half_en_building.mp3` | [gently] Healing uses mitosis, which keeps the full set. | B3 · B3-s06 (B3-C1) choice feedback |
+| **needed** | `mm_txt_B3-C1-opt-right_en_building.mp3` | The new skin cells are identical to the parent; the eggs all differ from each other. | B3 · B3-s06 (B3-C1) choice |
+| **needed** | `mm_txt_B3-C1-fb-right_en_building.mp3` | [pleased] Mitosis copies (skin); meiosis halves and shuffles (eggs). | B3 · B3-s06 (B3-C1) choice feedback |
+| **needed** | `mm_txt_B3-C1-opt-swapped_en_building.mp3` | The new skin cells all differ; the eggs are identical. | B3 · B3-s06 (B3-C1) choice |
+| **needed** | `mm_txt_B3-C1-fb-swapped_en_building.mp3` | [gently] That is the wrong way round: [pause] mitosis makes identical cells, meiosis makes different ones. | B3 · B3-s06 (B3-C1) choice feedback |
+| **needed** | `mm_txt_mis-b-mitosis-shuffles_en_building.mp3` | Mitosis makes cells that are all different. | B3 · B3-s06 (B3-C1) mix-up |
+| **needed** | `mm_txt_B3-C2-prompt_en_building.mp3` | [warm] Look back at your prediction. In your own words: how is meiosis different from mitosis? [pause] Give two differences. | B3 · B3-s07 (B3-C2) |
+| **needed** | `mm_txt_B3-end-body1_en_building.mp3` | [warm] Mitosis makes two cells identical to the parent: it builds and repairs the body. [pause] Meiosis makes four cells with half the chromosomes, all different: eggs or sperm. | B3 · B3-s08 |
+| **needed** | `mm_txt_B3-end-body2_en_building.mp3` | [warm] Both start by copying the chromosomes. [pause] What happens next is the difference. | B3 · B3-s08 |
+| **needed** | `mm_txt_B4-R1-prompt_en_building.mp3` | [curious] What does meiosis make? | B4 · B4-s01 (B4-R1) |
+| **needed** | `mm_txt_B4-R2-prompt_en_building.mp3` | [curious] In the DNA test, which adult matched Hatchling two? | B4 · B4-s01 (B4-R2) |
+| **needed** | `mm_txt_B4-R3-prompt_en_building.mp3` | [curious] Why do a bone cell and a skin cell from the same newt have the same DNA? | B4 · B4-s01 (B4-R3) |
+| **needed** | `mm_txt_B4-intro-body_en_building.mp3` | [warm] Each tank shows one way new variation can appear. [pause] Watch where the change happens: in a body cell, or in a cell that makes eggs. | B4 · B4-s02 |
+| **needed** | `mm_txt_B4-L1-prompt_en_building.mp3` | [warm] Run all three tanks. [pause] For each one, find where the change happens and whether it reaches the hatchlings. | B4 · B4-s03 (B4-L1) |
+| **needed** | `mm_txt_B4-L1-hint1_en_building.mp3` | [helpful] After each run, find the star: that is where the change happened. [pause] Then follow the arrows to the hatchlings. | B4 · B4-s03 (B4-L1) hint |
+| **needed** | `mm_txt_B4-card-shuffle_en_building.mp3` | [warm] Tank one: meiosis shuffles chromosomes, so every egg is different. [pause] New mixes are passed on. | B4 · B4-s03 (B4-L1) evidence card |
+| **needed** | `mm_txt_B4-card-copy_en_building.mp3` | [warm] Tank two: a copying error in an egg-making cell gave Hatchling five a white tail tip. [pause] Passed on. | B4 · B4-s03 (B4-L1) evidence card |
+| **needed** | `mm_txt_B4-card-uv_en_building.mp3` | [warm] Tank three: UV light changed a patch of skin. Her young had normal skin. [pause] Not passed on. | B4 · B4-s03 (B4-L1) evidence card |
+| **needed** | `mm_txt_B4-lab-fb-done_en_building.mp3` | [pleased] All three tanks are in the evidence locker. [pause] Two kinds of change reached the young; one didn't. | B4 · B4-s03 (B4-L1) feedback |
+| **needed** | `mm_txt_B4-rule-body1_en_building.mp3` | [warm] A change in a body cell, like skin, stays in that newt. [pause] It never reaches the eggs. | B4 · B4-s04 |
+| **needed** | `mm_txt_B4-rule-body2_en_building.mp3` | [warm] A change in an egg-making or sperm-making cell can end up in the young. [pause] So can the new mixes that meiosis makes. | B4 · B4-s04 |
+| **needed** | `mm_txt_B4-G1-prompt_en_building.mp3` | [curious] Sort each change: [pause] can it be passed on to the young, or not? | B4 · B4-s05 (B4-G1) |
+| **needed** | `mm_txt_B4-G1-hint1_en_building.mp3` | [helpful] Ask: [pause] is the change in a cell that makes eggs or sperm? | B4 · B4-s05 (B4-G1) hint |
+| **needed** | `mm_txt_B4-G1-hint2_en_building.mp3` | [helpful] What caused the change doesn't matter. [pause] Where it happened does. | B4 · B4-s05 (B4-G1) hint |
+| **needed** | `mm_txt_B4-G1-item-mix_en_building.mp3` | A new mix of chromosomes in an egg (the shuffle). | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_B4-G1-item-sperm_en_building.mp3` | A copying error in a sperm-making cell. | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_mis-b-environment-never-inherited_en_building.mp3` | Changes caused by the environment can never be passed on. | B4 · B4-s05 (B4-G1) mix-up |
+| **needed** | `mm_txt_B4-G1-item-uv_en_building.mp3` | A patch of skin changed by UV light. | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_mis-b-all-changes-inherited_en_building.mp3` | Any change in the body gets passed on to the young. | B4 · B4-s05 (B4-G1) mix-up |
+| **needed** | `mm_txt_B4-G1-item-tail_en_building.mp3` | A copying error in a tail cell while the tail regrows. | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_B4-G1-item-legs_en_building.mp3` | Strong legs from a newt that swims a lot. | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_mis-b-acquired-traits_en_building.mp3` | Traits a parent gains during life get passed on. | B4 · B4-s05 (B4-G1) mix-up |
+| **needed** | `mm_txt_B4-G1-item-uvgerm_en_building.mp3` | UV damage to an egg-making cell. | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_B4-G1-fb-correct_en_building.mp3` | [pleased] All sorted. [pause] Only changes in egg- or sperm-making cells, and new mixes from meiosis, reach the young. | B4 · B4-s05 (B4-G1) feedback |
+| **needed** | `mm_txt_B4-I1-prompt_en_building.mp3` | [curious] A fisher gets a sun-damaged patch of skin after years outdoors. [pause] Will their children inherit the change? | B4 · B4-s06 (B4-I1) |
+| **needed** | `mm_txt_B4-I1-opt-all_en_building.mp3` | Yes: every change in the body is passed on. | B4 · B4-s06 (B4-I1) choice |
+| **needed** | `mm_txt_B4-I1-fb-all_en_building.mp3` | [gently] Only changes in cells that make eggs or sperm can be passed on. | B4 · B4-s06 (B4-I1) choice feedback |
+| **needed** | `mm_txt_B4-I1-opt-long_en_building.mp3` | Yes, if the change lasts long enough. | B4 · B4-s06 (B4-I1) choice |
+| **needed** | `mm_txt_B4-I1-fb-long_en_building.mp3` | [gently] How long it lasts doesn't matter; skin cells never make eggs or sperm. | B4 · B4-s06 (B4-I1) choice feedback |
+| **needed** | `mm_txt_B4-I1-opt-skin_en_building.mp3` | No: skin cells don't make eggs or sperm. | B4 · B4-s06 (B4-I1) choice |
+| **needed** | `mm_txt_B4-I1-fb-skin_en_building.mp3` | [pleased] The change is in skin cells, so it stays with the fisher. | B4 · B4-s06 (B4-I1) choice feedback |
+| **needed** | `mm_txt_B4-I1-opt-never_en_building.mp3` | No: changes caused by the sun can never be inherited. | B4 · B4-s06 (B4-I1) choice |
+| **needed** | `mm_txt_B4-I1-fb-never_en_building.mp3` | [gently] Right answer, wrong reason. [pause] Sun damage to egg- or sperm-making cells could be inherited; here it hit skin. | B4 · B4-s06 (B4-I1) choice feedback |
+| **needed** | `mm_txt_B4-C1-prompt_en_building.mp3` | [curious] A mouse is born with curly fur, though both parents have straight fur and no relative has ever had curly fur. [pause] Which explanation is most likely? | B4 · B4-s07 (B4-C1) |
+| **needed** | `mm_txt_B4-C1-opt-learned_en_building.mp3` | The mother's fur turned curly during her life and she passed it on. | B4 · B4-s07 (B4-C1) choice |
+| **needed** | `mm_txt_B4-C1-fb-learned_en_building.mp3` | [gently] Changes during a parent's life aren't passed on unless they happen in egg- or sperm-making cells. | B4 · B4-s07 (B4-C1) choice feedback |
+| **needed** | `mm_txt_B4-C1-opt-blend_en_building.mp3` | Straight fur from two parents blended into curly fur. | B4 · B4-s07 (B4-C1) choice |
+| **needed** | `mm_txt_B4-C1-fb-blend_en_building.mp3` | [gently] Traits don't blend like paint, and straight plus straight has no curly to blend. | B4 · B4-s07 (B4-C1) choice feedback |
+| **needed** | `mm_txt_B4-C1-opt-copy_en_building.mp3` | A copying error in an egg-making or sperm-making cell of one parent. | B4 · B4-s07 (B4-C1) choice |
+| **needed** | `mm_txt_B4-C1-fb-copy_en_building.mp3` | [pleased] A new change in a cell that makes eggs or sperm can show up in the young. | B4 · B4-s07 (B4-C1) choice feedback |
+| **needed** | `mm_txt_B4-C1-opt-skin_en_building.mp3` | Sun damage to the father's skin cells. | B4 · B4-s07 (B4-C1) choice |
+| **needed** | `mm_txt_B4-C1-fb-skin_en_building.mp3` | [gently] Skin cells don't make sperm, so their changes stay in the father. | B4 · B4-s07 (B4-C1) choice feedback |
+| **needed** | `mm_txt_B4-end-body1_en_building.mp3` | [warm] New variation that can be inherited comes from three places: [pause] new mixes made by meiosis, copying errors in egg- or sperm-making cells, and changes caused by the environment in those cells. | B4 · B4-s08 |
+| **needed** | `mm_txt_B4-end-body2_en_building.mp3` | [warm] A change only reaches the young if it is in the cells that make eggs or sperm. | B4 · B4-s08 |
+| **needed** | `mm_txt_B5-R1-prompt_en_building.mp3` | [curious] Which changes can be passed on to the young? | B5 · B5-s01 (B5-R1) |
+| **needed** | `mm_txt_B5-R2-prompt_en_building.mp3` | [curious] In meiosis, what does each egg get? | B5 · B5-s01 (B5-R2) |
+| **needed** | `mm_txt_B5-R3-prompt_en_building.mp3` | [curious] How exactly does mitosis copy DNA? | B5 · B5-s01 (B5-R3) |
+| **needed** | `mm_txt_B5-night-body_en_building.mp3` | [warm] Fig laid the eggs: the camera saw it. The test says she isn't the mother. [pause] Time to test more of Fig. | B5 · B5-s02 |
+| **needed** | `mm_txt_B5-T1-prompt_en_building.mp3` | [warm] Choose which parts of Fig to test. [pause] Test her egg cells and at least one other tissue. | B5 · B5-s03 (B5-T1) |
+| **needed** | `mm_txt_B5-T1-hint1_en_building.mp3` | [helpful] Test the egg cells and at least one other part of Fig, then compare each new lane with Hatchling two. | B5 · B5-s03 (B5-T1) hint |
+| **needed** | `mm_txt_B5-T1-fb-correct_en_building.mp3` | [pleased] Fig's body samples match each other but not Hatchling two. [pause] Her egg cells match Hatchling two in every marker. | B5 · B5-s03 (B5-T1) feedback |
+| **needed** | `mm_txt_gel-result-figTail_en_building.mp3` | [warm] Tail clip: [pause] does not match Hatchling two (Ada ran it twice: same bands both times). | B5 · B5-s03 (B5-T1) test result |
+| **needed** | `mm_txt_gel-result-figSkin_en_building.mp3` | [warm] Skin: the same bands as the tail clip. [pause] Does not match Hatchling two. | B5 · B5-s03 (B5-T1) test result |
+| **needed** | `mm_txt_gel-result-figBlood_en_building.mp3` | [warm] Blood: the same bands as the tail clip. [pause] Does not match Hatchling two. | B5 · B5-s03 (B5-T1) test result |
+| **needed** | `mm_txt_gel-result-figEggs_en_building.mp3` | [warm] Egg cells: [pause] a match for Hatchling two in every marker (run twice: same result). | B5 · B5-s03 (B5-T1) test result |
+| **needed** | `mm_txt_B5-I1-prompt_en_building.mp3` | [curious] Which of Fig's samples could have come from the hatchlings' mother? | B5 · B5-s04 (B5-I1) |
+| **needed** | `mm_txt_B5-I1-opt-tail_en_building.mp3` | The tail clip. | B5 · B5-s04 (B5-I1) choice |
+| **needed** | `mm_txt_B5-I1-fb-tail_en_building.mp3` | [gently] The tail clip shares only one band with Hatchling two. | B5 · B5-s04 (B5-I1) choice feedback |
+| **needed** | `mm_txt_mis-b-dna-same-everywhere_en_building.mp3` | Every cell in one body always has the same DNA. | B5 · B5-s04 (B5-I1) mix-up |
+| **needed** | `mm_txt_B5-I1-opt-blood_en_building.mp3` | The blood. | B5 · B5-s04 (B5-I1) choice |
+| **needed** | `mm_txt_B5-I1-fb-blood_en_building.mp3` | [gently] Blood has the same bands as the tail: no match. | B5 · B5-s04 (B5-I1) choice feedback |
+| **needed** | `mm_txt_B5-I1-opt-eggs_en_building.mp3` | The egg cells. | B5 · B5-s04 (B5-I1) choice |
+| **needed** | `mm_txt_B5-I1-fb-eggs_en_building.mp3` | [pleased] The egg cells match Hatchling two in every marker. | B5 · B5-s04 (B5-I1) choice feedback |
+| **needed** | `mm_txt_B5-I1-opt-none_en_building.mp3` | None: the eggs must have been swapped. | B5 · B5-s04 (B5-I1) choice |
+| **needed** | `mm_txt_B5-I1-fb-none_en_building.mp3` | [gently] Fig's own egg cells match. [pause] No swap is needed to explain it. | B5 · B5-s04 (B5-I1) choice feedback |
+| **needed** | `mm_txt_mis-b-eggs-swapped_en_building.mp3` | The eggs must have come from another newt. | B5 · B5-s04 (B5-I1) mix-up |
+| **needed** | `mm_txt_B5-reveal-body_en_building.mp3` | [warm] Fig's body and Fig's egg cells have different DNA. | B5 · B5-s05 |
+| **needed** | `mm_txt_B5-lines-body1_en_building.mp3` | [warm] Long before Fig hatched, two embryos fused into one. [pause] Each line of cells kept copying itself exactly, by mitosis. | B5 · B5-s06 |
+| **needed** | `mm_txt_B5-lines-body2_en_building.mp3` | [warm] Line one built her tail, skin and blood. [pause] Line two built the cells that make her eggs, so only line two reaches the hatchlings. | B5 · B5-s06 |
+| **needed** | `mm_txt_B5-I2-prompt_en_building.mp3` | [curious] Why did the tail-clip test say Fig was not the mother? | B5 · B5-s07 (B5-I2) |
+| **needed** | `mm_txt_B5-I2-opt-machine_en_building.mp3` | The DNA machine made a mistake. | B5 · B5-s07 (B5-I2) choice |
+| **needed** | `mm_txt_B5-I2-fb-machine_en_building.mp3` | [gently] Ada ran the tail twice and got the same bands; skin and blood agree too. | B5 · B5-s07 (B5-I2) choice feedback |
+| **needed** | `mm_txt_B5-I2-opt-mutation_en_building.mp3` | One mutation changed the hatchlings' DNA. | B5 · B5-s07 (B5-I2) choice |
+| **needed** | `mm_txt_B5-I2-fb-mutation_en_building.mp3` | [gently] One copying error changes one place; Hatchling two differs in five of six markers. | B5 · B5-s07 (B5-I2) choice feedback |
+| **needed** | `mm_txt_mis-b-one-mutation_en_building.mp3` | One mutation can explain many differences at once. | B5 · B5-s07 (B5-I2) mix-up |
+| **needed** | `mm_txt_B5-I2-opt-lines_en_building.mp3` | Her tail was built by a different cell line than her eggs. | B5 · B5-s07 (B5-I2) choice |
+| **needed** | `mm_txt_B5-I2-fb-lines_en_building.mp3` | [pleased] The tail comes from line one; her eggs come from line two. | B5 · B5-s07 (B5-I2) choice feedback |
+| **needed** | `mm_txt_B5-I2-opt-swap_en_building.mp3` | Someone swapped the eggs. | B5 · B5-s07 (B5-I2) choice |
+| **needed** | `mm_txt_B5-I2-fb-swap_en_building.mp3` | [gently] Fig's own egg cells match the hatchlings, and the camera saw her lay them. | B5 · B5-s07 (B5-I2) choice feedback |
+| **needed** | `mm_txt_B5-C1-prompt_en_building.mp3` | [curious] A chimera cat's fur is made by one cell line and its eggs by another. [pause] To find out what its kittens could inherit, which sample should you test? | B5 · B5-s08 (B5-C1) |
+| **needed** | `mm_txt_B5-C1-opt-fur_en_building.mp3` | Its fur. | B5 · B5-s08 (B5-C1) choice |
+| **needed** | `mm_txt_B5-C1-fb-fur_en_building.mp3` | [gently] Fur comes from the other line, which the kittens don't inherit. | B5 · B5-s08 (B5-C1) choice feedback |
+| **needed** | `mm_txt_B5-C1-opt-blood_en_building.mp3` | Its blood. | B5 · B5-s08 (B5-C1) choice |
+| **needed** | `mm_txt_B5-C1-fb-blood_en_building.mp3` | [gently] Blood could come from either line; only the egg-making line is inherited. | B5 · B5-s08 (B5-C1) choice feedback |
+| **needed** | `mm_txt_B5-C1-opt-eggs_en_building.mp3` | Cells from its egg-making tissue. | B5 · B5-s08 (B5-C1) choice |
+| **needed** | `mm_txt_B5-C1-fb-eggs_en_building.mp3` | [pleased] Only the egg-making line passes DNA to the kittens. | B5 · B5-s08 (B5-C1) choice feedback |
+| **needed** | `mm_txt_B5-C1-opt-any_en_building.mp3` | Any sample: all its cells have the same DNA. | B5 · B5-s08 (B5-C1) choice |
+| **needed** | `mm_txt_B5-C1-fb-any_en_building.mp3` | [gently] In a chimera, the two cell lines have different DNA. | B5 · B5-s08 (B5-C1) choice feedback |
+| **needed** | `mm_txt_B5-end-body1_en_building.mp3` | [warm] Fig is a chimera: one body, two cell lines with different DNA. [pause] Mitosis copied each line faithfully. | B5 · B5-s09 |
+| **needed** | `mm_txt_B5-end-body2_en_building.mp3` | [warm] Only the line that makes her eggs is inherited. [pause] The tail clip just sampled the wrong Fig. | B5 · B5-s09 |
+| **needed** | `mm_txt_B6-R1-prompt_en_building.mp3` | [curious] What is a chimera? | B6 · B6-s01 (B6-R1) |
+| **needed** | `mm_txt_B6-R2-prompt_en_building.mp3` | [curious] Which of Fig's samples matched the hatchlings? | B6 · B6-s01 (B6-R2) |
+| **needed** | `mm_txt_B6-R3-prompt_en_building.mp3` | [curious] What does mitosis do to the DNA in each new cell? | B6 · B6-s01 (B6-R3) |
+| **needed** | `mm_txt_B6-board-body1_en_building.mp3` | [warm] Here is your evidence locker: [pause] the cards you filed in the lab and the tissue tests. | B6 · B6-s02 |
+| **needed** | `mm_txt_B6-board-body2_en_building.mp3` | [warm] A strong argument has a claim, the evidence for it, and the reasoning that links them. [pause] Then it answers the other side. | B6 · B6-s02 |
+| **needed** | `mm_txt_B6-G1-prompt_en_building.mp3` | [warm] Write your claim: is Fig the hatchlings' mother? [pause] Add two pieces of evidence from the locker. | B6 · B6-s03 (B6-G1) |
+| **needed** | `mm_txt_B6-G1-frame_en_building.mp3` | [encouraging] I claim that blank. One piece of evidence is blank. Another is blank. [pause] This shows blank because blank. | B6 · B6-s03 (B6-G1) sentence starter |
+| **needed** | `mm_txt_B6-I1-prompt_en_building.mp3` | [curious] Tomás still says someone swapped the eggs. [pause] Which evidence answers him best? | B6 · B6-s04 (B6-I1) |
+| **needed** | `mm_txt_B6-I1-opt-tank_en_building.mp3` | The hatchlings live in Fig's tank. | B6 · B6-s04 (B6-I1) choice |
+| **needed** | `mm_txt_B6-I1-fb-tank_en_building.mp3` | [gently] Being in Fig's tank doesn't show where the eggs came from. | B6 · B6-s04 (B6-I1) choice feedback |
+| **needed** | `mm_txt_mis-b-correlation-is-cause_en_building.mp3` | Two things that happen together must cause each other. | B6 · B6-s04 (B6-I1) mix-up |
+| **needed** | `mm_txt_B6-I1-opt-barty_en_building.mp3` | Barty is the father. | B6 · B6-s04 (B6-I1) choice |
+| **needed** | `mm_txt_B6-I1-fb-barty_en_building.mp3` | [gently] Barty matching says nothing about who the mother is. | B6 · B6-s04 (B6-I1) choice feedback |
+| **needed** | `mm_txt_mis-b-one-parent-proves-both_en_building.mp3` | If one parent matches, the other must too. | B6 · B6-s04 (B6-I1) mix-up |
+| **needed** | `mm_txt_B6-I1-opt-camera_en_building.mp3` | Camera footage shows Fig laying these eggs, and her egg cells match them. | B6 · B6-s04 (B6-I1) choice |
+| **needed** | `mm_txt_B6-I1-fb-camera_en_building.mp3` | [pleased] Direct evidence: [pause] she was seen laying them, and her egg-cell DNA matches. | B6 · B6-s04 (B6-I1) choice feedback |
+| **needed** | `mm_txt_B6-I1-opt-calm_en_building.mp3` | Fig doesn't seem upset. | B6 · B6-s04 (B6-I1) choice |
+| **needed** | `mm_txt_B6-I1-fb-calm_en_building.mp3` | [gently] How a newt acts isn't evidence about DNA. | B6 · B6-s04 (B6-I1) choice feedback |
+| **needed** | `mm_txt_mis-b-opinion-as-evidence_en_building.mp3` | How someone acts or seems counts as evidence. | B6 · B6-s04 (B6-I1) mix-up |
+| **needed** | `mm_txt_B6-I2-prompt_en_building.mp3` | [curious] Noor wonders if the DNA machine made a mistake. [pause] Which evidence answers her best? | B6 · B6-s05 (B6-I2) |
+| **needed** | `mm_txt_B6-I2-opt-repeat_en_building.mp3` | Ada ran the tests again and got the same bands each time. | B6 · B6-s05 (B6-I2) choice |
+| **needed** | `mm_txt_B6-I2-fb-repeat_en_building.mp3` | [pleased] Repeat runs that agree make a machine error very unlikely. | B6 · B6-s05 (B6-I2) choice feedback |
+| **needed** | `mm_txt_B6-I2-opt-surprise_en_building.mp3` | Surprising results are usually mistakes. | B6 · B6-s05 (B6-I2) choice |
+| **needed** | `mm_txt_B6-I2-fb-surprise_en_building.mp3` | [gently] A surprising result is a reason to repeat the test, not to throw it out. | B6 · B6-s05 (B6-I2) choice feedback |
+| **needed** | `mm_txt_B6-I2-opt-barty_en_building.mp3` | Barty's result was right, so Fig's must be too. | B6 · B6-s05 (B6-I2) choice |
+| **needed** | `mm_txt_B6-I2-fb-barty_en_building.mp3` | [gently] One result being right doesn't prove another one. | B6 · B6-s05 (B6-I2) choice feedback |
+| **needed** | `mm_txt_B6-I2-opt-careful_en_building.mp3` | Ada is very careful. | B6 · B6-s05 (B6-I2) choice |
+| **needed** | `mm_txt_B6-I2-fb-careful_en_building.mp3` | [gently] Trusting a person isn't the same as evidence; repeat runs are. | B6 · B6-s05 (B6-I2) choice feedback |
+| **needed** | `mm_txt_B6-I3-prompt_en_building.mp3` | [curious] Someone suggests that one mutation in Fig's eggs changed their DNA. [pause] Which evidence answers this best? | B6 · B6-s06 (B6-I3) |
+| **needed** | `mm_txt_B6-I3-opt-anything_en_building.mp3` | Mutations can change anything. | B6 · B6-s06 (B6-I3) choice |
+| **needed** | `mm_txt_B6-I3-fb-anything_en_building.mp3` | [gently] One copying error changes one place in the DNA, not a whole profile. | B6 · B6-s06 (B6-I3) choice feedback |
+| **needed** | `mm_txt_B6-I3-opt-regrew_en_building.mp3` | Fig's tail regrew, so her DNA must have changed. | B6 · B6-s06 (B6-I3) choice |
+| **needed** | `mm_txt_B6-I3-fb-regrew_en_building.mp3` | [gently] Regrowth is mitosis, which copies DNA exactly. | B6 · B6-s06 (B6-I3) choice feedback |
+| **needed** | `mm_txt_B6-I3-opt-five_en_building.mp3` | Hatchling two differs from Fig's tail in five of six markers: far too many for one copying error. | B6 · B6-s06 (B6-I3) choice |
+| **needed** | `mm_txt_B6-I3-fb-five_en_building.mp3` | [pleased] Five markers differ. [pause] One mutation can't explain that; a second cell line can. | B6 · B6-s06 (B6-I3) choice feedback |
+| **needed** | `mm_txt_B6-I3-opt-broken_en_building.mp3` | The test is broken. | B6 · B6-s06 (B6-I3) choice |
+| **needed** | `mm_txt_B6-I3-fb-broken_en_building.mp3` | [gently] Repeat runs gave the same bands. | B6 · B6-s06 (B6-I3) choice feedback |
+| **needed** | `mm_txt_B6-I4-prompt_en_building.mp3` | [curious] The hatchlings hatched in the same week the old UV lamp was repaired. [pause] Does that show the lamp changed their DNA? | B6 · B6-s07 (B6-I4) |
+| **needed** | `mm_txt_B6-I4-opt-yes_en_building.mp3` | Yes: they happened at the same time, so the lamp caused it. | B6 · B6-s07 (B6-I4) choice |
+| **needed** | `mm_txt_B6-I4-fb-yes_en_building.mp3` | [gently] Two things happening together doesn't show that one caused the other. | B6 · B6-s07 (B6-I4) choice feedback |
+| **needed** | `mm_txt_B6-I4-opt-no_en_building.mp3` | No: two things happening at the same time doesn't show that one caused the other. | B6 · B6-s07 (B6-I4) choice |
+| **needed** | `mm_txt_B6-I4-fb-no_en_building.mp3` | [pleased] You would need evidence of how the lamp could have changed them. [pause] The DNA tests already explain the result. | B6 · B6-s07 (B6-I4) choice feedback |
+| **needed** | `mm_txt_B6-I4-opt-never_en_building.mp3` | No: UV light can never change DNA. | B6 · B6-s07 (B6-I4) choice |
+| **needed** | `mm_txt_B6-I4-fb-never_en_building.mp3` | [gently] UV can change DNA (Tank three). [pause] The point is that timing alone isn't evidence. | B6 · B6-s07 (B6-I4) choice feedback |
+| **needed** | `mm_txt_B6-I4-opt-sat_en_building.mp3` | Yes: if the mother sat under the lamp, the young inherit it. | B6 · B6-s07 (B6-I4) choice |
+| **needed** | `mm_txt_B6-I4-fb-sat_en_building.mp3` | [gently] UV on her skin wouldn't reach the young, and timing alone shows nothing. | B6 · B6-s07 (B6-I4) choice feedback |
+| **needed** | `mm_txt_B6-C1-prompt_en_building.mp3` | [warm] Write your full argument for Tomás. [pause] Make a claim, give evidence, explain your reasoning, and answer at least one counterclaim. | B6 · B6-s08 (B6-C1) |
+| **needed** | `mm_txt_B6-end-body1_en_building.mp3` | [warm] Fig is the mother. [pause] Her egg-making cells carry a second cell line, and that is the DNA the hatchlings inherited. | B6 · B6-s09 |
+| **needed** | `mm_txt_B6-end-body2_en_building.mp3` | [warm] Good evidence answers each counterclaim directly: [pause] the camera, the repeat runs, and the number of differences. | B6 · B6-s09 |
+| **needed** | `mm_txt_B7-body1_en_building.mp3` | [warm] Fig's eggs come from the cell line of her fused twin. [pause] The hatchlings are, genetically, her twin's young: her nieces and nephews. | B7 · B7-s01 |
+| **needed** | `mm_txt_B7-cycle-body1_en_building.mp3` | [warm] Both halves are filled in now: [pause] meiosis makes eggs and sperm, fertilisation joins them, and mitosis builds the body. | B7 · B7-s02 |
+| **needed** | `mm_txt_B7-cycle-body2_en_building.mp3` | [warm] Chimeras happen in other animals too, including people. [pause] Usually nobody knows, unless a DNA test gives a surprising answer, just like Fig's. | B7 · B7-s02 |
+| **needed** | `mm_txt_B7-done-body1_en_building.mp3` | [encouraging] You solved the mystery with evidence: [pause] DNA profiles, the variation lab, and how meiosis and mitosis work. | B7 · B7-s03 |
+| **needed** | `mm_txt_B7-done-body2_en_building.mp3` | [encouraging] One last step: [pause] the checkpoint. | B7 · B7-s03 |
+| **needed** | `mm_txt_Bc-R1-prompt_en_building.mp3` | [curious] Why does a regrown tail have the same DNA as the rest of the newt? | B-check · Bc-s01 (Bc-R1) |
+| **needed** | `mm_txt_Bc-R2-prompt_en_building.mp3` | [curious] How many chromosomes does an egg get, compared with a body cell? | B-check · Bc-s01 (Bc-R2) |
+| **needed** | `mm_txt_Bc-R3-prompt_en_building.mp3` | [curious] Name three sources of new variation that can be passed on. | B-check · Bc-s01 (Bc-R3) |
+| **needed** | `mm_txt_Bcheck-intro-body1_en_building.mp3` | [encouraging] Five questions about new situations. [pause] Work on your own: hints, worked steps and sentence starters are off. | B-check · Bc-s02 |
+| **needed** | `mm_txt_Bcheck-intro-body2_en_building.mp3` | [encouraging] Your first answer counts. [pause] The last question asks you to make a claim; your teacher will read it. | B-check · Bc-s02 |
+| **needed** | `mm_txt_Bc-C1-prompt_en_building.mp3` | [warm] A frog's sperm-making cell has three pairs of chromosomes. [pause] Make one sperm. | B-check · Bc-s03 (Bc-C1) |
+| **needed** | `mm_txt_Bc-C1-fb-correct_en_building.mp3` | [pleased] One chromosome from each of the three pairs: [pause] half of the frog's six. | B-check · Bc-s03 (Bc-C1) feedback |
+| **needed** | `mm_txt_Bc-C2-prompt_en_building.mp3` | [curious] Two sisters (not twins) have the same parents, but their DNA is different. [pause] Why? | B-check · Bc-s04 (Bc-C2) |
+| **needed** | `mm_txt_Bc-C2-opt-shuffle_en_building.mp3` | Each came from a different egg and sperm, each with its own shuffle. | B-check · Bc-s04 (Bc-C2) choice |
+| **needed** | `mm_txt_Bc-C2-fb-shuffle_en_building.mp3` | [pleased] Meiosis makes every egg and sperm different. | B-check · Bc-s04 (Bc-C2) choice feedback |
+| **needed** | `mm_txt_Bc-C2-opt-older_en_building.mp3` | The older sister's DNA changed as she grew up. | B-check · Bc-s04 (Bc-C2) choice |
+| **needed** | `mm_txt_Bc-C2-fb-older_en_building.mp3` | [gently] Growing up uses mitosis, which copies DNA exactly. | B-check · Bc-s04 (Bc-C2) choice feedback |
+| **needed** | `mm_txt_Bc-C2-opt-same_en_building.mp3` | Their DNA is really the same; tests can't tell them apart. | B-check · Bc-s04 (Bc-C2) choice |
+| **needed** | `mm_txt_Bc-C2-fb-same_en_building.mp3` | [gently] Siblings get different mixes; tests can tell them apart. | B-check · Bc-s04 (Bc-C2) choice feedback |
+| **needed** | `mm_txt_Bc-C2-opt-blend_en_building.mp3` | Each got a different blend of their parents, like paint. | B-check · Bc-s04 (Bc-C2) choice |
+| **needed** | `mm_txt_Bc-C2-fb-blend_en_building.mp3` | [gently] Children get whole chromosomes, one from each pair, not a blend. | B-check · Bc-s04 (Bc-C2) choice feedback |
+| **needed** | `mm_txt_Bc-C3-prompt_en_building.mp3` | [curious] Which of these changes could a lizard pass on to its young? | B-check · Bc-s05 (Bc-C3) |
+| **needed** | `mm_txt_Bc-C3-item-tail_en_building.mp3` | A tail broken off by a cat. | B-check · Bc-s05 (Bc-C3) card |
+| **needed** | `mm_txt_Bc-C3-item-egg_en_building.mp3` | A copying error in a cell that makes eggs. | B-check · Bc-s05 (Bc-C3) card |
+| **needed** | `mm_txt_Bc-C3-item-sun_en_building.mp3` | A sunburned patch of skin. | B-check · Bc-s05 (Bc-C3) card |
+| **needed** | `mm_txt_Bc-C3-item-mix_en_building.mp3` | A new mix of chromosomes made in meiosis. | B-check · Bc-s05 (Bc-C3) card |
+| **needed** | `mm_txt_Bc-C3-fb-correct_en_building.mp3` | [pleased] All sorted: [pause] only changes in egg- or sperm-making cells, and new mixes, reach the young. | B-check · Bc-s05 (Bc-C3) feedback |
+| **needed** | `mm_txt_Bc-C4-prompt_en_building.mp3` | [curious] A chemical in a pond damages the DNA in a newt's sperm-making cells. [pause] Could the change appear in its young? | B-check · Bc-s06 (Bc-C4) |
+| **needed** | `mm_txt_Bc-C4-opt-yes_en_building.mp3` | Yes: sperm-making cells make the sperm that become the young. | B-check · Bc-s06 (Bc-C4) choice |
+| **needed** | `mm_txt_Bc-C4-fb-yes_en_building.mp3` | [pleased] A change in sperm-making cells can be carried into a sperm and then the young. | B-check · Bc-s06 (Bc-C4) choice feedback |
+| **needed** | `mm_txt_Bc-C4-opt-never_en_building.mp3` | No: changes caused by the environment are never inherited. | B-check · Bc-s06 (Bc-C4) choice |
+| **needed** | `mm_txt_Bc-C4-fb-never_en_building.mp3` | [gently] The cause doesn't matter; where the change happens does. | B-check · Bc-s06 (Bc-C4) choice feedback |
+| **needed** | `mm_txt_Bc-C4-opt-long_en_building.mp3` | Only if the newt lives in the pond for a long time. | B-check · Bc-s06 (Bc-C4) choice |
+| **needed** | `mm_txt_Bc-C4-fb-long_en_building.mp3` | [gently] Time in the pond doesn't decide it; whether the sperm carry the change does. | B-check · Bc-s06 (Bc-C4) choice feedback |
+| **needed** | `mm_txt_Bc-C4-opt-skin_en_building.mp3` | Yes, and so will every change in its skin. | B-check · Bc-s06 (Bc-C4) choice |
+| **needed** | `mm_txt_Bc-C4-fb-skin_en_building.mp3` | [gently] Skin changes stay in the newt. | B-check · Bc-s06 (Bc-C4) choice feedback |
+| **needed** | `mm_txt_Bc-C5-prompt_en_building.mp3` | [warm] Two brown rabbits have eight young. One is white, and no rabbit in the family has ever been white. [pause] Make a claim about where this new variation came from, and support it with evidence and reasoning. | B-check · Bc-s07 (Bc-C5) |
+| **needed** | `mm_txt_Bcheck-end-body1_en_building.mp3` | [warm] You explained where new, inheritable variation comes from: [pause] new mixes in meiosis, copying errors, and changes caused by the environment in egg- or sperm-making cells. | B-check · Bc-s08 |
+| **needed** | `mm_txt_Bcheck-end-body2_en_building.mp3` | [warm] And you know why a change has to be in those cells to be passed on. | B-check · Bc-s08 |
 
 ## Panel text: Beginning
 
@@ -718,6 +1042,238 @@ Building lines are written for ElevenLabs v3 with direction tags (from scripts/r
 | **needed** | `mm_txt_A-end-body2_en_beginning.mp3` | The grey part comes next, in Part B. | A-end · Aend-s01 |
 | **needed** | `mm_txt_A-end-done-body1_en_beginning.mp3` | Every cell in Fig has the same DNA. | A-end · Aend-s02 |
 | **needed** | `mm_txt_A-end-done-body2_en_beginning.mp3` | In Part B: a surprise about Fig's babies. | A-end · Aend-s02 |
+| **needed** | `mm_txt_B0-title-body_en_beginning.mp3` | Fig has babies. A DNA test has a surprise. | B0 · B0-s01 |
+| **needed** | `mm_txt_B0-story1-body_en_beginning.mp3` | Barty and Fig are the parents. | B0 · B0-s02 |
+| **needed** | `mm_txt_B0-story2-body_en_beginning.mp3` | A baby shares bands with each parent. | B0 · B0-s03 |
+| **needed** | `mm_txt_B0-T1-prompt_en_beginning.mp3` | Mark the bands that match Barty. | B0 · B0-s04 (B0-T1) |
+| **needed** | `mm_txt_B0-T1-step1_en_beginning.mp3` | Find Hatchling 2 and Barty. | B0 · B0-s04 (B0-T1) worked step |
+| **needed** | `mm_txt_B0-T1-step2_en_beginning.mp3` | Marker 1: the lower band matches Barty. | B0 · B0-s04 (B0-T1) worked step |
+| **needed** | `mm_txt_B0-T1-step3_en_beginning.mp3` | Check every marker. | B0 · B0-s04 (B0-T1) worked step |
+| **needed** | `mm_txt_B0-T1-hint1_en_beginning.mp3` | One marker at a time. | B0 · B0-s04 (B0-T1) hint |
+| **needed** | `mm_txt_B0-T1-hint2_en_beginning.mp3` | There are six matches. | B0 · B0-s04 (B0-T1) hint |
+| **needed** | `mm_txt_B0-T1-fb-correct_en_beginning.mp3` | Barty is the father. | B0 · B0-s04 (B0-T1) feedback |
+| **needed** | `mm_txt_gel-fb-missed_en_beginning.mp3` | Some matches are missing. | B0 · B0-s04 (B0-T1) feedback |
+| **needed** | `mm_txt_gel-fb-extra_en_beginning.mp3` | One band does not match. | B0 · B0-s04 (B0-T1) feedback |
+| **needed** | `mm_txt_B0-T2-prompt_en_beginning.mp3` | Mark the bands that match Fig. | B0 · B0-s05 (B0-T2) |
+| **needed** | `mm_txt_B0-T2-hint1_en_beginning.mp3` | Compare with Fig. | B0 · B0-s05 (B0-T2) hint |
+| **needed** | `mm_txt_B0-T2-fb-correct_en_beginning.mp3` | Only one band matches Fig. | B0 · B0-s05 (B0-T2) feedback |
+| **needed** | `mm_txt_B0-T3-prompt_en_beginning.mp3` | Five bands match nobody. Where are they from? | B0 · B0-s06 (B0-T3) |
+| **needed** | `mm_txt_B0-T3-fb-mother_en_beginning.mp3` | From the mother. | B0 · B0-s06 (B0-T3) choice feedback |
+| **needed** | `mm_txt_B0-T3-fb-itself_en_beginning.mp3` | DNA comes from the parents. | B0 · B0-s06 (B0-T3) choice feedback |
+| **needed** | `mm_txt_B0-T3-fb-barty_en_beginning.mp3` | Barty's bands already match. | B0 · B0-s06 (B0-T3) choice feedback |
+| **needed** | `mm_txt_B0-T3-fb-broken_en_beginning.mp3` | The test worked for Barty. | B0 · B0-s06 (B0-T3) choice feedback |
+| **needed** | `mm_txt_B0-P1-prompt_en_beginning.mp3` | Why does the test say Fig is not the mother? | B0 · B0-s07 (B0-P1) |
+| **needed** | `mm_txt_B0-P1-frame_en_beginning.mp3` | I think ___. | B0 · B0-s07 (B0-P1) sentence starter |
+| **needed** | `mm_txt_B1-body_en_beginning.mp3` | What do you know already? | B1 · B1-s01 |
+| **needed** | `mm_txt_B1-R1-prompt_en_beginning.mp3` | What does mitosis make? | B1 · B1-s02 (B1-R1) |
+| **needed** | `mm_txt_B1-R2-prompt_en_beginning.mp3` | Where does each chromosome of a pair come from? | B1 · B1-s02 (B1-R2) |
+| **needed** | `mm_txt_B1-R3-prompt_en_beginning.mp3` | One X: how many DNA molecules? | B1 · B1-s02 (B1-R3) |
+| **needed** | `mm_txt_B1-R4-prompt_en_beginning.mp3` | Tail cell and skin cell: same DNA? | B1 · B1-s02 (B1-R4) |
+| **needed** | `mm_txt_B1-end-body1_en_beginning.mp3` | Body cells have the same DNA. Babies get half from each parent. | B1 · B1-s03 |
+| **needed** | `mm_txt_B1-end-body2_en_beginning.mp3` | But Fig does not match. Why? | B1 · B1-s03 |
+| **needed** | `mm_txt_B2-R1-prompt_en_beginning.mp3` | How much DNA came from Barty? | B2 · B2-s01 (B2-R1) |
+| **needed** | `mm_txt_B2-R2-prompt_en_beginning.mp3` | Mitosis: same number or half? | B2 · B2-s01 (B2-R2) |
+| **needed** | `mm_txt_B2-R3-prompt_en_beginning.mp3` | What is a pair? | B2 · B2-s01 (B2-R3) |
+| **needed** | `mm_txt_B2-meiosis-body1_en_beginning.mp3` | The cell divides two times. | B2 · B2-s02 |
+| **needed** | `mm_txt_B2-meiosis-body2_en_beginning.mp3` | 4 chromosomes become 2. | B2 · B2-s02 |
+| **needed** | `mm_txt_B2-G1-prompt_en_beginning.mp3` | Make one egg. | B2 · B2-s03 (B2-G1) |
+| **needed** | `mm_txt_B2-G1-step1_en_beginning.mp3` | Pair 1: pick one. | B2 · B2-s03 (B2-G1) worked step |
+| **needed** | `mm_txt_B2-G1-step2_en_beginning.mp3` | Pair 2: pick one. | B2 · B2-s03 (B2-G1) worked step |
+| **needed** | `mm_txt_B2-G1-step3_en_beginning.mp3` | One from each pair: 2 in all. | B2 · B2-s03 (B2-G1) worked step |
+| **needed** | `mm_txt_B2-G1-hint1_en_beginning.mp3` | One from each pair. | B2 · B2-s03 (B2-G1) hint |
+| **needed** | `mm_txt_B2-G1-hint2_en_beginning.mp3` | An egg has 2. | B2 · B2-s03 (B2-G1) hint |
+| **needed** | `mm_txt_B2-G1-fb-correct_en_beginning.mp3` | Yes. 2 chromosomes. | B2 · B2-s03 (B2-G1) feedback |
+| **needed** | `mm_txt_gamete-fb-full-set_en_beginning.mp3` | That is all of them. Take half. | B2 · B2-s03 (B2-G1) feedback |
+| **needed** | `mm_txt_gamete-fb-both-of-pair_en_beginning.mp3` | One from each pair. | B2 · B2-s03 (B2-G1) feedback |
+| **needed** | `mm_txt_gamete-fb-missing-pair_en_beginning.mp3` | Every pair sends one. | B2 · B2-s03 (B2-G1) feedback |
+| **needed** | `mm_txt_B2-I1-prompt_en_beginning.mp3` | Make one sperm. | B2 · B2-s04 (B2-I1) |
+| **needed** | `mm_txt_B2-I1-hint1_en_beginning.mp3` | One from each pair. | B2 · B2-s04 (B2-I1) hint |
+| **needed** | `mm_txt_B2-I1-fb-correct_en_beginning.mp3` | Yes. Half of the set. | B2 · B2-s04 (B2-I1) feedback |
+| **needed** | `mm_txt_B2-shuffle-body1_en_beginning.mp3` | Chance decides which chromosomes go in. | B2 · B2-s05 |
+| **needed** | `mm_txt_B2-shuffle-body2_en_beginning.mp3` | Partners swap pieces. | B2 · B2-s05 |
+| **needed** | `mm_txt_B2-I2-prompt_en_beginning.mp3` | Make all the different eggs. | B2 · B2-s06 (B2-I2) |
+| **needed** | `mm_txt_B2-I2-hint1_en_beginning.mp3` | Change one pair at a time. | B2 · B2-s06 (B2-I2) hint |
+| **needed** | `mm_txt_B2-I2-hint2_en_beginning.mp3` | 2 choices and 2 choices. | B2 · B2-s06 (B2-I2) hint |
+| **needed** | `mm_txt_B2-I2-fb-correct_en_beginning.mp3` | 4 different eggs. | B2 · B2-s06 (B2-I2) feedback |
+| **needed** | `mm_txt_gamete-fb-duplicate-egg_en_beginning.mp3` | You made this one. Try another. | B2 · B2-s06 (B2-I2) feedback |
+| **needed** | `mm_txt_B2-I3-prompt_en_beginning.mp3` | After swapping, how many kinds of chromosome 1? | B2 · B2-s07 (B2-I3) |
+| **needed** | `mm_txt_B2-I3-fb-two_en_beginning.mp3` | Swapping makes new ones. | B2 · B2-s07 (B2-I3) choice feedback |
+| **needed** | `mm_txt_B2-I3-fb-four_en_beginning.mp3` | Yes. 4 kinds. | B2 · B2-s07 (B2-I3) choice feedback |
+| **needed** | `mm_txt_B2-I3-fb-one_en_beginning.mp3` | There is more than one kind. | B2 · B2-s07 (B2-I3) choice feedback |
+| **needed** | `mm_txt_B2-I3-fb-new_en_beginning.mp3` | No new genes. It mixes them. | B2 · B2-s07 (B2-I3) choice feedback |
+| **needed** | `mm_txt_B2-I3gf-prompt_en_beginning.mp3` | With 12 pairs, how many kinds of eggs? | B2 · B2-s07 (B2-I3gf, Go further) |
+| **needed** | `mm_txt_B2-I3gf-fb-24_en_beginning.mp3` | Multiply, don't add. | B2 · B2-s07 (B2-I3gf, Go further) choice feedback |
+| **needed** | `mm_txt_B2-I3gf-fb-4096_en_beginning.mp3` | Yes. 4,096. | B2 · B2-s07 (B2-I3gf, Go further) choice feedback |
+| **needed** | `mm_txt_B2-I3gf-fb-12_en_beginning.mp3` | Every egg has all 12 pairs. | B2 · B2-s07 (B2-I3gf, Go further) choice feedback |
+| **needed** | `mm_txt_B2-fert-body1_en_beginning.mp3` | Egg plus sperm: 4 chromosomes. | B2 · B2-s08 |
+| **needed** | `mm_txt_B2-fert-body2_en_beginning.mp3` | Each baby is different. | B2 · B2-s08 |
+| **needed** | `mm_txt_B2-C1-prompt_en_beginning.mp3` | Make one moth egg. | B2 · B2-s09 (B2-C1) |
+| **needed** | `mm_txt_B2-C1-fb-correct_en_beginning.mp3` | Yes. 3 chromosomes. | B2 · B2-s09 (B2-C1) feedback |
+| **needed** | `mm_txt_B2-C2-prompt_en_beginning.mp3` | Two kittens look different. Why? | B2 · B2-s10 (B2-C2) |
+| **needed** | `mm_txt_B2-C2-fb-blend_en_beginning.mp3` | They get chromosomes, not a blend. | B2 · B2-s10 (B2-C2) choice feedback |
+| **needed** | `mm_txt_B2-C2-fb-shuffle_en_beginning.mp3` | Yes. Different eggs and sperm. | B2 · B2-s10 (B2-C2) choice feedback |
+| **needed** | `mm_txt_B2-C2-fb-same_en_beginning.mp3` | They got different chromosomes. | B2 · B2-s10 (B2-C2) choice feedback |
+| **needed** | `mm_txt_B2-C2-fb-copy_en_beginning.mp3` | Meiosis mixes. It does not copy. | B2 · B2-s10 (B2-C2) choice feedback |
+| **needed** | `mm_txt_B2-end-body1_en_beginning.mp3` | Meiosis halves and mixes. | B2 · B2-s11 |
+| **needed** | `mm_txt_B2-end-body2_en_beginning.mp3` | New mixes make babies different. | B2 · B2-s11 |
+| **needed** | `mm_txt_B3-R1-prompt_en_beginning.mp3` | How many chromosomes in an egg? | B3 · B3-s01 (B3-R1) |
+| **needed** | `mm_txt_B3-R2-prompt_en_beginning.mp3` | Why are eggs different? | B3 · B3-s01 (B3-R2) |
+| **needed** | `mm_txt_B3-R3-prompt_en_beginning.mp3` | What happens before a cell divides? | B3 · B3-s01 (B3-R3) |
+| **needed** | `mm_txt_B3-P1-prompt_en_beginning.mp3` | How will the new cells be different? | B3 · B3-s02 (B3-P1) |
+| **needed** | `mm_txt_B3-P1-frame_en_beginning.mp3` | Mitosis ___. Meiosis ___. | B3 · B3-s02 (B3-P1) sentence starter |
+| **needed** | `mm_txt_B3-side-body1_en_beginning.mp3` | Watch both sides. | B3 · B3-s03 |
+| **needed** | `mm_txt_B3-side-body2_en_beginning.mp3` | Mitosis divides once. Meiosis divides two times. | B3 · B3-s03 |
+| **needed** | `mm_txt_B3-G1-prompt_en_beginning.mp3` | Mitosis, meiosis, or both? | B3 · B3-s04 (B3-G1) |
+| **needed** | `mm_txt_B3-G1-hint1_en_beginning.mp3` | Watch the animation again. | B3 · B3-s04 (B3-G1) hint |
+| **needed** | `mm_txt_B3-G1-hint2_en_beginning.mp3` | Both copy first. | B3 · B3-s04 (B3-G1) hint |
+| **needed** | `mm_txt_B3-G1-item-two_en_beginning.mp3` | Makes 2 cells | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-four_en_beginning.mp3` | Makes 4 cells | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-same_en_beginning.mp3` | New cells are the same as the parent | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-half_en_beginning.mp3` | Each new cell gets half | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-copy_en_beginning.mp3` | Chromosomes are copied first | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-swap_en_beginning.mp3` | Partners swap pieces | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-body_en_beginning.mp3` | Builds the body | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-item-eggs_en_beginning.mp3` | Makes eggs and sperm | B3 · B3-s04 (B3-G1) card |
+| **needed** | `mm_txt_B3-G1-fb-correct_en_beginning.mp3` | All correct. | B3 · B3-s04 (B3-G1) feedback |
+| **needed** | `mm_txt_B3-I1-prompt_en_beginning.mp3` | 6 chromosomes. After meiosis, how many in each cell? | B3 · B3-s05 (B3-I1) |
+| **needed** | `mm_txt_B3-I1-fb-six_en_beginning.mp3` | Meiosis halves. | B3 · B3-s05 (B3-I1) choice feedback |
+| **needed** | `mm_txt_B3-I1-fb-three_en_beginning.mp3` | Yes. 3. | B3 · B3-s05 (B3-I1) choice feedback |
+| **needed** | `mm_txt_B3-I1-fb-twelve_en_beginning.mp3` | An X is still 1 chromosome. | B3 · B3-s05 (B3-I1) choice feedback |
+| **needed** | `mm_txt_B3-I1-fb-two_en_beginning.mp3` | One from each of 3 pairs. | B3 · B3-s05 (B3-I1) choice feedback |
+| **needed** | `mm_txt_B3-C1-prompt_en_beginning.mp3` | Skin cell and egg cell. Which is true? | B3 · B3-s06 (B3-C1) |
+| **needed** | `mm_txt_B3-C1-fb-both-same_en_beginning.mp3` | Eggs are different. | B3 · B3-s06 (B3-C1) choice feedback |
+| **needed** | `mm_txt_B3-C1-fb-both-half_en_beginning.mp3` | Skin cells keep all of them. | B3 · B3-s06 (B3-C1) choice feedback |
+| **needed** | `mm_txt_B3-C1-fb-right_en_beginning.mp3` | Yes. | B3 · B3-s06 (B3-C1) choice feedback |
+| **needed** | `mm_txt_B3-C1-fb-swapped_en_beginning.mp3` | It is the other way round. | B3 · B3-s06 (B3-C1) choice feedback |
+| **needed** | `mm_txt_B3-C2-prompt_en_beginning.mp3` | How is meiosis different from mitosis? | B3 · B3-s07 (B3-C2) |
+| **needed** | `mm_txt_B3-end-body1_en_beginning.mp3` | Mitosis: same cells. Meiosis: different cells. | B3 · B3-s08 |
+| **needed** | `mm_txt_B3-end-body2_en_beginning.mp3` | Both copy first. | B3 · B3-s08 |
+| **needed** | `mm_txt_B4-R1-prompt_en_beginning.mp3` | What does meiosis make? | B4 · B4-s01 (B4-R1) |
+| **needed** | `mm_txt_B4-R2-prompt_en_beginning.mp3` | Who matched Hatchling 2? | B4 · B4-s01 (B4-R2) |
+| **needed** | `mm_txt_B4-R3-prompt_en_beginning.mp3` | Why do bone and skin cells have the same DNA? | B4 · B4-s01 (B4-R3) |
+| **needed** | `mm_txt_B4-intro-body_en_beginning.mp3` | Three tanks, three kinds of change. | B4 · B4-s02 |
+| **needed** | `mm_txt_B4-L1-prompt_en_beginning.mp3` | Run the three tanks. | B4 · B4-s03 (B4-L1) |
+| **needed** | `mm_txt_B4-L1-hint1_en_beginning.mp3` | Find the star. Follow the arrows. | B4 · B4-s03 (B4-L1) hint |
+| **needed** | `mm_txt_B4-card-shuffle_en_beginning.mp3` | Tank 1: new mixes. Passed on. | B4 · B4-s03 (B4-L1) evidence card |
+| **needed** | `mm_txt_B4-card-copy_en_beginning.mp3` | Tank 2: copy error in an egg cell. Passed on. | B4 · B4-s03 (B4-L1) evidence card |
+| **needed** | `mm_txt_B4-card-uv_en_beginning.mp3` | Tank 3: UV changed skin. Not passed on. | B4 · B4-s03 (B4-L1) evidence card |
+| **needed** | `mm_txt_B4-lab-fb-done_en_beginning.mp3` | All three tanks are done. | B4 · B4-s03 (B4-L1) feedback |
+| **needed** | `mm_txt_B4-rule-body1_en_beginning.mp3` | Skin changes stay in the newt. | B4 · B4-s04 |
+| **needed** | `mm_txt_B4-rule-body2_en_beginning.mp3` | Changes in egg cells can go to the babies. | B4 · B4-s04 |
+| **needed** | `mm_txt_B4-G1-prompt_en_beginning.mp3` | Can the babies get this change? | B4 · B4-s05 (B4-G1) |
+| **needed** | `mm_txt_B4-G1-hint1_en_beginning.mp3` | Is it in an egg or sperm cell? | B4 · B4-s05 (B4-G1) hint |
+| **needed** | `mm_txt_B4-G1-hint2_en_beginning.mp3` | Where did it happen? | B4 · B4-s05 (B4-G1) hint |
+| **needed** | `mm_txt_B4-G1-item-mix_en_beginning.mp3` | A new mix in an egg | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_B4-G1-item-sperm_en_beginning.mp3` | A copy error in a sperm cell | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_B4-G1-item-uv_en_beginning.mp3` | Skin changed by UV light | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_B4-G1-item-tail_en_beginning.mp3` | A copy error in a tail cell | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_B4-G1-item-legs_en_beginning.mp3` | Strong legs from swimming | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_B4-G1-item-uvgerm_en_beginning.mp3` | UV damage to an egg cell | B4 · B4-s05 (B4-G1) card |
+| **needed** | `mm_txt_B4-G1-fb-correct_en_beginning.mp3` | All correct. | B4 · B4-s05 (B4-G1) feedback |
+| **needed** | `mm_txt_B4-I1-prompt_en_beginning.mp3` | Sun changed a fisher's skin. Will the children get it? | B4 · B4-s06 (B4-I1) |
+| **needed** | `mm_txt_B4-I1-fb-all_en_beginning.mp3` | Skin changes are not passed on. | B4 · B4-s06 (B4-I1) choice feedback |
+| **needed** | `mm_txt_B4-I1-fb-long_en_beginning.mp3` | Skin does not make eggs or sperm. | B4 · B4-s06 (B4-I1) choice feedback |
+| **needed** | `mm_txt_B4-I1-fb-skin_en_beginning.mp3` | Yes. It stays in the skin. | B4 · B4-s06 (B4-I1) choice feedback |
+| **needed** | `mm_txt_B4-I1-fb-never_en_beginning.mp3` | Right, but the reason is wrong. | B4 · B4-s06 (B4-I1) choice feedback |
+| **needed** | `mm_txt_B4-C1-prompt_en_beginning.mp3` | A mouse has curly fur. Its parents do not. Why? | B4 · B4-s07 (B4-C1) |
+| **needed** | `mm_txt_B4-C1-fb-learned_en_beginning.mp3` | Changes in life are not passed on. | B4 · B4-s07 (B4-C1) choice feedback |
+| **needed** | `mm_txt_B4-C1-fb-blend_en_beginning.mp3` | Traits do not blend. | B4 · B4-s07 (B4-C1) choice feedback |
+| **needed** | `mm_txt_B4-C1-fb-copy_en_beginning.mp3` | Yes. A copy error. | B4 · B4-s07 (B4-C1) choice feedback |
+| **needed** | `mm_txt_B4-C1-fb-skin_en_beginning.mp3` | Skin changes stay. | B4 · B4-s07 (B4-C1) choice feedback |
+| **needed** | `mm_txt_B4-end-body1_en_beginning.mp3` | Three kinds of change can go to babies. | B4 · B4-s08 |
+| **needed** | `mm_txt_B4-end-body2_en_beginning.mp3` | The change must be in egg or sperm cells. | B4 · B4-s08 |
+| **needed** | `mm_txt_B5-R1-prompt_en_beginning.mp3` | Which changes go to the babies? | B5 · B5-s01 (B5-R1) |
+| **needed** | `mm_txt_B5-R2-prompt_en_beginning.mp3` | What does each egg get? | B5 · B5-s01 (B5-R2) |
+| **needed** | `mm_txt_B5-R3-prompt_en_beginning.mp3` | Does mitosis copy DNA exactly? | B5 · B5-s01 (B5-R3) |
+| **needed** | `mm_txt_B5-night-body_en_beginning.mp3` | Let's test more of Fig. | B5 · B5-s02 |
+| **needed** | `mm_txt_B5-T1-prompt_en_beginning.mp3` | Test parts of Fig. | B5 · B5-s03 (B5-T1) |
+| **needed** | `mm_txt_B5-T1-hint1_en_beginning.mp3` | Test the egg cells and one more. | B5 · B5-s03 (B5-T1) hint |
+| **needed** | `mm_txt_B5-T1-fb-correct_en_beginning.mp3` | The egg cells match. | B5 · B5-s03 (B5-T1) feedback |
+| **needed** | `mm_txt_gel-result-figTail_en_beginning.mp3` | Tail: no match. | B5 · B5-s03 (B5-T1) test result |
+| **needed** | `mm_txt_gel-result-figSkin_en_beginning.mp3` | Skin: no match. | B5 · B5-s03 (B5-T1) test result |
+| **needed** | `mm_txt_gel-result-figBlood_en_beginning.mp3` | Blood: no match. | B5 · B5-s03 (B5-T1) test result |
+| **needed** | `mm_txt_gel-result-figEggs_en_beginning.mp3` | Egg cells: match! | B5 · B5-s03 (B5-T1) test result |
+| **needed** | `mm_txt_B5-I1-prompt_en_beginning.mp3` | Which sample matches the mother? | B5 · B5-s04 (B5-I1) |
+| **needed** | `mm_txt_B5-I1-fb-tail_en_beginning.mp3` | The tail does not match. | B5 · B5-s04 (B5-I1) choice feedback |
+| **needed** | `mm_txt_B5-I1-fb-blood_en_beginning.mp3` | Blood does not match. | B5 · B5-s04 (B5-I1) choice feedback |
+| **needed** | `mm_txt_B5-I1-fb-eggs_en_beginning.mp3` | Yes. The egg cells. | B5 · B5-s04 (B5-I1) choice feedback |
+| **needed** | `mm_txt_B5-I1-fb-none_en_beginning.mp3` | Fig's eggs match. | B5 · B5-s04 (B5-I1) choice feedback |
+| **needed** | `mm_txt_B5-reveal-body_en_beginning.mp3` | Fig has two kinds of DNA. | B5 · B5-s05 |
+| **needed** | `mm_txt_B5-lines-body1_en_beginning.mp3` | Two embryos joined. | B5 · B5-s06 |
+| **needed** | `mm_txt_B5-lines-body2_en_beginning.mp3` | One line made the body. One made the eggs. | B5 · B5-s06 |
+| **needed** | `mm_txt_B5-I2-prompt_en_beginning.mp3` | Why did the tail test say "not the mother"? | B5 · B5-s07 (B5-I2) |
+| **needed** | `mm_txt_B5-I2-fb-machine_en_beginning.mp3` | The test was right. | B5 · B5-s07 (B5-I2) choice feedback |
+| **needed** | `mm_txt_B5-I2-fb-mutation_en_beginning.mp3` | Too many differences. | B5 · B5-s07 (B5-I2) choice feedback |
+| **needed** | `mm_txt_B5-I2-fb-lines_en_beginning.mp3` | Yes. Two cell lines. | B5 · B5-s07 (B5-I2) choice feedback |
+| **needed** | `mm_txt_B5-I2-fb-swap_en_beginning.mp3` | Her eggs match. | B5 · B5-s07 (B5-I2) choice feedback |
+| **needed** | `mm_txt_B5-C1-prompt_en_beginning.mp3` | A chimera cat. Which sample shows what kittens get? | B5 · B5-s08 (B5-C1) |
+| **needed** | `mm_txt_B5-C1-fb-fur_en_beginning.mp3` | Not the fur. | B5 · B5-s08 (B5-C1) choice feedback |
+| **needed** | `mm_txt_B5-C1-fb-blood_en_beginning.mp3` | Not the blood. | B5 · B5-s08 (B5-C1) choice feedback |
+| **needed** | `mm_txt_B5-C1-fb-eggs_en_beginning.mp3` | Yes. Egg cells. | B5 · B5-s08 (B5-C1) choice feedback |
+| **needed** | `mm_txt_B5-C1-fb-any_en_beginning.mp3` | A chimera has two kinds of DNA. | B5 · B5-s08 (B5-C1) choice feedback |
+| **needed** | `mm_txt_B5-end-body1_en_beginning.mp3` | Fig is a chimera. | B5 · B5-s09 |
+| **needed** | `mm_txt_B5-end-body2_en_beginning.mp3` | Only the egg cells go to the babies. | B5 · B5-s09 |
+| **needed** | `mm_txt_B6-R1-prompt_en_beginning.mp3` | What is a chimera? | B6 · B6-s01 (B6-R1) |
+| **needed** | `mm_txt_B6-R2-prompt_en_beginning.mp3` | Which sample matched? | B6 · B6-s01 (B6-R2) |
+| **needed** | `mm_txt_B6-R3-prompt_en_beginning.mp3` | Mitosis and DNA? | B6 · B6-s01 (B6-R3) |
+| **needed** | `mm_txt_B6-board-body1_en_beginning.mp3` | Here is your evidence. | B6 · B6-s02 |
+| **needed** | `mm_txt_B6-board-body2_en_beginning.mp3` | Claim. Evidence. Reason. | B6 · B6-s02 |
+| **needed** | `mm_txt_B6-G1-prompt_en_beginning.mp3` | Is Fig the mother? Give two pieces of evidence. | B6 · B6-s03 (B6-G1) |
+| **needed** | `mm_txt_B6-G1-frame_en_beginning.mp3` | I claim ___. My evidence is ___. | B6 · B6-s03 (B6-G1) sentence starter |
+| **needed** | `mm_txt_B6-I1-prompt_en_beginning.mp3` | Tomás says the eggs were swapped. Which evidence answers him? | B6 · B6-s04 (B6-I1) |
+| **needed** | `mm_txt_B6-I1-fb-tank_en_beginning.mp3` | Where they live is not proof. | B6 · B6-s04 (B6-I1) choice feedback |
+| **needed** | `mm_txt_B6-I1-fb-barty_en_beginning.mp3` | That is about the father. | B6 · B6-s04 (B6-I1) choice feedback |
+| **needed** | `mm_txt_B6-I1-fb-camera_en_beginning.mp3` | Yes. Camera and DNA. | B6 · B6-s04 (B6-I1) choice feedback |
+| **needed** | `mm_txt_B6-I1-fb-calm_en_beginning.mp3` | That is not evidence. | B6 · B6-s04 (B6-I1) choice feedback |
+| **needed** | `mm_txt_B6-I2-prompt_en_beginning.mp3` | Noor thinks the machine was wrong. Which evidence answers her? | B6 · B6-s05 (B6-I2) |
+| **needed** | `mm_txt_B6-I2-fb-repeat_en_beginning.mp3` | Yes. Same result every time. | B6 · B6-s05 (B6-I2) choice feedback |
+| **needed** | `mm_txt_B6-I2-fb-surprise_en_beginning.mp3` | Surprising is not wrong. | B6 · B6-s05 (B6-I2) choice feedback |
+| **needed** | `mm_txt_B6-I2-fb-barty_en_beginning.mp3` | Each result needs its own check. | B6 · B6-s05 (B6-I2) choice feedback |
+| **needed** | `mm_txt_B6-I2-fb-careful_en_beginning.mp3` | Look for data. | B6 · B6-s05 (B6-I2) choice feedback |
+| **needed** | `mm_txt_B6-I3-prompt_en_beginning.mp3` | Did one mutation change Fig's eggs? | B6 · B6-s06 (B6-I3) |
+| **needed** | `mm_txt_B6-I3-fb-anything_en_beginning.mp3` | One error is small. | B6 · B6-s06 (B6-I3) choice feedback |
+| **needed** | `mm_txt_B6-I3-fb-regrew_en_beginning.mp3` | Mitosis copies exactly. | B6 · B6-s06 (B6-I3) choice feedback |
+| **needed** | `mm_txt_B6-I3-fb-five_en_beginning.mp3` | Yes. Too many differences. | B6 · B6-s06 (B6-I3) choice feedback |
+| **needed** | `mm_txt_B6-I3-fb-broken_en_beginning.mp3` | The test was checked. | B6 · B6-s06 (B6-I3) choice feedback |
+| **needed** | `mm_txt_B6-I4-prompt_en_beginning.mp3` | The lamp was fixed the same week. Did it change their DNA? | B6 · B6-s07 (B6-I4) |
+| **needed** | `mm_txt_B6-I4-fb-yes_en_beginning.mp3` | Same time is not cause. | B6 · B6-s07 (B6-I4) choice feedback |
+| **needed** | `mm_txt_B6-I4-fb-no_en_beginning.mp3` | Yes. Same time is not proof. | B6 · B6-s07 (B6-I4) choice feedback |
+| **needed** | `mm_txt_B6-I4-fb-never_en_beginning.mp3` | UV can change DNA. | B6 · B6-s07 (B6-I4) choice feedback |
+| **needed** | `mm_txt_B6-I4-fb-sat_en_beginning.mp3` | Skin changes stay. | B6 · B6-s07 (B6-I4) choice feedback |
+| **needed** | `mm_txt_B6-C1-prompt_en_beginning.mp3` | Write your argument for Tomás. | B6 · B6-s08 (B6-C1) |
+| **needed** | `mm_txt_B6-end-body1_en_beginning.mp3` | Fig is the mother. | B6 · B6-s09 |
+| **needed** | `mm_txt_B6-end-body2_en_beginning.mp3` | Evidence answers each idea. | B6 · B6-s09 |
+| **needed** | `mm_txt_B7-body1_en_beginning.mp3` | Fig's eggs came from her twin. | B7 · B7-s01 |
+| **needed** | `mm_txt_B7-cycle-body1_en_beginning.mp3` | Now the life cycle is complete. | B7 · B7-s02 |
+| **needed** | `mm_txt_B7-cycle-body2_en_beginning.mp3` | People can be chimeras too. | B7 · B7-s02 |
+| **needed** | `mm_txt_B7-done-body1_en_beginning.mp3` | You solved the mystery. | B7 · B7-s03 |
+| **needed** | `mm_txt_B7-done-body2_en_beginning.mp3` | Next: the checkpoint. | B7 · B7-s03 |
+| **needed** | `mm_txt_Bc-R1-prompt_en_beginning.mp3` | Why does a new tail have the same DNA? | B-check · Bc-s01 (Bc-R1) |
+| **needed** | `mm_txt_Bc-R2-prompt_en_beginning.mp3` | Egg cell or body cell: which has more chromosomes? | B-check · Bc-s01 (Bc-R2) |
+| **needed** | `mm_txt_Bc-R3-prompt_en_beginning.mp3` | Name three kinds of change that go to babies. | B-check · Bc-s01 (Bc-R3) |
+| **needed** | `mm_txt_Bcheck-intro-body1_en_beginning.mp3` | Five questions. Work on your own. | B-check · Bc-s02 |
+| **needed** | `mm_txt_Bcheck-intro-body2_en_beginning.mp3` | Your first answer counts. | B-check · Bc-s02 |
+| **needed** | `mm_txt_Bc-C1-prompt_en_beginning.mp3` | Make one frog sperm. | B-check · Bc-s03 (Bc-C1) |
+| **needed** | `mm_txt_Bc-C1-fb-correct_en_beginning.mp3` | Yes. 3 chromosomes. | B-check · Bc-s03 (Bc-C1) feedback |
+| **needed** | `mm_txt_Bc-C2-prompt_en_beginning.mp3` | Two sisters have different DNA. Why? | B-check · Bc-s04 (Bc-C2) |
+| **needed** | `mm_txt_Bc-C2-fb-shuffle_en_beginning.mp3` | Yes. Different eggs and sperm. | B-check · Bc-s04 (Bc-C2) choice feedback |
+| **needed** | `mm_txt_Bc-C2-fb-older_en_beginning.mp3` | DNA does not change as you grow. | B-check · Bc-s04 (Bc-C2) choice feedback |
+| **needed** | `mm_txt_Bc-C2-fb-same_en_beginning.mp3` | Their DNA is different. | B-check · Bc-s04 (Bc-C2) choice feedback |
+| **needed** | `mm_txt_Bc-C2-fb-blend_en_beginning.mp3` | Not a blend. | B-check · Bc-s04 (Bc-C2) choice feedback |
+| **needed** | `mm_txt_Bc-C3-prompt_en_beginning.mp3` | Can a lizard's babies get this change? | B-check · Bc-s05 (Bc-C3) |
+| **needed** | `mm_txt_Bc-C3-item-tail_en_beginning.mp3` | A broken tail | B-check · Bc-s05 (Bc-C3) card |
+| **needed** | `mm_txt_Bc-C3-item-egg_en_beginning.mp3` | A copy error in an egg cell | B-check · Bc-s05 (Bc-C3) card |
+| **needed** | `mm_txt_Bc-C3-item-sun_en_beginning.mp3` | Sunburned skin | B-check · Bc-s05 (Bc-C3) card |
+| **needed** | `mm_txt_Bc-C3-item-mix_en_beginning.mp3` | A new mix from meiosis | B-check · Bc-s05 (Bc-C3) card |
+| **needed** | `mm_txt_Bc-C3-fb-correct_en_beginning.mp3` | All correct. | B-check · Bc-s05 (Bc-C3) feedback |
+| **needed** | `mm_txt_Bc-C4-prompt_en_beginning.mp3` | A chemical changes sperm-making cells. Can the babies get it? | B-check · Bc-s06 (Bc-C4) |
+| **needed** | `mm_txt_Bc-C4-fb-yes_en_beginning.mp3` | Yes. | B-check · Bc-s06 (Bc-C4) choice feedback |
+| **needed** | `mm_txt_Bc-C4-fb-never_en_beginning.mp3` | Where it happens matters. | B-check · Bc-s06 (Bc-C4) choice feedback |
+| **needed** | `mm_txt_Bc-C4-fb-long_en_beginning.mp3` | Time does not matter. | B-check · Bc-s06 (Bc-C4) choice feedback |
+| **needed** | `mm_txt_Bc-C4-fb-skin_en_beginning.mp3` | Skin changes stay. | B-check · Bc-s06 (Bc-C4) choice feedback |
+| **needed** | `mm_txt_Bc-C5-prompt_en_beginning.mp3` | One baby rabbit is white. Where did this come from? Explain. | B-check · Bc-s07 (Bc-C5) |
+| **needed** | `mm_txt_Bcheck-end-body1_en_beginning.mp3` | You explained where variation comes from. | B-check · Bc-s08 |
+| **needed** | `mm_txt_Bcheck-end-body2_en_beginning.mp3` | Changes must be in egg or sperm cells. | B-check · Bc-s08 |
 
 ## Always read by the browser voice
 
@@ -727,6 +1283,8 @@ These contain numbers that change for each student, so they cannot be pre-record
 - `ui.summary.score`: "Checkpoint: {n} of {total} right on the first try." (A1 · A1-s16)
 - `A2b.T1.prompt`: "Use your counts. For each phase, work out its share of the cells (%), then its hours out of a {hours}-hour cycle." (A2b · A2b-s07)
 - `A2b.N2.prompt`: "Using your onion counts and a {hours}-hour cycle, work out the share and the hours for interphase and metaphase." (A2b · A2b-s13)
+- `gamete.fb.another.egg`: "A new egg. {n} more to find." (B2 · B2-s06)
+- `classify.fb.some`: "{n} not right yet. They are marked with ✗; try those again." (B3 · B3-s04)
 
 ## Story narration
 

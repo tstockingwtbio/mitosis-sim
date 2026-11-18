@@ -9,7 +9,9 @@
 // out. Review the output by ear: these are a starting point.
 import fs from 'node:fs';
 
-const content = JSON.parse(fs.readFileSync('src/content/partA.json', 'utf8'));
+const partA = JSON.parse(fs.readFileSync('src/content/partA.json', 'utf8'));
+const partB = JSON.parse(fs.readFileSync('src/content/partB.json', 'utf8'));
+const content = { beats: [...partA.beats, ...partB.beats], tasks: { ...partA.tasks, ...partB.tasks }, misconceptions: { ...partA.misconceptions, ...partB.misconceptions } };
 const en = JSON.parse(fs.readFileSync('src/i18n/en.json', 'utf8'));
 const tagsPath = 'scripts/recording-tags.json';
 const tags = JSON.parse(fs.readFileSync(tagsPath, 'utf8'));
@@ -39,6 +41,15 @@ for (const beat of content.beats.filter((b) => b.built)) {
         role(r.text, r.when === 'correct' ? 'praise' : 'gentle');
         if (r.misconception) role(content.misconceptions[r.misconception], 'misconception');
       }
+      for (const i of t.items ?? []) {
+        role(i.text, 'option');
+        if (i.misconception) role(content.misconceptions[i.misconception], 'misconception');
+      }
+      if (t.kind === 'classify') role(t.prompt.replace(/\.prompt$/, '.fb.correct'), 'praise');
+      for (const tk of t.tanks ?? []) role(tk.card, 'body');
+      if (t.kind === 'lab') role('B4.lab.fb.done', 'praise');
+      for (const id of t.samples ?? []) role(`gel.result.${id}`, 'body');
+      if (t.kind === 'gamete' && t.collect) role(`gamete.fb.duplicate.${t.gamete}`, 'gentle');
       for (const o of t.options ?? []) {
         role(o.text, 'option');
         role(o.feedback, o.correct ? 'praise' : 'gentle');

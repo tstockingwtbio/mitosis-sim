@@ -21,7 +21,7 @@ function titleScene(ctx: StepContext): StepView {
   // Anchor the title in the plain top part of the card (IMG-P09 is 4:3).
   const aspect = 1448 / 1086;
   const w = Math.min(ctx.stage.viewWidth * 0.96, VIEW_HEIGHT * 0.96 * aspect);
-  const title = h('div', { class: 'story-title' }, h('h1', {}, t('app.title')), h('p', {}, t('app.part')));
+  const title = h('div', { class: 'story-title' }, h('h1', {}, t('app.title')), h('p', {}, t(s.variant ?? 'app.part')));
   g.add(label(title, { x: 0, y: (w / aspect) * 0.3, z: 0.2 }));
   ctx.stage.invalidate();
   return { dispose: () => title.remove() };

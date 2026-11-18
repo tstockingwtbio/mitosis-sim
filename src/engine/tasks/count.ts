@@ -40,7 +40,7 @@ function numberStepper(id: string, labelText: string, value: number, onChange: (
 
 function matchRule(task: CountTask, c: number, d: number) {
   for (const r of task.feedback) {
-    if (r.when === 'correct' || r.when === 'other' || 'pair' in r.when || 'divide' in r.when || 'switch' in r.when) continue;
+    if (r.when === 'correct' || r.when === 'other' || 'pair' in r.when || 'divide' in r.when || 'switch' in r.when || 'gamete' in r.when || 'bands' in r.when) continue;
     const w = r.when;
     const okC = w.chromosomes === undefined || w.chromosomes === c;
     const okD = w.dnaMolecules === undefined || w.dnaMolecules === d;

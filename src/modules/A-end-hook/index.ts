@@ -15,7 +15,9 @@ interface Node {
   part: 'A' | 'B';
 }
 
-function lifeCycleScene(ctx: StepContext): StepView {
+/** The life cycle. variant 'complete' (B7): the meiosis half is filled in too. */
+export function lifeCycleScene(ctx: StepContext): StepView {
+  const complete = (ctx.step as { variant?: string }).variant === 'complete';
   const root = new THREE.Group();
   ctx.stage.scene.add(root);
   const nodes: Node[] = [
@@ -33,7 +35,8 @@ function lifeCycleScene(ctx: StepContext): StepView {
     [3, 4, 'A', 'A-end.cycle.mitosis'],
     [4, 0, 'A', 'A-end.cycle.mitosis'],
   ];
-  for (const [a, b, part, key] of arrows) {
+  for (const [a, b, p0, key] of arrows) {
+    const part = complete ? 'A' : p0;
     const p = new THREE.Vector2(nodes[a].x, nodes[a].y);
     const q = new THREE.Vector2(nodes[b].x, nodes[b].y);
     const dir = q.clone().sub(p).normalize();
@@ -61,7 +64,8 @@ function lifeCycleScene(ctx: StepContext): StepView {
       label(h('div', { class: `cycle-arrow-label${part === 'B' ? ' later' : ''}`, 'aria-hidden': 'true' }, t(key)), { x: mid.x, y: mid.y + 0.3, z: 0.2 }),
     );
   }
-  for (const n of nodes) {
+  for (const n0 of nodes) {
+    const n = complete ? { ...n0, part: 'A' as const } : n0;
     const card = paper(roundRectShape(2.3, 1.3, 0.25), { color: n.part === 'A' ? PALETTE.cream : '#e7e1d6', outline: n.part === 'A' ? 0.07 : 0.04 });
     card.position.set(n.x, n.y, 0);
     root.add(card);
@@ -69,7 +73,7 @@ function lifeCycleScene(ctx: StepContext): StepView {
       label(h('div', { class: `cycle-node${n.part === 'B' ? ' later' : ''}`, 'aria-hidden': 'true' }, t(`A-end.cycle.${n.key}`)), { x: n.x, y: n.y, z: 0.2 }),
     );
   }
-  root.add(label(h('div', { class: 'cycle-note', 'aria-hidden': 'true' }, t('A-end.cycle.partB')), { x: 4.2, y: 1.6, z: 0.2 }));
+  if (!complete) root.add(label(h('div', { class: 'cycle-note', 'aria-hidden': 'true' }, t('A-end.cycle.partB')), { x: 4.2, y: 1.6, z: 0.2 }));
   ctx.counts.set({ chromosomes: null, dnaMolecules: null, same: null });
   ctx.stage.invalidate();
   return { dispose: () => undefined };

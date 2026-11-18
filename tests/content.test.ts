@@ -1,12 +1,19 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import content from '../src/content/partA.json';
+import partA from '../src/content/partA.json';
+import partB from '../src/content/partB.json';
+import { mergeParts } from '../src/content/merge';
+import { combinations } from '../src/engine/tasks/gamete';
+import { matchingBands } from '../src/engine/tasks/bands';
 import en from '../src/i18n/en.json';
 import type { PartContent, Task } from '../src/content/schema';
 import { countCell, isHomologousPair } from '../src/engine/model/chromosome';
 
-const part = content as unknown as PartContent;
+const A = partA as unknown as PartContent;
+const Bp = partB as unknown as PartContent;
+const part = mergeParts(A, Bp);
+const STANDARD: Record<string, string> = { A: 'SC.HS.6.1.d', B: 'SC.HS.9.4.b' };
 const dict = en as Record<string, unknown>;
 const bible = readFileSync(resolve(__dirname, '../docs/story-bible.md'), 'utf8');
 
@@ -17,16 +24,19 @@ function keysOfTask(task: Task): string[] {
   if ('hints' in task && task.hints) keys.push(...task.hints);
   if ('frames' in task && task.frames) keys.push(task.frames);
   if ('wordBank' in task && task.wordBank) keys.push(task.wordBank);
-  if (task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide' || task.kind === 'switch' || task.kind === 'timing') keys.push(...task.feedback.map((f) => f.text));
+  if ('feedback' in task && Array.isArray(task.feedback)) keys.push(...task.feedback.map((f) => f.text));
+  if (task.kind === 'classify') keys.push(...task.bins, ...task.items.map((i) => i.text), task.prompt.replace(/.prompt$/, '.fb.correct'));
+  if (task.kind === 'lab') keys.push(...task.tanks.map((tk) => tk.card));
   if (task.kind === 'choice') for (const o of task.options) keys.push(o.text, o.feedback);
   return keys;
 }
 
-describe('partA.json', () => {
+describe('partA.json + partB.json', () => {
   it('every task is tagged with its beat and standard', () => {
     for (const task of Object.values(part.tasks)) {
-      expect(task.standard, task.id).toBe('SC.HS.6.1.d');
-      expect(part.beats.some((b) => b.id === task.beat), task.id).toBe(true);
+      const beat = part.beats.find((b) => b.id === task.beat);
+      expect(beat, task.id).toBeDefined();
+      expect(task.standard, task.id).toBe(STANDARD[beat!.part ?? 'A']);
     }
   });
 
@@ -51,6 +61,7 @@ describe('partA.json', () => {
   it('every voice-over, image and sound ID comes from the story bible', () => {
     for (const b of part.beats)
       for (const s of b.steps) {
+        if (s.type === 'task') for (const vo of part.tasks[s.task].lines ?? []) expect(bible.includes(`| ${vo} |`), vo).toBe(true);
         if (s.type !== 'explain') continue;
         const panelIds = (s.panels ?? []).flatMap((p) => [p.asset, ...(p.sfx ? [p.sfx] : [])]);
         for (const id of [...s.lines, ...(s.sfx ?? []), ...(s.assets ?? []), ...panelIds, ...(s.ambience ? [s.ambience] : [])])
@@ -96,7 +107,11 @@ describe('partA.json', () => {
 
   it('built beats open with >= 3 retrieve items and end with an independent checkpoint', () => {
     // Story openers (kind: observe) are phenomenon-first: no Retrieve block or checkpoint.
-    for (const b of part.beats.filter((x) => x.built && x.kind !== 'observe')) {
+    for (const b of part.beats.filter((x) => x.built && x.kind === 'review')) {
+      const first = b.steps.find((s) => s.type === 'retrieve');
+      expect(first && first.type === 'retrieve' && first.tasks.length, b.id).toBeGreaterThanOrEqual(3);
+    }
+    for (const b of part.beats.filter((x) => x.built && !x.kind)) {
       const first = b.steps[0];
       expect(first.type).toBe('retrieve');
       if (first.type === 'retrieve') expect(first.tasks.length).toBeGreaterThanOrEqual(3);
@@ -105,8 +120,11 @@ describe('partA.json', () => {
       expect(last.type === 'task' && part.tasks[last.task].phase).toBe('checkpoint');
       // Worked example comes before any independent practice.
       const phases = taskSteps.map((s) => (s.type === 'task' ? part.tasks[s.task].phase : ''));
-      expect(phases.indexOf('worked')).toBeLessThan(phases.indexOf('independent'));
-      expect(phases.indexOf('guided')).toBeLessThan(phases.indexOf('independent'));
+      const ind = phases.indexOf('independent');
+      if (ind >= 0) {
+        expect(phases.indexOf('worked'), b.id).toBeLessThan(ind);
+        expect(phases.indexOf('guided'), b.id).toBeLessThan(ind);
+      }
     }
   });
 
@@ -153,11 +171,42 @@ describe('partA.json', () => {
 
   it('every wrong-answer feedback names a known misconception', () => {
     for (const task of Object.values(part.tasks)) {
-      const rules = task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide' ? task.feedback : [];
+      const rules = 'feedback' in task && Array.isArray(task.feedback) ? task.feedback : [];
+      if (task.kind === 'classify') for (const i of task.items) if (i.misconception) expect(part.misconceptions[i.misconception], i.misconception).toBeDefined();
       for (const r of rules) if (r.misconception) expect(part.misconceptions[r.misconception], r.misconception).toBeDefined();
       if (task.kind === 'choice')
         for (const o of task.options) if (o.misconception) expect(part.misconceptions[o.misconception]).toBeDefined();
     }
+  });
+});
+
+describe('Part B models', () => {
+  it('gamete tasks start from complete pairs, and collect counts every combination', () => {
+    for (const task of Object.values(part.tasks)) {
+      if (task.kind !== 'gamete') continue;
+      const pairs = new Map<number, string[]>();
+      for (const c of task.cell.chromosomes) pairs.set(c.pair, [...(pairs.get(c.pair) ?? []), c.parent]);
+      for (const [, ps] of pairs) expect(ps.sort(), task.id).toEqual(['M', 'P']);
+      if (task.collect) expect(task.collect, task.id).toBe(combinations(task.cell.chromosomes));
+    }
+  });
+
+  it('band tasks use real profiles, and the story holds', () => {
+    const p = part.profiles!;
+    for (const task of Object.values(part.tasks)) {
+      if (task.kind !== 'bands') continue;
+      for (const id of [...task.lanes, ...(task.samples ?? []), task.target, task.compare].filter(Boolean)) expect(p[id!], `${task.id} ${id}`).toBeDefined();
+      if (task.mode === 'match') expect(matchingBands(p[task.target!], p[task.compare!]).length, task.id).toBeGreaterThan(0);
+    }
+    const markers = p.h2.length;
+    // Barty is the father: one shared band in every marker.
+    expect(matchingBands(p.h2, p.barty).length).toBe(markers);
+    // Fig's egg cells explain the other half in every marker; her body does not.
+    p.h2.forEach((sizes, m) => expect(sizes.some((s) => p.figEggs[m].includes(s) && !p.barty[m].includes(s)) || sizes.every((s) => p.figEggs[m].includes(s)), `marker ${m}`).toBe(true));
+    const bodyMisses = p.h2.filter((sizes, m) => !sizes.some((s) => p.figTail[m].includes(s))).length;
+    expect(bodyMisses).toBeGreaterThanOrEqual(4);
+    expect(p.figSkin).toEqual(p.figTail);
+    expect(p.figBlood).toEqual(p.figTail);
   });
 });
 

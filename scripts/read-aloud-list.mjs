@@ -3,7 +3,9 @@
 //   npm run audio:list
 import fs from 'node:fs';
 
-const content = JSON.parse(fs.readFileSync('src/content/partA.json', 'utf8'));
+const partA = JSON.parse(fs.readFileSync('src/content/partA.json', 'utf8'));
+const partB = JSON.parse(fs.readFileSync('src/content/partB.json', 'utf8'));
+const content = { beats: [...partA.beats, ...partB.beats], tasks: { ...partA.tasks, ...partB.tasks }, misconceptions: { ...partA.misconceptions, ...partB.misconceptions } };
 const en = JSON.parse(fs.readFileSync('src/i18n/en.json', 'utf8'));
 // ElevenLabs recording text with direction tags (Building lines).
 const tags = JSON.parse(fs.readFileSync('scripts/recording-tags.json', 'utf8'));
@@ -67,6 +69,24 @@ for (const beat of content.beats.filter((b) => b.built)) {
         if (task.phase === 'checkpoint') add('ui.task.firstTry', w);
         if (task.kind === 'pair') add('ui.task.revealPairs', `${w} (after 3 tries)`);
         if (task.kind === 'count') dynamic.push(['ui.task.revealCount', `${w} (after 3 tries)`]);
+        // Part B task kinds.
+        if (task.kind === 'classify') {
+          task.items.forEach((i) => {
+            add(i.text, `${w} card`);
+            if (i.misconception) add(content.misconceptions[i.misconception], `${w} mix-up`);
+          });
+          add(task.prompt.replace(/\.prompt$/, '.fb.correct'), `${w} feedback`);
+          dynamic.push(['classify.fb.some', `${w} feedback`]);
+        }
+        if (task.kind === 'lab') {
+          task.tanks.forEach((tk) => add(tk.card, `${w} evidence card`));
+          add('B4.lab.fb.done', `${w} feedback`);
+        }
+        if (task.kind === 'bands' && task.mode === 'tissues') task.samples.forEach((id) => add(`gel.result.${id}`, `${w} test result`));
+        if (task.kind === 'gamete' && task.collect) {
+          add(`gamete.fb.duplicate.${task.gamete}`, `${w} feedback`);
+          dynamic.push([`gamete.fb.another.${task.gamete}`, `${w} feedback`]);
+        }
       }
     }
   }

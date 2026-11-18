@@ -136,3 +136,32 @@ Framework check: passed. Retrieve block with 4 items; worked example before inde
 ## Framework check (A2–A4)
 
 Framework check: passed. Each module opens with a Retrieve block (≥ 3 items across last module, last week and a prior unit); new procedures have a worked example before independent practice (A2b explicit first; A2 and A3 attempt first with a consolidating demonstration before guided practice); every check names a likely misconception; text sits beside its model; each module ends with a supports-off checkpoint matching "develop and use a model", with no phase recall assessed; every task is tagged SC.HS.6.1.d. A0 and A-end are story beats (no Retrieve or checkpoint).
+
+## Part B (Unit 4, SC.HS.9.4.b)
+
+**Status: draft.** Every Part B task is marked `"status": "draft"` in `src/content/partB.json`. The narration (VO-B01 to VO-B18) comes from the bible word for word. Claude drafted all task text, answers, feedback and misconception wording, plus the DNA profiles, for your review. To change the content, edit `scripts/content/partB.mjs` and run `node scripts/content/partB.mjs`.
+
+Students switch between Part A and Part B with the switch in the top bar. Each part has its own row of chapter tabs. After the last Part A screen, Next opens Part B.
+
+### Sequencing log
+
+| Module | Learning target | Type | Sequencing | Why |
+| --- | --- | --- | --- | --- |
+| B0 | The mystery: the DNA test says Fig is not the mother | Phenomenon (OBSERVE) | Phenomenon first | Story panels, then students read the DNA profile themselves (worked, then on their own) and write a prediction. B6 brings it back. |
+| B1 | Spaced retrieval of Part A | Review | (retrieval only) | Four free-recall items from Unit 3, then "pinned to the board": the rule the mystery breaks. |
+| B2 | Meiosis halves and shuffles; why siblings differ | New procedure and representation | Explicit first | Stepped meiosis animation, then a worked egg, a sperm on their own, crossing over, counting all 4 combinations, fertilisation, and a checkpoint. |
+| B3 | Contrast mitosis with meiosis | Conceptual, with prior knowledge from B2 and Unit 3 | Attempt first | Students predict differences, then step through both side by side from the same starting cell, then sort statements. |
+| B4 | Three sources of inheritable variation; body cells vs. egg- and sperm-making cells | Investigation | Attempt first | Students run the three tanks and see where each change happens and whether it reaches the young. Then the rule (VO-B12) and a sort. |
+| B5 | Synthesis: two cell lines, only the egg-making line is inherited | Conceptual | Attempt first | Students choose which tissues to test before the reveal and the two-cell-lines diagram. |
+| B6 | Claim, evidence and reasoning with rebuttal; cause vs. coincidence | Argument | Explicit first | Evidence locker (filled from each student's own B4 and B5 runs), a claim with sentence starters, one rebuttal per counterclaim, then a full written argument with supports off. |
+| B7 | Real-world transfer | Story (teacher-led, optional) | Phenomenon | VO-B18, the completed life cycle, and one line saying chimerism also occurs in people. The legal story is left out, as the bible asks. |
+| B-check | Independent evidence for 9.4.b | Checkpoint | (checkpoint) | Unfamiliar cases (frog sperm, sisters, a lizard, a pond chemical, a white rabbit), supports off, first answer counts. |
+
+### Please check
+
+1. **DNA profiles.** There are 6 markers with 2 bands each. Barty matches Hatchling 2 once in every marker. Fig's body (tail, skin and blood) matches in only 1 of 6 markers. Her egg cells match in all 6. The two lines are sisters (same parents, two embryos), so they share some bands. The content test checks these rules.
+2. **"Egg cells" as a sample.** One egg carries only one band per marker. The model shows the egg-cell sample with both bands, as if many eggs (or the tissue that makes them) were tested together. Say so if students ask, or rename the lane "egg-making tissue".
+3. **Repeat runs.** B6 asks students to answer "the test was wrong" with repeat runs. The B5 test results say Ada ran each sample twice.
+4. **Crossing over** appears in pair 1 only, as a swapped tip with the partner's paper and gene letter. Pair 2 is too short to show it clearly.
+5. **Scope.** No meiosis phase names are taught or assessed. The stage captions describe what happens (copy, partners pair up, partners separate, copies separate). There is no Hardy-Weinberg and no mutation chemistry.
+6. **Assets not used yet:** IMG-B01 (tank room), IMG-B03 (lab bench) and IMG-B04 (hatchery). The story steps used the panels the bible assigns to each beat. These backgrounds are free if you want them somewhere.

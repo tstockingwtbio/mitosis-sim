@@ -790,3 +790,56 @@ p.earlier { margin: 0; font-style: italic; white-space: pre-wrap; }
 .stage .labels .story-title h1 { font-size: calc(2.6rem * var(--stage-scale)); }
 .stage .labels .story-title p { font-size: calc(1.1rem * var(--stage-scale)); }
 .stage .legend, .stage .zoom-scale { font-size: calc(0.85rem * min(1, var(--stage-scale))); }
+
+/* ---------- Part A / Part B switch ---------- */
+.parts { display: inline-flex; gap: 4px; padding: 3px; border: var(--border) solid var(--ink); border-radius: 999px; background: var(--card); }
+.parts .part-btn { min-height: calc(var(--target) - 8px); border-radius: 999px; padding: 0 12px; white-space: nowrap; }
+.parts .part-btn:not(.primary) { border-color: transparent; box-shadow: none; background: transparent; }
+
+/* ---------- Part B ---------- */
+/* Sort cards into bins (engine/tasks/classify.ts). */
+.classify { display: grid; gap: 8px; }
+.classify-row { display: grid; gap: 6px; padding: 8px 10px; border: var(--border) solid var(--ink); border-radius: 12px; background: var(--card); }
+.classify-row.right { background: var(--good-bg); }
+.classify-row.wrong { background: var(--warn-bg); }
+.classify-text { display: flex; gap: 8px; align-items: baseline; }
+.classify-text .tag { margin-inline-start: auto; font-weight: 700; }
+.classify-row .seg-options .btn { min-height: 40px; }
+
+/* DNA profiles (engine/stage/gel.ts, engine/tasks/bands.ts). */
+.band-rows { display: grid; gap: 6px; }
+.band-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.band-row-label { font-weight: 700; min-width: 6.5em; }
+.gel-marker { font: 700 13px/1 'Atkinson Hyperlegible', sans-serif; color: var(--ink); }
+.gel-marker.head { font-weight: 400; font-size: 12px; }
+.gel-tick { font: 700 14px/1 'Atkinson Hyperlegible', sans-serif; color: var(--ink); background: #ffd866; border: 2px solid var(--ink); border-radius: 999px; padding: 1px 5px; }
+.gel-table table { border-collapse: collapse; width: 100%; margin-top: 6px; }
+.gel-table th, .gel-table td { border: 1px solid var(--ink); padding: 3px 6px; text-align: center; }
+.gel-table summary { cursor: pointer; font-weight: 700; min-height: var(--target); display: flex; align-items: center; }
+.test-results { margin: 6px 0 0; padding-inline-start: 1.2em; display: grid; gap: 4px; }
+
+/* Gametes, the evidence locker, the lab. */
+.made-list { margin: 0; padding-inline-start: 1.4em; display: grid; gap: 4px; }
+.locker { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.evidence-card { border: var(--border) solid var(--ink); border-radius: 10px; padding: 6px 10px; background: #fffaf0; box-shadow: 2px 2px 0 rgba(43, 29, 20, 0.25); }
+.pinned-card { font: 700 13px/1.25 'Atkinson Hyperlegible', sans-serif; color: var(--ink); background: #fffaf0; border: 2px solid var(--ink); border-radius: 6px; padding: 6px 8px; max-width: 170px; text-align: center; box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.25); }
+.result-banner { font: 700 15px/1.2 'Atkinson Hyperlegible', sans-serif; border: 2px solid var(--ink); border-radius: 999px; padding: 4px 12px; background: var(--card); color: var(--ink); white-space: nowrap; }
+.result-banner.yes { background: var(--good-bg); }
+.result-banner.yes::before { content: '✓ '; }
+.result-banner.no { background: var(--warn-bg); }
+.result-banner.no::before { content: '✗ '; }
+.cell-tag.hot { background: #ffd866; font-weight: 700; }
+.stage-label.big { font-size: 17px; font-weight: 700; }
+.side-caption { max-width: 260px; text-align: center; white-space: normal; }
+.cycle-node.on-dark { color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+.parts .part-btn:focus-visible { outline-offset: 2px; }
+
+.stage .labels .gel-marker { font-size: calc(13px * var(--stage-scale)); }
+.stage .labels .gel-tick { font-size: calc(14px * var(--stage-scale)); }
+.stage .labels .pinned-card { font-size: calc(13px * var(--stage-scale)); max-width: calc(170px * var(--stage-scale)); }
+.stage .labels .result-banner { font-size: calc(15px * var(--stage-scale)); }
+.stage .labels .stage-label.big { font-size: calc(17px * var(--stage-scale)); }
+.stage .labels .side-caption { max-width: calc(260px * var(--stage-scale)); }
+
+/* A stage caption and the paper legend both sit at the top: caption on the start side, legend on the end side. */
+.stage .legend ~ .zoom-scale { inset-inline-end: auto; inset-inline-start: var(--pad); max-width: 58%; }

@@ -24,7 +24,7 @@ export function textAudioFile(key: string, lang: string, level: 'building' | 'be
   return `mm_txt_${key.replace(/[^A-Za-z0-9]+/g, '-')}_${lang}_${level}.mp3`;
 }
 
-const GLOSSARY_TERMS = ['cell', 'tissue', 'nucleus', 'dna', 'chromosome', 'gene', 'pair', 'centromere', 'copy', 'version'];
+const GLOSSARY_TERMS = ['cell', 'tissue', 'nucleus', 'dna', 'chromosome', 'gene', 'pair', 'centromere', 'copy', 'version', 'meiosis', 'gamete', 'mutation', 'chimera'];
 
 let wordIndex: Map<string, string> | null = null;
 let wordIndexLang = '';

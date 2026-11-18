@@ -1,0 +1,2702 @@
+{
+  "version": 1,
+  "part": "B",
+  "profiles": {
+    "barty": [
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "h2": [
+      [
+        2,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "figTail": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "figSkin": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "figBlood": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "figEggs": [
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        1,
+        3
+      ]
+    ]
+  },
+  "misconceptions": {
+    "gamete-full-set": "mis.b.gamete-full-set",
+    "gamete-both-of-pair": "mis.b.gamete-both-of-pair",
+    "gamete-missing-pair": "mis.b.gamete-missing-pair",
+    "meiosis-is-copy": "mis.b.meiosis-is-copy",
+    "meiosis-no-copy": "mis.b.meiosis-no-copy",
+    "swap-in-mitosis": "mis.b.swap-in-mitosis",
+    "mitosis-shuffles": "mis.b.mitosis-shuffles",
+    "siblings-identical": "mis.b.siblings-identical",
+    "crossing-over-new-genes": "mis.b.crossing-over-new-genes",
+    "combos-add": "mis.b.combos-add",
+    "one-egg-per-pair": "mis.b.one-egg-per-pair",
+    "blending": "mis.b.blending",
+    "all-changes-inherited": "mis.b.all-changes-inherited",
+    "acquired-traits": "mis.b.acquired-traits",
+    "environment-never-inherited": "mis.b.environment-never-inherited",
+    "dna-same-everywhere": "mis.b.dna-same-everywhere",
+    "eggs-swapped": "mis.b.eggs-swapped",
+    "test-error": "mis.b.test-error",
+    "one-mutation": "mis.b.one-mutation",
+    "correlation-is-cause": "mis.b.correlation-is-cause",
+    "one-parent-proves-both": "mis.b.one-parent-proves-both",
+    "opinion-as-evidence": "mis.b.opinion-as-evidence",
+    "dna-from-nowhere": "mis.b.dna-from-nowhere",
+    "all-from-father": "mis.b.all-from-father",
+    "band-near-match": "mis.b.band-near-match"
+  },
+  "beats": [
+    {
+      "id": "B0",
+      "title": "beat.B0.title",
+      "module": "B0-cold-open",
+      "standard": "SC.HS.9.4.b",
+      "built": true,
+      "kind": "observe",
+      "sequencing": "phenomenon-first",
+      "steps": [
+        {
+          "id": "B0-s01",
+          "type": "explain",
+          "scene": "title",
+          "title": "B0.title.title",
+          "body": [
+            "B0.title.body"
+          ],
+          "lines": [],
+          "panels": [
+            {
+              "asset": "IMG-P09"
+            }
+          ],
+          "assets": [
+            "IMG-P09"
+          ],
+          "variant": "app.partB"
+        },
+        {
+          "id": "B0-s02",
+          "type": "explain",
+          "scene": "story",
+          "title": "B0.story1.title",
+          "body": [
+            "B0.story1.body"
+          ],
+          "lines": [
+            "VO-B01"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-P04"
+            }
+          ],
+          "assets": [
+            "IMG-P04"
+          ],
+          "ambience": "SFX-25",
+          "sfx": [
+            "SFX-25"
+          ]
+        },
+        {
+          "id": "B0-s03",
+          "type": "explain",
+          "scene": "story",
+          "title": "B0.story2.title",
+          "body": [
+            "B0.story2.body"
+          ],
+          "lines": [
+            "VO-B02",
+            "VO-B03"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-P05",
+              "line": 0,
+              "sfx": "SFX-21"
+            },
+            {
+              "asset": "IMG-P06",
+              "line": 1,
+              "sfx": "SFX-22"
+            }
+          ],
+          "assets": [
+            "IMG-P05",
+            "IMG-P06"
+          ],
+          "ambience": "SFX-25",
+          "sfx": [
+            "SFX-21",
+            "SFX-22",
+            "SFX-25"
+          ]
+        },
+        {
+          "id": "B0-s04",
+          "type": "task",
+          "task": "B0-T1"
+        },
+        {
+          "id": "B0-s05",
+          "type": "task",
+          "task": "B0-T2"
+        },
+        {
+          "id": "B0-s06",
+          "type": "task",
+          "task": "B0-T3"
+        },
+        {
+          "id": "B0-s07",
+          "type": "task",
+          "task": "B0-P1"
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "title": "beat.B1.title",
+      "module": "B1-retrieval",
+      "standard": "SC.HS.9.4.b",
+      "built": true,
+      "kind": "review",
+      "steps": [
+        {
+          "id": "B1-s01",
+          "type": "explain",
+          "scene": "story",
+          "title": "B1.title",
+          "body": [
+            "B1.body"
+          ],
+          "lines": [
+            "VO-B04"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-B06"
+            }
+          ],
+          "assets": [
+            "IMG-B06"
+          ],
+          "ambience": "SFX-25",
+          "sfx": [
+            "SFX-25"
+          ]
+        },
+        {
+          "id": "B1-s02",
+          "type": "retrieve",
+          "tasks": [
+            "B1-R1",
+            "B1-R2",
+            "B1-R3",
+            "B1-R4"
+          ]
+        },
+        {
+          "id": "B1-s03",
+          "type": "intro",
+          "title": "B1.end.title",
+          "body": [
+            "B1.end.body1",
+            "B1.end.body2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "title": "beat.B2.title",
+      "module": "B2-make-gametes",
+      "standard": "SC.HS.9.4.b",
+      "built": true,
+      "sequencing": "explicit-first",
+      "steps": [
+        {
+          "id": "B2-s01",
+          "type": "retrieve",
+          "tasks": [
+            "B2-R1",
+            "B2-R2",
+            "B2-R3"
+          ]
+        },
+        {
+          "id": "B2-s02",
+          "type": "explain",
+          "scene": "meiosis",
+          "title": "B2.meiosis.title",
+          "body": [
+            "B2.meiosis.body1",
+            "B2.meiosis.body2"
+          ],
+          "lines": [
+            "VO-B05"
+          ],
+          "cell": {
+            "chromosomes": [
+              {
+                "id": "1M",
+                "pair": 1,
+                "parent": "M",
+                "state": "unreplicated",
+                "length": "long",
+                "alleles": [
+                  "A",
+                  "E"
+                ]
+              },
+              {
+                "id": "1P",
+                "pair": 1,
+                "parent": "P",
+                "state": "unreplicated",
+                "length": "long",
+                "alleles": [
+                  "a",
+                  "e"
+                ]
+              },
+              {
+                "id": "2M",
+                "pair": 2,
+                "parent": "M",
+                "state": "unreplicated",
+                "length": "short",
+                "alleles": [
+                  "B"
+                ]
+              },
+              {
+                "id": "2P",
+                "pair": 2,
+                "parent": "P",
+                "state": "unreplicated",
+                "length": "short",
+                "alleles": [
+                  "b"
+                ]
+              }
+            ]
+          },
+          "sfx": [
+            "SFX-11",
+            "SFX-15",
+            "SFX-12"
+          ]
+        },
+        {
+          "id": "B2-s03",
+          "type": "task",
+          "task": "B2-G1"
+        },
+        {
+          "id": "B2-s04",
+          "type": "task",
+          "task": "B2-I1"
+        },
+        {
+          "id": "B2-s05",
+          "type": "explain",
+          "scene": "meiosis",
+          "title": "B2.shuffle.title",
+          "body": [
+            "B2.shuffle.body1",
+            "B2.shuffle.body2"
+          ],
+          "lines": [
+            "VO-B06"
+          ],
+          "cell": {
+            "chromosomes": [
+              {
+                "id": "1M",
+                "pair": 1,
+                "parent": "M",
+                "state": "unreplicated",
+                "length": "long",
+                "alleles": [
+                  "A",
+                  "E"
+                ]
+              },
+              {
+                "id": "1P",
+                "pair": 1,
+                "parent": "P",
+                "state": "unreplicated",
+                "length": "long",
+                "alleles": [
+                  "a",
+                  "e"
+                ]
+              },
+              {
+                "id": "2M",
+                "pair": 2,
+                "parent": "M",
+                "state": "unreplicated",
+                "length": "short",
+                "alleles": [
+                  "B"
+                ]
+              },
+              {
+                "id": "2P",
+                "pair": 2,
+                "parent": "P",
+                "state": "unreplicated",
+                "length": "short",
+                "alleles": [
+                  "b"
+                ]
+              }
+            ]
+          },
+          "variant": "crossover",
+          "sfx": [
+            "SFX-16",
+            "SFX-15"
+          ]
+        },
+        {
+          "id": "B2-s06",
+          "type": "task",
+          "task": "B2-I2"
+        },
+        {
+          "id": "B2-s07",
+          "type": "task",
+          "task": "B2-I3"
+        },
+        {
+          "id": "B2-s08",
+          "type": "explain",
+          "scene": "fertilise",
+          "title": "B2.fert.title",
+          "body": [
+            "B2.fert.body1",
+            "B2.fert.body2"
+          ],
+          "lines": [
+            "VO-B07"
+          ],
+          "sfx": [
+            "SFX-17"
+          ]
+        },
+        {
+          "id": "B2-s09",
+          "type": "task",
+          "task": "B2-C1"
+        },
+        {
+          "id": "B2-s10",
+          "type": "task",
+          "task": "B2-C2"
+        },
+        {
+          "id": "B2-s11",
+          "type": "summary",
+          "title": "B2.end.title",
+          "body": [
+            "B2.end.body1",
+            "B2.end.body2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "title": "beat.B3.title",
+      "module": "B3-side-by-side",
+      "standard": "SC.HS.9.4.b",
+      "built": true,
+      "sequencing": "attempt-first",
+      "steps": [
+        {
+          "id": "B3-s01",
+          "type": "retrieve",
+          "tasks": [
+            "B3-R1",
+            "B3-R2",
+            "B3-R3"
+          ]
+        },
+        {
+          "id": "B3-s02",
+          "type": "task",
+          "task": "B3-P1"
+        },
+        {
+          "id": "B3-s03",
+          "type": "explain",
+          "scene": "sideBySide",
+          "title": "B3.side.title",
+          "body": [
+            "B3.side.body1",
+            "B3.side.body2"
+          ],
+          "lines": [
+            "VO-B08"
+          ],
+          "sfx": [
+            "SFX-11",
+            "SFX-16",
+            "SFX-15",
+            "SFX-12"
+          ]
+        },
+        {
+          "id": "B3-s04",
+          "type": "task",
+          "task": "B3-G1"
+        },
+        {
+          "id": "B3-s05",
+          "type": "task",
+          "task": "B3-I1"
+        },
+        {
+          "id": "B3-s06",
+          "type": "task",
+          "task": "B3-C1"
+        },
+        {
+          "id": "B3-s07",
+          "type": "task",
+          "task": "B3-C2"
+        },
+        {
+          "id": "B3-s08",
+          "type": "summary",
+          "title": "B3.end.title",
+          "body": [
+            "B3.end.body1",
+            "B3.end.body2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "title": "beat.B4.title",
+      "module": "B4-variation-lab",
+      "standard": "SC.HS.9.4.b",
+      "built": true,
+      "sequencing": "attempt-first",
+      "steps": [
+        {
+          "id": "B4-s01",
+          "type": "retrieve",
+          "tasks": [
+            "B4-R1",
+            "B4-R2",
+            "B4-R3"
+          ]
+        },
+        {
+          "id": "B4-s02",
+          "type": "explain",
+          "scene": "story",
+          "title": "B4.intro.title",
+          "body": [
+            "B4.intro.body"
+          ],
+          "lines": [
+            "VO-B09"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-B05"
+            }
+          ],
+          "assets": [
+            "IMG-B05"
+          ],
+          "ambience": "SFX-25",
+          "sfx": [
+            "SFX-25"
+          ]
+        },
+        {
+          "id": "B4-s03",
+          "type": "task",
+          "task": "B4-L1"
+        },
+        {
+          "id": "B4-s04",
+          "type": "explain",
+          "scene": "rule",
+          "title": "B4.rule.title",
+          "body": [
+            "B4.rule.body1",
+            "B4.rule.body2"
+          ],
+          "lines": [
+            "VO-B12"
+          ]
+        },
+        {
+          "id": "B4-s05",
+          "type": "task",
+          "task": "B4-G1"
+        },
+        {
+          "id": "B4-s06",
+          "type": "task",
+          "task": "B4-I1"
+        },
+        {
+          "id": "B4-s07",
+          "type": "task",
+          "task": "B4-C1"
+        },
+        {
+          "id": "B4-s08",
+          "type": "summary",
+          "title": "B4.end.title",
+          "body": [
+            "B4.end.body1",
+            "B4.end.body2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "title": "beat.B5.title",
+      "module": "B5-the-twist",
+      "standard": "SC.HS.9.4.b",
+      "built": true,
+      "sequencing": "attempt-first",
+      "steps": [
+        {
+          "id": "B5-s01",
+          "type": "retrieve",
+          "tasks": [
+            "B5-R1",
+            "B5-R2",
+            "B5-R3"
+          ]
+        },
+        {
+          "id": "B5-s02",
+          "type": "explain",
+          "scene": "story",
+          "title": "B5.night.title",
+          "body": [
+            "B5.night.body"
+          ],
+          "lines": [
+            "VO-B13"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-B07"
+            }
+          ],
+          "assets": [
+            "IMG-B07"
+          ],
+          "ambience": "SFX-25",
+          "sfx": [
+            "SFX-25"
+          ]
+        },
+        {
+          "id": "B5-s03",
+          "type": "task",
+          "task": "B5-T1"
+        },
+        {
+          "id": "B5-s04",
+          "type": "task",
+          "task": "B5-I1"
+        },
+        {
+          "id": "B5-s05",
+          "type": "explain",
+          "scene": "story",
+          "title": "B5.reveal.title",
+          "body": [
+            "B5.reveal.body"
+          ],
+          "lines": [
+            "VO-B15"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-P07",
+              "sfx": "SFX-24"
+            }
+          ],
+          "assets": [
+            "IMG-P07"
+          ],
+          "sfx": [
+            "SFX-24"
+          ]
+        },
+        {
+          "id": "B5-s06",
+          "type": "explain",
+          "scene": "twoLines",
+          "title": "B5.lines.title",
+          "body": [
+            "B5.lines.body1",
+            "B5.lines.body2"
+          ],
+          "lines": [
+            "VO-B16"
+          ],
+          "sfx": [
+            "SFX-17",
+            "SFX-12"
+          ]
+        },
+        {
+          "id": "B5-s07",
+          "type": "task",
+          "task": "B5-I2"
+        },
+        {
+          "id": "B5-s08",
+          "type": "task",
+          "task": "B5-C1"
+        },
+        {
+          "id": "B5-s09",
+          "type": "summary",
+          "title": "B5.end.title",
+          "body": [
+            "B5.end.body1",
+            "B5.end.body2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B6",
+      "title": "beat.B6.title",
+      "module": "B6-claim-and-defend",
+      "standard": "SC.HS.9.4.b",
+      "built": true,
+      "sequencing": "explicit-first",
+      "steps": [
+        {
+          "id": "B6-s01",
+          "type": "retrieve",
+          "tasks": [
+            "B6-R1",
+            "B6-R2",
+            "B6-R3"
+          ]
+        },
+        {
+          "id": "B6-s02",
+          "type": "explain",
+          "scene": "board",
+          "title": "B6.board.title",
+          "body": [
+            "B6.board.body1",
+            "B6.board.body2"
+          ],
+          "lines": [
+            "VO-B17"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-B06"
+            }
+          ],
+          "assets": [
+            "IMG-B06"
+          ],
+          "ambience": "SFX-25",
+          "sfx": [
+            "SFX-25"
+          ]
+        },
+        {
+          "id": "B6-s03",
+          "type": "task",
+          "task": "B6-G1"
+        },
+        {
+          "id": "B6-s04",
+          "type": "task",
+          "task": "B6-I1"
+        },
+        {
+          "id": "B6-s05",
+          "type": "task",
+          "task": "B6-I2"
+        },
+        {
+          "id": "B6-s06",
+          "type": "task",
+          "task": "B6-I3"
+        },
+        {
+          "id": "B6-s07",
+          "type": "task",
+          "task": "B6-I4"
+        },
+        {
+          "id": "B6-s08",
+          "type": "task",
+          "task": "B6-C1"
+        },
+        {
+          "id": "B6-s09",
+          "type": "summary",
+          "title": "B6.end.title",
+          "body": [
+            "B6.end.body1",
+            "B6.end.body2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B7",
+      "title": "beat.B7.title",
+      "module": "B7-epilogue",
+      "standard": "SC.HS.9.4.b",
+      "built": true,
+      "kind": "observe",
+      "sequencing": "phenomenon-first",
+      "steps": [
+        {
+          "id": "B7-s01",
+          "type": "explain",
+          "scene": "story",
+          "title": "B7.title",
+          "body": [
+            "B7.body1"
+          ],
+          "lines": [
+            "VO-B18"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-P08"
+            }
+          ],
+          "assets": [
+            "IMG-P08"
+          ],
+          "ambience": "SFX-25",
+          "sfx": [
+            "SFX-25"
+          ]
+        },
+        {
+          "id": "B7-s02",
+          "type": "explain",
+          "scene": "lifecycle",
+          "title": "B7.cycle.title",
+          "body": [
+            "B7.cycle.body1",
+            "B7.cycle.body2"
+          ],
+          "lines": [],
+          "variant": "complete"
+        },
+        {
+          "id": "B7-s03",
+          "type": "intro",
+          "title": "B7.done.title",
+          "body": [
+            "B7.done.body1",
+            "B7.done.body2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B-check",
+      "title": "beat.Bcheck.title",
+      "module": "B-check",
+      "standard": "SC.HS.9.4.b",
+      "built": true,
+      "sequencing": "explicit-first",
+      "steps": [
+        {
+          "id": "Bc-s01",
+          "type": "retrieve",
+          "tasks": [
+            "Bc-R1",
+            "Bc-R2",
+            "Bc-R3"
+          ]
+        },
+        {
+          "id": "Bc-s02",
+          "type": "intro",
+          "title": "Bcheck.intro.title",
+          "body": [
+            "Bcheck.intro.body1",
+            "Bcheck.intro.body2"
+          ]
+        },
+        {
+          "id": "Bc-s03",
+          "type": "task",
+          "task": "Bc-C1"
+        },
+        {
+          "id": "Bc-s04",
+          "type": "task",
+          "task": "Bc-C2"
+        },
+        {
+          "id": "Bc-s05",
+          "type": "task",
+          "task": "Bc-C3"
+        },
+        {
+          "id": "Bc-s06",
+          "type": "task",
+          "task": "Bc-C4"
+        },
+        {
+          "id": "Bc-s07",
+          "type": "task",
+          "task": "Bc-C5"
+        },
+        {
+          "id": "Bc-s08",
+          "type": "summary",
+          "title": "Bcheck.end.title",
+          "body": [
+            "Bcheck.end.body1",
+            "Bcheck.end.body2"
+          ]
+        }
+      ]
+    }
+  ],
+  "tasks": {
+    "B0-T1": {
+      "id": "B0-T1",
+      "beat": "B0",
+      "standard": "SC.HS.9.4.b",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "bands",
+      "prompt": "B0.T1.prompt",
+      "mode": "match",
+      "lanes": [
+        "barty",
+        "h2",
+        "figTail"
+      ],
+      "target": "h2",
+      "compare": "barty",
+      "worked": [
+        "B0.T1.step1",
+        "B0.T1.step2",
+        "B0.T1.step3"
+      ],
+      "hints": [
+        "B0.T1.hint1",
+        "B0.T1.hint2"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "B0.T1.fb.correct"
+        },
+        {
+          "when": {
+            "bands": "missed"
+          },
+          "text": "gel.fb.missed"
+        },
+        {
+          "when": {
+            "bands": "extra"
+          },
+          "misconception": "band-near-match",
+          "text": "gel.fb.extra"
+        }
+      ]
+    },
+    "B0-T2": {
+      "id": "B0-T2",
+      "beat": "B0",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "bands",
+      "prompt": "B0.T2.prompt",
+      "mode": "match",
+      "lanes": [
+        "barty",
+        "h2",
+        "figTail"
+      ],
+      "target": "h2",
+      "compare": "figTail",
+      "hints": [
+        "B0.T2.hint1"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "B0.T2.fb.correct"
+        },
+        {
+          "when": {
+            "bands": "missed"
+          },
+          "text": "gel.fb.missed"
+        },
+        {
+          "when": {
+            "bands": "extra"
+          },
+          "misconception": "band-near-match",
+          "text": "gel.fb.extra"
+        }
+      ]
+    },
+    "B0-T3": {
+      "id": "B0-T3",
+      "beat": "B0",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B0-T3.prompt",
+      "options": [
+        {
+          "id": "mother",
+          "text": "B0-T3.opt.mother",
+          "feedback": "B0-T3.fb.mother",
+          "correct": true
+        },
+        {
+          "id": "itself",
+          "text": "B0-T3.opt.itself",
+          "feedback": "B0-T3.fb.itself",
+          "misconception": "dna-from-nowhere"
+        },
+        {
+          "id": "barty",
+          "text": "B0-T3.opt.barty",
+          "feedback": "B0-T3.fb.barty",
+          "misconception": "all-from-father"
+        },
+        {
+          "id": "broken",
+          "text": "B0-T3.opt.broken",
+          "feedback": "B0-T3.fb.broken",
+          "misconception": "test-error",
+          "removable": true
+        }
+      ]
+    },
+    "B0-P1": {
+      "id": "B0-P1",
+      "beat": "B0",
+      "standard": "SC.HS.9.4.b",
+      "phase": "predict",
+      "status": "draft",
+      "kind": "predict",
+      "prompt": "B0-P1.prompt",
+      "frames": "B0.P1.frame",
+      "wordBank": "B0.P1.bank"
+    },
+    "B1-R1": {
+      "id": "B1-R1",
+      "beat": "B1",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "B1-R1.prompt",
+      "answer": "B1-R1.answer"
+    },
+    "B1-R2": {
+      "id": "B1-R2",
+      "beat": "B1",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "B1-R2.prompt",
+      "answer": "B1-R2.answer"
+    },
+    "B1-R3": {
+      "id": "B1-R3",
+      "beat": "B1",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "B1-R3.prompt",
+      "answer": "B1-R3.answer"
+    },
+    "B1-R4": {
+      "id": "B1-R4",
+      "beat": "B1",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "B1-R4.prompt",
+      "answer": "B1-R4.answer"
+    },
+    "B2-R1": {
+      "id": "B2-R1",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "B2-R1.prompt",
+      "answer": "B2-R1.answer"
+    },
+    "B2-R2": {
+      "id": "B2-R2",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "B2-R2.prompt",
+      "answer": "B2-R2.answer"
+    },
+    "B2-R3": {
+      "id": "B2-R3",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "B2-R3.prompt",
+      "answer": "B2-R3.answer"
+    },
+    "B2-G1": {
+      "id": "B2-G1",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "gamete",
+      "gamete": "egg",
+      "prompt": "B2.G1.prompt",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "A",
+              "E"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "a",
+              "e"
+            ]
+          },
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "B"
+            ]
+          },
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "b"
+            ]
+          }
+        ]
+      },
+      "worked": [
+        "B2.G1.step1",
+        "B2.G1.step2",
+        "B2.G1.step3"
+      ],
+      "hints": [
+        "B2.G1.hint1",
+        "B2.G1.hint2"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "B2.G1.fb.correct"
+        },
+        {
+          "when": {
+            "gamete": "full-set"
+          },
+          "misconception": "gamete-full-set",
+          "text": "gamete.fb.full-set"
+        },
+        {
+          "when": {
+            "gamete": "both-of-pair"
+          },
+          "misconception": "gamete-both-of-pair",
+          "text": "gamete.fb.both-of-pair"
+        },
+        {
+          "when": {
+            "gamete": "missing-pair"
+          },
+          "misconception": "gamete-missing-pair",
+          "text": "gamete.fb.missing-pair"
+        }
+      ]
+    },
+    "B2-I1": {
+      "id": "B2-I1",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "gamete",
+      "gamete": "sperm",
+      "prompt": "B2.I1.prompt",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "A",
+              "e"
+            ]
+          },
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "B"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "a",
+              "E"
+            ]
+          },
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "b"
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "B2.I1.hint1"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "B2.I1.fb.correct"
+        },
+        {
+          "when": {
+            "gamete": "full-set"
+          },
+          "misconception": "gamete-full-set",
+          "text": "gamete.fb.full-set"
+        },
+        {
+          "when": {
+            "gamete": "both-of-pair"
+          },
+          "misconception": "gamete-both-of-pair",
+          "text": "gamete.fb.both-of-pair"
+        },
+        {
+          "when": {
+            "gamete": "missing-pair"
+          },
+          "misconception": "gamete-missing-pair",
+          "text": "gamete.fb.missing-pair"
+        }
+      ]
+    },
+    "B2-I2": {
+      "id": "B2-I2",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "gamete",
+      "gamete": "egg",
+      "collect": 4,
+      "prompt": "B2.I2.prompt",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "A",
+              "E"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "a",
+              "e"
+            ]
+          },
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "B"
+            ]
+          },
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "b"
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "B2.I2.hint1",
+        "B2.I2.hint2"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "B2.I2.fb.correct"
+        },
+        {
+          "when": {
+            "gamete": "full-set"
+          },
+          "misconception": "gamete-full-set",
+          "text": "gamete.fb.full-set"
+        },
+        {
+          "when": {
+            "gamete": "both-of-pair"
+          },
+          "misconception": "gamete-both-of-pair",
+          "text": "gamete.fb.both-of-pair"
+        },
+        {
+          "when": {
+            "gamete": "missing-pair"
+          },
+          "misconception": "gamete-missing-pair",
+          "text": "gamete.fb.missing-pair"
+        }
+      ]
+    },
+    "B2-I3": {
+      "id": "B2-I3",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B2-I3.prompt",
+      "options": [
+        {
+          "id": "two",
+          "text": "B2-I3.opt.two",
+          "feedback": "B2-I3.fb.two",
+          "misconception": "crossing-over-new-genes"
+        },
+        {
+          "id": "four",
+          "text": "B2-I3.opt.four",
+          "feedback": "B2-I3.fb.four",
+          "correct": true
+        },
+        {
+          "id": "one",
+          "text": "B2-I3.opt.one",
+          "feedback": "B2-I3.fb.one",
+          "misconception": "meiosis-is-copy"
+        },
+        {
+          "id": "new",
+          "text": "B2-I3.opt.new",
+          "feedback": "B2-I3.fb.new",
+          "misconception": "crossing-over-new-genes",
+          "removable": true
+        }
+      ],
+      "goFurther": "B2-I3gf"
+    },
+    "B2-I3gf": {
+      "id": "B2-I3gf",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B2-I3gf.prompt",
+      "options": [
+        {
+          "id": "24",
+          "text": "B2-I3gf.opt.24",
+          "feedback": "B2-I3gf.fb.24",
+          "misconception": "combos-add"
+        },
+        {
+          "id": "4096",
+          "text": "B2-I3gf.opt.4096",
+          "feedback": "B2-I3gf.fb.4096",
+          "correct": true
+        },
+        {
+          "id": "12",
+          "text": "B2-I3gf.opt.12",
+          "feedback": "B2-I3gf.fb.12",
+          "misconception": "one-egg-per-pair"
+        }
+      ],
+      "isGoFurther": true
+    },
+    "B2-C1": {
+      "id": "B2-C1",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "gamete",
+      "gamete": "egg",
+      "prompt": "B2.C1.prompt",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "R"
+            ]
+          },
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "s"
+            ]
+          },
+          {
+            "id": "3M",
+            "pair": 3,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "T"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "r"
+            ]
+          },
+          {
+            "id": "3P",
+            "pair": 3,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "t"
+            ]
+          },
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "S"
+            ]
+          }
+        ]
+      },
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "B2.C1.fb.correct"
+        },
+        {
+          "when": {
+            "gamete": "full-set"
+          },
+          "misconception": "gamete-full-set",
+          "text": "gamete.fb.full-set"
+        },
+        {
+          "when": {
+            "gamete": "both-of-pair"
+          },
+          "misconception": "gamete-both-of-pair",
+          "text": "gamete.fb.both-of-pair"
+        },
+        {
+          "when": {
+            "gamete": "missing-pair"
+          },
+          "misconception": "gamete-missing-pair",
+          "text": "gamete.fb.missing-pair"
+        }
+      ]
+    },
+    "B2-C2": {
+      "id": "B2-C2",
+      "beat": "B2",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B2-C2.prompt",
+      "options": [
+        {
+          "id": "blend",
+          "text": "B2-C2.opt.blend",
+          "feedback": "B2-C2.fb.blend",
+          "misconception": "blending"
+        },
+        {
+          "id": "shuffle",
+          "text": "B2-C2.opt.shuffle",
+          "feedback": "B2-C2.fb.shuffle",
+          "correct": true
+        },
+        {
+          "id": "same",
+          "text": "B2-C2.opt.same",
+          "feedback": "B2-C2.fb.same",
+          "misconception": "siblings-identical"
+        },
+        {
+          "id": "copy",
+          "text": "B2-C2.opt.copy",
+          "feedback": "B2-C2.fb.copy",
+          "misconception": "meiosis-is-copy"
+        }
+      ]
+    },
+    "B3-R1": {
+      "id": "B3-R1",
+      "beat": "B3",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "B3-R1.prompt",
+      "answer": "B3-R1.answer"
+    },
+    "B3-R2": {
+      "id": "B3-R2",
+      "beat": "B3",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "B3-R2.prompt",
+      "answer": "B3-R2.answer"
+    },
+    "B3-R3": {
+      "id": "B3-R3",
+      "beat": "B3",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "B3-R3.prompt",
+      "answer": "B3-R3.answer"
+    },
+    "B3-P1": {
+      "id": "B3-P1",
+      "beat": "B3",
+      "standard": "SC.HS.9.4.b",
+      "phase": "predict",
+      "status": "draft",
+      "kind": "predict",
+      "prompt": "B3-P1.prompt",
+      "frames": "B3.P1.frame",
+      "wordBank": "B3.P1.bank"
+    },
+    "B3-G1": {
+      "id": "B3-G1",
+      "beat": "B3",
+      "standard": "SC.HS.9.4.b",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "classify",
+      "prompt": "B3-G1.prompt",
+      "bins": [
+        "B3.bin.mitosis",
+        "B3.bin.meiosis",
+        "B3.bin.both"
+      ],
+      "items": [
+        {
+          "id": "two",
+          "text": "B3-G1.item.two",
+          "bin": 0,
+          "misconception": "meiosis-is-copy"
+        },
+        {
+          "id": "four",
+          "text": "B3-G1.item.four",
+          "bin": 1,
+          "misconception": "mitosis-halves"
+        },
+        {
+          "id": "same",
+          "text": "B3-G1.item.same",
+          "bin": 0,
+          "misconception": "meiosis-is-copy"
+        },
+        {
+          "id": "half",
+          "text": "B3-G1.item.half",
+          "bin": 1,
+          "misconception": "mitosis-halves"
+        },
+        {
+          "id": "copy",
+          "text": "B3-G1.item.copy",
+          "bin": 2,
+          "misconception": "meiosis-no-copy"
+        },
+        {
+          "id": "swap",
+          "text": "B3-G1.item.swap",
+          "bin": 1,
+          "misconception": "swap-in-mitosis"
+        },
+        {
+          "id": "body",
+          "text": "B3-G1.item.body",
+          "bin": 0,
+          "misconception": "meiosis-is-copy"
+        },
+        {
+          "id": "eggs",
+          "text": "B3-G1.item.eggs",
+          "bin": 1,
+          "misconception": "mitosis-halves"
+        }
+      ],
+      "hints": [
+        "B3.G1.hint1",
+        "B3.G1.hint2"
+      ]
+    },
+    "B3-I1": {
+      "id": "B3-I1",
+      "beat": "B3",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B3-I1.prompt",
+      "options": [
+        {
+          "id": "six",
+          "text": "B3-I1.opt.six",
+          "feedback": "B3-I1.fb.six",
+          "misconception": "meiosis-is-copy"
+        },
+        {
+          "id": "three",
+          "text": "B3-I1.opt.three",
+          "feedback": "B3-I1.fb.three",
+          "correct": true
+        },
+        {
+          "id": "twelve",
+          "text": "B3-I1.opt.twelve",
+          "feedback": "B3-I1.fb.twelve",
+          "misconception": "copy-doubles-chromosomes"
+        },
+        {
+          "id": "two",
+          "text": "B3-I1.opt.two",
+          "feedback": "B3-I1.fb.two",
+          "misconception": "gamete-missing-pair",
+          "removable": true
+        }
+      ]
+    },
+    "B3-C1": {
+      "id": "B3-C1",
+      "beat": "B3",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B3-C1.prompt",
+      "options": [
+        {
+          "id": "both-same",
+          "text": "B3-C1.opt.both-same",
+          "feedback": "B3-C1.fb.both-same",
+          "misconception": "meiosis-is-copy"
+        },
+        {
+          "id": "both-half",
+          "text": "B3-C1.opt.both-half",
+          "feedback": "B3-C1.fb.both-half",
+          "misconception": "mitosis-halves"
+        },
+        {
+          "id": "right",
+          "text": "B3-C1.opt.right",
+          "feedback": "B3-C1.fb.right",
+          "correct": true
+        },
+        {
+          "id": "swapped",
+          "text": "B3-C1.opt.swapped",
+          "feedback": "B3-C1.fb.swapped",
+          "misconception": "mitosis-shuffles"
+        }
+      ]
+    },
+    "B3-C2": {
+      "id": "B3-C2",
+      "beat": "B3",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "predict",
+      "prompt": "B3-C2.prompt",
+      "showEarlier": "B3-P1"
+    },
+    "B4-R1": {
+      "id": "B4-R1",
+      "beat": "B4",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "B4-R1.prompt",
+      "answer": "B4-R1.answer"
+    },
+    "B4-R2": {
+      "id": "B4-R2",
+      "beat": "B4",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "B4-R2.prompt",
+      "answer": "B4-R2.answer"
+    },
+    "B4-R3": {
+      "id": "B4-R3",
+      "beat": "B4",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "B4-R3.prompt",
+      "answer": "B4-R3.answer"
+    },
+    "B4-L1": {
+      "id": "B4-L1",
+      "beat": "B4",
+      "standard": "SC.HS.9.4.b",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "lab",
+      "prompt": "B4.L1.prompt",
+      "tanks": [
+        {
+          "id": "shuffle",
+          "card": "B4.card.shuffle"
+        },
+        {
+          "id": "copy",
+          "line": "VO-B10",
+          "card": "B4.card.copy"
+        },
+        {
+          "id": "uv",
+          "line": "VO-B11",
+          "card": "B4.card.uv"
+        }
+      ],
+      "hints": [
+        "B4.L1.hint1"
+      ]
+    },
+    "B4-G1": {
+      "id": "B4-G1",
+      "beat": "B4",
+      "standard": "SC.HS.9.4.b",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "classify",
+      "prompt": "B4-G1.prompt",
+      "bins": [
+        "B4.bin.yes",
+        "B4.bin.no"
+      ],
+      "items": [
+        {
+          "id": "mix",
+          "text": "B4-G1.item.mix",
+          "bin": 0,
+          "misconception": "siblings-identical"
+        },
+        {
+          "id": "sperm",
+          "text": "B4-G1.item.sperm",
+          "bin": 0,
+          "misconception": "environment-never-inherited"
+        },
+        {
+          "id": "uv",
+          "text": "B4-G1.item.uv",
+          "bin": 1,
+          "misconception": "all-changes-inherited"
+        },
+        {
+          "id": "tail",
+          "text": "B4-G1.item.tail",
+          "bin": 1,
+          "misconception": "all-changes-inherited"
+        },
+        {
+          "id": "legs",
+          "text": "B4-G1.item.legs",
+          "bin": 1,
+          "misconception": "acquired-traits"
+        },
+        {
+          "id": "uvgerm",
+          "text": "B4-G1.item.uvgerm",
+          "bin": 0,
+          "misconception": "environment-never-inherited"
+        }
+      ],
+      "hints": [
+        "B4.G1.hint1",
+        "B4.G1.hint2"
+      ]
+    },
+    "B4-I1": {
+      "id": "B4-I1",
+      "beat": "B4",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B4-I1.prompt",
+      "options": [
+        {
+          "id": "all",
+          "text": "B4-I1.opt.all",
+          "feedback": "B4-I1.fb.all",
+          "misconception": "all-changes-inherited"
+        },
+        {
+          "id": "long",
+          "text": "B4-I1.opt.long",
+          "feedback": "B4-I1.fb.long",
+          "misconception": "acquired-traits"
+        },
+        {
+          "id": "skin",
+          "text": "B4-I1.opt.skin",
+          "feedback": "B4-I1.fb.skin",
+          "correct": true
+        },
+        {
+          "id": "never",
+          "text": "B4-I1.opt.never",
+          "feedback": "B4-I1.fb.never",
+          "misconception": "environment-never-inherited"
+        }
+      ]
+    },
+    "B4-C1": {
+      "id": "B4-C1",
+      "beat": "B4",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B4-C1.prompt",
+      "options": [
+        {
+          "id": "learned",
+          "text": "B4-C1.opt.learned",
+          "feedback": "B4-C1.fb.learned",
+          "misconception": "acquired-traits"
+        },
+        {
+          "id": "blend",
+          "text": "B4-C1.opt.blend",
+          "feedback": "B4-C1.fb.blend",
+          "misconception": "blending"
+        },
+        {
+          "id": "copy",
+          "text": "B4-C1.opt.copy",
+          "feedback": "B4-C1.fb.copy",
+          "correct": true
+        },
+        {
+          "id": "skin",
+          "text": "B4-C1.opt.skin",
+          "feedback": "B4-C1.fb.skin",
+          "misconception": "all-changes-inherited"
+        }
+      ]
+    },
+    "B5-R1": {
+      "id": "B5-R1",
+      "beat": "B5",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "B5-R1.prompt",
+      "answer": "B5-R1.answer"
+    },
+    "B5-R2": {
+      "id": "B5-R2",
+      "beat": "B5",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "B5-R2.prompt",
+      "answer": "B5-R2.answer"
+    },
+    "B5-R3": {
+      "id": "B5-R3",
+      "beat": "B5",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "B5-R3.prompt",
+      "answer": "B5-R3.answer"
+    },
+    "B5-T1": {
+      "id": "B5-T1",
+      "beat": "B5",
+      "standard": "SC.HS.9.4.b",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "bands",
+      "prompt": "B5.T1.prompt",
+      "mode": "tissues",
+      "lanes": [
+        "barty",
+        "h2"
+      ],
+      "samples": [
+        "figTail",
+        "figSkin",
+        "figBlood",
+        "figEggs"
+      ],
+      "lines": [
+        "VO-B14"
+      ],
+      "hints": [
+        "B5.T1.hint1"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "B5.T1.fb.correct"
+        }
+      ]
+    },
+    "B5-I1": {
+      "id": "B5-I1",
+      "beat": "B5",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B5-I1.prompt",
+      "options": [
+        {
+          "id": "tail",
+          "text": "B5-I1.opt.tail",
+          "feedback": "B5-I1.fb.tail",
+          "misconception": "dna-same-everywhere"
+        },
+        {
+          "id": "blood",
+          "text": "B5-I1.opt.blood",
+          "feedback": "B5-I1.fb.blood",
+          "misconception": "dna-same-everywhere"
+        },
+        {
+          "id": "eggs",
+          "text": "B5-I1.opt.eggs",
+          "feedback": "B5-I1.fb.eggs",
+          "correct": true
+        },
+        {
+          "id": "none",
+          "text": "B5-I1.opt.none",
+          "feedback": "B5-I1.fb.none",
+          "misconception": "eggs-swapped",
+          "removable": true
+        }
+      ]
+    },
+    "B5-I2": {
+      "id": "B5-I2",
+      "beat": "B5",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B5-I2.prompt",
+      "options": [
+        {
+          "id": "machine",
+          "text": "B5-I2.opt.machine",
+          "feedback": "B5-I2.fb.machine",
+          "misconception": "test-error"
+        },
+        {
+          "id": "mutation",
+          "text": "B5-I2.opt.mutation",
+          "feedback": "B5-I2.fb.mutation",
+          "misconception": "one-mutation"
+        },
+        {
+          "id": "lines",
+          "text": "B5-I2.opt.lines",
+          "feedback": "B5-I2.fb.lines",
+          "correct": true
+        },
+        {
+          "id": "swap",
+          "text": "B5-I2.opt.swap",
+          "feedback": "B5-I2.fb.swap",
+          "misconception": "eggs-swapped"
+        }
+      ]
+    },
+    "B5-C1": {
+      "id": "B5-C1",
+      "beat": "B5",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B5-C1.prompt",
+      "options": [
+        {
+          "id": "fur",
+          "text": "B5-C1.opt.fur",
+          "feedback": "B5-C1.fb.fur",
+          "misconception": "dna-same-everywhere"
+        },
+        {
+          "id": "blood",
+          "text": "B5-C1.opt.blood",
+          "feedback": "B5-C1.fb.blood",
+          "misconception": "dna-same-everywhere"
+        },
+        {
+          "id": "eggs",
+          "text": "B5-C1.opt.eggs",
+          "feedback": "B5-C1.fb.eggs",
+          "correct": true
+        },
+        {
+          "id": "any",
+          "text": "B5-C1.opt.any",
+          "feedback": "B5-C1.fb.any",
+          "misconception": "dna-same-everywhere"
+        }
+      ]
+    },
+    "B6-R1": {
+      "id": "B6-R1",
+      "beat": "B6",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "B6-R1.prompt",
+      "answer": "B6-R1.answer"
+    },
+    "B6-R2": {
+      "id": "B6-R2",
+      "beat": "B6",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "B6-R2.prompt",
+      "answer": "B6-R2.answer"
+    },
+    "B6-R3": {
+      "id": "B6-R3",
+      "beat": "B6",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "B6-R3.prompt",
+      "answer": "B6-R3.answer"
+    },
+    "B6-G1": {
+      "id": "B6-G1",
+      "beat": "B6",
+      "standard": "SC.HS.9.4.b",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "predict",
+      "prompt": "B6-G1.prompt",
+      "showEarlier": "B0-P1",
+      "frames": "B6.G1.frame",
+      "wordBank": "B6.G1.bank"
+    },
+    "B6-I1": {
+      "id": "B6-I1",
+      "beat": "B6",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B6-I1.prompt",
+      "options": [
+        {
+          "id": "tank",
+          "text": "B6-I1.opt.tank",
+          "feedback": "B6-I1.fb.tank",
+          "misconception": "correlation-is-cause"
+        },
+        {
+          "id": "barty",
+          "text": "B6-I1.opt.barty",
+          "feedback": "B6-I1.fb.barty",
+          "misconception": "one-parent-proves-both"
+        },
+        {
+          "id": "camera",
+          "text": "B6-I1.opt.camera",
+          "feedback": "B6-I1.fb.camera",
+          "correct": true
+        },
+        {
+          "id": "calm",
+          "text": "B6-I1.opt.calm",
+          "feedback": "B6-I1.fb.calm",
+          "misconception": "opinion-as-evidence",
+          "removable": true
+        }
+      ]
+    },
+    "B6-I2": {
+      "id": "B6-I2",
+      "beat": "B6",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B6-I2.prompt",
+      "options": [
+        {
+          "id": "repeat",
+          "text": "B6-I2.opt.repeat",
+          "feedback": "B6-I2.fb.repeat",
+          "correct": true
+        },
+        {
+          "id": "surprise",
+          "text": "B6-I2.opt.surprise",
+          "feedback": "B6-I2.fb.surprise",
+          "misconception": "test-error"
+        },
+        {
+          "id": "barty",
+          "text": "B6-I2.opt.barty",
+          "feedback": "B6-I2.fb.barty",
+          "misconception": "one-parent-proves-both"
+        },
+        {
+          "id": "careful",
+          "text": "B6-I2.opt.careful",
+          "feedback": "B6-I2.fb.careful",
+          "misconception": "opinion-as-evidence"
+        }
+      ]
+    },
+    "B6-I3": {
+      "id": "B6-I3",
+      "beat": "B6",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B6-I3.prompt",
+      "options": [
+        {
+          "id": "anything",
+          "text": "B6-I3.opt.anything",
+          "feedback": "B6-I3.fb.anything",
+          "misconception": "one-mutation"
+        },
+        {
+          "id": "regrew",
+          "text": "B6-I3.opt.regrew",
+          "feedback": "B6-I3.fb.regrew",
+          "misconception": "all-changes-inherited"
+        },
+        {
+          "id": "five",
+          "text": "B6-I3.opt.five",
+          "feedback": "B6-I3.fb.five",
+          "correct": true
+        },
+        {
+          "id": "broken",
+          "text": "B6-I3.opt.broken",
+          "feedback": "B6-I3.fb.broken",
+          "misconception": "test-error"
+        }
+      ]
+    },
+    "B6-I4": {
+      "id": "B6-I4",
+      "beat": "B6",
+      "standard": "SC.HS.9.4.b",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "B6-I4.prompt",
+      "options": [
+        {
+          "id": "yes",
+          "text": "B6-I4.opt.yes",
+          "feedback": "B6-I4.fb.yes",
+          "misconception": "correlation-is-cause"
+        },
+        {
+          "id": "no",
+          "text": "B6-I4.opt.no",
+          "feedback": "B6-I4.fb.no",
+          "correct": true
+        },
+        {
+          "id": "never",
+          "text": "B6-I4.opt.never",
+          "feedback": "B6-I4.fb.never",
+          "misconception": "environment-never-inherited"
+        },
+        {
+          "id": "sat",
+          "text": "B6-I4.opt.sat",
+          "feedback": "B6-I4.fb.sat",
+          "misconception": "acquired-traits"
+        }
+      ]
+    },
+    "B6-C1": {
+      "id": "B6-C1",
+      "beat": "B6",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "predict",
+      "prompt": "B6-C1.prompt"
+    },
+    "Bc-R1": {
+      "id": "Bc-R1",
+      "beat": "B-check",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "Bc-R1.prompt",
+      "answer": "Bc-R1.answer"
+    },
+    "Bc-R2": {
+      "id": "Bc-R2",
+      "beat": "B-check",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "Bc-R2.prompt",
+      "answer": "Bc-R2.answer"
+    },
+    "Bc-R3": {
+      "id": "Bc-R3",
+      "beat": "B-check",
+      "standard": "SC.HS.9.4.b",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "Bc-R3.prompt",
+      "answer": "Bc-R3.answer"
+    },
+    "Bc-C1": {
+      "id": "Bc-C1",
+      "beat": "B-check",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "gamete",
+      "gamete": "sperm",
+      "prompt": "Bc.C1.prompt",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "G"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "f"
+            ]
+          },
+          {
+            "id": "3P",
+            "pair": 3,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "h"
+            ]
+          },
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "F"
+            ]
+          },
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "g"
+            ]
+          },
+          {
+            "id": "3M",
+            "pair": 3,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "H"
+            ]
+          }
+        ]
+      },
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "Bc.C1.fb.correct"
+        },
+        {
+          "when": {
+            "gamete": "full-set"
+          },
+          "misconception": "gamete-full-set",
+          "text": "gamete.fb.full-set"
+        },
+        {
+          "when": {
+            "gamete": "both-of-pair"
+          },
+          "misconception": "gamete-both-of-pair",
+          "text": "gamete.fb.both-of-pair"
+        },
+        {
+          "when": {
+            "gamete": "missing-pair"
+          },
+          "misconception": "gamete-missing-pair",
+          "text": "gamete.fb.missing-pair"
+        }
+      ]
+    },
+    "Bc-C2": {
+      "id": "Bc-C2",
+      "beat": "B-check",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "Bc-C2.prompt",
+      "options": [
+        {
+          "id": "shuffle",
+          "text": "Bc-C2.opt.shuffle",
+          "feedback": "Bc-C2.fb.shuffle",
+          "correct": true
+        },
+        {
+          "id": "older",
+          "text": "Bc-C2.opt.older",
+          "feedback": "Bc-C2.fb.older",
+          "misconception": "acquired-traits"
+        },
+        {
+          "id": "same",
+          "text": "Bc-C2.opt.same",
+          "feedback": "Bc-C2.fb.same",
+          "misconception": "siblings-identical"
+        },
+        {
+          "id": "blend",
+          "text": "Bc-C2.opt.blend",
+          "feedback": "Bc-C2.fb.blend",
+          "misconception": "blending"
+        }
+      ]
+    },
+    "Bc-C3": {
+      "id": "Bc-C3",
+      "beat": "B-check",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "classify",
+      "prompt": "Bc-C3.prompt",
+      "bins": [
+        "B4.bin.yes",
+        "B4.bin.no"
+      ],
+      "items": [
+        {
+          "id": "tail",
+          "text": "Bc-C3.item.tail",
+          "bin": 1,
+          "misconception": "acquired-traits"
+        },
+        {
+          "id": "egg",
+          "text": "Bc-C3.item.egg",
+          "bin": 0,
+          "misconception": "environment-never-inherited"
+        },
+        {
+          "id": "sun",
+          "text": "Bc-C3.item.sun",
+          "bin": 1,
+          "misconception": "all-changes-inherited"
+        },
+        {
+          "id": "mix",
+          "text": "Bc-C3.item.mix",
+          "bin": 0,
+          "misconception": "siblings-identical"
+        }
+      ]
+    },
+    "Bc-C4": {
+      "id": "Bc-C4",
+      "beat": "B-check",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "Bc-C4.prompt",
+      "options": [
+        {
+          "id": "yes",
+          "text": "Bc-C4.opt.yes",
+          "feedback": "Bc-C4.fb.yes",
+          "correct": true
+        },
+        {
+          "id": "never",
+          "text": "Bc-C4.opt.never",
+          "feedback": "Bc-C4.fb.never",
+          "misconception": "environment-never-inherited"
+        },
+        {
+          "id": "long",
+          "text": "Bc-C4.opt.long",
+          "feedback": "Bc-C4.fb.long",
+          "misconception": "acquired-traits"
+        },
+        {
+          "id": "skin",
+          "text": "Bc-C4.opt.skin",
+          "feedback": "Bc-C4.fb.skin",
+          "misconception": "all-changes-inherited"
+        }
+      ]
+    },
+    "Bc-C5": {
+      "id": "Bc-C5",
+      "beat": "B-check",
+      "standard": "SC.HS.9.4.b",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "predict",
+      "prompt": "Bc-C5.prompt"
+    }
+  }
+}

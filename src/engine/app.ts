@@ -20,9 +20,15 @@ import { pairTask } from './tasks/pair';
 import { choiceTask } from './tasks/choice';
 import { predictTask } from './tasks/predict';
 import { divideTask } from './tasks/divide';
+import { gameteTask } from './tasks/gamete';
+import { classifyTask } from './tasks/classify';
+import { bandsTask } from './tasks/bands';
 
 /** Explain scenes that show a chromosome model, so the count strip appears. */
-const COUNT_SCENES = ['pairs', 'replicate', 'parent', 'mitosis', 'stump', 'three-cells'];
+const COUNT_SCENES = ['pairs', 'replicate', 'parent', 'mitosis', 'stump', 'three-cells', 'meiosis', 'fertilise'];
+
+/** Task kinds that use the model area, and whether they show the count strip. */
+const STAGE_TASKS: Record<string, boolean> = { count: true, pair: true, divide: true, switch: true, gamete: true, sort: false, bands: false, lab: false };
 
 const MODULES: Record<string, () => Promise<BeatModule>> = {
   'A0-cold-open': () => import('../modules/A0-cold-open/index'),
@@ -32,6 +38,15 @@ const MODULES: Record<string, () => Promise<BeatModule>> = {
   'A3-build-a-body': () => import('../modules/A3-build-a-body/index'),
   'A4-model-limits': () => import('../modules/A4-model-limits/index'),
   'A-end-hook': () => import('../modules/A-end-hook/index'),
+  'B0-cold-open': () => import('../modules/B0-cold-open/index'),
+  'B1-retrieval': () => import('../modules/B1-retrieval/index'),
+  'B2-make-gametes': () => import('../modules/B2-make-gametes/index'),
+  'B3-side-by-side': () => import('../modules/B3-side-by-side/index'),
+  'B4-variation-lab': () => import('../modules/B4-variation-lab/index'),
+  'B5-the-twist': () => import('../modules/B5-the-twist/index'),
+  'B6-claim-and-defend': () => import('../modules/B6-claim-and-defend/index'),
+  'B7-epilogue': () => import('../modules/B7-epilogue/index'),
+  'B-check': () => import('../modules/B-check/index'),
 };
 
 /** Settings that change what the panel shows; the step re-renders. */
@@ -44,6 +59,7 @@ export class App {
   private settingsMenu = new SettingsMenu();
   private overlay = h('div', { class: 'stage-overlay' });
   private chaptersNav = h('nav', { class: 'chapters' });
+  private partsNav = h('div', { class: 'parts', role: 'group' });
   private titleEl = h('p', { class: 'title' });
   private settingsBtn = h('button', { class: 'btn', type: 'button' });
   private badges = h('div', { class: 'row-badges', style: { display: 'flex', gap: '6px', flexWrap: 'wrap' } });
@@ -80,7 +96,7 @@ export class App {
       h(
         'div',
         { class: 'app' },
-        h('header', { class: 'topbar' }, this.titleEl, this.chaptersNav, h('div', { class: 'spacer' }), this.settingsBtn),
+        h('header', { class: 'topbar' }, this.titleEl, this.partsNav, this.chaptersNav, h('div', { class: 'spacer' }), this.settingsBtn),
         (this.workspace = h('main', { class: 'workspace no-stage no-counts' }, h('div', { class: 'stage-col' }, this.stage.el, this.counts.el, this.captions.el), this.panel)),
       ),
       this.settingsMenu.dialog,
@@ -132,12 +148,42 @@ export class App {
     this.renderChapters();
   }
 
+  /** Part A / Part B switch: each part has its own row of chapter tabs. */
+  private renderParts(): void {
+    const part = this.beat?.part ?? 'A';
+    this.partsNav.setAttribute('aria-label', t('ui.parts'));
+    this.partsNav.replaceChildren(
+      ...(['A', 'B'] as const).map((p) => {
+        const first = this.content.beats.find((b) => (b.part ?? 'A') === p && b.built);
+        return h(
+          'button',
+          {
+            class: `btn part-btn${part === p ? ' primary' : ''}`,
+            type: 'button',
+            'aria-pressed': String(part === p),
+            disabled: !first,
+            onclick: () => {
+              if (part === p || !first) return;
+              // Back to where this student left off in that part.
+              const saved = progress().partBeat?.[p];
+              const target = this.content.beats.find((b) => b.id === saved && b.built) ?? first;
+              void this.openBeat(target.id, progress().step[target.id] ?? 0);
+            },
+          },
+          t(`ui.part.${p}`),
+        );
+      }),
+    );
+  }
+
   private renderChapters(): void {
+    this.renderParts();
     this.chaptersNav.querySelector('ol')?.remove();
     this.chapterTabs ??= liquidTabs('chapters', this.chaptersNav);
     this.chaptersNav.setAttribute('aria-label', t('ui.chapters'));
     const ol = h('ol');
-    this.content.beats.forEach((b, i) => {
+    const part = this.beat?.part ?? 'A';
+    this.content.beats.filter((b) => (b.part ?? 'A') === part).forEach((b, i) => {
       const current = this.beat?.id === b.id;
       const name = t(b.title);
       const btn = h(
@@ -166,7 +212,7 @@ export class App {
     const beat = this.content.beats.find((b) => b.id === id);
     if (!beat || !beat.built) return;
     this.beat = beat;
-    saveProgress({ beat: id });
+    saveProgress({ beat: id, partBeat: { ...progress().partBeat, [beat.part ?? 'A']: id } });
     this.renderChapters();
     this.module = null;
     clear(this.body);
@@ -203,9 +249,7 @@ export class App {
   /** Which parts of the workspace a step needs. */
   private layoutFor(step: Step, task?: Task): { stage: boolean; counts: boolean } {
     if (step.type === 'explain') return { stage: true, counts: COUNT_SCENES.includes(step.scene) };
-    if (step.type === 'task' && task && (task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide')) return { stage: true, counts: true };
-    if (step.type === 'task' && task?.kind === 'sort') return { stage: true, counts: false };
-    if (step.type === 'task' && task?.kind === 'switch') return { stage: true, counts: true };
+    if (step.type === 'task' && task && task.kind in STAGE_TASKS) return { stage: true, counts: STAGE_TASKS[task.kind] };
     return { stage: false, counts: false };
   }
 
@@ -294,6 +338,9 @@ export class App {
       else if (task.kind === 'choice') this.view = choiceTask(ctx, task, this.content);
       else if (task.kind === 'predict') this.view = predictTask(ctx, task);
       else if (task.kind === 'divide') this.view = divideTask(ctx, task, this.content);
+      else if (task.kind === 'gamete') this.view = gameteTask(ctx, task, this.content);
+      else if (task.kind === 'classify') this.view = classifyTask(ctx, task, this.content);
+      else if (task.kind === 'bands') this.view = bandsTask(ctx, task, this.content);
       else if (this.module?.tasks?.[task.kind]) this.view = this.module.tasks[task.kind](ctx, task, this.content);
       // Narrated lines that go with a task (captions; read aloud when that setting is on).
       if (task.lines?.length && !this.captions.lineKeys().length) this.captions.setLines(task.lines, { autoplay: focus && getSettings().readAloud });

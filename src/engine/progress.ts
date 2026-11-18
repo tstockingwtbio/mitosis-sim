@@ -17,6 +17,8 @@ export interface Progress {
   fade: number;
   /** This student's random seed (each student gets different slide fields). */
   seed: number;
+  /** Last chapter opened in each part. */
+  partBeat?: Partial<Record<'A' | 'B', string>>;
 }
 
 const KEY = 'mm.progress.v1';

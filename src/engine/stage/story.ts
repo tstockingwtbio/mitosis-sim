@@ -15,6 +15,7 @@ interface ExplainStep {
   panels?: Panels;
   ambience?: string;
   sfx?: string[];
+  variant?: string;
 }
 
 export function stepOf(ctx: StepContext): ExplainStep {
@@ -75,6 +76,8 @@ export function storyScene(ctx: StepContext): StepView {
   ctx.captions.setLines(s.lines, { autoAdvance: true, autoplay: getSettings().readAloud });
   const off = ctx.captions.onChange((i) => show(i, true));
   show(ctx.captions.current(), false);
+  // The opening picture's sound plays once when the step opens.
+  if (ctx.captions.current() === 0 && panels[0]?.sfx) playSfx(panels[0].sfx);
   return {
     dispose: () => {
       off();

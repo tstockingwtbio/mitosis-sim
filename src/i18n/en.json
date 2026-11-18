@@ -1764,5 +1764,1280 @@
   "A4.limits.genes.model": "Three genes, switched on or off.",
   "A4.limits.genes.real": "Real cells use thousands of genes, turned up and down in many steps.",
   "A4.limits.cycle.model": "Every cycle takes 24 hours.",
-  "A4.limits.cycle.real": "A round number for the maths. Real cycle lengths vary by species and tissue."
+  "A4.limits.cycle.real": "A round number for the maths. Real cycle lengths vary by species and tissue.",
+  "ui.parts": "Parts",
+  "ui.part.A": "Part A",
+  "ui.part.B": "Part B",
+  "app.partB": "Part B",
+  "vo.VO-B01": {
+    "building": "[cheerful] It's breeding season. Barty over here has grown a crest the size of his ego to impress the ladies, [pause, dry humor] which, for a newt, is considerable. Fig lays her eggs, and six hatchlings wriggle out.",
+    "beginning": "Fig lays eggs. Six babies hatch."
+  },
+  "vo.VO-B02": {
+    "building": "For the breeding records, Ada runs a routine DNA test on a tiny tail clip. The father's Barty. [pause] The mother is... [pause, confused] not Fig.",
+    "beginning": "Ada tests the DNA. Barty is the father. The test says Fig is not the mother."
+  },
+  "vo.VO-B03": {
+    "building": "[exasperated] Tomás is sure someone swapped the eggs. Noor blames the paperwork. [pause] [dry] Fig suspects nothing, [pause] because she's a newt.",
+    "beginning": "Tomás thinks someone changed the eggs."
+  },
+  "vo.VO-B04": {
+    "building": "[trying to calm others down] Before we accuse anybody, let's check what we already know.",
+    "beginning": "What do you remember?"
+  },
+  "vo.VO-B05": {
+    "building": "Eggs and sperm aren't made the way tail cells are. Each one gets half the chromosomes, [pause] one from every pair, so when egg meets sperm, you're back to a full set.",
+    "beginning": "Eggs and sperm have half of the chromosomes. Egg plus sperm makes a full set."
+  },
+  "vo.VO-B06": {
+    "building": "Which chromosome from each pair ends up in an egg? [pause] That's down to chance. And before they split up, partner chromosomes trade sections. [amused] It's less of a copy machine and more of a card shuffle.",
+    "beginning": "The chromosomes mix. Each egg is different."
+  },
+  "vo.VO-B07": {
+    "building": "That's why no two hatchlings look alike. [pause] Same parents, different shuffle.",
+    "beginning": "Brothers and sisters are different because of this mixing."
+  },
+  "vo.VO-B08": {
+    "building": "Let's put them side by side. Mitosis copies everything and makes two identical cells. [pause] Meiosis halves and shuffles, and every cell it makes is one of a kind.",
+    "beginning": "Mitosis makes cells that are the same. Meiosis makes different cells with half of the chromosomes."
+  },
+  "vo.VO-B09": {
+    "building": "[brisk] Three tanks, three ways new variation shows up. Your job? [pause] Figure out which ones make it to the next generation.",
+    "beginning": "Test three tanks. Which changes go to the babies?"
+  },
+  "vo.VO-B10": {
+    "building": "Hatchling 5 has a white tail tip, and neither parent has one. [curious] Somewhere in an egg-making cell, a copy went a little bit wrong, [pause] and the mistake got passed on.",
+    "beginning": "Baby 5 has a white tail tip. A copying mistake in an egg made this."
+  },
+  "vo.VO-B11": {
+    "building": "This newt spent way too long under the old UV lamp, and a patch of her skin changed. Her babies' skin [pause] didn't. [dry] Turns out skin cells [pause, dry humor]don't make babies.",
+    "beginning": "UV light changed this newt's skin. Her babies did not get the change."
+  },
+  "vo.VO-B12": {
+    "building": "[teacherly] So here's the rule: only changes in egg-making or sperm-making cells get passed on. [pause] [mysterious] Which brings us back to Fig the newt.",
+    "beginning": "Only changes in egg cells or sperm cells go to the babies."
+  },
+  "vo.VO-B13": {
+    "building": "Fig laid those eggs. There's camera footage. [pause] But the test says [pause] she is [subtle emphasis] not the mother. [serious] One of those facts has got to give.",
+    "beginning": "The camera shows Fig laid the eggs. But the DNA does not match. Why?"
+  },
+  "vo.VO-B14": {
+    "building": "Ada can test any tissue you pick, so pick carefully. [dry] Newts aren't big fans of being sampled.",
+    "beginning": "Choose which parts of Fig to test."
+  },
+  "vo.VO-B15": {
+    "building": "Tail, skin, blood: [pause] all the same DNA. Egg cells? [pause] Different DNA, and a perfect match for the hatchlings... [pause, quietly amazed] Fig is two newts [pause] in one body.",
+    "beginning": "Fig's tail, skin and blood have one DNA. Fig's egg cells have a different DNA. The egg cells match the babies."
+  },
+  "vo.VO-B16": {
+    "building": "[warm] Long before she hatched, two embryos fused into one. Each one kept copying itself perfectly, by mitosis. One built her tail and skin. The other built the cells that make her eggs. [pause] [dry humor] The test just sampled the wrong Fig.",
+    "beginning": "Two embryos joined together. One made her skin. One made her egg cells."
+  },
+  "vo.VO-B17": {
+    "building": "[encouraging] Now make your case. Tomás still thinks the eggs were swapped. [pause] Convince him.",
+    "beginning": "Write your claim. Use evidence."
+  },
+  "vo.VO-B18": {
+    "building": "So Fig, it turns out, [pause] is technically her own aunt... [pause] [dry] She's still not impressed.",
+    "beginning": "Fig is the mother. She is still not impressed."
+  },
+  "beat.B0.title": "The hatchling test",
+  "B0.title.title": "Part B",
+  "B0.title.body": {
+    "building": "Breeding season at Mossbank. Six hatchlings, one routine DNA test, and a result nobody expected.",
+    "beginning": "Fig has babies. A DNA test has a surprise."
+  },
+  "B0.story1.title": "Breeding season",
+  "B0.story1.body": {
+    "building": "Barty and Fig are the only adults in the breeding tank.",
+    "beginning": "Barty and Fig are the parents."
+  },
+  "B0.story2.title": "The test",
+  "B0.story2.body": {
+    "building": "A DNA profile shows bands. A parent and a young newt share one band in every marker, because the young newt got half its DNA from each parent.",
+    "beginning": "A baby shares bands with each parent."
+  },
+  "gel.lane.barty": "Barty",
+  "gel.lane.h2": "Hatchling 2",
+  "gel.lane.figTail": "Fig: tail clip",
+  "gel.lane.figSkin": "Fig: skin",
+  "gel.lane.figBlood": "Fig: blood",
+  "gel.lane.figEggs": "Fig: egg cells",
+  "B0.T1.step1": {
+    "building": "Find Hatchling 2's lane and Barty's lane. Each lane has two bands in every marker.",
+    "beginning": "Find Hatchling 2 and Barty."
+  },
+  "B0.T1.step2": {
+    "building": "Look at marker 1. Hatchling 2's lower band sits at the same height as one of Barty's bands: that band matches.",
+    "beginning": "Marker 1: the lower band matches Barty."
+  },
+  "B0.T1.step3": {
+    "building": "Do the same for every marker. A father matches once in each marker.",
+    "beginning": "Check every marker."
+  },
+  "B0.T1.hint1": {
+    "building": "Go one marker at a time. Is either of Hatchling 2's bands at the same height as a Barty band?",
+    "beginning": "One marker at a time."
+  },
+  "B0.T1.hint2": {
+    "building": "There is exactly one match in every marker: six in all.",
+    "beginning": "There are six matches."
+  },
+  "B0.T1.prompt": {
+    "building": "Mark every band in Hatchling 2's lane that matches a band in Barty's lane.",
+    "beginning": "Mark the bands that match Barty."
+  },
+  "B0.T1.fb.correct": {
+    "building": "One band from Barty in every marker. Half of Hatchling 2's DNA came from him: Barty is the father.",
+    "beginning": "Barty is the father."
+  },
+  "B0.T2.hint1": {
+    "building": "Compare Hatchling 2 with Fig's tail clip, one marker at a time.",
+    "beginning": "Compare with Fig."
+  },
+  "B0.T2.prompt": {
+    "building": "Now mark every band in Hatchling 2's lane that matches Fig's tail clip.",
+    "beginning": "Mark the bands that match Fig."
+  },
+  "B0.T2.fb.correct": {
+    "building": "Only one band matches, in marker 3. A mother should match once in every marker, so this test says Fig is not the mother.",
+    "beginning": "Only one band matches Fig."
+  },
+  "B0-T3.prompt": {
+    "building": "Five of Hatchling 2's bands match neither Barty nor Fig's tail clip. Where must those bands have come from?",
+    "beginning": "Five bands match nobody. Where are they from?"
+  },
+  "B0-T3.opt.mother": "From the hatchling's mother, whoever she is",
+  "B0-T3.fb.mother": {
+    "building": "Every hatchling gets half its DNA from its mother. Those bands are the mother's half.",
+    "beginning": "From the mother."
+  },
+  "B0-T3.opt.itself": "The hatchling made new DNA for itself",
+  "B0-T3.fb.itself": {
+    "building": "Young animals don't make new DNA; they get it all from their parents.",
+    "beginning": "DNA comes from the parents."
+  },
+  "B0-T3.opt.barty": "From Barty, but they changed on the way",
+  "B0-T3.fb.barty": {
+    "building": "Barty's half already matched, one band per marker. These are the other half.",
+    "beginning": "Barty's bands already match."
+  },
+  "B0-T3.opt.broken": "Nowhere: the test must be broken",
+  "B0-T3.fb.broken": {
+    "building": "Barty's matches came from the same test, and they worked perfectly.",
+    "beginning": "The test worked for Barty."
+  },
+  "B0-P1.prompt": {
+    "building": "Tomás thinks someone swapped the eggs. What do you think could explain the test? Write your best idea.",
+    "beginning": "Why does the test say Fig is not the mother?"
+  },
+  "B0.P1.frame": {
+    "building": "I think the test says Fig is not the mother because ___.",
+    "beginning": "I think ___."
+  },
+  "B0.P1.bank": "eggs, swapped, test, mistake, DNA, mother, tail",
+  "beat.B1.title": "What we know",
+  "B1.title": "Before anyone is accused",
+  "B1.body": {
+    "building": "The evidence board is empty. Start with what you already know from Part A.",
+    "beginning": "What do you know already?"
+  },
+  "B1.end.title": "Pinned to the board",
+  "B1.end.body1": {
+    "building": "Every body cell has the same DNA, because mitosis copies it exactly. A hatchling gets half its DNA from each parent.",
+    "beginning": "Body cells have the same DNA. Babies get half from each parent."
+  },
+  "B1.end.body2": {
+    "building": "So if Fig is the mother, Hatchling 2 should match her in every marker. It doesn't. Something in that reasoning has to give.",
+    "beginning": "But Fig does not match. Why?"
+  },
+  "B1-R1.prompt": {
+    "building": "What does mitosis make?",
+    "beginning": "What does mitosis make?"
+  },
+  "B1-R1.answer": "Two new cells with the same chromosomes (the same DNA) as the parent cell.",
+  "B1-R2.prompt": {
+    "building": "Fig's cells have 2 pairs of chromosomes. Where did the two chromosomes of a pair come from?",
+    "beginning": "Where does each chromosome of a pair come from?"
+  },
+  "B1-R2.answer": "One from her mother, one from her father.",
+  "B1-R3.prompt": {
+    "building": "An X-shaped chromosome: how many DNA molecules does it hold?",
+    "beginning": "One X: how many DNA molecules?"
+  },
+  "B1-R3.answer": "Two: the original and its copy, joined at the centromere.",
+  "B1-R4.prompt": {
+    "building": "A tail cell and a skin cell from Fig: same DNA or different? Why?",
+    "beginning": "Tail cell and skin cell: same DNA?"
+  },
+  "B1-R4.answer": "The same DNA, because mitosis copied it. Different genes are switched on.",
+  "beat.B2.title": "Make gametes",
+  "B2.meiosis.title": "Halve and shuffle",
+  "B2.meiosis.body1": {
+    "building": "Watch one of Fig's egg-making cells. It copies its chromosomes, then divides twice, so each new cell gets one chromosome from every pair.",
+    "beginning": "The cell divides two times."
+  },
+  "B2.meiosis.body2": {
+    "building": "Keep an eye on the counts: 4 chromosomes in the starting cell, 2 in each new cell.",
+    "beginning": "4 chromosomes become 2."
+  },
+  "B2.shuffle.title": "Why every egg is different",
+  "B2.shuffle.body1": {
+    "building": "Which chromosome from each pair goes into an egg is down to chance. Here, the mother's pair 1 went with the father's pair 2.",
+    "beginning": "Chance decides which chromosomes go in."
+  },
+  "B2.shuffle.body2": {
+    "building": "Before they separate, partners swap matching sections. Look at pair 1: each swapped tip has the other parent's paper and gene letter.",
+    "beginning": "Partners swap pieces."
+  },
+  "B2.fert.title": "Back to a full set",
+  "B2.fert.body1": {
+    "building": "An egg (2 chromosomes) and a sperm (2) join into one cell with 4: a full set again. In the hatchling, every chromosome from the egg counts as a mother's chromosome.",
+    "beginning": "Egg plus sperm: 4 chromosomes."
+  },
+  "B2.fert.body2": {
+    "building": "Three siblings, three different eggs and sperm: same parents, different shuffle.",
+    "beginning": "Each baby is different."
+  },
+  "B2.end.title": "Make gametes: done",
+  "B2.end.body1": {
+    "building": "Meiosis halves the chromosomes and shuffles them, so every egg and sperm is one of a kind.",
+    "beginning": "Meiosis halves and mixes."
+  },
+  "B2.end.body2": {
+    "building": "That shuffle is the first source of new variation: new combinations of the parents' genes.",
+    "beginning": "New mixes make babies different."
+  },
+  "B2-R1.prompt": {
+    "building": "How much of Hatchling 2's DNA came from Barty?",
+    "beginning": "How much DNA came from Barty?"
+  },
+  "B2-R1.answer": "Half: one band in every marker.",
+  "B2-R2.prompt": {
+    "building": "What does mitosis do to the number of chromosomes?",
+    "beginning": "Mitosis: same number or half?"
+  },
+  "B2-R2.answer": "Keeps it the same: each new cell gets a full set.",
+  "B2-R3.prompt": {
+    "building": "What is a homologous pair?",
+    "beginning": "What is a pair?"
+  },
+  "B2-R3.answer": "Two chromosomes with the same genes, one from each parent.",
+  "B2.G1.step1": {
+    "building": "Pair 1 has two versions: the one from Fig's mother (A, E) and the one from her father (a, e). An egg gets one of them. Pick either.",
+    "beginning": "Pair 1: pick one."
+  },
+  "B2.G1.step2": {
+    "building": "Do the same for pair 2: one of B or b.",
+    "beginning": "Pair 2: pick one."
+  },
+  "B2.G1.step3": {
+    "building": "Check: one chromosome from each pair, 2 in all. That is half of Fig's 4.",
+    "beginning": "One from each pair: 2 in all."
+  },
+  "B2.G1.hint1": {
+    "building": "An egg gets one chromosome from every pair: not both, and not none.",
+    "beginning": "One from each pair."
+  },
+  "B2.G1.hint2": {
+    "building": "Fig has 2 pairs, so an egg has 2 chromosomes.",
+    "beginning": "An egg has 2."
+  },
+  "B2.G1.fb.correct": {
+    "building": "One from each pair: 2 chromosomes. When this egg meets a sperm with 2 more, the hatchling has 4.",
+    "beginning": "Yes. 2 chromosomes."
+  },
+  "B2.G1.prompt": {
+    "building": "Make one egg from Fig's egg-making cell.",
+    "beginning": "Make one egg."
+  },
+  "B2.I1.hint1": {
+    "building": "Same rule as for eggs: one chromosome from every pair.",
+    "beginning": "One from each pair."
+  },
+  "B2.I1.fb.correct": {
+    "building": "A sperm with one chromosome from each pair: half of Barty's set.",
+    "beginning": "Yes. Half of the set."
+  },
+  "B2.I1.prompt": {
+    "building": "Make one sperm from Barty's sperm-making cell.",
+    "beginning": "Make one sperm."
+  },
+  "B2.I2.hint1": {
+    "building": "Change one choice at a time: keep pair 1 the same and switch pair 2.",
+    "beginning": "Change one pair at a time."
+  },
+  "B2.I2.hint2": {
+    "building": "Pair 1 has 2 choices, and so does pair 2.",
+    "beginning": "2 choices and 2 choices."
+  },
+  "B2.I2.fb.correct": {
+    "building": "4 different eggs: 2 choices for pair 1 times 2 choices for pair 2. Every extra pair doubles the number.",
+    "beginning": "4 different eggs."
+  },
+  "B2.I2.prompt": {
+    "building": "Leaving crossing over aside, how many different eggs can Fig's cell make? Make every different one.",
+    "beginning": "Make all the different eggs."
+  },
+  "B2-I3.prompt": {
+    "building": "After crossing over in pair 1, how many different versions of chromosome 1 can end up in Fig's eggs? (Before: A with E, and a with e.)",
+    "beginning": "After swapping, how many kinds of chromosome 1?"
+  },
+  "B2-I3.opt.two": "2",
+  "B2-I3.fb.two": {
+    "building": "Crossing over adds two new versions: A with e, and a with E.",
+    "beginning": "Swapping makes new ones."
+  },
+  "B2-I3.opt.four": "4",
+  "B2-I3.fb.four": {
+    "building": "A with E, a with e, and the two swapped versions: A with e, and a with E.",
+    "beginning": "Yes. 4 kinds."
+  },
+  "B2-I3.opt.one": "1",
+  "B2-I3.fb.one": {
+    "building": "Meiosis doesn't copy one version into every egg; each egg gets one of several.",
+    "beginning": "There is more than one kind."
+  },
+  "B2-I3.opt.new": "Too many to count: it makes brand-new genes",
+  "B2-I3.fb.new": {
+    "building": "Crossing over swaps sections between partners. It mixes genes that are already there.",
+    "beginning": "No new genes. It mixes them."
+  },
+  "B2-I3gf.prompt": {
+    "building": "Real newts have about 12 pairs of chromosomes. Leaving crossing over aside, how many different eggs could one newt make? (2 × 2 × 2 ..., 12 times)",
+    "beginning": "With 12 pairs, how many kinds of eggs?"
+  },
+  "B2-I3gf.opt.24": "24",
+  "B2-I3gf.fb.24": {
+    "building": "Each pair doubles the number; it doesn't add 2. 2 multiplied by itself 12 times is 4,096.",
+    "beginning": "Multiply, don't add."
+  },
+  "B2-I3gf.opt.4096": "4,096",
+  "B2-I3gf.fb.4096": {
+    "building": "2 choices for each of 12 pairs: 4,096 different eggs, before crossing over adds even more.",
+    "beginning": "Yes. 4,096."
+  },
+  "B2-I3gf.opt.12": "12",
+  "B2-I3gf.fb.12": {
+    "building": "Each pair doesn't make its own kind of egg; every egg has one chromosome from every pair.",
+    "beginning": "Every egg has all 12 pairs."
+  },
+  "B2.C1.fb.correct": {
+    "building": "One from each of the 3 pairs: 3 chromosomes, half of the moth's 6.",
+    "beginning": "Yes. 3 chromosomes."
+  },
+  "B2.C1.prompt": {
+    "building": "A moth's egg-making cell has 3 pairs of chromosomes. Make one egg.",
+    "beginning": "Make one moth egg."
+  },
+  "B2-C2.prompt": {
+    "building": "Two kittens have the same mother and father but look different. Which is the best explanation?",
+    "beginning": "Two kittens look different. Why?"
+  },
+  "B2-C2.opt.blend": "Each kitten blends its parents in a different amount, like mixing paint",
+  "B2-C2.fb.blend": {
+    "building": "Kittens don't get a blend; each gets a full set of chromosomes, one from each pair, from each parent.",
+    "beginning": "They get chromosomes, not a blend."
+  },
+  "B2-C2.opt.shuffle": "Each kitten came from a different egg and sperm, shuffled differently in meiosis",
+  "B2-C2.fb.shuffle": {
+    "building": "Meiosis shuffles chromosomes and swaps sections, so every egg and sperm is different.",
+    "beginning": "Yes. Different eggs and sperm."
+  },
+  "B2-C2.opt.same": "They got the same chromosomes; food made them look different",
+  "B2-C2.fb.same": {
+    "building": "Siblings don't get the same chromosomes; each egg and sperm carries a different mix.",
+    "beginning": "They got different chromosomes."
+  },
+  "B2-C2.opt.copy": "Meiosis copies the parents exactly, so one kitten must have different parents",
+  "B2-C2.fb.copy": {
+    "building": "Meiosis halves and shuffles; it doesn't copy. Different-looking siblings are normal.",
+    "beginning": "Meiosis mixes. It does not copy."
+  },
+  "beat.B3.title": "Side by side",
+  "B3.side.title": "Same cell, two jobs",
+  "B3.side.body1": {
+    "building": "Step through both at once and read the counts under each side.",
+    "beginning": "Watch both sides."
+  },
+  "B3.side.body2": {
+    "building": "Mitosis copies, then divides once. Meiosis copies, then divides twice, shuffling and swapping along the way.",
+    "beginning": "Mitosis divides once. Meiosis divides two times."
+  },
+  "B3.side.mitosis": "Mitosis",
+  "B3.side.meiosis": "Meiosis",
+  "B3.side.count": "{c} chromosomes, {d} DNA molecules",
+  "B3.side.countEach": "{n} cells, each: {c} chromosomes, {d} DNA molecules",
+  "B3.bin.mitosis": "Mitosis",
+  "B3.bin.meiosis": "Meiosis",
+  "B3.bin.both": "Both",
+  "B3.end.title": "Side by side: done",
+  "B3.end.body1": {
+    "building": "Mitosis makes two cells identical to the parent: it builds and repairs the body. Meiosis makes four cells with half the chromosomes, all different: eggs or sperm.",
+    "beginning": "Mitosis: same cells. Meiosis: different cells."
+  },
+  "B3.end.body2": {
+    "building": "Both start by copying the chromosomes. What happens next is the difference.",
+    "beginning": "Both copy first."
+  },
+  "B3-R1.prompt": {
+    "building": "How many chromosomes does one of Fig's eggs have?",
+    "beginning": "How many chromosomes in an egg?"
+  },
+  "B3-R1.answer": "2: one from each pair.",
+  "B3-R2.prompt": {
+    "building": "Give one reason why no two eggs are the same.",
+    "beginning": "Why are eggs different?"
+  },
+  "B3-R2.answer": "Chance decides which chromosome of each pair goes in, and partners swap sections.",
+  "B3-R3.prompt": {
+    "building": "What does a cell do to its chromosomes before it divides?",
+    "beginning": "What happens before a cell divides?"
+  },
+  "B3-R3.answer": "It copies them: each becomes an X.",
+  "B3-P1.prompt": {
+    "building": "Mitosis and meiosis start with the same cell. Predict two ways the new cells will be different.",
+    "beginning": "How will the new cells be different?"
+  },
+  "B3.P1.frame": {
+    "building": "Mitosis makes ___. Meiosis makes ___.",
+    "beginning": "Mitosis ___. Meiosis ___."
+  },
+  "B3.P1.bank": "identical, different, half, full set, two cells, four cells",
+  "B3.G1.hint1": {
+    "building": "Step through the animation again and read the counts under each side.",
+    "beginning": "Watch the animation again."
+  },
+  "B3.G1.hint2": {
+    "building": "Only one of them swaps sections and halves the chromosomes. Both copy first.",
+    "beginning": "Both copy first."
+  },
+  "B3-G1.prompt": {
+    "building": "Sort each statement: is it true of mitosis, meiosis, or both?",
+    "beginning": "Mitosis, meiosis, or both?"
+  },
+  "B3-G1.item.two": {
+    "building": "Makes 2 new cells",
+    "beginning": "Makes 2 cells"
+  },
+  "B3-G1.item.four": {
+    "building": "Makes 4 new cells",
+    "beginning": "Makes 4 cells"
+  },
+  "B3-G1.item.same": {
+    "building": "The new cells are identical to the parent cell",
+    "beginning": "New cells are the same as the parent"
+  },
+  "B3-G1.item.half": {
+    "building": "Each new cell gets one chromosome from every pair",
+    "beginning": "Each new cell gets half"
+  },
+  "B3-G1.item.copy": {
+    "building": "The chromosomes are copied first",
+    "beginning": "Chromosomes are copied first"
+  },
+  "B3-G1.item.swap": {
+    "building": "Partners swap sections of DNA",
+    "beginning": "Partners swap pieces"
+  },
+  "B3-G1.item.body": {
+    "building": "Builds and repairs the body, like Fig's tail",
+    "beginning": "Builds the body"
+  },
+  "B3-G1.item.eggs": {
+    "building": "Makes eggs and sperm",
+    "beginning": "Makes eggs and sperm"
+  },
+  "B3-G1.fb.correct": {
+    "building": "All sorted. Mitosis copies; meiosis halves and shuffles; both start by copying.",
+    "beginning": "All correct."
+  },
+  "B3-I1.prompt": {
+    "building": "A cell with 6 chromosomes (3 pairs) goes through meiosis. How many chromosomes are in each new cell?",
+    "beginning": "6 chromosomes. After meiosis, how many in each cell?"
+  },
+  "B3-I1.opt.six": "6",
+  "B3-I1.fb.six": {
+    "building": "That would be mitosis. Meiosis gives each new cell one chromosome from every pair.",
+    "beginning": "Meiosis halves."
+  },
+  "B3-I1.opt.three": "3",
+  "B3-I1.fb.three": {
+    "building": "One from each of the 3 pairs: half the chromosomes.",
+    "beginning": "Yes. 3."
+  },
+  "B3-I1.opt.twelve": "12",
+  "B3-I1.fb.twelve": {
+    "building": "Copying makes each chromosome an X, but it is still one chromosome. Then meiosis halves the number.",
+    "beginning": "An X is still 1 chromosome."
+  },
+  "B3-I1.opt.two": "2",
+  "B3-I1.fb.two": {
+    "building": "Each new cell needs one chromosome from every pair, and there are 3 pairs.",
+    "beginning": "One from each of 3 pairs."
+  },
+  "B3-C1.prompt": {
+    "building": "A skin cell divides to heal a scrape. A cell in an ovary divides to make eggs. Which statement is true?",
+    "beginning": "Skin cell and egg cell. Which is true?"
+  },
+  "B3-C1.opt.both-same": "Both make cells identical to the parent",
+  "B3-C1.fb.both-same": {
+    "building": "Eggs are made by meiosis, which halves and shuffles.",
+    "beginning": "Eggs are different."
+  },
+  "B3-C1.opt.both-half": "Both halve the number of chromosomes",
+  "B3-C1.fb.both-half": {
+    "building": "Healing uses mitosis, which keeps the full set.",
+    "beginning": "Skin cells keep all of them."
+  },
+  "B3-C1.opt.right": "The new skin cells are identical to the parent; the eggs all differ from each other",
+  "B3-C1.fb.right": {
+    "building": "Mitosis copies (skin); meiosis halves and shuffles (eggs).",
+    "beginning": "Yes."
+  },
+  "B3-C1.opt.swapped": "The new skin cells all differ; the eggs are identical",
+  "B3-C1.fb.swapped": {
+    "building": "That is the wrong way round: mitosis makes identical cells, meiosis makes different ones.",
+    "beginning": "It is the other way round."
+  },
+  "B3-C2.prompt": {
+    "building": "Look back at your prediction. In your own words: how is meiosis different from mitosis? Give two differences.",
+    "beginning": "How is meiosis different from mitosis?"
+  },
+  "beat.B4.title": "Variation lab",
+  "B4.intro.title": "Three tanks",
+  "B4.intro.body": {
+    "building": "Each tank shows one way new variation can appear. Watch where the change happens: in a body cell, or in a cell that makes eggs.",
+    "beginning": "Three tanks, three kinds of change."
+  },
+  "B4.tank.shuffle": "Tank 1: the shuffle",
+  "B4.tank.copy": "Tank 2: a copying error",
+  "B4.tank.uv": "Tank 3: the old UV lamp",
+  "B4.tank.none": "Run a tank to see the result",
+  "B4.ui.run": "Run {name}",
+  "B4.ui.show": "Show {name}",
+  "B4.box.parent": "Parent newt",
+  "B4.box.body": "Body cells (skin, tail, blood)",
+  "B4.box.germ": "Egg-making cells",
+  "B4.box.eggs": "Eggs",
+  "B4.box.young": "Hatchlings",
+  "B4.tag.here": "★ Change happens here",
+  "B4.tag.carries": "✓ Carries the change",
+  "B4.noPath": "Body cells don't make eggs",
+  "B4.result.yes": "Passed on to the hatchlings: yes",
+  "B4.result.no": "Passed on to the hatchlings: no",
+  "B4.rule.title": "The rule",
+  "B4.rule.body1": {
+    "building": "A change in a body cell, like skin, stays in that newt. It never reaches the eggs.",
+    "beginning": "Skin changes stay in the newt."
+  },
+  "B4.rule.body2": {
+    "building": "A change in an egg-making or sperm-making cell can end up in the young. So can the new mixes that meiosis makes.",
+    "beginning": "Changes in egg cells can go to the babies."
+  },
+  "B4.rule.body": "Changes here stay in this newt",
+  "B4.rule.germ": "Changes here can reach the hatchlings",
+  "B4.card.shuffle": {
+    "building": "Tank 1: meiosis shuffles chromosomes, so every egg is different. New mixes are passed on.",
+    "beginning": "Tank 1: new mixes. Passed on."
+  },
+  "B4.card.copy": {
+    "building": "Tank 2: a copying error in an egg-making cell gave Hatchling 5 a white tail tip. Passed on.",
+    "beginning": "Tank 2: copy error in an egg cell. Passed on."
+  },
+  "B4.card.uv": {
+    "building": "Tank 3: UV light changed a patch of skin. Her young had normal skin. Not passed on.",
+    "beginning": "Tank 3: UV changed skin. Not passed on."
+  },
+  "B4.lab.fb.done": {
+    "building": "All three tanks are in the evidence locker. Two kinds of change reached the young; one didn't.",
+    "beginning": "All three tanks are done."
+  },
+  "B4.bin.yes": "Can be passed on",
+  "B4.bin.no": "Not passed on",
+  "B4.end.title": "Variation lab: done",
+  "B4.end.body1": {
+    "building": "New variation that can be inherited comes from three places: new mixes made by meiosis, copying errors in egg- or sperm-making cells, and changes caused by the environment in those cells.",
+    "beginning": "Three kinds of change can go to babies."
+  },
+  "B4.end.body2": {
+    "building": "A change only reaches the young if it is in the cells that make eggs or sperm.",
+    "beginning": "The change must be in egg or sperm cells."
+  },
+  "locker.title": "Evidence locker",
+  "locker.empty": "No evidence filed yet.",
+  "locker.card.lab-shuffle": "Tank 1: new mixes from meiosis are passed on.",
+  "locker.card.lab-copy": "Tank 2: a copy error in an egg-making cell is passed on (Hatchling 5's white tail tip).",
+  "locker.card.lab-uv": "Tank 3: UV damage to skin is not passed on.",
+  "locker.card.test-figTail": "Fig's tail clip: does not match the hatchlings.",
+  "locker.card.test-figSkin": "Fig's skin: same bands as her tail; does not match the hatchlings.",
+  "locker.card.test-figBlood": "Fig's blood: same bands as her tail; does not match the hatchlings.",
+  "locker.card.test-figEggs": "Fig's egg cells: match the hatchlings in every marker.",
+  "B4-R1.prompt": {
+    "building": "What does meiosis make?",
+    "beginning": "What does meiosis make?"
+  },
+  "B4-R1.answer": "Eggs or sperm: cells with half the chromosomes, each one different.",
+  "B4-R2.prompt": {
+    "building": "In the DNA test, which adult matched Hatchling 2?",
+    "beginning": "Who matched Hatchling 2?"
+  },
+  "B4-R2.answer": "Barty matched. Fig's tail clip did not.",
+  "B4-R3.prompt": {
+    "building": "Why do a bone cell and a skin cell from the same newt have the same DNA?",
+    "beginning": "Why do bone and skin cells have the same DNA?"
+  },
+  "B4-R3.answer": "Both were made by mitosis, which copies DNA exactly.",
+  "B4.L1.hint1": {
+    "building": "After each run, find the star: that is where the change happened. Then follow the arrows to the hatchlings.",
+    "beginning": "Find the star. Follow the arrows."
+  },
+  "B4.L1.prompt": {
+    "building": "Run all three tanks. For each one, find where the change happens and whether it reaches the hatchlings.",
+    "beginning": "Run the three tanks."
+  },
+  "B4.G1.hint1": {
+    "building": "Ask: is the change in a cell that makes eggs or sperm?",
+    "beginning": "Is it in an egg or sperm cell?"
+  },
+  "B4.G1.hint2": {
+    "building": "What caused the change doesn't matter. Where it happened does.",
+    "beginning": "Where did it happen?"
+  },
+  "B4-G1.prompt": {
+    "building": "Sort each change: can it be passed on to the young, or not?",
+    "beginning": "Can the babies get this change?"
+  },
+  "B4-G1.item.mix": {
+    "building": "A new mix of chromosomes in an egg (the shuffle)",
+    "beginning": "A new mix in an egg"
+  },
+  "B4-G1.item.sperm": {
+    "building": "A copying error in a sperm-making cell",
+    "beginning": "A copy error in a sperm cell"
+  },
+  "B4-G1.item.uv": {
+    "building": "A patch of skin changed by UV light",
+    "beginning": "Skin changed by UV light"
+  },
+  "B4-G1.item.tail": {
+    "building": "A copying error in a tail cell while the tail regrows",
+    "beginning": "A copy error in a tail cell"
+  },
+  "B4-G1.item.legs": {
+    "building": "Strong legs from a newt that swims a lot",
+    "beginning": "Strong legs from swimming"
+  },
+  "B4-G1.item.uvgerm": {
+    "building": "UV damage to an egg-making cell",
+    "beginning": "UV damage to an egg cell"
+  },
+  "B4-G1.fb.correct": {
+    "building": "All sorted. Only changes in egg- or sperm-making cells, and new mixes from meiosis, reach the young.",
+    "beginning": "All correct."
+  },
+  "B4-I1.prompt": {
+    "building": "A fisher gets a sun-damaged patch of skin after years outdoors. Will their children inherit the change?",
+    "beginning": "Sun changed a fisher's skin. Will the children get it?"
+  },
+  "B4-I1.opt.all": "Yes: every change in the body is passed on",
+  "B4-I1.fb.all": {
+    "building": "Only changes in cells that make eggs or sperm can be passed on.",
+    "beginning": "Skin changes are not passed on."
+  },
+  "B4-I1.opt.long": "Yes, if the change lasts long enough",
+  "B4-I1.fb.long": {
+    "building": "How long it lasts doesn't matter; skin cells never make eggs or sperm.",
+    "beginning": "Skin does not make eggs or sperm."
+  },
+  "B4-I1.opt.skin": "No: skin cells don't make eggs or sperm",
+  "B4-I1.fb.skin": {
+    "building": "The change is in skin cells, so it stays with the fisher.",
+    "beginning": "Yes. It stays in the skin."
+  },
+  "B4-I1.opt.never": "No: changes caused by the sun can never be inherited",
+  "B4-I1.fb.never": {
+    "building": "Right answer, wrong reason. Sun damage to egg- or sperm-making cells could be inherited; here it hit skin.",
+    "beginning": "Right, but the reason is wrong."
+  },
+  "B4-C1.prompt": {
+    "building": "A mouse is born with curly fur, though both parents have straight fur and no relative has ever had curly fur. Which explanation is most likely?",
+    "beginning": "A mouse has curly fur. Its parents do not. Why?"
+  },
+  "B4-C1.opt.learned": "The mother's fur turned curly during her life and she passed it on",
+  "B4-C1.fb.learned": {
+    "building": "Changes during a parent's life aren't passed on unless they happen in egg- or sperm-making cells.",
+    "beginning": "Changes in life are not passed on."
+  },
+  "B4-C1.opt.blend": "Straight fur from two parents blended into curly fur",
+  "B4-C1.fb.blend": {
+    "building": "Traits don't blend like paint, and straight plus straight has no curly to blend.",
+    "beginning": "Traits do not blend."
+  },
+  "B4-C1.opt.copy": "A copying error in an egg-making or sperm-making cell of one parent",
+  "B4-C1.fb.copy": {
+    "building": "A new change in a cell that makes eggs or sperm can show up in the young.",
+    "beginning": "Yes. A copy error."
+  },
+  "B4-C1.opt.skin": "Sun damage to the father's skin cells",
+  "B4-C1.fb.skin": {
+    "building": "Skin cells don't make sperm, so their changes stay in the father.",
+    "beginning": "Skin changes stay."
+  },
+  "beat.B5.title": "The twist",
+  "B5.night.title": "Two facts that can't both be true",
+  "B5.night.body": {
+    "building": "Fig laid the eggs: the camera saw it. The test says she isn't the mother. Time to test more of Fig.",
+    "beginning": "Let's test more of Fig."
+  },
+  "B5.reveal.title": "Two newts in one",
+  "B5.reveal.body": {
+    "building": "Fig's body and Fig's egg cells have different DNA.",
+    "beginning": "Fig has two kinds of DNA."
+  },
+  "B5.lines.title": "How it happened",
+  "B5.lines.body1": {
+    "building": "Long before Fig hatched, two embryos fused into one. Each line of cells kept copying itself exactly, by mitosis.",
+    "beginning": "Two embryos joined."
+  },
+  "B5.lines.body2": {
+    "building": "Line 1 built her tail, skin and blood. Line 2 built the cells that make her eggs, so only line 2 reaches the hatchlings.",
+    "beginning": "One line made the body. One made the eggs."
+  },
+  "B5.lines.embryo1": "Embryo 1",
+  "B5.lines.embryo2": "Embryo 2",
+  "B5.lines.fig": "Fig: one embryo, two cell lines",
+  "B5.lines.line1": "Line 1 (mitosis)",
+  "B5.lines.line2": "Line 2 (mitosis)",
+  "B5.lines.body": "Tail, skin, blood",
+  "B5.lines.eggs": "Egg cells",
+  "B5.lines.young": "Hatchlings",
+  "gel.result.figTail": {
+    "building": "Tail clip: does not match Hatchling 2 (Ada ran it twice: same bands both times).",
+    "beginning": "Tail: no match."
+  },
+  "gel.result.figSkin": {
+    "building": "Skin: the same bands as the tail clip. Does not match Hatchling 2.",
+    "beginning": "Skin: no match."
+  },
+  "gel.result.figBlood": {
+    "building": "Blood: the same bands as the tail clip. Does not match Hatchling 2.",
+    "beginning": "Blood: no match."
+  },
+  "gel.result.figEggs": {
+    "building": "Egg cells: a match for Hatchling 2 in every marker (run twice: same result).",
+    "beginning": "Egg cells: match!"
+  },
+  "B5.end.title": "The twist: done",
+  "B5.end.body1": {
+    "building": "Fig is a chimera: one body, two cell lines with different DNA. Mitosis copied each line faithfully.",
+    "beginning": "Fig is a chimera."
+  },
+  "B5.end.body2": {
+    "building": "Only the line that makes her eggs is inherited. The tail clip just sampled the wrong Fig.",
+    "beginning": "Only the egg cells go to the babies."
+  },
+  "B5-R1.prompt": {
+    "building": "Which changes can be passed on to the young?",
+    "beginning": "Which changes go to the babies?"
+  },
+  "B5-R1.answer": "Changes in egg- or sperm-making cells (and new mixes from meiosis), not changes in body cells.",
+  "B5-R2.prompt": {
+    "building": "In meiosis, what does each egg get?",
+    "beginning": "What does each egg get?"
+  },
+  "B5-R2.answer": "One chromosome from every pair.",
+  "B5-R3.prompt": {
+    "building": "How exactly does mitosis copy DNA?",
+    "beginning": "Does mitosis copy DNA exactly?"
+  },
+  "B5-R3.answer": "Exactly: both new cells get the same DNA as the parent.",
+  "B5.T1.hint1": {
+    "building": "Test the egg cells and at least one other part of Fig, then compare each new lane with Hatchling 2.",
+    "beginning": "Test the egg cells and one more."
+  },
+  "B5.T1.prompt": {
+    "building": "Choose which parts of Fig to test. Test her egg cells and at least one other tissue.",
+    "beginning": "Test parts of Fig."
+  },
+  "B5.T1.fb.correct": {
+    "building": "Fig's body samples match each other but not Hatchling 2. Her egg cells match Hatchling 2 in every marker.",
+    "beginning": "The egg cells match."
+  },
+  "B5-I1.prompt": {
+    "building": "Which of Fig's samples could have come from the hatchlings' mother?",
+    "beginning": "Which sample matches the mother?"
+  },
+  "B5-I1.opt.tail": "The tail clip",
+  "B5-I1.fb.tail": {
+    "building": "The tail clip shares only one band with Hatchling 2.",
+    "beginning": "The tail does not match."
+  },
+  "B5-I1.opt.blood": "The blood",
+  "B5-I1.fb.blood": {
+    "building": "Blood has the same bands as the tail: no match.",
+    "beginning": "Blood does not match."
+  },
+  "B5-I1.opt.eggs": "The egg cells",
+  "B5-I1.fb.eggs": {
+    "building": "The egg cells match Hatchling 2 in every marker.",
+    "beginning": "Yes. The egg cells."
+  },
+  "B5-I1.opt.none": "None: the eggs must have been swapped",
+  "B5-I1.fb.none": {
+    "building": "Fig's own egg cells match. No swap is needed to explain it.",
+    "beginning": "Fig's eggs match."
+  },
+  "B5-I2.prompt": {
+    "building": "Why did the tail-clip test say Fig was not the mother?",
+    "beginning": "Why did the tail test say \"not the mother\"?"
+  },
+  "B5-I2.opt.machine": "The DNA machine made a mistake",
+  "B5-I2.fb.machine": {
+    "building": "Ada ran the tail twice and got the same bands; skin and blood agree too.",
+    "beginning": "The test was right."
+  },
+  "B5-I2.opt.mutation": "One mutation changed the hatchlings' DNA",
+  "B5-I2.fb.mutation": {
+    "building": "One copying error changes one place; Hatchling 2 differs in 5 of 6 markers.",
+    "beginning": "Too many differences."
+  },
+  "B5-I2.opt.lines": "Her tail was built by a different cell line than her eggs",
+  "B5-I2.fb.lines": {
+    "building": "The tail comes from line 1; her eggs come from line 2.",
+    "beginning": "Yes. Two cell lines."
+  },
+  "B5-I2.opt.swap": "Someone swapped the eggs",
+  "B5-I2.fb.swap": {
+    "building": "Fig's own egg cells match the hatchlings, and the camera saw her lay them.",
+    "beginning": "Her eggs match."
+  },
+  "B5-C1.prompt": {
+    "building": "A chimera cat's fur is made by one cell line and its eggs by another. To find out what its kittens could inherit, which sample should you test?",
+    "beginning": "A chimera cat. Which sample shows what kittens get?"
+  },
+  "B5-C1.opt.fur": "Its fur",
+  "B5-C1.fb.fur": {
+    "building": "Fur comes from the other line, which the kittens don't inherit.",
+    "beginning": "Not the fur."
+  },
+  "B5-C1.opt.blood": "Its blood",
+  "B5-C1.fb.blood": {
+    "building": "Blood could come from either line; only the egg-making line is inherited.",
+    "beginning": "Not the blood."
+  },
+  "B5-C1.opt.eggs": "Cells from its egg-making tissue",
+  "B5-C1.fb.eggs": {
+    "building": "Only the egg-making line passes DNA to the kittens.",
+    "beginning": "Yes. Egg cells."
+  },
+  "B5-C1.opt.any": "Any sample: all its cells have the same DNA",
+  "B5-C1.fb.any": {
+    "building": "In a chimera, the two cell lines have different DNA.",
+    "beginning": "A chimera has two kinds of DNA."
+  },
+  "beat.B6.title": "Claim and defend",
+  "B6.board.title": "Make your case",
+  "B6.board.body1": {
+    "building": "Here is your evidence locker: the cards you filed in the lab and the tissue tests.",
+    "beginning": "Here is your evidence."
+  },
+  "B6.board.body2": {
+    "building": "A strong argument has a claim, the evidence for it, and the reasoning that links them. Then it answers the other side.",
+    "beginning": "Claim. Evidence. Reason."
+  },
+  "B6.end.title": "Claim and defend: done",
+  "B6.end.body1": {
+    "building": "Fig is the mother. Her egg-making cells carry a second cell line, and that is the DNA the hatchlings inherited.",
+    "beginning": "Fig is the mother."
+  },
+  "B6.end.body2": {
+    "building": "Good evidence answers each counterclaim directly: the camera, the repeat runs, and the number of differences.",
+    "beginning": "Evidence answers each idea."
+  },
+  "B6-R1.prompt": {
+    "building": "What is a chimera?",
+    "beginning": "What is a chimera?"
+  },
+  "B6-R1.answer": "One body made of two cell lines with different DNA (for Fig: two embryos that fused).",
+  "B6-R2.prompt": {
+    "building": "Which of Fig's samples matched the hatchlings?",
+    "beginning": "Which sample matched?"
+  },
+  "B6-R2.answer": "Her egg cells.",
+  "B6-R3.prompt": {
+    "building": "What does mitosis do to the DNA in each new cell?",
+    "beginning": "Mitosis and DNA?"
+  },
+  "B6-R3.answer": "Copies it exactly.",
+  "B6-G1.prompt": {
+    "building": "Write your claim: is Fig the hatchlings' mother? Add two pieces of evidence from the locker.",
+    "beginning": "Is Fig the mother? Give two pieces of evidence."
+  },
+  "B6.G1.frame": {
+    "building": "I claim that ___. One piece of evidence is ___. Another is ___. This shows ___ because ___.",
+    "beginning": "I claim ___. My evidence is ___."
+  },
+  "B6.G1.bank": "mother, egg cells, tail clip, cell line, chimera, matches, bands, mitosis",
+  "B6-I1.prompt": {
+    "building": "Tomás still says someone swapped the eggs. Which evidence answers him best?",
+    "beginning": "Tomás says the eggs were swapped. Which evidence answers him?"
+  },
+  "B6-I1.opt.tank": "The hatchlings live in Fig's tank",
+  "B6-I1.fb.tank": {
+    "building": "Being in Fig's tank doesn't show where the eggs came from.",
+    "beginning": "Where they live is not proof."
+  },
+  "B6-I1.opt.barty": "Barty is the father",
+  "B6-I1.fb.barty": {
+    "building": "Barty matching says nothing about who the mother is.",
+    "beginning": "That is about the father."
+  },
+  "B6-I1.opt.camera": "Camera footage shows Fig laying these eggs, and her egg cells match them",
+  "B6-I1.fb.camera": {
+    "building": "Direct evidence: she was seen laying them, and her egg-cell DNA matches.",
+    "beginning": "Yes. Camera and DNA."
+  },
+  "B6-I1.opt.calm": "Fig doesn't seem upset",
+  "B6-I1.fb.calm": {
+    "building": "How a newt acts isn't evidence about DNA.",
+    "beginning": "That is not evidence."
+  },
+  "B6-I2.prompt": {
+    "building": "Noor wonders if the DNA machine made a mistake. Which evidence answers her best?",
+    "beginning": "Noor thinks the machine was wrong. Which evidence answers her?"
+  },
+  "B6-I2.opt.repeat": "Ada ran the tests again and got the same bands each time",
+  "B6-I2.fb.repeat": {
+    "building": "Repeat runs that agree make a machine error very unlikely.",
+    "beginning": "Yes. Same result every time."
+  },
+  "B6-I2.opt.surprise": "Surprising results are usually mistakes",
+  "B6-I2.fb.surprise": {
+    "building": "A surprising result is a reason to repeat the test, not to throw it out.",
+    "beginning": "Surprising is not wrong."
+  },
+  "B6-I2.opt.barty": "Barty's result was right, so Fig's must be too",
+  "B6-I2.fb.barty": {
+    "building": "One result being right doesn't prove another one.",
+    "beginning": "Each result needs its own check."
+  },
+  "B6-I2.opt.careful": "Ada is very careful",
+  "B6-I2.fb.careful": {
+    "building": "Trusting a person isn't the same as evidence; repeat runs are.",
+    "beginning": "Look for data."
+  },
+  "B6-I3.prompt": {
+    "building": "Someone suggests that one mutation in Fig's eggs changed their DNA. Which evidence answers this best?",
+    "beginning": "Did one mutation change Fig's eggs?"
+  },
+  "B6-I3.opt.anything": "Mutations can change anything",
+  "B6-I3.fb.anything": {
+    "building": "One copying error changes one place in the DNA, not a whole profile.",
+    "beginning": "One error is small."
+  },
+  "B6-I3.opt.regrew": "Fig's tail regrew, so her DNA must have changed",
+  "B6-I3.fb.regrew": {
+    "building": "Regrowth is mitosis, which copies DNA exactly.",
+    "beginning": "Mitosis copies exactly."
+  },
+  "B6-I3.opt.five": "Hatchling 2 differs from Fig's tail in 5 of 6 markers: far too many for one copying error",
+  "B6-I3.fb.five": {
+    "building": "Five markers differ. One mutation can't explain that; a second cell line can.",
+    "beginning": "Yes. Too many differences."
+  },
+  "B6-I3.opt.broken": "The test is broken",
+  "B6-I3.fb.broken": {
+    "building": "Repeat runs gave the same bands.",
+    "beginning": "The test was checked."
+  },
+  "B6-I4.prompt": {
+    "building": "The hatchlings hatched in the same week the old UV lamp was repaired. Does that show the lamp changed their DNA?",
+    "beginning": "The lamp was fixed the same week. Did it change their DNA?"
+  },
+  "B6-I4.opt.yes": "Yes: they happened at the same time, so the lamp caused it",
+  "B6-I4.fb.yes": {
+    "building": "Two things happening together doesn't show that one caused the other.",
+    "beginning": "Same time is not cause."
+  },
+  "B6-I4.opt.no": "No: two things happening at the same time doesn't show that one caused the other",
+  "B6-I4.fb.no": {
+    "building": "You would need evidence of how the lamp could have changed them. The DNA tests already explain the result.",
+    "beginning": "Yes. Same time is not proof."
+  },
+  "B6-I4.opt.never": "No: UV light can never change DNA",
+  "B6-I4.fb.never": {
+    "building": "UV can change DNA (Tank 3). The point is that timing alone isn't evidence.",
+    "beginning": "UV can change DNA."
+  },
+  "B6-I4.opt.sat": "Yes: if the mother sat under the lamp, the young inherit it",
+  "B6-I4.fb.sat": {
+    "building": "UV on her skin wouldn't reach the young, and timing alone shows nothing.",
+    "beginning": "Skin changes stay."
+  },
+  "B6-C1.prompt": {
+    "building": "Write your full argument for Tomás. Make a claim, give evidence, explain your reasoning, and answer at least one counterclaim.",
+    "beginning": "Write your argument for Tomás."
+  },
+  "beat.B7.title": "Her own aunt",
+  "B7.title": "Epilogue",
+  "B7.body1": {
+    "building": "Fig's eggs come from the cell line of her fused twin. The hatchlings are, genetically, her twin's young: her nieces and nephews.",
+    "beginning": "Fig's eggs came from her twin."
+  },
+  "B7.cycle.title": "The whole life cycle",
+  "B7.cycle.body1": {
+    "building": "Both halves are filled in now: meiosis makes eggs and sperm, fertilisation joins them, and mitosis builds the body.",
+    "beginning": "Now the life cycle is complete."
+  },
+  "B7.cycle.body2": {
+    "building": "Chimeras happen in other animals too, including people. Usually nobody knows, unless a DNA test gives a surprising answer, just like Fig's.",
+    "beginning": "People can be chimeras too."
+  },
+  "B7.done.title": "Part B: done",
+  "B7.done.body1": {
+    "building": "You solved the mystery with evidence: DNA profiles, the variation lab, and how meiosis and mitosis work.",
+    "beginning": "You solved the mystery."
+  },
+  "B7.done.body2": {
+    "building": "One last step: the checkpoint.",
+    "beginning": "Next: the checkpoint."
+  },
+  "beat.Bcheck.title": "Checkpoint",
+  "Bcheck.intro.title": "Part B checkpoint",
+  "Bcheck.intro.body1": {
+    "building": "Five questions about new situations. Work on your own: hints, worked steps and sentence starters are off.",
+    "beginning": "Five questions. Work on your own."
+  },
+  "Bcheck.intro.body2": {
+    "building": "Your first answer counts. The last question asks you to make a claim; your teacher will read it.",
+    "beginning": "Your first answer counts."
+  },
+  "Bcheck.end.title": "Checkpoint: done",
+  "Bcheck.end.body1": {
+    "building": "You explained where new, inheritable variation comes from: new mixes in meiosis, copying errors, and changes caused by the environment in egg- or sperm-making cells.",
+    "beginning": "You explained where variation comes from."
+  },
+  "Bcheck.end.body2": {
+    "building": "And you know why a change has to be in those cells to be passed on.",
+    "beginning": "Changes must be in egg or sperm cells."
+  },
+  "Bc-R1.prompt": {
+    "building": "Why does a regrown tail have the same DNA as the rest of the newt?",
+    "beginning": "Why does a new tail have the same DNA?"
+  },
+  "Bc-R1.answer": "Mitosis copies the DNA exactly.",
+  "Bc-R2.prompt": {
+    "building": "How many chromosomes does an egg get, compared with a body cell?",
+    "beginning": "Egg cell or body cell: which has more chromosomes?"
+  },
+  "Bc-R2.answer": "Half: one from each pair.",
+  "Bc-R3.prompt": {
+    "building": "Name three sources of new variation that can be passed on.",
+    "beginning": "Name three kinds of change that go to babies."
+  },
+  "Bc-R3.answer": "New mixes from meiosis, copying errors in egg- or sperm-making cells, and environment-caused changes in those cells.",
+  "Bc.C1.fb.correct": {
+    "building": "One chromosome from each of the 3 pairs: half of the frog's 6.",
+    "beginning": "Yes. 3 chromosomes."
+  },
+  "Bc.C1.prompt": {
+    "building": "A frog's sperm-making cell has 3 pairs of chromosomes. Make one sperm.",
+    "beginning": "Make one frog sperm."
+  },
+  "Bc-C2.prompt": {
+    "building": "Two sisters (not twins) have the same parents, but their DNA is different. Why?",
+    "beginning": "Two sisters have different DNA. Why?"
+  },
+  "Bc-C2.opt.shuffle": "Each came from a different egg and sperm, each with its own shuffle",
+  "Bc-C2.fb.shuffle": {
+    "building": "Meiosis makes every egg and sperm different.",
+    "beginning": "Yes. Different eggs and sperm."
+  },
+  "Bc-C2.opt.older": "The older sister's DNA changed as she grew up",
+  "Bc-C2.fb.older": {
+    "building": "Growing up uses mitosis, which copies DNA exactly.",
+    "beginning": "DNA does not change as you grow."
+  },
+  "Bc-C2.opt.same": "Their DNA is really the same; tests can't tell them apart",
+  "Bc-C2.fb.same": {
+    "building": "Siblings get different mixes; tests can tell them apart.",
+    "beginning": "Their DNA is different."
+  },
+  "Bc-C2.opt.blend": "Each got a different blend of their parents, like paint",
+  "Bc-C2.fb.blend": {
+    "building": "Children get whole chromosomes, one from each pair, not a blend.",
+    "beginning": "Not a blend."
+  },
+  "Bc-C3.prompt": {
+    "building": "Which of these changes could a lizard pass on to its young?",
+    "beginning": "Can a lizard's babies get this change?"
+  },
+  "Bc-C3.item.tail": {
+    "building": "A tail broken off by a cat",
+    "beginning": "A broken tail"
+  },
+  "Bc-C3.item.egg": {
+    "building": "A copying error in a cell that makes eggs",
+    "beginning": "A copy error in an egg cell"
+  },
+  "Bc-C3.item.sun": {
+    "building": "A sunburned patch of skin",
+    "beginning": "Sunburned skin"
+  },
+  "Bc-C3.item.mix": {
+    "building": "A new mix of chromosomes made in meiosis",
+    "beginning": "A new mix from meiosis"
+  },
+  "Bc-C3.fb.correct": {
+    "building": "All sorted: only changes in egg- or sperm-making cells, and new mixes, reach the young.",
+    "beginning": "All correct."
+  },
+  "Bc-C4.prompt": {
+    "building": "A chemical in a pond damages the DNA in a newt's sperm-making cells. Could the change appear in its young?",
+    "beginning": "A chemical changes sperm-making cells. Can the babies get it?"
+  },
+  "Bc-C4.opt.yes": "Yes: sperm-making cells make the sperm that become the young",
+  "Bc-C4.fb.yes": {
+    "building": "A change in sperm-making cells can be carried into a sperm and then the young.",
+    "beginning": "Yes."
+  },
+  "Bc-C4.opt.never": "No: changes caused by the environment are never inherited",
+  "Bc-C4.fb.never": {
+    "building": "The cause doesn't matter; where the change happens does.",
+    "beginning": "Where it happens matters."
+  },
+  "Bc-C4.opt.long": "Only if the newt lives in the pond for a long time",
+  "Bc-C4.fb.long": {
+    "building": "Time in the pond doesn't decide it; whether the sperm carry the change does.",
+    "beginning": "Time does not matter."
+  },
+  "Bc-C4.opt.skin": "Yes, and so will every change in its skin",
+  "Bc-C4.fb.skin": {
+    "building": "Skin changes stay in the newt.",
+    "beginning": "Skin changes stay."
+  },
+  "Bc-C5.prompt": {
+    "building": "Two brown rabbits have 8 young. One is white, and no rabbit in the family has ever been white. Make a claim about where this new variation came from, and support it with evidence and reasoning.",
+    "beginning": "One baby rabbit is white. Where did this come from? Explain."
+  },
+  "div.start": "The starting cell: 4 chromosomes",
+  "div.copy": "Every chromosome is copied (each becomes an X)",
+  "div.pairUp": "Partners pair up",
+  "div.swap": "Partners swap matching sections",
+  "div.partnersApart": "Partners separate: 2 cells",
+  "div.copiesApart": "The halves of each X separate: 4 cells, each with one of every pair",
+  "div.lineUp": "The Xs line up in single file",
+  "div.mitosisDone": "The halves of each X separate: 2 cells, each with the full set",
+  "fert.egg": "Egg",
+  "fert.sperm": "Sperm",
+  "fert.zygote": "Fertilised egg",
+  "fert.start": "An egg and a sperm: 2 chromosomes each",
+  "fert.join": "They join: 4 chromosomes, a full set",
+  "fert.siblings": "Same parents, different shuffle",
+  "fert.sib1": "Sibling 1",
+  "fert.sib2": "Sibling 2",
+  "fert.sib3": "Sibling 3",
+  "gamete.parent.egg": "Egg-making cell",
+  "gamete.parent.sperm": "Sperm-making cell",
+  "gamete.new.egg": "New egg",
+  "gamete.new.sperm": "New sperm",
+  "gamete.tray.egg": "Different eggs made",
+  "gamete.tray.sperm": "Different sperm made",
+  "gamete.ui.choose": "Choose chromosomes:",
+  "gamete.ui.chrom": "Pair {pair}, from the {parent} ({alleles})",
+  "gamete.ui.inNew.egg": "in the new egg",
+  "gamete.ui.inNew.sperm": "in the new sperm",
+  "gamete.ui.make.egg": "Make this egg",
+  "gamete.ui.make.sperm": "Make this sperm",
+  "gamete.ui.clear": "Start again",
+  "gamete.ui.status.egg": "Chromosomes in the new egg: {n}",
+  "gamete.ui.status.sperm": "Chromosomes in the new sperm: {n}",
+  "gamete.ui.made.egg": "Eggs made so far",
+  "gamete.ui.made.sperm": "Sperm made so far",
+  "gamete.ui.noneYet": "None yet.",
+  "gamete.fb.full-set": {
+    "building": "That is all of them: a full set. If eggs and sperm had full sets, the young would end up with twice as many chromosomes as their parents.",
+    "beginning": "That is all of them. Take half."
+  },
+  "gamete.fb.both-of-pair": {
+    "building": "This one has both chromosomes of a pair and is missing another pair. Every pair must send exactly one.",
+    "beginning": "One from each pair."
+  },
+  "gamete.fb.missing-pair": {
+    "building": "One pair has no chromosome here. Every pair must send one, or the young would be missing those genes.",
+    "beginning": "Every pair sends one."
+  },
+  "gamete.fb.duplicate.egg": {
+    "building": "You already made that egg. Try a different mix.",
+    "beginning": "You made this one. Try another."
+  },
+  "gamete.fb.duplicate.sperm": {
+    "building": "You already made that sperm. Try a different mix.",
+    "beginning": "You made this one. Try another."
+  },
+  "gamete.fb.another.egg": {
+    "building": "A new egg. {n} more to find.",
+    "beginning": "New egg! {n} more."
+  },
+  "gamete.fb.another.sperm": {
+    "building": "A new sperm. {n} more to find.",
+    "beginning": "New sperm! {n} more."
+  },
+  "classify.fb.some": {
+    "building": "{n} not right yet. They are marked with ✗; try those again.",
+    "beginning": "{n} not right yet."
+  },
+  "gel.marker": "Marker",
+  "gel.tableToggle": "Read the bands as a table",
+  "gel.tableNote": "Numbers show where each band sits inside its marker: 1 is the top row, 5 the bottom.",
+  "gel.ui.markIn": "Bands in {lane}:",
+  "gel.ui.marker": "Marker {n}",
+  "gel.ui.upper": "Upper band",
+  "gel.ui.lower": "Lower band",
+  "gel.ui.only": "Band",
+  "gel.ui.bandAria": "Marker {n}, {which} (row {row})",
+  "gel.ui.choose": "Samples to test:",
+  "gel.ui.test": "Test: {sample}",
+  "gel.fb.missed": {
+    "building": "Some matching bands aren't marked yet. Check each marker again.",
+    "beginning": "Some matches are missing."
+  },
+  "gel.fb.extra": {
+    "building": "A marked band doesn't match. A band only matches if it sits at exactly the same height, in the same marker.",
+    "beginning": "One band does not match."
+  },
+  "glossary.meiosis": "Cell division that makes eggs or sperm: each new cell gets half the chromosomes, one from every pair.",
+  "glossary.words.meiosis": "meiosis",
+  "glossary.gamete": "An egg or a sperm. It has half the chromosomes of a body cell.",
+  "glossary.words.gamete": "egg|eggs|sperm|gamete|gametes",
+  "glossary.mutation": "A change in DNA, for example from a copying error or UV light.",
+  "glossary.words.mutation": "mutation|mutations|copying error|copying errors",
+  "glossary.chimera": "One body made of two cell lines with different DNA.",
+  "glossary.words.chimera": "chimera|chimeras",
+  "mis.b.gamete-full-set": "Eggs and sperm get a full set of chromosomes, like body cells.",
+  "mis.b.gamete-both-of-pair": "An egg or sperm can get both chromosomes of a pair.",
+  "mis.b.gamete-missing-pair": "An egg or sperm can leave out a whole pair.",
+  "mis.b.meiosis-is-copy": "Meiosis makes identical copies, like mitosis.",
+  "mis.b.meiosis-no-copy": "Meiosis skips copying the chromosomes.",
+  "mis.b.swap-in-mitosis": "Mitosis also swaps sections between partners.",
+  "mis.b.mitosis-shuffles": "Mitosis makes cells that are all different.",
+  "mis.b.siblings-identical": "Children of the same parents get the same chromosomes.",
+  "mis.b.crossing-over-new-genes": "Crossing over makes brand-new genes (or makes nothing new).",
+  "mis.b.combos-add": "Each new pair adds 2 combinations, instead of doubling them.",
+  "mis.b.one-egg-per-pair": "Each pair of chromosomes makes its own kind of egg.",
+  "mis.b.blending": "Children are a blend of their parents, like mixed paint.",
+  "mis.b.all-changes-inherited": "Any change in the body gets passed on to the young.",
+  "mis.b.acquired-traits": "Traits a parent gains during life get passed on.",
+  "mis.b.environment-never-inherited": "Changes caused by the environment can never be passed on.",
+  "mis.b.dna-same-everywhere": "Every cell in one body always has the same DNA.",
+  "mis.b.eggs-swapped": "The eggs must have come from another newt.",
+  "mis.b.test-error": "A surprising result means the test is wrong.",
+  "mis.b.one-mutation": "One mutation can explain many differences at once.",
+  "mis.b.correlation-is-cause": "Two things that happen together must cause each other.",
+  "mis.b.one-parent-proves-both": "If one parent matches, the other must too.",
+  "mis.b.opinion-as-evidence": "How someone acts or seems counts as evidence.",
+  "mis.b.dna-from-nowhere": "Young animals make new DNA for themselves.",
+  "mis.b.all-from-father": "All of a hatchling's DNA can come from one parent.",
+  "mis.b.band-near-match": "Bands that are close in height count as a match."
 }
