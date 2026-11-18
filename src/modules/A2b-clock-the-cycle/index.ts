@@ -98,6 +98,15 @@ class Field {
       this.hits[i] = btn;
       this.root.add(label(btn, { x: c.pos.x, y: c.pos.y, z: 0.2 }));
     });
+    // Click targets follow the stage size.
+    this.ctx.stage.onResize(() => {
+      const u = this.ctx.stage.unitsPerPixel();
+      this.hits.forEach((b) => {
+        if (!b) return;
+        b.style.width = `${1.25 / u}px`;
+        b.style.height = `${1.25 / u}px`;
+      });
+    });
   }
 
   ring(i: number, color: string = PALETTE.blue): void {

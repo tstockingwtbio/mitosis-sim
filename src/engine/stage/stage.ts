@@ -6,6 +6,12 @@ export type CameraMode = 'ortho' | 'perspective';
 
 /** Visible height of task screens in world units; width follows the aspect. */
 export const VIEW_HEIGHT = 9;
+/** The design is laid out for at least this many units across (about 1366 × 768). */
+const DESIGN_ASPECT = 1.45;
+const MIN_VIEW_WIDTH = VIEW_HEIGHT * DESIGN_ASPECT;
+const BASE_FOV = 50;
+/** Pixels per world unit on the stage at 1366 × 768. */
+const DESIGN_PX_PER_UNIT = 62;
 
 type Tick = (dt: number, now: number) => boolean | void;
 
@@ -73,7 +79,19 @@ export class Stage {
 
   /** Width of the orthographic view in world units at the current aspect. */
   get viewWidth(): number {
-    return this.viewHeight * this.aspect;
+    return this.fitHeight() * this.aspect;
+  }
+
+  /** Visible height in world units: the design height, taller when the stage is narrow so the full design width still fits. */
+  fitHeight(): number {
+    return Math.max(this.viewHeight, MIN_VIEW_WIDTH / this.aspect);
+  }
+
+  /** CSS px per world unit, relative to the 1366 × 768 design (used to scale stage text). */
+  textScale(): number {
+    const r = this.el.getBoundingClientRect();
+    const pxPerUnit = Math.max(1, r.height) / this.fitHeight();
+    return Math.min(1.3, Math.max(0.5, pxPerUnit / DESIGN_PX_PER_UNIT));
   }
 
   setViewHeight(hgt: number): void {
@@ -141,24 +159,32 @@ export class Stage {
   /** World units per CSS pixel for the orthographic camera. */
   unitsPerPixel(): number {
     const r = this.el.getBoundingClientRect();
-    return this.viewHeight / Math.max(1, r.height);
+    return this.fitHeight() / Math.max(1, r.height);
   }
 
   private resize(): void {
     const r = this.el.getBoundingClientRect();
-    const w = Math.max(1, Math.floor(r.width));
-    const hgt = Math.max(1, Math.floor(r.height));
+    // A hidden stage measures 0 × 0: keep the last real size until it shows again.
+    if (r.width < 2 || r.height < 2) return;
+    const w = Math.floor(r.width);
+    const hgt = Math.floor(r.height);
     this.renderer.setSize(w, hgt, false);
     this.labels.setSize(w, hgt);
     this.aspect = w / hgt;
-    const halfH = this.viewHeight / 2;
+    const halfH = this.fitHeight() / 2;
     this.ortho.left = -halfH * this.aspect;
     this.ortho.right = halfH * this.aspect;
     this.ortho.top = halfH;
     this.ortho.bottom = -halfH;
     this.ortho.updateProjectionMatrix();
     this.persp.aspect = this.aspect;
+    // Keep the perspective view at least as wide as the design: a narrow stage widens the field of view.
+    const halfV = Math.tan(THREE.MathUtils.degToRad(BASE_FOV / 2));
+    const needHalfV = (halfV * DESIGN_ASPECT) / this.aspect;
+    this.persp.fov = THREE.MathUtils.radToDeg(2 * Math.atan(Math.max(halfV, needHalfV)));
     this.persp.updateProjectionMatrix();
+    // Stage text (CSS labels) follows the stage size.
+    this.el.style.setProperty('--stage-scale', this.textScale().toFixed(3));
     this.dirty = true;
     for (const fn of this.resizeListeners) fn();
   }
@@ -176,6 +202,20 @@ export class Stage {
     this.dirty = false;
     this.renderer.render(this.scene, this.camera);
     this.labels.render(this.scene, this.camera);
+    this.sweepLabels();
+  }
+
+  /**
+   * The label layer keeps an HTML element for every label it has drawn, even
+   * after its object leaves the scene. Remove the ones no longer in the scene
+   * so old text never lingers on screen.
+   */
+  sweepLabels(): void {
+    const live = new Set<Element>();
+    this.scene.traverse((o) => {
+      if (o instanceof CSS2DObject) live.add(o.element);
+    });
+    for (const el of [...this.labels.domElement.children]) if (!live.has(el)) el.remove();
   }
 
   /** Frame-rate guard: two slow 1-second windows in a row switch to low power. */

@@ -28,6 +28,11 @@ export function panel(ctx: StepContext, id: string, crop?: [number, number, numb
   const card = paper(roundRectShape(w * 0.9, hh * 0.9, 0.3), { color: PALETTE.cream, outline: 0.06 });
   const g = assetSlot(id, card, { size: { w, h: hh }, crop }, () => ctx.stage.invalidate());
   ctx.stage.scene.add(g);
+  // Refit when the stage changes shape: never wider than the stage, and
+  // anything attached to the picture (like the title) moves with it.
+  const builtWidth = ctx.stage.viewWidth;
+  const refit = () => g.scale.setScalar(Math.min(1, ctx.stage.viewWidth / builtWidth));
+  ctx.stage.onResize(refit);
   return g;
 }
 
