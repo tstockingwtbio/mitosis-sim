@@ -754,3 +754,23 @@ p.earlier { margin: 0; font-style: italic; white-space: pre-wrap; }
 .gene-lamps span.on { color: var(--ink); }
 .gene-lamps i { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid var(--ink); background: #ddd3c0; }
 .gene-lamps span.on i { background: #ffd866; }
+
+/* ---------- A4 limits card, A-end life cycle ---------- */
+.limits-card {
+  position: absolute;
+  inset: var(--pad);
+  overflow: auto;
+  padding: var(--pad);
+  border: var(--border) solid var(--ink);
+  border-radius: calc(var(--radius) - 4px);
+  background: #fff;
+}
+.limits-card h3 { margin: 0 0 8px; }
+.limits-card table { width: 100%; border-collapse: collapse; }
+.limits-card th, .limits-card td { text-align: start; vertical-align: top; padding: 6px 8px; border-bottom: 1.5px solid #e2d5bd; }
+.limits-card th { background: var(--card-2); }
+.cycle-node { font: 700 14px/1.2 'Atkinson Hyperlegible', sans-serif; text-align: center; max-width: 120px; color: var(--ink); }
+.cycle-node.later, .cycle-arrow-label.later { color: #8a7f70; }
+.cycle-arrow-label { font: 700 12px/1.1 'Atkinson Hyperlegible', sans-serif; padding: 2px 6px; border-radius: 6px; background: #fffaf0; border: 1.5px solid var(--ink); }
+.cycle-arrow-label.later { border-style: dashed; }
+.cycle-note { font: 700 12px/1.2 'Atkinson Hyperlegible', sans-serif; padding: 3px 8px; border: 1.5px dashed #8a7f70; border-radius: 6px; background: #fffaf0; color: #6e6457; }

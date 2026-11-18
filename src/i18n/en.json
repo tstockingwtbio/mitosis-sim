@@ -1534,5 +1534,235 @@
   "mis.genesAdded": "A cell becomes a new type by gaining new genes.",
   "mis.allGenesOn": "A cell switches on all of its genes.",
   "mis.differentDnaPerTissue": "Each kind of tissue has its own DNA.",
-  "mis.genesLost": "Cells lose the genes they don't use."
+  "mis.genesLost": "Cells lose the genes they don't use.",
+  "A4.limits.heading": "Where this model is wrong",
+  "A4.limits.model": "In our model",
+  "A4.limits.real": "In a real newt",
+  "A4.limits.title": "A confession",
+  "A4.limits.body1": {
+    "building": "Every model leaves things out. The card shows what ours simplifies, and what is really true.",
+    "beginning": "Our model is simple. Real cells are more complex."
+  },
+  "A4.limits.body2": {
+    "building": "Leaving things out is what makes a model useful: it shows the main idea clearly. The trick is knowing what was left out.",
+    "beginning": "Models leave things out on purpose."
+  },
+  "A4.R1.prompt": {
+    "building": "An X-shaped chromosome: how many chromosomes, and how many DNA molecules?",
+    "beginning": "One X: how many chromosomes? How many DNA molecules?"
+  },
+  "A4.R1.answer": "One chromosome, two DNA molecules.",
+  "A4.R2.prompt": {
+    "building": "What does mitosis make?",
+    "beginning": "What does mitosis make?"
+  },
+  "A4.R2.answer": "Two new cells with the same DNA as the parent.",
+  "A4.R3.prompt": {
+    "building": "Why do most cells on a slide look like they are in interphase?",
+    "beginning": "Why are most cells in interphase?"
+  },
+  "A4.R3.answer": "Cells spend most of their cycle in interphase, growing and copying their DNA.",
+  "A4.R4.prompt": {
+    "building": "How can a bone cell and a skin cell have the same DNA but be different?",
+    "beginning": "How can cells with the same DNA be different?"
+  },
+  "A4.R4.answer": "They switch on different genes.",
+  "A4.L1.prompt": {
+    "building": "Which is a real way our model newt is different from a real newt?",
+    "beginning": "How is our model different from a real newt?"
+  },
+  "A4.L1.hint": {
+    "building": "Look at the first row of the card.",
+    "beginning": "Look at the card."
+  },
+  "A4.L1.optMore": "Real newts have many more chromosomes",
+  "A4.L1.optNoCopy": "Real cells divide without copying",
+  "A4.L1.optLabels": "Real chromosomes are labelled M and P",
+  "A4.L1.optHalf": "Real mitosis halves the chromosomes",
+  "A4.L1.fbMore": {
+    "building": "Our newt has 4 to keep the counting simple; real newts have many more.",
+    "beginning": "Real newts have more."
+  },
+  "A4.L1.fbNoCopy": {
+    "building": "Real cells copy their chromosomes before mitosis too; the model got that part right.",
+    "beginning": "Real cells copy first too."
+  },
+  "A4.L1.fbLabels": {
+    "building": "The labels are a model trick. Real chromosomes are not coloured or labelled.",
+    "beginning": "Labels are only in the model."
+  },
+  "A4.L1.fbHalf": {
+    "building": "Real mitosis keeps the full set, just like the model.",
+    "beginning": "Mitosis keeps the full set."
+  },
+  "A4.L2.prompt": {
+    "building": "\"Share of cells = share of time\" only works if which is true?",
+    "beginning": "When does \"share of cells = share of time\" work?"
+  },
+  "A4.L2.hint": {
+    "building": "Look at the timing row of the card.",
+    "beginning": "Look at the card."
+  },
+  "A4.L2.optSame": "Every phase takes the same time",
+  "A4.L2.optRandom": "Cells divide at random, independent times",
+  "A4.L2.optFast": "Phases with more cells are faster",
+  "A4.L2.optRest": "Cells rest during interphase",
+  "A4.L2.fbSame": {
+    "building": "If phases took the same time, the counts would be equal; the method is for when they differ.",
+    "beginning": "Phases take different times."
+  },
+  "A4.L2.fbRandom": {
+    "building": "If cells were in step with each other, a slide would catch them all in one phase.",
+    "beginning": "Cells must divide at different times."
+  },
+  "A4.L2.fbFast": {
+    "building": "More cells means a longer phase, not a faster one.",
+    "beginning": "More cells means longer."
+  },
+  "A4.L2.fbRest": {
+    "building": "Interphase cells are busy, and that is not what makes the method work.",
+    "beginning": "Interphase cells are busy."
+  },
+  "A4.check.title": "Unit checkpoint",
+  "A4.check.body1": {
+    "building": "Five questions about new situations. Show what you know on your own: hints, worked steps and sentence starters are off.",
+    "beginning": "Five questions. Work on your own."
+  },
+  "A4.check.body2": {
+    "building": "Your first answer counts. The last question asks you to explain in your own words; your teacher will read it.",
+    "beginning": "Your first answer counts."
+  },
+  "A4.C1.prompt": {
+    "building": "This cell comes from a sea star's arm, which is regrowing. Divide it so both new cells match the parent.",
+    "beginning": "Divide this cell. Both new cells must match the parent."
+  },
+  "A4.C1.fb.correct": {
+    "building": "Both new cells match the parent.",
+    "beginning": "Both cells match."
+  },
+  "A4.C2.prompt": {
+    "building": "You cut your finger. New skin cells fill the cut. How does their DNA compare with the skin cells next to the cut?",
+    "beginning": "New skin cells fill a cut. How is their DNA?"
+  },
+  "A4.C2.optHalf": "They have half as much DNA",
+  "A4.C2.optNeighbour": "The same DNA as the cells next to them",
+  "A4.C2.optNew": "New genes for healing were added",
+  "A4.C2.optBlood": "They copy DNA from the blood",
+  "A4.C2.fbHalf": {
+    "building": "Mitosis gives each new cell a full set.",
+    "beginning": "Each cell gets a full set."
+  },
+  "A4.C2.fbNeighbour": {
+    "building": "The new cells were made by mitosis, so they have the same DNA.",
+    "beginning": "Same DNA. Mitosis made them."
+  },
+  "A4.C2.fbNew": {
+    "building": "No genes are added; healing uses the genes every cell already has.",
+    "beginning": "No new genes."
+  },
+  "A4.C2.fbBlood": {
+    "building": "Each new cell gets its DNA by mitosis from the cell that divided.",
+    "beginning": "DNA comes from mitosis."
+  },
+  "A4.C3.prompt": {
+    "building": "A plant's root cells and leaf cells look very different. Which is the best explanation?",
+    "beginning": "Root cells and leaf cells look different. Why?"
+  },
+  "A4.C3.optLost": "Root cells lost their leaf genes",
+  "A4.C3.optDiff": "Roots and leaves have different DNA",
+  "A4.C3.optSwitched": "They have the same genes, but different genes are switched on",
+  "A4.C3.optSun": "Sunlight adds new genes to the leaves",
+  "A4.C3.fbLost": {
+    "building": "Root cells keep every gene; the leaf genes are switched off.",
+    "beginning": "The genes are still there."
+  },
+  "A4.C3.fbDiff": {
+    "building": "A plant's cells all have the same DNA, made by mitosis.",
+    "beginning": "Same DNA."
+  },
+  "A4.C3.fbSwitched": {
+    "building": "Same genes everywhere; root and leaf cells switch on different ones.",
+    "beginning": "Different genes are on."
+  },
+  "A4.C3.fbSun": {
+    "building": "Light does not add genes; leaf cells use genes they already have.",
+    "beginning": "No new genes."
+  },
+  "A4.C4.prompt": {
+    "building": "Two skin slides: slide X, from a healing wound, has 14 of 36 cells dividing; slide Y, from healthy skin, has 2 of 36. Which came from the part that is growing faster?",
+    "beginning": "Slide X has 14 dividing cells. Slide Y has 2. Which is growing faster?"
+  },
+  "A4.C4.optX": "Slide X",
+  "A4.C4.optY": "Slide Y",
+  "A4.C4.optSame": "Both are growing at the same rate",
+  "A4.C4.optNeither": "Neither; skin cells only rest",
+  "A4.C4.fbX": {
+    "building": "More dividing cells means more mitosis, so faster growth: healing tissue.",
+    "beginning": "More dividing cells: faster growth."
+  },
+  "A4.C4.fbY": {
+    "building": "Fewer dividing cells means slower growth.",
+    "beginning": "Fewer dividing cells: slower."
+  },
+  "A4.C4.fbSame": {
+    "building": "The counts are very different, so the growth is too.",
+    "beginning": "The counts are different."
+  },
+  "A4.C4.fbNeither": {
+    "building": "Skin cells divide all the time to replace old ones, faster in a wound.",
+    "beginning": "Skin cells divide."
+  },
+  "A4.C5.prompt": {
+    "building": "In your own words: how can a body rebuild a lost part, like Fig's tail? Use the words mitosis, DNA and genes.",
+    "beginning": "How does a body grow back a part? Use: mitosis, DNA, genes."
+  },
+  "A4.end.title": "Unit checkpoint: done",
+  "A4.end.body1": {
+    "building": "You used a model of chromosomes, mitosis and gene switches to explain how a body grows and repairs itself.",
+    "beginning": "You used a model to explain growth and repair."
+  },
+  "A4.end.body2": {
+    "building": "Models leave things out; knowing what they leave out is part of using them well.",
+    "beginning": "Models leave things out."
+  },
+  "A-end.title": "Breeding season",
+  "A-end.body1": {
+    "building": "Mitosis builds and repairs Fig, and every cell it makes has the same DNA. The life cycle shows where that happens.",
+    "beginning": "Mitosis makes all of Fig's body cells. They have the same DNA."
+  },
+  "A-end.body2": {
+    "building": "The grey half (making eggs and sperm, and fertilisation) is Part B. Something about it is going to surprise everyone.",
+    "beginning": "The grey part comes next, in Part B."
+  },
+  "A-end.cycle.adult": "Adult newt",
+  "A-end.cycle.gametes": "Eggs and sperm",
+  "A-end.cycle.zygote": "Fertilised egg",
+  "A-end.cycle.hatchling": "Hatchling",
+  "A-end.cycle.growth": "Growing newt",
+  "A-end.cycle.mitosis": "Mitosis",
+  "A-end.cycle.meiosis": "Meiosis",
+  "A-end.cycle.fertilisation": "Fertilisation",
+  "A-end.cycle.partB": "Coming in Part B",
+  "A-end.done.title": "Part A: done",
+  "A-end.done.body1": {
+    "building": "Every cell in Fig's body has the same DNA: mitosis copies it faithfully, and genes switched on or off make bone, muscle and skin.",
+    "beginning": "Every cell in Fig has the same DNA."
+  },
+  "A-end.done.body2": {
+    "building": "Hold that thought. In Part B, a DNA test says Fig is not the mother of her own hatchlings.",
+    "beginning": "In Part B: a surprise about Fig's babies."
+  },
+  "mis.labelsAreReal": "Real chromosomes come labelled and coloured.",
+  "A4.limits.chromosomes.model": "Fig has 2 pairs of chromosomes (4 in all).",
+  "A4.limits.chromosomes.real": "Real newts have many more: often a dozen pairs or more.",
+  "A4.limits.drag.model": "You decide when a cell copies and divides.",
+  "A4.limits.drag.real": "Real cells copy and divide on their own, controlled by the body.",
+  "A4.limits.labels.model": "Chromosomes are coloured, striped and labelled M and P.",
+  "A4.limits.labels.real": "Real chromosomes have no colours or labels; scientists stain them to see them.",
+  "A4.limits.timing.model": "Share of cells = share of time.",
+  "A4.limits.timing.real": "This only works if cells divide at random, independent times.",
+  "A4.limits.genes.model": "Three genes, switched on or off.",
+  "A4.limits.genes.real": "Real cells use thousands of genes, turned up and down in many steps.",
+  "A4.limits.cycle.model": "Every cycle takes 24 hours.",
+  "A4.limits.cycle.real": "A round number for the maths. Real cycle lengths vary by species and tissue."
 }

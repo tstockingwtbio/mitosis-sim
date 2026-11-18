@@ -33,7 +33,8 @@
     "genes-added": "mis.genesAdded",
     "all-genes-on": "mis.allGenesOn",
     "different-dna-per-tissue": "mis.differentDnaPerTissue",
-    "genes-lost": "mis.genesLost"
+    "genes-lost": "mis.genesLost",
+    "labels-are-real": "mis.labelsAreReal"
   },
   "beats": [
     {
@@ -866,16 +867,119 @@
       "title": "beat.A4.title",
       "module": "A4-model-limits",
       "standard": "SC.HS.6.1.d",
-      "built": false,
-      "steps": []
+      "built": true,
+      "steps": [
+        {
+          "id": "A4-s01",
+          "type": "retrieve",
+          "tasks": [
+            "A4-R1",
+            "A4-R2",
+            "A4-R3",
+            "A4-R4"
+          ]
+        },
+        {
+          "id": "A4-s02",
+          "type": "explain",
+          "scene": "limits",
+          "title": "A4.limits.title",
+          "body": [
+            "A4.limits.body1",
+            "A4.limits.body2"
+          ],
+          "lines": [
+            "VO-A14"
+          ]
+        },
+        {
+          "id": "A4-s03",
+          "type": "task",
+          "task": "A4-L1"
+        },
+        {
+          "id": "A4-s04",
+          "type": "task",
+          "task": "A4-L2"
+        },
+        {
+          "id": "A4-s05",
+          "type": "intro",
+          "title": "A4.check.title",
+          "body": [
+            "A4.check.body1",
+            "A4.check.body2"
+          ]
+        },
+        {
+          "id": "A4-s06",
+          "type": "task",
+          "task": "A4-C1"
+        },
+        {
+          "id": "A4-s07",
+          "type": "task",
+          "task": "A4-C2"
+        },
+        {
+          "id": "A4-s08",
+          "type": "task",
+          "task": "A4-C3"
+        },
+        {
+          "id": "A4-s09",
+          "type": "task",
+          "task": "A4-C4"
+        },
+        {
+          "id": "A4-s10",
+          "type": "task",
+          "task": "A4-C5"
+        },
+        {
+          "id": "A4-s11",
+          "type": "summary",
+          "title": "A4.end.title",
+          "body": [
+            "A4.end.body1",
+            "A4.end.body2"
+          ]
+        }
+      ],
+      "sequencing": "explicit-first"
     },
     {
       "id": "A-end",
       "title": "beat.Aend.title",
       "module": "A-end-hook",
       "standard": "SC.HS.6.1.d",
-      "built": false,
-      "steps": []
+      "built": true,
+      "steps": [
+        {
+          "id": "Aend-s01",
+          "type": "explain",
+          "scene": "lifecycle",
+          "title": "A-end.title",
+          "body": [
+            "A-end.body1",
+            "A-end.body2"
+          ],
+          "lines": [
+            "VO-A15"
+          ]
+        },
+        {
+          "id": "Aend-s02",
+          "type": "summary",
+          "title": "A-end.done.title",
+          "body": [
+            "A-end.done.body1",
+            "A-end.done.body2"
+          ]
+        }
+      ],
+      "kind": "observe",
+      "sequencing": "phenomenon-first"
     }
   ],
   "tasks": {
@@ -3291,6 +3395,340 @@
           "feedback": "A3.C3.fbParent"
         }
       ]
+    },
+    "A4-R1": {
+      "id": "A4-R1",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "A4.R1.prompt",
+      "answer": "A4.R1.answer"
+    },
+    "A4-R2": {
+      "id": "A4-R2",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "A4.R2.prompt",
+      "answer": "A4.R2.answer"
+    },
+    "A4-R3": {
+      "id": "A4-R3",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "A4.R3.prompt",
+      "answer": "A4.R3.answer"
+    },
+    "A4-R4": {
+      "id": "A4-R4",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "A4.R4.prompt",
+      "answer": "A4.R4.answer"
+    },
+    "A4-L1": {
+      "id": "A4-L1",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A4.L1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A4.L1.optMore",
+          "feedback": "A4.L1.fbMore",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "A4.L1.optNoCopy",
+          "feedback": "A4.L1.fbNoCopy",
+          "misconception": "divide-without-copy"
+        },
+        {
+          "id": "c",
+          "text": "A4.L1.optLabels",
+          "feedback": "A4.L1.fbLabels",
+          "misconception": "labels-are-real"
+        },
+        {
+          "id": "d",
+          "text": "A4.L1.optHalf",
+          "feedback": "A4.L1.fbHalf",
+          "misconception": "mitosis-halves"
+        }
+      ],
+      "hints": [
+        "A4.L1.hint"
+      ]
+    },
+    "A4-L2": {
+      "id": "A4-L2",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A4.L2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A4.L2.optSame",
+          "feedback": "A4.L2.fbSame",
+          "misconception": "phases-equal"
+        },
+        {
+          "id": "b",
+          "text": "A4.L2.optRandom",
+          "feedback": "A4.L2.fbRandom",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "A4.L2.optFast",
+          "feedback": "A4.L2.fbFast",
+          "misconception": "more-cells-faster"
+        },
+        {
+          "id": "d",
+          "text": "A4.L2.optRest",
+          "feedback": "A4.L2.fbRest",
+          "misconception": "interphase-resting"
+        }
+      ],
+      "hints": [
+        "A4.L2.hint"
+      ]
+    },
+    "A4-C1": {
+      "id": "A4-C1",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "divide",
+      "prompt": "A4.C1.prompt",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "3P",
+            "pair": 3,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "k"
+            ]
+          },
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "H"
+            ]
+          },
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "J"
+            ]
+          },
+          {
+            "id": "3M",
+            "pair": 3,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "K"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "h"
+            ]
+          },
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "j"
+            ]
+          }
+        ]
+      },
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A4.C1.fb.correct"
+        },
+        {
+          "when": {
+            "divide": "missing"
+          },
+          "misconception": "divide-without-copy",
+          "text": "A2.fb.missing"
+        },
+        {
+          "when": {
+            "divide": "extra"
+          },
+          "misconception": "both-halves-one-cell",
+          "text": "A2.fb.extra"
+        },
+        {
+          "when": {
+            "divide": "mixed"
+          },
+          "misconception": "split-by-parent",
+          "text": "A2.fb.mixed"
+        }
+      ]
+    },
+    "A4-C2": {
+      "id": "A4-C2",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A4.C2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A4.C2.optHalf",
+          "feedback": "A4.C2.fbHalf",
+          "misconception": "mitosis-halves"
+        },
+        {
+          "id": "b",
+          "text": "A4.C2.optNeighbour",
+          "feedback": "A4.C2.fbNeighbour",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "A4.C2.optNew",
+          "feedback": "A4.C2.fbNew",
+          "misconception": "genes-added"
+        },
+        {
+          "id": "d",
+          "text": "A4.C2.optBlood",
+          "feedback": "A4.C2.fbBlood",
+          "misconception": "different-dna-per-tissue"
+        }
+      ]
+    },
+    "A4-C3": {
+      "id": "A4-C3",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A4.C3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A4.C3.optLost",
+          "feedback": "A4.C3.fbLost",
+          "misconception": "genes-lost"
+        },
+        {
+          "id": "b",
+          "text": "A4.C3.optDiff",
+          "feedback": "A4.C3.fbDiff",
+          "misconception": "different-dna-per-tissue"
+        },
+        {
+          "id": "c",
+          "text": "A4.C3.optSwitched",
+          "feedback": "A4.C3.fbSwitched",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "A4.C3.optSun",
+          "feedback": "A4.C3.fbSun",
+          "misconception": "genes-added"
+        }
+      ]
+    },
+    "A4-C4": {
+      "id": "A4-C4",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A4.C4.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A4.C4.optX",
+          "feedback": "A4.C4.fbX",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "A4.C4.optY",
+          "feedback": "A4.C4.fbY",
+          "misconception": "more-cells-faster"
+        },
+        {
+          "id": "c",
+          "text": "A4.C4.optSame",
+          "feedback": "A4.C4.fbSame",
+          "misconception": "phases-equal"
+        },
+        {
+          "id": "d",
+          "text": "A4.C4.optNeither",
+          "feedback": "A4.C4.fbNeither",
+          "misconception": "interphase-resting"
+        }
+      ]
+    },
+    "A4-C5": {
+      "id": "A4-C5",
+      "beat": "A4",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "predict",
+      "prompt": "A4.C5.prompt"
     }
   }
 }

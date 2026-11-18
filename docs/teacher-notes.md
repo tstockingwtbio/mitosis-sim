@@ -9,6 +9,11 @@ Notes for the teacher and for comparing pilot results. Students never see this f
 | A0 | The phenomenon: a lost tail grows back | Phenomenon (OBSERVE) | Phenomenon first | Story and time-lapse, then every student writes a prediction before any instruction. A1 to A3 answer it. |
 | A1 | Chromosome structure: an X is one chromosome with two DNA molecules | New representation | Explicit first | New vocabulary (centromere, chromatid) and a new counting procedure. Order: zoom ladder, pairs, copying animation, worked example, guided practice, independent practice. |
 | A1 | Genes are sections of chromosomes; chromosomes come in pairs (one from each parent) | New vocabulary and representation | Explicit first | Students need the model (lengths, gene letters, solid M and striped P) before they can reason with it. |
+| A2 | Mitosis makes two genetically identical cells | Conceptual, with prior knowledge from A1 (an X is one chromosome, copied) | Attempt first | Students divide a cell their own way (most skip copying and leave a cell short); then a stepped animation shows copy → line up → pull apart → two cells and why the copy comes first. Then guided, independent, checkpoint. |
+| A2b | Cycle is continuous; most time in interphase; share of cells estimates share of time | New procedure (sorting by phase, counts → % → hours) | Explicit first | As the bible sets: narrator sorts 3 cells (VO-A18), students sort 6 with feedback, then the rest alone. |
+| A3 | Same DNA in every cell; different genes switched on | Conceptual, with prior knowledge (genes, mitosis) | Attempt first | Students try to make a bone cell with the gene switches before VO-A13 explains; then they revisit their A0 prediction. |
+| A4 | Model limits; independent evidence for 6.1.d | Checkpoint | Explicit first | Limits card, two questions on it, then the unit checkpoint (supports off, unfamiliar cases, one written explanation). |
+| A-end | Plants the rule Part B breaks | Story | Phenomenon | VO-A15 and the life-cycle diagram (meiosis half greyed). |
 
 ## A0: Cold open (SC.HS.6.1.d)
 
@@ -86,6 +91,48 @@ These ideas come back in A2: mitosis error states (missing or extra chromosome) 
 - Settings › My progress › Reset clears this browser's progress.
 - To test right-to-left layout, choose Arabic, Dari, Farsi or Pashto. The text stays English until translations exist.
 
+
+## A2: Copy a cell (draft)
+
+1. Retrieve (4). 2. Your turn (VO-A09) with the parent cell. 3. **Try it first**: divide a cell however you like. Most students skip copying; the new cell comes up short, VO-A10 plays, and the count strip shows "Same info as parent? ✗ No". One try is enough to move on. 4. How a cell copies itself: stepped animation (copy, line up, fibres pull the halves apart, two cells), VO-A11. 5. Guided divide with worked steps and hints. 6. Independent divide (3 pairs); **Go further** swaps in "a human skin cell with 46 chromosomes". 7. Error analysis (3 and 5 chromosomes). 8.–11. Checkpoint: divide a new animal's cell, compare DNA, counts after mitosis. 12. Summary.
+
+- **How the divide task works:** select a chromosome, then new cell 1 or 2 (or click the cell). Placing an X splits it: one half goes to that cell, the other half waits to be placed. "Divide the cell" judges each new cell against the parent: missing, extra, or mixed.
+- **Misconceptions:** dividing without copying; both halves of an X in one cell; one cell gets the mother's chromosomes and the other the father's; mitosis halves the number; the new cells differ; new cells keep whole Xs.
+- Phase names are not used in A2 (the 6.1.d limit).
+
+## A2b: Clock the cycle (draft)
+
+1. Retrieve (4). 2. The cell cycle wheel (VO-A16). 3. Ada's slide (IMG-P10, VO-A17). 4. Worked: the narrator sorts cells 1–3 (VO-A18). 5. Guided: sort 6 ringed cells, check, fix. 6. Independent: sort the other 27, check once. 7. Timing table (VO-A19): share of cells and hours of 24 for each phase, from the student's own counts. 8. Which phase is longest? (**Go further**: a chemical stops cells at metaphase.) 9.–10. Old tail slide (VO-A20) and why it is nearly all interphase. 11.–13. Onion root (IMG-P11, VO-A21): sort, then interphase and metaphase timing. 14.–17. Checkpoint on reasoning. 18. Summary.
+
+- **Every student gets a different random slide**, saved with their progress, so the class can pool counts. Fields are about 75% interphase for the new tail tip, ~96% for the old tail, ~68% for the onion root tip.
+- **Reference cards** (drawing, name, what to look for) stay on screen while sorting; sorting uses the cards, not memory. The checkpoint asks about reasoning only.
+- **Timing answers** are accepted within ±1.5 percentage points and ±0.5 hours, so rounded answers count.
+- **Misconceptions:** interphase is "resting"; a phase with more cells is faster; phases are separate steps; the count is the percent; the percent is the hours.
+
+## A3: Build a body (draft)
+
+1. Retrieve (4). 2. The stump (VO-A12): identical, undecided cells; count strip shows the same information as the parent. 3. **Try it first**: make a bone cell with the gene switches. 4. Same cookbook, different pages (VO-A13): bone, muscle and skin side by side over one shared set of chromosomes. 5. Guided: muscle. 6. Independent: skin. 7. Same DNA? (**Go further**: is the skin gene still in a muscle cell?) 8. The regrowth time-lapse again. 9. Revisit the A0 prediction (the student's earlier answer is shown). 10.–13. Checkpoint, including human liver and nerve cells. 14. Summary.
+
+- The gene switches never change the chromosomes: the count strip stays at 4 / 4 / same as parent while the cell redraws as bone, muscle, skin, undecided or mixed-up.
+- **No gene-control mechanisms** are shown (the 6.1.d limit): genes are simply "on" or "off".
+- **Misconceptions:** each tissue has its own DNA; cells lose genes they don't use; cells gain new genes; every gene is on; an undecided cell is finished.
+
+## A4: Model limits and unit checkpoint (draft)
+
+1. Retrieve across A1–A3. 2. The limits card (VO-A14): 2 pairs vs. many; you drag vs. the body controls division; coloured, labelled chromosomes; "share of cells = share of time" assumes random, independent timing; three genes on/off vs. thousands; the 24-hour round number. 3.–4. Two questions on the card. 5. Checkpoint intro. 6.–10. **Unit checkpoint**, supports off, unfamiliar cases: divide a sea star cell; DNA in new skin cells in a cut; root vs. leaf cells; which skin slide is growing faster; and a written explanation (how a body rebuilds a lost part, using mitosis, DNA and genes). The written answer is saved in the browser for you to read; it is not auto-graded and not counted in the score.
+
+## A-end: Hook
+
+VO-A15 over a life-cycle diagram: adult → (mitosis) growing newt, hatchling; the meiosis and fertilisation half is greyed out and marked "Coming in Part B". Then a Part A summary.
+
+## Reading students' written answers
+
+Predictions (A0, A3) and the A4 written explanation are saved in each student's browser only (nothing leaves the browser). To see them, sit with the student's device: with **Teacher mode** on, you can step to those questions and read what is in the box.
+
 ## Framework check (A1)
 
 Framework check: passed. Retrieve block with 4 items; worked example before independent practice, with fading; all-student checks with misconception feedback; integrated text next to the model; no decorative images in the working area; checkpoint matches "develop and use a model" with no phase recall; every task tagged SC.HS.6.1.d.
+
+## Framework check (A2–A4)
+
+Framework check: passed. Each module opens with a Retrieve block (≥ 3 items across last module, last week and a prior unit); new procedures have a worked example before independent practice (A2b explicit first; A2 and A3 attempt first with a consolidating demonstration before guided practice); every check names a likely misconception; text sits beside its model; each module ends with a supports-off checkpoint matching "develop and use a model", with no phase recall assessed; every task is tagged SC.HS.6.1.d. A0 and A-end are story beats (no Retrieve or checkpoint).

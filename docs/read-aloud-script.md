@@ -12,8 +12,8 @@ Anything without a recording is read by the browser's built-in voice, so nothing
 ## Summary
 
 - Story narration: 21 of 21 recorded.
-- Panel text, Building (English): 0 of 107 recorded; **107 needed**.
-- Panel text, Beginning (English): 0 of 78 recorded; **78 needed**. Only used when a student picks the Beginning support level in English.
+- Panel text, Building (English): 0 of 410 recorded; **410 needed**.
+- Panel text, Beginning (English): 0 of 286 recorded; **286 needed**. Only used when a student picks the Beginning support level in English.
 
 Building lines are written for ElevenLabs v3 with direction tags (from scripts/recording-tags.json), following the bible's tag rules: paste them in as they are. A few words are spelled out where a voice would misread a symbol (blank, divided by, capital A and small a); the captions on screen do not change. Beginning lines have no tags: record them slowly, as written.
 
@@ -128,6 +128,309 @@ Building lines are written for ElevenLabs v3 with direction tags (from scripts/r
 | **needed** | `mm_txt_A1-C3-fbSame_en_building.mp3` | [pleased] Same genes, and the versions can differ, [pause] like capital A and small a. | A1 · A1-s15 (A1-C3) choice feedback |
 | **needed** | `mm_txt_A1-end-body1_en_building.mp3` | [warm] Genes are sections of chromosomes. [pause] Chromosomes come in pairs, one from each parent. | A1 · A1-s16 |
 | **needed** | `mm_txt_A1-end-body2_en_building.mp3` | An X is one chromosome, copied: one chromosome, two DNA molecules. [pause] [curious] Next: how does one cell become two? | A1 · A1-s16 |
+| **needed** | `mm_txt_A2-R1-prompt_en_building.mp3` | How many DNA molecules are in one X-shaped chromosome? | A2 · A2-s01 (A2-R1) |
+| **needed** | `mm_txt_A2-R2-prompt_en_building.mp3` | Where do the two chromosomes in a pair come from? | A2 · A2-s01 (A2-R2) |
+| **needed** | `mm_txt_A2-R3-prompt_en_building.mp3` | What is a gene? | A2 · A2-s01 (A2-R3) |
+| **needed** | `mm_txt_A2-R4-prompt_en_building.mp3` | Name one reason a living thing needs to make new cells. | A2 · A2-s01 (A2-R4) |
+| **needed** | `mm_txt_A2-intro-body1_en_building.mp3` | Fig's tail grows back because cells divide: one cell becomes two. Each new cell needs exactly what the parent cell had. | A2 · A2-s02 |
+| **needed** | `mm_txt_A2-intro-body2_en_building.mp3` | Next, try it your way. You can copy the chromosomes first, or not. Mistakes are fine: you will see what happens. | A2 · A2-s02 |
+| **needed** | `mm_txt_A2-T1-prompt_en_building.mp3` | Give each new cell everything the parent cell had. Select a chromosome, then a new cell. When the parent cell is empty, divide it. | A2 · A2-s03 (A2-T1) |
+| **needed** | `mm_txt_A2-T1-fb-correct_en_building.mp3` | Both new cells match the parent. How did you get there? Next, watch how real cells do it. | A2 · A2-s03 (A2-T1) feedback |
+| **needed** | `mm_txt_A2-fb-missing_en_building.mp3` | A new cell is missing a chromosome. Without copying first, there is only one of each chromosome to share, so one cell has to go without. | A2 · A2-s03 (A2-T1) feedback |
+| **needed** | `mm_txt_mis-divideWithoutCopy_en_building.mp3` | A cell can divide without copying first. | A2 · A2-s03 (A2-T1) mix-up |
+| **needed** | `mm_txt_A2-fb-extra_en_building.mp3` | A new cell has an extra chromosome, and the other is missing it. Both halves of one X went to the same cell: send one half to each. | A2 · A2-s03 (A2-T1) feedback |
+| **needed** | `mm_txt_mis-bothHalvesOneCell_en_building.mp3` | Both halves of an X can go to the same new cell. | A2 · A2-s03 (A2-T1) mix-up |
+| **needed** | `mm_txt_A2-fb-mixed_en_building.mp3` | The new cells don't match the parent: some chromosomes are doubled and some are missing. Each new cell needs one copy of every chromosome. | A2 · A2-s03 (A2-T1) feedback |
+| **needed** | `mm_txt_mis-splitByParent_en_building.mp3` | One new cell gets the mother's chromosomes and the other gets the father's. | A2 · A2-s03 (A2-T1) mix-up |
+| **needed** | `mm_txt_A2-mitosis-body1_en_building.mp3` | Step through and watch the count strip. First, every chromosome is copied: each one becomes an X, with two identical halves. | A2 · A2-s04 |
+| **needed** | `mm_txt_A2-mitosis-body2_en_building.mp3` | Then the Xs line up, and fibres pull the two halves of every X to opposite ends. One half of each X goes to each new cell. | A2 · A2-s04 |
+| **needed** | `mm_txt_A2-mitosis-body3_en_building.mp3` | That is why the copy comes first: without it, there would be only one of each chromosome to share. This whole process is called mitosis. | A2 · A2-s04 |
+| **needed** | `mm_txt_A2-G1-prompt_en_building.mp3` | Now divide this cell the way real cells do. Copy first, then send one half of each X to each new cell. | A2 · A2-s05 (A2-G1) |
+| **needed** | `mm_txt_A2-G1-step1_en_building.mp3` | Press "Copy the chromosomes". Every chromosome becomes an X. | A2 · A2-s05 (A2-G1) worked step |
+| **needed** | `mm_txt_A2-G1-step2_en_building.mp3` | Select an X and put it in new cell 1: one half goes there, and the other half stays to be placed. | A2 · A2-s05 (A2-G1) worked step |
+| **needed** | `mm_txt_A2-G1-step3_en_building.mp3` | Put that other half in new cell 2. Do the same for every X, then divide. | A2 · A2-s05 (A2-G1) worked step |
+| **needed** | `mm_txt_A2-hint1_en_building.mp3` | Copy before you divide: each new cell needs its own copy of every chromosome. | A2 · A2-s05 (A2-G1) hint |
+| **needed** | `mm_txt_A2-hint2_en_building.mp3` | Each X gives one half to each new cell. Never send both halves to the same cell. | A2 · A2-s05 (A2-G1) hint |
+| **needed** | `mm_txt_A2-G1-fb-correct_en_building.mp3` | Each new cell has one copy of every chromosome: the same information as the parent. | A2 · A2-s05 (A2-G1) feedback |
+| **needed** | `mm_txt_A2-I1-prompt_en_building.mp3` | This cell is from a different animal, with three pairs. Divide it so both new cells match the parent. | A2 · A2-s06 (A2-I1) |
+| **needed** | `mm_txt_A2-I1-fb-correct_en_building.mp3` | Six chromosomes in each new cell, one copy of each, just like the parent. | A2 · A2-s06 (A2-I1) feedback |
+| **needed** | `mm_txt_A2-GF-prompt_en_building.mp3` | A human skin cell has 46 chromosomes. It divides by mitosis. What do the two new cells have? | A2 · A2-s06 (A2-I1-GF, Go further) |
+| **needed** | `mm_txt_A2-GF-hint_en_building.mp3` | Mitosis gives each new cell the same information as the parent. | A2 · A2-s06 (A2-I1-GF, Go further) hint |
+| **needed** | `mm_txt_A2-GF-opt23_en_building.mp3` | 23 chromosomes each | A2 · A2-s06 (A2-I1-GF, Go further) choice |
+| **needed** | `mm_txt_A2-GF-fb23_en_building.mp3` | Halving happens when eggs and sperm are made, not in mitosis. Mitosis keeps the full set. | A2 · A2-s06 (A2-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_mis-mitosisHalves_en_building.mp3` | Mitosis halves the number of chromosomes. | A2 · A2-s06 (A2-I1-GF, Go further) mix-up |
+| **needed** | `mm_txt_A2-GF-opt92_en_building.mp3` | 92 chromosomes each | A2 · A2-s06 (A2-I1-GF, Go further) choice |
+| **needed** | `mm_txt_A2-GF-fb92_en_building.mp3` | The copy is shared between the two cells, so the number does not double. | A2 · A2-s06 (A2-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2-GF-opt46_en_building.mp3` | 46 chromosomes each, the same as the parent | A2 · A2-s06 (A2-I1-GF, Go further) choice |
+| **needed** | `mm_txt_A2-GF-fb46_en_building.mp3` | Mitosis copies all 46, then shares them: each new cell gets the full set. | A2 · A2-s06 (A2-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2-GF-opt46diff_en_building.mp3` | 46 chromosomes each, but different genes | A2 · A2-s06 (A2-I1-GF, Go further) choice |
+| **needed** | `mm_txt_A2-GF-fb46diff_en_building.mp3` | Each half of an X is an exact copy, so both cells carry the same genes. | A2 · A2-s06 (A2-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_mis-daughtersDiffer_en_building.mp3` | The two new cells get different genes. | A2 · A2-s06 (A2-I1-GF, Go further) mix-up |
+| **needed** | `mm_txt_A2-I2-prompt_en_building.mp3` | A cell divides. One new cell gets 3 chromosomes; the other gets 5. The parent had 4. What went wrong? | A2 · A2-s07 (A2-I2) |
+| **needed** | `mm_txt_A2-I2-hint_en_building.mp3` | 3 + 5 = 8: the cell did copy. Where did the halves of the Xs go? | A2 · A2-s07 (A2-I2) hint |
+| **needed** | `mm_txt_A2-I2-optNoCopy_en_building.mp3` | The cell forgot to copy its chromosomes. | A2 · A2-s07 (A2-I2) choice |
+| **needed** | `mm_txt_A2-I2-fbNoCopy_en_building.mp3` | Without copying there would be only 4 chromosomes to share, not 8. | A2 · A2-s07 (A2-I2) choice feedback |
+| **needed** | `mm_txt_A2-I2-optBoth_en_building.mp3` | Both halves of one X went into the same cell. | A2 · A2-s07 (A2-I2) choice |
+| **needed** | `mm_txt_A2-I2-fbBoth_en_building.mp3` | One X sent both halves to one cell: that cell got an extra, and the other is missing one. | A2 · A2-s07 (A2-I2) choice feedback |
+| **needed** | `mm_txt_A2-I2-optExtraCopy_en_building.mp3` | The cell copied one chromosome twice. | A2 · A2-s07 (A2-I2) choice |
+| **needed** | `mm_txt_A2-I2-fbExtraCopy_en_building.mp3` | Then there would be 9 halves, not 8. The count is right; the sharing went wrong. | A2 · A2-s07 (A2-I2) choice feedback |
+| **needed** | `mm_txt_A2-I2-optNormal_en_building.mp3` | Nothing; new cells are often different. | A2 · A2-s07 (A2-I2) choice |
+| **needed** | `mm_txt_A2-I2-fbNormal_en_building.mp3` | Mitosis makes two cells that match the parent. A cell missing a chromosome has a problem. | A2 · A2-s07 (A2-I2) choice feedback |
+| **needed** | `mm_txt_A2-check-body_en_building.mp3` | Three questions about cells dividing. Show what you know on your own: hints and worked steps are off. | A2 · A2-s08 |
+| **needed** | `mm_txt_A2-C1-prompt_en_building.mp3` | Divide this cell from a different animal so both new cells match the parent. | A2 · A2-s09 (A2-C1) |
+| **needed** | `mm_txt_A2-C1-fb-correct_en_building.mp3` | Both new cells match the parent. | A2 · A2-s09 (A2-C1) feedback |
+| **needed** | `mm_txt_A2-C2-prompt_en_building.mp3` | After mitosis, how does the DNA in each new cell compare with the parent cell's DNA? | A2 · A2-s10 (A2-C2) |
+| **needed** | `mm_txt_A2-C2-optHalf_en_building.mp3` | Each new cell has half of the parent's DNA. | A2 · A2-s10 (A2-C2) choice |
+| **needed** | `mm_txt_A2-C2-fbHalf_en_building.mp3` | Mitosis copies first, so each cell gets a full set. | A2 · A2-s10 (A2-C2) choice feedback |
+| **needed** | `mm_txt_A2-C2-optDiffer_en_building.mp3` | The two new cells have different genes. | A2 · A2-s10 (A2-C2) choice |
+| **needed** | `mm_txt_A2-C2-fbDiffer_en_building.mp3` | The two halves of each X are exact copies, so both cells get the same genes. | A2 · A2-s10 (A2-C2) choice feedback |
+| **needed** | `mm_txt_A2-C2-optDouble_en_building.mp3` | Each new cell has twice as many chromosomes. | A2 · A2-s10 (A2-C2) choice |
+| **needed** | `mm_txt_A2-C2-fbDouble_en_building.mp3` | The copies are shared out, one half to each cell, so the number stays the same. | A2 · A2-s10 (A2-C2) choice feedback |
+| **needed** | `mm_txt_A2-C2-optSame_en_building.mp3` | Each new cell has the same DNA as the parent. | A2 · A2-s10 (A2-C2) choice |
+| **needed** | `mm_txt_A2-C2-fbSame_en_building.mp3` | Same DNA, same chromosomes: two identical copies of the parent cell. | A2 · A2-s10 (A2-C2) choice feedback |
+| **needed** | `mm_txt_A2-C3-prompt_en_building.mp3` | Before dividing, a cell has 6 chromosomes, and each one is an X. After mitosis, what does each new cell have? | A2 · A2-s11 (A2-C3) |
+| **needed** | `mm_txt_A2-C3-opt6and6_en_building.mp3` | 6 chromosomes, 6 DNA molecules | A2 · A2-s11 (A2-C3) choice |
+| **needed** | `mm_txt_A2-C3-fb6and6_en_building.mp3` | Each new cell gets one half of each X: 6 single chromosomes, 6 DNA molecules. | A2 · A2-s11 (A2-C3) choice feedback |
+| **needed** | `mm_txt_A2-C3-opt3and6_en_building.mp3` | 3 chromosomes, 6 DNA molecules | A2 · A2-s11 (A2-C3) choice |
+| **needed** | `mm_txt_A2-C3-fb3and6_en_building.mp3` | Mitosis does not halve the chromosomes: every new cell gets one of each of the 6. | A2 · A2-s11 (A2-C3) choice feedback |
+| **needed** | `mm_txt_A2-C3-opt6and12_en_building.mp3` | 6 chromosomes, 12 DNA molecules | A2 · A2-s11 (A2-C3) choice |
+| **needed** | `mm_txt_A2-C3-fb6and12_en_building.mp3` | The Xs are pulled apart, so the new cells get single halves, not whole Xs. | A2 · A2-s11 (A2-C3) choice feedback |
+| **needed** | `mm_txt_mis-daughtersKeepX_en_building.mp3` | The new cells keep whole X-shaped chromosomes. | A2 · A2-s11 (A2-C3) mix-up |
+| **needed** | `mm_txt_A2-C3-opt12and12_en_building.mp3` | 12 chromosomes, 12 DNA molecules | A2 · A2-s11 (A2-C3) choice |
+| **needed** | `mm_txt_A2-C3-fb12and12_en_building.mp3` | An X is one chromosome, copied. Its halves are shared between the two cells. | A2 · A2-s11 (A2-C3) choice feedback |
+| **needed** | `mm_txt_A2-end-body1_en_building.mp3` | Mitosis copies every chromosome, then pulls the copies apart so each new cell gets one of each. | A2 · A2-s12 |
+| **needed** | `mm_txt_A2-end-body2_en_building.mp3` | The two new cells have the same DNA as each other and as the parent. Next: how long does each part of this take? | A2 · A2-s12 |
+| **needed** | `mm_txt_A2b-R1-prompt_en_building.mp3` | What happens to every chromosome before a cell divides? | A2b · A2b-s01 (A2b-R1) |
+| **needed** | `mm_txt_A2b-R2-prompt_en_building.mp3` | After mitosis, how do the two new cells compare with the parent cell? | A2b · A2b-s01 (A2b-R2) |
+| **needed** | `mm_txt_A2b-R3-prompt_en_building.mp3` | What is a gene? | A2b · A2b-s01 (A2b-R3) |
+| **needed** | `mm_txt_A2b-R4-prompt_en_building.mp3` | What does the nucleus of a cell hold? | A2b · A2b-s01 (A2b-R4) |
+| **needed** | `mm_txt_A2b-cycle-body1_en_building.mp3` | A dividing cell goes round and round a cycle. The slices show how much of the cycle each part takes: interphase is most of it. | A2b · A2b-s02 |
+| **needed** | `mm_txt_A2b-cycle-body2_en_building.mp3` | The cycle is continuous: one part flows into the next. The five names are lines that scientists drew to talk about it; the cell does not stop between them. | A2b · A2b-s02 |
+| **needed** | `mm_txt_A2b-slide-body_en_building.mp3` | Each cell on the slide was caught at one moment of its cycle. If you count how many cells are in each part, you can work out how long each part takes. | A2b · A2b-s03 |
+| **needed** | `mm_txt_A2b-W1-prompt_en_building.mp3` | Watch the first three cells being sorted. The cards show what to look for. | A2b · A2b-s04 (A2b-W1) |
+| **needed** | `mm_txt_A2b-W1-step1_en_building.mp3` | Cell 1: a round, dark nucleus and no chromosomes you can see. That is interphase. | A2b · A2b-s04 (A2b-W1) worked step |
+| **needed** | `mm_txt_A2b-W1-step2_en_building.mp3` | Cell 2: chromosomes lined up across the middle. That is metaphase. | A2b · A2b-s04 (A2b-W1) worked step |
+| **needed** | `mm_txt_A2b-W1-step3_en_building.mp3` | Cell 3: two sets of chromosomes pulling apart. That is anaphase. | A2b · A2b-s04 (A2b-W1) worked step |
+| **needed** | `mm_txt_A2b-G1-prompt_en_building.mp3` | Now you sort the six cells in rings. Choose a card, click the cells that match, then check. | A2b · A2b-s05 (A2b-G1) |
+| **needed** | `mm_txt_A2b-hint-sort1_en_building.mp3` | Look for a nucleus first. A round, dark nucleus with no threads: interphase. A paler nucleus with threads: prophase. | A2b · A2b-s05 (A2b-G1) hint |
+| **needed** | `mm_txt_A2b-hint-sort2_en_building.mp3` | No nucleus? Look at the chromosomes: one line in the middle is metaphase; two sets moving apart is anaphase; two new nuclei is telophase. | A2b · A2b-s05 (A2b-G1) hint |
+| **needed** | `mm_txt_A2b-I1-prompt_en_building.mp3` | Sort the rest of the slide on your own. Then check: your counts go into the next step. | A2b · A2b-s06 (A2b-I1) |
+| **needed** | `mm_txt_A2b-T1-prompt_en_building.mp3` | Use your counts. For each phase, work out its share of the cells (%), then its hours out of a {hours}-hour cycle. | A2b · A2b-s07 (A2b-T1) |
+| **needed** | `mm_txt_A2b-T1-step1_en_building.mp3` | Example: if 3 of 36 cells are in metaphase, the share is 3 ÷ 36 = about 8%. | A2b · A2b-s07 (A2b-T1) worked step |
+| **needed** | `mm_txt_A2b-T1-step2_en_building.mp3` | The share of cells is the share of time. 8% of 24 hours is 0.08 × 24 = about 2 hours. | A2b · A2b-s07 (A2b-T1) worked step |
+| **needed** | `mm_txt_A2b-T1-step3_en_building.mp3` | Do the same for every phase. Your counts may differ from a classmate's: each slide is different. | A2b · A2b-s07 (A2b-T1) worked step |
+| **needed** | `mm_txt_A2b-hint-time1_en_building.mp3` | Share of cells = cells in the phase ÷ all cells, × 100. | A2b · A2b-s07 (A2b-T1) hint |
+| **needed** | `mm_txt_A2b-hint-time2_en_building.mp3` | Hours = share × 24. Check: all the hours together should add up to about 24. | A2b · A2b-s07 (A2b-T1) hint |
+| **needed** | `mm_txt_A2b-T1-fb-correct_en_building.mp3` | Your table is right. Interphase takes most of the day; the parts of mitosis take an hour or two each. | A2b · A2b-s07 (A2b-T1) feedback |
+| **needed** | `mm_txt_A2b-I2-prompt_en_building.mp3` | In your slide, which phase takes the longest? How do you know? | A2b · A2b-s08 (A2b-I2) |
+| **needed** | `mm_txt_A2b-I2-hint_en_building.mp3` | More cells caught in a phase means cells spend more time in it. | A2b · A2b-s08 (A2b-I2) hint |
+| **needed** | `mm_txt_A2b-I2-optFewest_en_building.mp3` | The phase with the fewest cells, because those cells finished fast | A2b · A2b-s08 (A2b-I2) choice |
+| **needed** | `mm_txt_A2b-I2-fbFewest_en_building.mp3` | Few cells in a phase means cells pass through it quickly, so it is short. | A2b · A2b-s08 (A2b-I2) choice feedback |
+| **needed** | `mm_txt_mis-moreCellsFaster_en_building.mp3` | A phase with more cells is a faster phase. | A2b · A2b-s08 (A2b-I2) mix-up |
+| **needed** | `mm_txt_A2b-I2-optMost_en_building.mp3` | The phase with the most cells, because cells spend longest there | A2b · A2b-s08 (A2b-I2) choice |
+| **needed** | `mm_txt_A2b-I2-fbMost_en_building.mp3` | A phase with more cells lasts longer: a cell is more likely to be caught in it. | A2b · A2b-s08 (A2b-I2) choice feedback |
+| **needed** | `mm_txt_A2b-I2-optSame_en_building.mp3` | They all take the same time; the slide is random | A2b · A2b-s08 (A2b-I2) choice |
+| **needed** | `mm_txt_A2b-I2-fbSame_en_building.mp3` | If every phase took the same time, the counts would be about equal. They are not. | A2b · A2b-s08 (A2b-I2) choice feedback |
+| **needed** | `mm_txt_mis-phasesEqual_en_building.mp3` | Every phase takes the same amount of time. | A2b · A2b-s08 (A2b-I2) mix-up |
+| **needed** | `mm_txt_A2b-I2-optResting_en_building.mp3` | Interphase, because the cell is resting | A2b · A2b-s08 (A2b-I2) choice |
+| **needed** | `mm_txt_A2b-I2-fbResting_en_building.mp3` | Interphase is longest, but not because the cell rests: it grows and copies its DNA then. | A2b · A2b-s08 (A2b-I2) choice feedback |
+| **needed** | `mm_txt_mis-interphaseResting_en_building.mp3` | Interphase is a resting phase. | A2b · A2b-s08 (A2b-I2) mix-up |
+| **needed** | `mm_txt_A2b-GF-prompt_en_building.mp3` | A chemical stops cells from moving past metaphase. After a few hours, what happens to the counts on a slide? | A2b · A2b-s08 (A2b-I2-GF, Go further) |
+| **needed** | `mm_txt_A2b-GF-hint_en_building.mp3` | Cells keep arriving at metaphase, but none leave. | A2b · A2b-s08 (A2b-I2-GF, Go further) hint |
+| **needed** | `mm_txt_A2b-GF-optPile_en_building.mp3` | Metaphase cells pile up, and anaphase and telophase cells disappear | A2b · A2b-s08 (A2b-I2-GF, Go further) choice |
+| **needed** | `mm_txt_A2b-GF-fbPile_en_building.mp3` | Cells flow into metaphase and get stuck, so they pile up there. Controlling when cells move on is how bodies control growth. | A2b · A2b-s08 (A2b-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2b-GF-optNone_en_building.mp3` | Nothing changes; each phase is separate | A2b · A2b-s08 (A2b-I2-GF, Go further) choice |
+| **needed** | `mm_txt_A2b-GF-fbNone_en_building.mp3` | The phases are connected: blocking one backs up the cells behind it. | A2b · A2b-s08 (A2b-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_mis-phasesSeparate_en_building.mp3` | The phases are separate steps that don't affect each other. | A2b · A2b-s08 (A2b-I2-GF, Go further) mix-up |
+| **needed** | `mm_txt_A2b-GF-optSame_en_building.mp3` | All five counts stay the same | A2b · A2b-s08 (A2b-I2-GF, Go further) choice |
+| **needed** | `mm_txt_A2b-GF-fbSame_en_building.mp3` | Cells still flow in, but none flow out, so the metaphase count grows. | A2b · A2b-s08 (A2b-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2b-GF-optInter_en_building.mp3` | Interphase disappears, because metaphase is now faster | A2b · A2b-s08 (A2b-I2-GF, Go further) choice |
+| **needed** | `mm_txt_A2b-GF-fbInter_en_building.mp3` | Cells still leave interphase as usual; they just cannot get past metaphase. | A2b · A2b-s08 (A2b-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2b-O1-prompt_en_building.mp3` | This slide comes from Fig's old tail. Sort every cell, then check. | A2b · A2b-s09 (A2b-O1) |
+| **needed** | `mm_txt_A2b-O2-prompt_en_building.mp3` | Almost every cell in the old tail is in interphase. Why? | A2b · A2b-s10 (A2b-O2) |
+| **needed** | `mm_txt_A2b-O2-hint_en_building.mp3` | Compare with the new tail tip: which one is still growing? | A2b · A2b-s10 (A2b-O2) hint |
+| **needed** | `mm_txt_A2b-O2-optDone_en_building.mp3` | The old tail has finished growing, so few cells are dividing | A2b · A2b-s10 (A2b-O2) choice |
+| **needed** | `mm_txt_A2b-O2-fbDone_en_building.mp3` | Finished tissue does its job instead of growing, so most cells stay in interphase. The growing tip has more dividing cells. | A2b · A2b-s10 (A2b-O2) choice feedback |
+| **needed** | `mm_txt_A2b-O2-optDead_en_building.mp3` | Cells in interphase are resting and not doing anything | A2b · A2b-s10 (A2b-O2) choice |
+| **needed** | `mm_txt_A2b-O2-fbDead_en_building.mp3` | Interphase cells are busy: they do their jobs, and they grow and copy their DNA when they are getting ready to divide. | A2b · A2b-s10 (A2b-O2) choice feedback |
+| **needed** | `mm_txt_A2b-O2-optFast_en_building.mp3` | Interphase is very fast in old tissue | A2b · A2b-s10 (A2b-O2) choice |
+| **needed** | `mm_txt_A2b-O2-fbFast_en_building.mp3` | If interphase were fast, few cells would be caught in it. Almost all are. | A2b · A2b-s10 (A2b-O2) choice feedback |
+| **needed** | `mm_txt_A2b-O2-optDiffDna_en_building.mp3` | Old-tail cells have different DNA from new-tail cells | A2b · A2b-s10 (A2b-O2) choice |
+| **needed** | `mm_txt_A2b-O2-fbDiffDna_en_building.mp3` | Every cell in Fig has the same DNA, made by mitosis. | A2b · A2b-s10 (A2b-O2) choice feedback |
+| **needed** | `mm_txt_A2b-onion-body_en_building.mp3` | Onion root tips grow fast, like Fig's new tail. Count a slice of root tip the same way. | A2b · A2b-s11 |
+| **needed** | `mm_txt_A2b-N1-prompt_en_building.mp3` | Sort every cell in the onion root tip, then check. | A2b · A2b-s12 (A2b-N1) |
+| **needed** | `mm_txt_A2b-N2-prompt_en_building.mp3` | Using your onion counts and a {hours}-hour cycle, work out the share and the hours for interphase and metaphase. | A2b · A2b-s13 (A2b-N2) |
+| **needed** | `mm_txt_A2b-N2-fb-correct_en_building.mp3` | Right. The same method works for any growing tissue. | A2b · A2b-s13 (A2b-N2) feedback |
+| **needed** | `mm_txt_A2b-check-body_en_building.mp3` | Three questions about the cell cycle. Show what you know on your own: hints are off. | A2b · A2b-s14 |
+| **needed** | `mm_txt_A2b-C1-prompt_en_building.mp3` | In a slice of a growing leaf, 30 of 36 cells are in interphase. What does this tell you? | A2b · A2b-s15 (A2b-C1) |
+| **needed** | `mm_txt_A2b-C1-optFast_en_building.mp3` | Interphase is the fastest phase | A2b · A2b-s15 (A2b-C1) choice |
+| **needed** | `mm_txt_A2b-C1-fbFast_en_building.mp3` | More cells in a phase means a longer phase, not a faster one. | A2b · A2b-s15 (A2b-C1) choice feedback |
+| **needed** | `mm_txt_A2b-C1-optRest_en_building.mp3` | Most of these cells are resting and doing nothing | A2b · A2b-s15 (A2b-C1) choice |
+| **needed** | `mm_txt_A2b-C1-fbRest_en_building.mp3` | Interphase cells grow, work and copy their DNA. | A2b · A2b-s15 (A2b-C1) choice feedback |
+| **needed** | `mm_txt_A2b-C1-optLong_en_building.mp3` | Cells spend most of their cycle in interphase | A2b · A2b-s15 (A2b-C1) choice |
+| **needed** | `mm_txt_A2b-C1-fbLong_en_building.mp3` | Most cells are caught in interphase because it takes most of the cycle. | A2b · A2b-s15 (A2b-C1) choice feedback |
+| **needed** | `mm_txt_A2b-C1-optBroken_en_building.mp3` | The leaf cells cannot divide | A2b · A2b-s15 (A2b-C1) choice |
+| **needed** | `mm_txt_A2b-C1-fbBroken_en_building.mp3` | 6 cells are dividing, so the leaf cells can divide. | A2b · A2b-s15 (A2b-C1) choice feedback |
+| **needed** | `mm_txt_A2b-C2-prompt_en_building.mp3` | In a slice of root tip, 6 of 48 cells are in metaphase. The cycle takes 24 hours. About how long is metaphase? | A2b · A2b-s16 (A2b-C2) |
+| **needed** | `mm_txt_A2b-C2-opt6_en_building.mp3` | 6 hours | A2b · A2b-s16 (A2b-C2) choice |
+| **needed** | `mm_txt_A2b-C2-fb6_en_building.mp3` | 6 is the number of cells. 6 ÷ 48 is the share: one eighth. | A2b · A2b-s16 (A2b-C2) choice feedback |
+| **needed** | `mm_txt_mis-percentIsCount_en_building.mp3` | The number of cells is the same as the share of cells. | A2b · A2b-s16 (A2b-C2) mix-up |
+| **needed** | `mm_txt_A2b-C2-opt3_en_building.mp3` | 3 hours | A2b · A2b-s16 (A2b-C2) choice |
+| **needed** | `mm_txt_A2b-C2-fb3_en_building.mp3` | 6 ÷ 48 = one eighth, and one eighth of 24 hours is 3 hours. | A2b · A2b-s16 (A2b-C2) choice feedback |
+| **needed** | `mm_txt_A2b-C2-opt12_en_building.mp3` | 12.5 hours | A2b · A2b-s16 (A2b-C2) choice |
+| **needed** | `mm_txt_A2b-C2-fb12_en_building.mp3` | 12.5 is the percent. Hours are 12.5% of 24, not of 100. | A2b · A2b-s16 (A2b-C2) choice feedback |
+| **needed** | `mm_txt_mis-hoursIsPercent_en_building.mp3` | The percent is the number of hours. | A2b · A2b-s16 (A2b-C2) mix-up |
+| **needed** | `mm_txt_A2b-C2-opt8_en_building.mp3` | 8 hours | A2b · A2b-s16 (A2b-C2) choice |
+| **needed** | `mm_txt_A2b-C2-fb8_en_building.mp3` | Check the share: 6 ÷ 48 is one eighth, so one eighth of 24 hours. | A2b · A2b-s16 (A2b-C2) choice feedback |
+| **needed** | `mm_txt_mis-hoursNotScaled_en_building.mp3` | The hours don't depend on the length of the cycle. | A2b · A2b-s16 (A2b-C2) mix-up |
+| **needed** | `mm_txt_A2b-C3-prompt_en_building.mp3` | On one slide, phase A has 9 cells and phase B has 2 cells. Which phase lasts longer? | A2b · A2b-s17 (A2b-C3) |
+| **needed** | `mm_txt_A2b-C3-optA_en_building.mp3` | Phase A | A2b · A2b-s17 (A2b-C3) choice |
+| **needed** | `mm_txt_A2b-C3-fbA_en_building.mp3` | More cells caught in a phase means cells spend longer in it. | A2b · A2b-s17 (A2b-C3) choice feedback |
+| **needed** | `mm_txt_A2b-C3-optB_en_building.mp3` | Phase B | A2b · A2b-s17 (A2b-C3) choice |
+| **needed** | `mm_txt_A2b-C3-fbB_en_building.mp3` | Fewer cells means cells pass through quickly: phase B is shorter. | A2b · A2b-s17 (A2b-C3) choice feedback |
+| **needed** | `mm_txt_A2b-C3-optSame_en_building.mp3` | They last the same time | A2b · A2b-s17 (A2b-C3) choice |
+| **needed** | `mm_txt_A2b-C3-fbSame_en_building.mp3` | Equal times would give about equal counts. | A2b · A2b-s17 (A2b-C3) choice feedback |
+| **needed** | `mm_txt_A2b-C3-optCannot_en_building.mp3` | You cannot tell from a slide | A2b · A2b-s17 (A2b-C3) choice |
+| **needed** | `mm_txt_A2b-C3-fbCannot_en_building.mp3` | A slide is a snapshot of many cells at once, so the counts estimate the times. | A2b · A2b-s17 (A2b-C3) choice feedback |
+| **needed** | `mm_txt_A2b-end-body1_en_building.mp3` | The cell cycle is continuous. Cells spend most of it in interphase, growing, working and copying their DNA; mitosis is the short part. | A2b · A2b-s18 |
+| **needed** | `mm_txt_A2b-end-body2_en_building.mp3` | Growing tissue has more dividing cells than finished tissue, and the share of cells in a phase estimates the share of time. Next: same DNA, different cells. | A2b · A2b-s18 |
+| **needed** | `mm_txt_A3-R1-prompt_en_building.mp3` | In a slice of a growing tail tip, why are more cells dividing than in an old tail? | A3 · A3-s01 (A3-R1) |
+| **needed** | `mm_txt_A3-R2-prompt_en_building.mp3` | After mitosis, how does the DNA in the two new cells compare with the parent? | A3 · A3-s01 (A3-R2) |
+| **needed** | `mm_txt_A3-R3-prompt_en_building.mp3` | What is a gene? | A3 · A3-s01 (A3-R3) |
+| **needed** | `mm_txt_A3-R4-prompt_en_building.mp3` | Name two kinds of tissue in Fig's tail. | A3 · A3-s01 (A3-R4) |
+| **needed** | `mm_txt_A3-stump-body1_en_building.mp3` | At the stump, cells divide by mitosis and make a lump of new cells. Every one of them has exactly the same chromosomes. | A3 · A3-s02 |
+| **needed** | `mm_txt_A3-stump-body2_en_building.mp3` | Look at the count strip: same information as the parent. So how do some become bone and others skin? | A3 · A3-s02 |
+| **needed** | `mm_txt_A3-T1-prompt_en_building.mp3` | Here is one cell from the lump. Try to make it into a bone cell. Switch genes on and off, then check. | A3 · A3-s03 (A3-T1) |
+| **needed** | `mm_txt_A3-T1-fb-correct_en_building.mp3` | A bone cell: only the bone gene is switched on. The chromosomes did not change at all. | A3 · A3-s03 (A3-T1) feedback |
+| **needed** | `mm_txt_A3-fb-none_en_building.mp3` | No genes are switched on, so the cell is still undecided. Switch on the gene for the kind of cell you want. | A3 · A3-s03 (A3-T1) feedback |
+| **needed** | `mm_txt_mis-undecidedIsDone_en_building.mp3` | A cell with no tissue genes switched on is finished. | A3 · A3-s03 (A3-T1) mix-up |
+| **needed** | `mm_txt_A3-fb-wrong_en_building.mp3` | That gene makes a different kind of cell. Every cell has all three genes: choose which one to switch on. | A3 · A3-s03 (A3-T1) feedback |
+| **needed** | `mm_txt_mis-genesAdded_en_building.mp3` | A cell becomes a new type by gaining new genes. | A3 · A3-s03 (A3-T1) mix-up |
+| **needed** | `mm_txt_A3-fb-extra_en_building.mp3` | More than one gene is switched on, so the cell is mixed up. A finished cell uses only the genes for its own job. | A3 · A3-s03 (A3-T1) feedback |
+| **needed** | `mm_txt_mis-allGenesOn_en_building.mp3` | A cell switches on all of its genes. | A3 · A3-s03 (A3-T1) mix-up |
+| **needed** | `mm_txt_A3-trick-body1_en_building.mp3` | Every cell in Fig has every gene. A bone cell switches on the bone gene; a muscle cell, the muscle gene; a skin cell, the skin gene. | A3 · A3-s04 |
+| **needed** | `mm_txt_A3-trick-body2_en_building.mp3` | Look at the chromosomes under each cell: they are identical. Only the switched-on gene (glowing) is different. | A3 · A3-s04 |
+| **needed** | `mm_txt_A3-G1-prompt_en_building.mp3` | Make this cell into a muscle cell. | A3 · A3-s05 (A3-G1) |
+| **needed** | `mm_txt_A3-G1-step1_en_building.mp3` | Find the muscle gene and switch it on. | A3 · A3-s05 (A3-G1) worked step |
+| **needed** | `mm_txt_A3-G1-step2_en_building.mp3` | Make sure the other genes are switched off, then check. | A3 · A3-s05 (A3-G1) worked step |
+| **needed** | `mm_txt_A3-hint1_en_building.mp3` | Each kind of cell uses the gene for its own job. | A3 · A3-s05 (A3-G1) hint |
+| **needed** | `mm_txt_A3-hint2_en_building.mp3` | Only one tissue gene should be on. Switching a gene does not add or remove any DNA. | A3 · A3-s05 (A3-G1) hint |
+| **needed** | `mm_txt_A3-G1-fb-correct_en_building.mp3` | A muscle cell: same chromosomes, with the muscle gene switched on. | A3 · A3-s05 (A3-G1) feedback |
+| **needed** | `mm_txt_A3-I1-prompt_en_building.mp3` | Make this cell into a skin cell, with Fig's orange colour. | A3 · A3-s06 (A3-I1) |
+| **needed** | `mm_txt_A3-I1-fb-correct_en_building.mp3` | A skin cell. Three cell types so far, all from the same chromosomes. | A3 · A3-s06 (A3-I1) feedback |
+| **needed** | `mm_txt_A3-I2-prompt_en_building.mp3` | Compare the DNA in one of Fig's skin cells and one of her bone cells. | A3 · A3-s07 (A3-I2) |
+| **needed** | `mm_txt_A3-I2-hint_en_building.mp3` | Both cells came from the same lump, by mitosis. | A3 · A3-s07 (A3-I2) hint |
+| **needed** | `mm_txt_A3-I2-optDiffDna_en_building.mp3` | Different DNA: skin DNA and bone DNA | A3 · A3-s07 (A3-I2) choice |
+| **needed** | `mm_txt_A3-I2-fbDiffDna_en_building.mp3` | Mitosis copies the DNA exactly, so every cell has the same DNA. | A3 · A3-s07 (A3-I2) choice feedback |
+| **needed** | `mm_txt_mis-differentDnaPerTissue_en_building.mp3` | Each kind of tissue has its own DNA. | A3 · A3-s07 (A3-I2) mix-up |
+| **needed** | `mm_txt_A3-I2-optSame_en_building.mp3` | The same DNA, with different genes switched on | A3 · A3-s07 (A3-I2) choice |
+| **needed** | `mm_txt_A3-I2-fbSame_en_building.mp3` | Same DNA in every cell; what differs is which genes are switched on. | A3 · A3-s07 (A3-I2) choice feedback |
+| **needed** | `mm_txt_A3-I2-optLost_en_building.mp3` | The skin cell lost its bone genes | A3 · A3-s07 (A3-I2) choice |
+| **needed** | `mm_txt_A3-I2-fbLost_en_building.mp3` | The bone gene is still there in a skin cell, just switched off. | A3 · A3-s07 (A3-I2) choice feedback |
+| **needed** | `mm_txt_mis-genesLost_en_building.mp3` | Cells lose the genes they don't use. | A3 · A3-s07 (A3-I2) mix-up |
+| **needed** | `mm_txt_A3-I2-optHalf_en_building.mp3` | Each has half of Fig's DNA | A3 · A3-s07 (A3-I2) choice |
+| **needed** | `mm_txt_A3-I2-fbHalf_en_building.mp3` | Mitosis gives every cell a full set. | A3 · A3-s07 (A3-I2) choice feedback |
+| **needed** | `mm_txt_A3-GF-prompt_en_building.mp3` | Does a muscle cell in Fig's tail still have the skin gene? | A3 · A3-s07 (A3-I2-GF, Go further) |
+| **needed** | `mm_txt_A3-GF-hint_en_building.mp3` | Think about what mitosis copies. | A3 · A3-s07 (A3-I2-GF, Go further) hint |
+| **needed** | `mm_txt_A3-GF-optGone_en_building.mp3` | No, it was removed when the cell became muscle | A3 · A3-s07 (A3-I2-GF, Go further) choice |
+| **needed** | `mm_txt_A3-GF-fbGone_en_building.mp3` | Nothing is removed. The skin gene is still on the chromosome, switched off. | A3 · A3-s07 (A3-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A3-GF-optThere_en_building.mp3` | Yes, but it is switched off | A3 · A3-s07 (A3-I2-GF, Go further) choice |
+| **needed** | `mm_txt_A3-GF-fbThere_en_building.mp3` | Every cell keeps every gene. A muscle cell just doesn't use the skin gene. | A3 · A3-s07 (A3-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A3-GF-optOther_en_building.mp3` | No, muscle cells have muscle DNA | A3 · A3-s07 (A3-I2-GF, Go further) choice |
+| **needed** | `mm_txt_A3-GF-fbOther_en_building.mp3` | All of Fig's cells have the same DNA. | A3 · A3-s07 (A3-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A3-GF-optMutant_en_building.mp3` | Only if the cell has a mutation | A3 · A3-s07 (A3-I2-GF, Go further) choice |
+| **needed** | `mm_txt_A3-GF-fbMutant_en_building.mp3` | No mutation is needed: the gene is there in every cell. | A3 · A3-s07 (A3-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A3-regrow-body_en_building.mp3` | Mitosis made enough cells; switching genes on made them bone, muscle and skin. Step through the regrowth again. | A3 · A3-s08 |
+| **needed** | `mm_txt_A3-P1-prompt_en_building.mp3` | In the cold open, you predicted where Fig's body got the instructions to build a new tail. Read your prediction. What would you change or add now? | A3 · A3-s09 (A3-P1) |
+| **needed** | `mm_txt_frame-revise_en_building.mp3` | Now I think the instructions came from ___, and the cells became different because ___. | A3 · A3-s09 (A3-P1) sentence starter |
+| **needed** | `mm_txt_A3-check-body_en_building.mp3` | Three questions about how cells become different. Show what you know on your own: hints are off. | A3 · A3-s10 |
+| **needed** | `mm_txt_A3-C1-prompt_en_building.mp3` | A person's liver cell and nerve cell look and act very differently. Which is true about their genes? | A3 · A3-s11 (A3-C1) |
+| **needed** | `mm_txt_A3-C1-optLiverMore_en_building.mp3` | The liver cell has extra genes the nerve cell does not | A3 · A3-s11 (A3-C1) choice |
+| **needed** | `mm_txt_A3-C1-fbLiverMore_en_building.mp3` | Every cell has the same genes; none gets extra. | A3 · A3-s11 (A3-C1) choice feedback |
+| **needed** | `mm_txt_A3-C1-optDifferent_en_building.mp3` | They have completely different DNA | A3 · A3-s11 (A3-C1) choice |
+| **needed** | `mm_txt_A3-C1-fbDifferent_en_building.mp3` | Cells in one body have the same DNA, made by mitosis. | A3 · A3-s11 (A3-C1) choice feedback |
+| **needed** | `mm_txt_A3-C1-optSame_en_building.mp3` | They have the same genes, but use different ones | A3 · A3-s11 (A3-C1) choice |
+| **needed** | `mm_txt_A3-C1-fbSame_en_building.mp3` | Same genes in both; each switches on the ones for its job. | A3 · A3-s11 (A3-C1) choice feedback |
+| **needed** | `mm_txt_A3-C1-optNoGenes_en_building.mp3` | The nerve cell has no genes left | A3 · A3-s11 (A3-C1) choice |
+| **needed** | `mm_txt_A3-C1-fbNoGenes_en_building.mp3` | Every cell keeps all its genes. | A3 · A3-s11 (A3-C1) choice feedback |
+| **needed** | `mm_txt_A3-C2-prompt_en_building.mp3` | Make this cell into a skin cell. | A3 · A3-s12 (A3-C2) |
+| **needed** | `mm_txt_A3-C2-fb-correct_en_building.mp3` | Skin gene on, the others off. | A3 · A3-s12 (A3-C2) feedback |
+| **needed** | `mm_txt_A3-C3-prompt_en_building.mp3` | Why is a muscle cell not a skin cell? | A3 · A3-s13 (A3-C3) |
+| **needed** | `mm_txt_A3-C3-optSwitched_en_building.mp3` | It has the muscle gene switched on and the skin gene switched off | A3 · A3-s13 (A3-C3) choice |
+| **needed** | `mm_txt_A3-C3-fbSwitched_en_building.mp3` | Same genes, different ones switched on. | A3 · A3-s13 (A3-C3) choice feedback |
+| **needed** | `mm_txt_A3-C3-optMutation_en_building.mp3` | A mutation turned its skin gene into a muscle gene | A3 · A3-s13 (A3-C3) choice |
+| **needed** | `mm_txt_A3-C3-fbMutation_en_building.mp3` | No mutation is needed: both genes are in every cell. | A3 · A3-s13 (A3-C3) choice feedback |
+| **needed** | `mm_txt_A3-C3-optFewer_en_building.mp3` | It has fewer chromosomes than a skin cell | A3 · A3-s13 (A3-C3) choice |
+| **needed** | `mm_txt_A3-C3-fbFewer_en_building.mp3` | Mitosis gives every cell the same chromosomes. | A3 · A3-s13 (A3-C3) choice feedback |
+| **needed** | `mm_txt_A3-C3-optParent_en_building.mp3` | It came from a different parent cell with different DNA | A3 · A3-s13 (A3-C3) choice |
+| **needed** | `mm_txt_A3-C3-fbParent_en_building.mp3` | All the cells came from the same lump, with the same DNA. | A3 · A3-s13 (A3-C3) choice feedback |
+| **needed** | `mm_txt_A3-end-body1_en_building.mp3` | Every cell has the same DNA, copied by mitosis. Cells become bone, muscle or skin by switching on different genes. | A3 · A3-s14 |
+| **needed** | `mm_txt_A3-end-body2_en_building.mp3` | That is how Fig rebuilt her tail. Next: where this model is wrong. | A3 · A3-s14 |
+| **needed** | `mm_txt_A4-R1-prompt_en_building.mp3` | An X-shaped chromosome: how many chromosomes, and how many DNA molecules? | A4 · A4-s01 (A4-R1) |
+| **needed** | `mm_txt_A4-R2-prompt_en_building.mp3` | What does mitosis make? | A4 · A4-s01 (A4-R2) |
+| **needed** | `mm_txt_A4-R3-prompt_en_building.mp3` | Why do most cells on a slide look like they are in interphase? | A4 · A4-s01 (A4-R3) |
+| **needed** | `mm_txt_A4-R4-prompt_en_building.mp3` | How can a bone cell and a skin cell have the same DNA but be different? | A4 · A4-s01 (A4-R4) |
+| **needed** | `mm_txt_A4-limits-body1_en_building.mp3` | Every model leaves things out. The card shows what ours simplifies, and what is really true. | A4 · A4-s02 |
+| **needed** | `mm_txt_A4-limits-body2_en_building.mp3` | Leaving things out is what makes a model useful: it shows the main idea clearly. The trick is knowing what was left out. | A4 · A4-s02 |
+| **needed** | `mm_txt_A4-L1-prompt_en_building.mp3` | Which is a real way our model newt is different from a real newt? | A4 · A4-s03 (A4-L1) |
+| **needed** | `mm_txt_A4-L1-hint_en_building.mp3` | Look at the first row of the card. | A4 · A4-s03 (A4-L1) hint |
+| **needed** | `mm_txt_A4-L1-optMore_en_building.mp3` | Real newts have many more chromosomes | A4 · A4-s03 (A4-L1) choice |
+| **needed** | `mm_txt_A4-L1-fbMore_en_building.mp3` | Our newt has 4 to keep the counting simple; real newts have many more. | A4 · A4-s03 (A4-L1) choice feedback |
+| **needed** | `mm_txt_A4-L1-optNoCopy_en_building.mp3` | Real cells divide without copying | A4 · A4-s03 (A4-L1) choice |
+| **needed** | `mm_txt_A4-L1-fbNoCopy_en_building.mp3` | Real cells copy their chromosomes before mitosis too; the model got that part right. | A4 · A4-s03 (A4-L1) choice feedback |
+| **needed** | `mm_txt_A4-L1-optLabels_en_building.mp3` | Real chromosomes are labelled M and P | A4 · A4-s03 (A4-L1) choice |
+| **needed** | `mm_txt_A4-L1-fbLabels_en_building.mp3` | The labels are a model trick. Real chromosomes are not coloured or labelled. | A4 · A4-s03 (A4-L1) choice feedback |
+| **needed** | `mm_txt_mis-labelsAreReal_en_building.mp3` | Real chromosomes come labelled and coloured. | A4 · A4-s03 (A4-L1) mix-up |
+| **needed** | `mm_txt_A4-L1-optHalf_en_building.mp3` | Real mitosis halves the chromosomes | A4 · A4-s03 (A4-L1) choice |
+| **needed** | `mm_txt_A4-L1-fbHalf_en_building.mp3` | Real mitosis keeps the full set, just like the model. | A4 · A4-s03 (A4-L1) choice feedback |
+| **needed** | `mm_txt_A4-L2-prompt_en_building.mp3` | "Share of cells = share of time" only works if which is true? | A4 · A4-s04 (A4-L2) |
+| **needed** | `mm_txt_A4-L2-hint_en_building.mp3` | Look at the timing row of the card. | A4 · A4-s04 (A4-L2) hint |
+| **needed** | `mm_txt_A4-L2-optSame_en_building.mp3` | Every phase takes the same time | A4 · A4-s04 (A4-L2) choice |
+| **needed** | `mm_txt_A4-L2-fbSame_en_building.mp3` | If phases took the same time, the counts would be equal; the method is for when they differ. | A4 · A4-s04 (A4-L2) choice feedback |
+| **needed** | `mm_txt_A4-L2-optRandom_en_building.mp3` | Cells divide at random, independent times | A4 · A4-s04 (A4-L2) choice |
+| **needed** | `mm_txt_A4-L2-fbRandom_en_building.mp3` | If cells were in step with each other, a slide would catch them all in one phase. | A4 · A4-s04 (A4-L2) choice feedback |
+| **needed** | `mm_txt_A4-L2-optFast_en_building.mp3` | Phases with more cells are faster | A4 · A4-s04 (A4-L2) choice |
+| **needed** | `mm_txt_A4-L2-fbFast_en_building.mp3` | More cells means a longer phase, not a faster one. | A4 · A4-s04 (A4-L2) choice feedback |
+| **needed** | `mm_txt_A4-L2-optRest_en_building.mp3` | Cells rest during interphase | A4 · A4-s04 (A4-L2) choice |
+| **needed** | `mm_txt_A4-L2-fbRest_en_building.mp3` | Interphase cells are busy, and that is not what makes the method work. | A4 · A4-s04 (A4-L2) choice feedback |
+| **needed** | `mm_txt_A4-check-body1_en_building.mp3` | Five questions about new situations. Show what you know on your own: hints, worked steps and sentence starters are off. | A4 · A4-s05 |
+| **needed** | `mm_txt_A4-check-body2_en_building.mp3` | Your first answer counts. The last question asks you to explain in your own words; your teacher will read it. | A4 · A4-s05 |
+| **needed** | `mm_txt_A4-C1-prompt_en_building.mp3` | This cell comes from a sea star's arm, which is regrowing. Divide it so both new cells match the parent. | A4 · A4-s06 (A4-C1) |
+| **needed** | `mm_txt_A4-C1-fb-correct_en_building.mp3` | Both new cells match the parent. | A4 · A4-s06 (A4-C1) feedback |
+| **needed** | `mm_txt_A4-C2-prompt_en_building.mp3` | You cut your finger. New skin cells fill the cut. How does their DNA compare with the skin cells next to the cut? | A4 · A4-s07 (A4-C2) |
+| **needed** | `mm_txt_A4-C2-optHalf_en_building.mp3` | They have half as much DNA | A4 · A4-s07 (A4-C2) choice |
+| **needed** | `mm_txt_A4-C2-fbHalf_en_building.mp3` | Mitosis gives each new cell a full set. | A4 · A4-s07 (A4-C2) choice feedback |
+| **needed** | `mm_txt_A4-C2-optNeighbour_en_building.mp3` | The same DNA as the cells next to them | A4 · A4-s07 (A4-C2) choice |
+| **needed** | `mm_txt_A4-C2-fbNeighbour_en_building.mp3` | The new cells were made by mitosis, so they have the same DNA. | A4 · A4-s07 (A4-C2) choice feedback |
+| **needed** | `mm_txt_A4-C2-optNew_en_building.mp3` | New genes for healing were added | A4 · A4-s07 (A4-C2) choice |
+| **needed** | `mm_txt_A4-C2-fbNew_en_building.mp3` | No genes are added; healing uses the genes every cell already has. | A4 · A4-s07 (A4-C2) choice feedback |
+| **needed** | `mm_txt_A4-C2-optBlood_en_building.mp3` | They copy DNA from the blood | A4 · A4-s07 (A4-C2) choice |
+| **needed** | `mm_txt_A4-C2-fbBlood_en_building.mp3` | Each new cell gets its DNA by mitosis from the cell that divided. | A4 · A4-s07 (A4-C2) choice feedback |
+| **needed** | `mm_txt_A4-C3-prompt_en_building.mp3` | A plant's root cells and leaf cells look very different. Which is the best explanation? | A4 · A4-s08 (A4-C3) |
+| **needed** | `mm_txt_A4-C3-optLost_en_building.mp3` | Root cells lost their leaf genes | A4 · A4-s08 (A4-C3) choice |
+| **needed** | `mm_txt_A4-C3-fbLost_en_building.mp3` | Root cells keep every gene; the leaf genes are switched off. | A4 · A4-s08 (A4-C3) choice feedback |
+| **needed** | `mm_txt_A4-C3-optDiff_en_building.mp3` | Roots and leaves have different DNA | A4 · A4-s08 (A4-C3) choice |
+| **needed** | `mm_txt_A4-C3-fbDiff_en_building.mp3` | A plant's cells all have the same DNA, made by mitosis. | A4 · A4-s08 (A4-C3) choice feedback |
+| **needed** | `mm_txt_A4-C3-optSwitched_en_building.mp3` | They have the same genes, but different genes are switched on | A4 · A4-s08 (A4-C3) choice |
+| **needed** | `mm_txt_A4-C3-fbSwitched_en_building.mp3` | Same genes everywhere; root and leaf cells switch on different ones. | A4 · A4-s08 (A4-C3) choice feedback |
+| **needed** | `mm_txt_A4-C3-optSun_en_building.mp3` | Sunlight adds new genes to the leaves | A4 · A4-s08 (A4-C3) choice |
+| **needed** | `mm_txt_A4-C3-fbSun_en_building.mp3` | Light does not add genes; leaf cells use genes they already have. | A4 · A4-s08 (A4-C3) choice feedback |
+| **needed** | `mm_txt_A4-C4-prompt_en_building.mp3` | Two skin slides: slide X, from a healing wound, has 14 of 36 cells dividing; slide Y, from healthy skin, has 2 of 36. Which came from the part that is growing faster? | A4 · A4-s09 (A4-C4) |
+| **needed** | `mm_txt_A4-C4-optX_en_building.mp3` | Slide X | A4 · A4-s09 (A4-C4) choice |
+| **needed** | `mm_txt_A4-C4-fbX_en_building.mp3` | More dividing cells means more mitosis, so faster growth: healing tissue. | A4 · A4-s09 (A4-C4) choice feedback |
+| **needed** | `mm_txt_A4-C4-optY_en_building.mp3` | Slide Y | A4 · A4-s09 (A4-C4) choice |
+| **needed** | `mm_txt_A4-C4-fbY_en_building.mp3` | Fewer dividing cells means slower growth. | A4 · A4-s09 (A4-C4) choice feedback |
+| **needed** | `mm_txt_A4-C4-optSame_en_building.mp3` | Both are growing at the same rate | A4 · A4-s09 (A4-C4) choice |
+| **needed** | `mm_txt_A4-C4-fbSame_en_building.mp3` | The counts are very different, so the growth is too. | A4 · A4-s09 (A4-C4) choice feedback |
+| **needed** | `mm_txt_A4-C4-optNeither_en_building.mp3` | Neither; skin cells only rest | A4 · A4-s09 (A4-C4) choice |
+| **needed** | `mm_txt_A4-C4-fbNeither_en_building.mp3` | Skin cells divide all the time to replace old ones, faster in a wound. | A4 · A4-s09 (A4-C4) choice feedback |
+| **needed** | `mm_txt_A4-C5-prompt_en_building.mp3` | In your own words: how can a body rebuild a lost part, like Fig's tail? Use the words mitosis, DNA and genes. | A4 · A4-s10 (A4-C5) |
+| **needed** | `mm_txt_A4-end-body1_en_building.mp3` | You used a model of chromosomes, mitosis and gene switches to explain how a body grows and repairs itself. | A4 · A4-s11 |
+| **needed** | `mm_txt_A4-end-body2_en_building.mp3` | Models leave things out; knowing what they leave out is part of using them well. | A4 · A4-s11 |
+| **needed** | `mm_txt_A-end-body1_en_building.mp3` | Mitosis builds and repairs Fig, and every cell it makes has the same DNA. The life cycle shows where that happens. | A-end · Aend-s01 |
+| **needed** | `mm_txt_A-end-body2_en_building.mp3` | The grey half (making eggs and sperm, and fertilisation) is Part B. Something about it is going to surprise everyone. | A-end · Aend-s01 |
+| **needed** | `mm_txt_A-end-done-body1_en_building.mp3` | Every cell in Fig's body has the same DNA: mitosis copies it faithfully, and genes switched on or off make bone, muscle and skin. | A-end · Aend-s02 |
+| **needed** | `mm_txt_A-end-done-body2_en_building.mp3` | Hold that thought. In Part B, a DNA test says Fig is not the mother of her own hatchlings. | A-end · Aend-s02 |
 
 ## Panel text: Beginning
 
@@ -211,6 +514,214 @@ Building lines are written for ElevenLabs v3 with direction tags (from scripts/r
 | **needed** | `mm_txt_A1-C3-fbSame_en_beginning.mp3` | Same genes. Versions can be different. | A1 · A1-s15 (A1-C3) choice feedback |
 | **needed** | `mm_txt_A1-end-body1_en_beginning.mp3` | Genes are on chromosomes. Chromosomes come in pairs. | A1 · A1-s16 |
 | **needed** | `mm_txt_A1-end-body2_en_beginning.mp3` | An X is one chromosome with 2 DNA molecules. | A1 · A1-s16 |
+| **needed** | `mm_txt_A2-R1-prompt_en_beginning.mp3` | One X has how many DNA molecules? | A2 · A2-s01 (A2-R1) |
+| **needed** | `mm_txt_A2-R2-prompt_en_beginning.mp3` | Where does each chromosome in a pair come from? | A2 · A2-s01 (A2-R2) |
+| **needed** | `mm_txt_A2-R3-prompt_en_beginning.mp3` | What is a gene? | A2 · A2-s01 (A2-R3) |
+| **needed** | `mm_txt_A2-R4-prompt_en_beginning.mp3` | Why does a body make new cells? | A2 · A2-s01 (A2-R4) |
+| **needed** | `mm_txt_A2-intro-body1_en_beginning.mp3` | One cell becomes two. Each new cell needs all the chromosomes. | A2 · A2-s02 |
+| **needed** | `mm_txt_A2-intro-body2_en_beginning.mp3` | Try it your way. Mistakes are OK. | A2 · A2-s02 |
+| **needed** | `mm_txt_A2-T1-prompt_en_beginning.mp3` | Move the chromosomes into the new cells. Then divide. | A2 · A2-s03 (A2-T1) |
+| **needed** | `mm_txt_A2-T1-fb-correct_en_beginning.mp3` | Both new cells match the parent. | A2 · A2-s03 (A2-T1) feedback |
+| **needed** | `mm_txt_A2-fb-missing_en_beginning.mp3` | A new cell is missing a chromosome. Copy first. | A2 · A2-s03 (A2-T1) feedback |
+| **needed** | `mm_txt_A2-fb-extra_en_beginning.mp3` | One cell got both halves of an X. Send one half to each cell. | A2 · A2-s03 (A2-T1) feedback |
+| **needed** | `mm_txt_A2-fb-mixed_en_beginning.mp3` | Each new cell needs one of every chromosome. | A2 · A2-s03 (A2-T1) feedback |
+| **needed** | `mm_txt_A2-mitosis-body1_en_beginning.mp3` | First, the cell copies every chromosome. | A2 · A2-s04 |
+| **needed** | `mm_txt_A2-mitosis-body2_en_beginning.mp3` | Then each X is pulled apart. One half goes to each new cell. | A2 · A2-s04 |
+| **needed** | `mm_txt_A2-mitosis-body3_en_beginning.mp3` | This is called mitosis. The two new cells are the same as the parent. | A2 · A2-s04 |
+| **needed** | `mm_txt_A2-G1-prompt_en_beginning.mp3` | Copy first. Then send one half of each X to each cell. | A2 · A2-s05 (A2-G1) |
+| **needed** | `mm_txt_A2-G1-step1_en_beginning.mp3` | Copy the chromosomes. | A2 · A2-s05 (A2-G1) worked step |
+| **needed** | `mm_txt_A2-G1-step2_en_beginning.mp3` | Put one half of the X in new cell 1. | A2 · A2-s05 (A2-G1) worked step |
+| **needed** | `mm_txt_A2-G1-step3_en_beginning.mp3` | Put the other half in new cell 2. | A2 · A2-s05 (A2-G1) worked step |
+| **needed** | `mm_txt_A2-hint1_en_beginning.mp3` | Copy first. | A2 · A2-s05 (A2-G1) hint |
+| **needed** | `mm_txt_A2-hint2_en_beginning.mp3` | One half to each cell. | A2 · A2-s05 (A2-G1) hint |
+| **needed** | `mm_txt_A2-G1-fb-correct_en_beginning.mp3` | Both cells are the same as the parent. | A2 · A2-s05 (A2-G1) feedback |
+| **needed** | `mm_txt_A2-I1-prompt_en_beginning.mp3` | Divide this cell. Both new cells must match the parent. | A2 · A2-s06 (A2-I1) |
+| **needed** | `mm_txt_A2-I1-fb-correct_en_beginning.mp3` | Both cells match the parent. | A2 · A2-s06 (A2-I1) feedback |
+| **needed** | `mm_txt_A2-GF-prompt_en_beginning.mp3` | A skin cell has 46 chromosomes. It divides. What do the new cells have? | A2 · A2-s06 (A2-I1-GF, Go further) |
+| **needed** | `mm_txt_A2-GF-hint_en_beginning.mp3` | The new cells are the same as the parent. | A2 · A2-s06 (A2-I1-GF, Go further) hint |
+| **needed** | `mm_txt_A2-GF-fb23_en_beginning.mp3` | Mitosis keeps all 46. | A2 · A2-s06 (A2-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2-GF-fb92_en_beginning.mp3` | The copies are shared. Each cell gets 46. | A2 · A2-s06 (A2-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2-GF-fb46_en_beginning.mp3` | Each new cell has 46, the same as the parent. | A2 · A2-s06 (A2-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2-GF-fb46diff_en_beginning.mp3` | The genes are the same. | A2 · A2-s06 (A2-I1-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2-I2-prompt_en_beginning.mp3` | One new cell has 3. One has 5. What went wrong? | A2 · A2-s07 (A2-I2) |
+| **needed** | `mm_txt_A2-I2-hint_en_beginning.mp3` | Look at where the halves went. | A2 · A2-s07 (A2-I2) hint |
+| **needed** | `mm_txt_A2-I2-fbNoCopy_en_beginning.mp3` | There were 8. It did copy. | A2 · A2-s07 (A2-I2) choice feedback |
+| **needed** | `mm_txt_A2-I2-fbBoth_en_beginning.mp3` | Both halves went to one cell. | A2 · A2-s07 (A2-I2) choice feedback |
+| **needed** | `mm_txt_A2-I2-fbExtraCopy_en_beginning.mp3` | The count is 8. The sharing went wrong. | A2 · A2-s07 (A2-I2) choice feedback |
+| **needed** | `mm_txt_A2-I2-fbNormal_en_beginning.mp3` | New cells should match the parent. | A2 · A2-s07 (A2-I2) choice feedback |
+| **needed** | `mm_txt_A2-check-body_en_beginning.mp3` | Three questions. Work on your own. | A2 · A2-s08 |
+| **needed** | `mm_txt_A2-C1-prompt_en_beginning.mp3` | Divide this cell. Both new cells must match the parent. | A2 · A2-s09 (A2-C1) |
+| **needed** | `mm_txt_A2-C1-fb-correct_en_beginning.mp3` | Both cells match. | A2 · A2-s09 (A2-C1) feedback |
+| **needed** | `mm_txt_A2-C2-prompt_en_beginning.mp3` | How is the DNA in the new cells? | A2 · A2-s10 (A2-C2) |
+| **needed** | `mm_txt_A2-C2-fbHalf_en_beginning.mp3` | Each cell gets a full set. | A2 · A2-s10 (A2-C2) choice feedback |
+| **needed** | `mm_txt_A2-C2-fbDiffer_en_beginning.mp3` | Both cells get the same genes. | A2 · A2-s10 (A2-C2) choice feedback |
+| **needed** | `mm_txt_A2-C2-fbDouble_en_beginning.mp3` | The number stays the same. | A2 · A2-s10 (A2-C2) choice feedback |
+| **needed** | `mm_txt_A2-C2-fbSame_en_beginning.mp3` | Same DNA as the parent. | A2 · A2-s10 (A2-C2) choice feedback |
+| **needed** | `mm_txt_A2-C3-prompt_en_beginning.mp3` | A cell has 6 X-shaped chromosomes. It divides. What does each new cell have? | A2 · A2-s11 (A2-C3) |
+| **needed** | `mm_txt_A2-C3-fb6and6_en_beginning.mp3` | 6 and 6. | A2 · A2-s11 (A2-C3) choice feedback |
+| **needed** | `mm_txt_A2-C3-fb3and6_en_beginning.mp3` | Each cell gets all 6. | A2 · A2-s11 (A2-C3) choice feedback |
+| **needed** | `mm_txt_A2-C3-fb6and12_en_beginning.mp3` | The Xs are pulled apart. | A2 · A2-s11 (A2-C3) choice feedback |
+| **needed** | `mm_txt_A2-C3-fb12and12_en_beginning.mp3` | An X is one chromosome. | A2 · A2-s11 (A2-C3) choice feedback |
+| **needed** | `mm_txt_A2-end-body1_en_beginning.mp3` | Mitosis copies, then shares. Each new cell gets one of every chromosome. | A2 · A2-s12 |
+| **needed** | `mm_txt_A2-end-body2_en_beginning.mp3` | The new cells have the same DNA as the parent. | A2 · A2-s12 |
+| **needed** | `mm_txt_A2b-R1-prompt_en_beginning.mp3` | What happens to chromosomes before a cell divides? | A2b · A2b-s01 (A2b-R1) |
+| **needed** | `mm_txt_A2b-R2-prompt_en_beginning.mp3` | How are the new cells and the parent the same? | A2b · A2b-s01 (A2b-R2) |
+| **needed** | `mm_txt_A2b-R3-prompt_en_beginning.mp3` | What is a gene? | A2b · A2b-s01 (A2b-R3) |
+| **needed** | `mm_txt_A2b-R4-prompt_en_beginning.mp3` | What is in the nucleus? | A2b · A2b-s01 (A2b-R4) |
+| **needed** | `mm_txt_A2b-cycle-body1_en_beginning.mp3` | A cell grows, copies, and divides, again and again. | A2b · A2b-s02 |
+| **needed** | `mm_txt_A2b-cycle-body2_en_beginning.mp3` | The parts flow into each other. The names help us talk about them. | A2b · A2b-s02 |
+| **needed** | `mm_txt_A2b-slide-body_en_beginning.mp3` | Each cell is at one stage. Count the cells in each stage. | A2b · A2b-s03 |
+| **needed** | `mm_txt_A2b-W1-prompt_en_beginning.mp3` | Watch. Sort the first three cells. | A2b · A2b-s04 (A2b-W1) |
+| **needed** | `mm_txt_A2b-W1-step1_en_beginning.mp3` | Cell 1: round nucleus. Interphase. | A2b · A2b-s04 (A2b-W1) worked step |
+| **needed** | `mm_txt_A2b-W1-step2_en_beginning.mp3` | Cell 2: chromosomes in a line. Metaphase. | A2b · A2b-s04 (A2b-W1) worked step |
+| **needed** | `mm_txt_A2b-W1-step3_en_beginning.mp3` | Cell 3: two sets pulling apart. Anaphase. | A2b · A2b-s04 (A2b-W1) worked step |
+| **needed** | `mm_txt_A2b-G1-prompt_en_beginning.mp3` | Sort the six cells in rings. Then check. | A2b · A2b-s05 (A2b-G1) |
+| **needed** | `mm_txt_A2b-hint-sort1_en_beginning.mp3` | Round nucleus: interphase. Threads: prophase. | A2b · A2b-s05 (A2b-G1) hint |
+| **needed** | `mm_txt_A2b-hint-sort2_en_beginning.mp3` | One line: metaphase. Two sets: anaphase. Two nuclei: telophase. | A2b · A2b-s05 (A2b-G1) hint |
+| **needed** | `mm_txt_A2b-I1-prompt_en_beginning.mp3` | Sort all the other cells. Then check. | A2b · A2b-s06 (A2b-I1) |
+| **needed** | `mm_txt_A2b-T1-prompt_en_beginning.mp3` | For each phase: what share of the cells? How many hours? | A2b · A2b-s07 (A2b-T1) |
+| **needed** | `mm_txt_A2b-T1-step1_en_beginning.mp3` | 3 out of 36 is about 8%. | A2b · A2b-s07 (A2b-T1) worked step |
+| **needed** | `mm_txt_A2b-T1-step2_en_beginning.mp3` | 8% of 24 hours is about 2 hours. | A2b · A2b-s07 (A2b-T1) worked step |
+| **needed** | `mm_txt_A2b-T1-step3_en_beginning.mp3` | Do the same for each phase. | A2b · A2b-s07 (A2b-T1) worked step |
+| **needed** | `mm_txt_A2b-hint-time1_en_beginning.mp3` | Cells in the phase ÷ all cells. | A2b · A2b-s07 (A2b-T1) hint |
+| **needed** | `mm_txt_A2b-hint-time2_en_beginning.mp3` | Share × 24 = hours. | A2b · A2b-s07 (A2b-T1) hint |
+| **needed** | `mm_txt_A2b-T1-fb-correct_en_beginning.mp3` | Right. Interphase takes the most time. | A2b · A2b-s07 (A2b-T1) feedback |
+| **needed** | `mm_txt_A2b-I2-prompt_en_beginning.mp3` | Which phase takes the longest? | A2b · A2b-s08 (A2b-I2) |
+| **needed** | `mm_txt_A2b-I2-hint_en_beginning.mp3` | More cells means more time. | A2b · A2b-s08 (A2b-I2) hint |
+| **needed** | `mm_txt_A2b-I2-fbFewest_en_beginning.mp3` | Few cells means a short phase. | A2b · A2b-s08 (A2b-I2) choice feedback |
+| **needed** | `mm_txt_A2b-I2-fbMost_en_beginning.mp3` | More cells means a longer phase. | A2b · A2b-s08 (A2b-I2) choice feedback |
+| **needed** | `mm_txt_A2b-I2-fbSame_en_beginning.mp3` | The counts are not equal. | A2b · A2b-s08 (A2b-I2) choice feedback |
+| **needed** | `mm_txt_A2b-I2-fbResting_en_beginning.mp3` | In interphase, the cell copies its DNA. | A2b · A2b-s08 (A2b-I2) choice feedback |
+| **needed** | `mm_txt_A2b-GF-prompt_en_beginning.mp3` | A chemical stops cells at metaphase. What happens to the counts? | A2b · A2b-s08 (A2b-I2-GF, Go further) |
+| **needed** | `mm_txt_A2b-GF-hint_en_beginning.mp3` | Cells arrive but do not leave. | A2b · A2b-s08 (A2b-I2-GF, Go further) hint |
+| **needed** | `mm_txt_A2b-GF-fbPile_en_beginning.mp3` | Cells pile up at metaphase. | A2b · A2b-s08 (A2b-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2b-GF-fbNone_en_beginning.mp3` | The phases are connected. | A2b · A2b-s08 (A2b-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2b-GF-fbSame_en_beginning.mp3` | More cells get stuck. | A2b · A2b-s08 (A2b-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2b-GF-fbInter_en_beginning.mp3` | They get stuck at metaphase. | A2b · A2b-s08 (A2b-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A2b-O1-prompt_en_beginning.mp3` | Sort every cell. Then check. | A2b · A2b-s09 (A2b-O1) |
+| **needed** | `mm_txt_A2b-O2-prompt_en_beginning.mp3` | Why are most old-tail cells in interphase? | A2b · A2b-s10 (A2b-O2) |
+| **needed** | `mm_txt_A2b-O2-hint_en_beginning.mp3` | Which tail is still growing? | A2b · A2b-s10 (A2b-O2) hint |
+| **needed** | `mm_txt_A2b-O2-fbDone_en_beginning.mp3` | The old tail is done growing. | A2b · A2b-s10 (A2b-O2) choice feedback |
+| **needed** | `mm_txt_A2b-O2-fbDead_en_beginning.mp3` | Interphase cells are busy. | A2b · A2b-s10 (A2b-O2) choice feedback |
+| **needed** | `mm_txt_A2b-O2-fbFast_en_beginning.mp3` | Lots of cells means a long time. | A2b · A2b-s10 (A2b-O2) choice feedback |
+| **needed** | `mm_txt_A2b-O2-fbDiffDna_en_beginning.mp3` | All the cells have the same DNA. | A2b · A2b-s10 (A2b-O2) choice feedback |
+| **needed** | `mm_txt_A2b-onion-body_en_beginning.mp3` | Count cells from an onion root. | A2b · A2b-s11 |
+| **needed** | `mm_txt_A2b-N1-prompt_en_beginning.mp3` | Sort every cell. Then check. | A2b · A2b-s12 (A2b-N1) |
+| **needed** | `mm_txt_A2b-N2-prompt_en_beginning.mp3` | Work out the share and the hours. | A2b · A2b-s13 (A2b-N2) |
+| **needed** | `mm_txt_A2b-N2-fb-correct_en_beginning.mp3` | Right. | A2b · A2b-s13 (A2b-N2) feedback |
+| **needed** | `mm_txt_A2b-check-body_en_beginning.mp3` | Three questions. Work on your own. | A2b · A2b-s14 |
+| **needed** | `mm_txt_A2b-C1-prompt_en_beginning.mp3` | 30 of 36 cells are in interphase. What does this mean? | A2b · A2b-s15 (A2b-C1) |
+| **needed** | `mm_txt_A2b-C1-fbFast_en_beginning.mp3` | More cells means longer. | A2b · A2b-s15 (A2b-C1) choice feedback |
+| **needed** | `mm_txt_A2b-C1-fbRest_en_beginning.mp3` | Interphase cells are busy. | A2b · A2b-s15 (A2b-C1) choice feedback |
+| **needed** | `mm_txt_A2b-C1-fbLong_en_beginning.mp3` | Interphase takes most of the time. | A2b · A2b-s15 (A2b-C1) choice feedback |
+| **needed** | `mm_txt_A2b-C1-fbBroken_en_beginning.mp3` | 6 cells are dividing. | A2b · A2b-s15 (A2b-C1) choice feedback |
+| **needed** | `mm_txt_A2b-C2-prompt_en_beginning.mp3` | 6 of 48 cells are in metaphase. The cycle is 24 hours. How long is metaphase? | A2b · A2b-s16 (A2b-C2) |
+| **needed** | `mm_txt_A2b-C2-fb6_en_beginning.mp3` | 6 is the number of cells. | A2b · A2b-s16 (A2b-C2) choice feedback |
+| **needed** | `mm_txt_A2b-C2-fb3_en_beginning.mp3` | One eighth of 24 is 3. | A2b · A2b-s16 (A2b-C2) choice feedback |
+| **needed** | `mm_txt_A2b-C2-fb12_en_beginning.mp3` | 12.5 is the percent. | A2b · A2b-s16 (A2b-C2) choice feedback |
+| **needed** | `mm_txt_A2b-C2-fb8_en_beginning.mp3` | One eighth of 24. | A2b · A2b-s16 (A2b-C2) choice feedback |
+| **needed** | `mm_txt_A2b-C3-prompt_en_beginning.mp3` | Phase A has 9 cells. Phase B has 2. Which is longer? | A2b · A2b-s17 (A2b-C3) |
+| **needed** | `mm_txt_A2b-C3-fbA_en_beginning.mp3` | More cells, longer phase. | A2b · A2b-s17 (A2b-C3) choice feedback |
+| **needed** | `mm_txt_A2b-C3-fbB_en_beginning.mp3` | Fewer cells, shorter phase. | A2b · A2b-s17 (A2b-C3) choice feedback |
+| **needed** | `mm_txt_A2b-C3-fbSame_en_beginning.mp3` | The counts are not equal. | A2b · A2b-s17 (A2b-C3) choice feedback |
+| **needed** | `mm_txt_A2b-C3-fbCannot_en_beginning.mp3` | The counts show the times. | A2b · A2b-s17 (A2b-C3) choice feedback |
+| **needed** | `mm_txt_A2b-end-body1_en_beginning.mp3` | Cells spend most of their time in interphase. | A2b · A2b-s18 |
+| **needed** | `mm_txt_A2b-end-body2_en_beginning.mp3` | Growing tissue has more dividing cells. | A2b · A2b-s18 |
+| **needed** | `mm_txt_A3-R1-prompt_en_beginning.mp3` | Why are more cells dividing in a growing tail? | A3 · A3-s01 (A3-R1) |
+| **needed** | `mm_txt_A3-R2-prompt_en_beginning.mp3` | How is the DNA in the new cells? | A3 · A3-s01 (A3-R2) |
+| **needed** | `mm_txt_A3-R3-prompt_en_beginning.mp3` | What is a gene? | A3 · A3-s01 (A3-R3) |
+| **needed** | `mm_txt_A3-R4-prompt_en_beginning.mp3` | Name two tissues in Fig's tail. | A3 · A3-s01 (A3-R4) |
+| **needed** | `mm_txt_A3-stump-body1_en_beginning.mp3` | New cells grow at the stump. They all have the same chromosomes. | A3 · A3-s02 |
+| **needed** | `mm_txt_A3-stump-body2_en_beginning.mp3` | How can they become different? | A3 · A3-s02 |
+| **needed** | `mm_txt_A3-T1-prompt_en_beginning.mp3` | Make a bone cell. Switch genes on or off. Then check. | A3 · A3-s03 (A3-T1) |
+| **needed** | `mm_txt_A3-T1-fb-correct_en_beginning.mp3` | Bone cell! Only the bone gene is on. | A3 · A3-s03 (A3-T1) feedback |
+| **needed** | `mm_txt_A3-fb-none_en_beginning.mp3` | Switch on a gene. | A3 · A3-s03 (A3-T1) feedback |
+| **needed** | `mm_txt_A3-fb-wrong_en_beginning.mp3` | That is a different gene. | A3 · A3-s03 (A3-T1) feedback |
+| **needed** | `mm_txt_A3-fb-extra_en_beginning.mp3` | Too many genes are on. | A3 · A3-s03 (A3-T1) feedback |
+| **needed** | `mm_txt_A3-trick-body1_en_beginning.mp3` | Every cell has the same genes. Each kind of cell turns on different genes. | A3 · A3-s04 |
+| **needed** | `mm_txt_A3-trick-body2_en_beginning.mp3` | The chromosomes are the same. Only the glowing gene is different. | A3 · A3-s04 |
+| **needed** | `mm_txt_A3-G1-prompt_en_beginning.mp3` | Make a muscle cell. | A3 · A3-s05 (A3-G1) |
+| **needed** | `mm_txt_A3-G1-step1_en_beginning.mp3` | Switch on the muscle gene. | A3 · A3-s05 (A3-G1) worked step |
+| **needed** | `mm_txt_A3-G1-step2_en_beginning.mp3` | Switch the other genes off. | A3 · A3-s05 (A3-G1) worked step |
+| **needed** | `mm_txt_A3-hint1_en_beginning.mp3` | Use the gene for the job. | A3 · A3-s05 (A3-G1) hint |
+| **needed** | `mm_txt_A3-hint2_en_beginning.mp3` | Only one gene on. | A3 · A3-s05 (A3-G1) hint |
+| **needed** | `mm_txt_A3-G1-fb-correct_en_beginning.mp3` | Muscle cell! | A3 · A3-s05 (A3-G1) feedback |
+| **needed** | `mm_txt_A3-I1-prompt_en_beginning.mp3` | Make a skin cell. | A3 · A3-s06 (A3-I1) |
+| **needed** | `mm_txt_A3-I1-fb-correct_en_beginning.mp3` | Skin cell! | A3 · A3-s06 (A3-I1) feedback |
+| **needed** | `mm_txt_A3-I2-prompt_en_beginning.mp3` | How is the DNA in a skin cell and a bone cell? | A3 · A3-s07 (A3-I2) |
+| **needed** | `mm_txt_A3-I2-hint_en_beginning.mp3` | Both came from the same cells. | A3 · A3-s07 (A3-I2) hint |
+| **needed** | `mm_txt_A3-I2-fbDiffDna_en_beginning.mp3` | All cells have the same DNA. | A3 · A3-s07 (A3-I2) choice feedback |
+| **needed** | `mm_txt_A3-I2-fbSame_en_beginning.mp3` | Same DNA. Different genes on. | A3 · A3-s07 (A3-I2) choice feedback |
+| **needed** | `mm_txt_A3-I2-fbLost_en_beginning.mp3` | The gene is still there. | A3 · A3-s07 (A3-I2) choice feedback |
+| **needed** | `mm_txt_A3-I2-fbHalf_en_beginning.mp3` | Every cell has a full set. | A3 · A3-s07 (A3-I2) choice feedback |
+| **needed** | `mm_txt_A3-GF-prompt_en_beginning.mp3` | Does a muscle cell have the skin gene? | A3 · A3-s07 (A3-I2-GF, Go further) |
+| **needed** | `mm_txt_A3-GF-hint_en_beginning.mp3` | What does mitosis copy? | A3 · A3-s07 (A3-I2-GF, Go further) hint |
+| **needed** | `mm_txt_A3-GF-fbGone_en_beginning.mp3` | It is still there. | A3 · A3-s07 (A3-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A3-GF-fbThere_en_beginning.mp3` | Yes. It is switched off. | A3 · A3-s07 (A3-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A3-GF-fbOther_en_beginning.mp3` | All cells have the same DNA. | A3 · A3-s07 (A3-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A3-GF-fbMutant_en_beginning.mp3` | Every cell has the gene. | A3 · A3-s07 (A3-I2-GF, Go further) choice feedback |
+| **needed** | `mm_txt_A3-regrow-body_en_beginning.mp3` | Mitosis makes the cells. Genes make them different. | A3 · A3-s08 |
+| **needed** | `mm_txt_A3-P1-prompt_en_beginning.mp3` | Read your idea. What do you know now? | A3 · A3-s09 (A3-P1) |
+| **needed** | `mm_txt_frame-revise_en_beginning.mp3` | The instructions are in the ___. | A3 · A3-s09 (A3-P1) sentence starter |
+| **needed** | `mm_txt_A3-check-body_en_beginning.mp3` | Three questions. Work on your own. | A3 · A3-s10 |
+| **needed** | `mm_txt_A3-C1-prompt_en_beginning.mp3` | A liver cell and a nerve cell. Which is true? | A3 · A3-s11 (A3-C1) |
+| **needed** | `mm_txt_A3-C1-fbLiverMore_en_beginning.mp3` | Same genes. | A3 · A3-s11 (A3-C1) choice feedback |
+| **needed** | `mm_txt_A3-C1-fbDifferent_en_beginning.mp3` | Same DNA. | A3 · A3-s11 (A3-C1) choice feedback |
+| **needed** | `mm_txt_A3-C1-fbSame_en_beginning.mp3` | Same genes. Different ones on. | A3 · A3-s11 (A3-C1) choice feedback |
+| **needed** | `mm_txt_A3-C1-fbNoGenes_en_beginning.mp3` | Every cell keeps its genes. | A3 · A3-s11 (A3-C1) choice feedback |
+| **needed** | `mm_txt_A3-C2-prompt_en_beginning.mp3` | Make a skin cell. | A3 · A3-s12 (A3-C2) |
+| **needed** | `mm_txt_A3-C2-fb-correct_en_beginning.mp3` | Skin cell! | A3 · A3-s12 (A3-C2) feedback |
+| **needed** | `mm_txt_A3-C3-prompt_en_beginning.mp3` | Why is a muscle cell not a skin cell? | A3 · A3-s13 (A3-C3) |
+| **needed** | `mm_txt_A3-C3-fbSwitched_en_beginning.mp3` | Different genes are on. | A3 · A3-s13 (A3-C3) choice feedback |
+| **needed** | `mm_txt_A3-C3-fbMutation_en_beginning.mp3` | Every cell has both genes. | A3 · A3-s13 (A3-C3) choice feedback |
+| **needed** | `mm_txt_A3-C3-fbFewer_en_beginning.mp3` | Same chromosomes. | A3 · A3-s13 (A3-C3) choice feedback |
+| **needed** | `mm_txt_A3-C3-fbParent_en_beginning.mp3` | Same DNA. | A3 · A3-s13 (A3-C3) choice feedback |
+| **needed** | `mm_txt_A3-end-body1_en_beginning.mp3` | Same DNA in every cell. Different genes are on. | A3 · A3-s14 |
+| **needed** | `mm_txt_A3-end-body2_en_beginning.mp3` | Next: what this model leaves out. | A3 · A3-s14 |
+| **needed** | `mm_txt_A4-R1-prompt_en_beginning.mp3` | One X: how many chromosomes? How many DNA molecules? | A4 · A4-s01 (A4-R1) |
+| **needed** | `mm_txt_A4-R2-prompt_en_beginning.mp3` | What does mitosis make? | A4 · A4-s01 (A4-R2) |
+| **needed** | `mm_txt_A4-R3-prompt_en_beginning.mp3` | Why are most cells in interphase? | A4 · A4-s01 (A4-R3) |
+| **needed** | `mm_txt_A4-R4-prompt_en_beginning.mp3` | How can cells with the same DNA be different? | A4 · A4-s01 (A4-R4) |
+| **needed** | `mm_txt_A4-limits-body1_en_beginning.mp3` | Our model is simple. Real cells are more complex. | A4 · A4-s02 |
+| **needed** | `mm_txt_A4-limits-body2_en_beginning.mp3` | Models leave things out on purpose. | A4 · A4-s02 |
+| **needed** | `mm_txt_A4-L1-prompt_en_beginning.mp3` | How is our model different from a real newt? | A4 · A4-s03 (A4-L1) |
+| **needed** | `mm_txt_A4-L1-hint_en_beginning.mp3` | Look at the card. | A4 · A4-s03 (A4-L1) hint |
+| **needed** | `mm_txt_A4-L1-fbMore_en_beginning.mp3` | Real newts have more. | A4 · A4-s03 (A4-L1) choice feedback |
+| **needed** | `mm_txt_A4-L1-fbNoCopy_en_beginning.mp3` | Real cells copy first too. | A4 · A4-s03 (A4-L1) choice feedback |
+| **needed** | `mm_txt_A4-L1-fbLabels_en_beginning.mp3` | Labels are only in the model. | A4 · A4-s03 (A4-L1) choice feedback |
+| **needed** | `mm_txt_A4-L1-fbHalf_en_beginning.mp3` | Mitosis keeps the full set. | A4 · A4-s03 (A4-L1) choice feedback |
+| **needed** | `mm_txt_A4-L2-prompt_en_beginning.mp3` | When does "share of cells = share of time" work? | A4 · A4-s04 (A4-L2) |
+| **needed** | `mm_txt_A4-L2-hint_en_beginning.mp3` | Look at the card. | A4 · A4-s04 (A4-L2) hint |
+| **needed** | `mm_txt_A4-L2-fbSame_en_beginning.mp3` | Phases take different times. | A4 · A4-s04 (A4-L2) choice feedback |
+| **needed** | `mm_txt_A4-L2-fbRandom_en_beginning.mp3` | Cells must divide at different times. | A4 · A4-s04 (A4-L2) choice feedback |
+| **needed** | `mm_txt_A4-L2-fbFast_en_beginning.mp3` | More cells means longer. | A4 · A4-s04 (A4-L2) choice feedback |
+| **needed** | `mm_txt_A4-L2-fbRest_en_beginning.mp3` | Interphase cells are busy. | A4 · A4-s04 (A4-L2) choice feedback |
+| **needed** | `mm_txt_A4-check-body1_en_beginning.mp3` | Five questions. Work on your own. | A4 · A4-s05 |
+| **needed** | `mm_txt_A4-check-body2_en_beginning.mp3` | Your first answer counts. | A4 · A4-s05 |
+| **needed** | `mm_txt_A4-C1-prompt_en_beginning.mp3` | Divide this cell. Both new cells must match the parent. | A4 · A4-s06 (A4-C1) |
+| **needed** | `mm_txt_A4-C1-fb-correct_en_beginning.mp3` | Both cells match. | A4 · A4-s06 (A4-C1) feedback |
+| **needed** | `mm_txt_A4-C2-prompt_en_beginning.mp3` | New skin cells fill a cut. How is their DNA? | A4 · A4-s07 (A4-C2) |
+| **needed** | `mm_txt_A4-C2-fbHalf_en_beginning.mp3` | Each cell gets a full set. | A4 · A4-s07 (A4-C2) choice feedback |
+| **needed** | `mm_txt_A4-C2-fbNeighbour_en_beginning.mp3` | Same DNA. Mitosis made them. | A4 · A4-s07 (A4-C2) choice feedback |
+| **needed** | `mm_txt_A4-C2-fbNew_en_beginning.mp3` | No new genes. | A4 · A4-s07 (A4-C2) choice feedback |
+| **needed** | `mm_txt_A4-C2-fbBlood_en_beginning.mp3` | DNA comes from mitosis. | A4 · A4-s07 (A4-C2) choice feedback |
+| **needed** | `mm_txt_A4-C3-prompt_en_beginning.mp3` | Root cells and leaf cells look different. Why? | A4 · A4-s08 (A4-C3) |
+| **needed** | `mm_txt_A4-C3-fbLost_en_beginning.mp3` | The genes are still there. | A4 · A4-s08 (A4-C3) choice feedback |
+| **needed** | `mm_txt_A4-C3-fbDiff_en_beginning.mp3` | Same DNA. | A4 · A4-s08 (A4-C3) choice feedback |
+| **needed** | `mm_txt_A4-C3-fbSwitched_en_beginning.mp3` | Different genes are on. | A4 · A4-s08 (A4-C3) choice feedback |
+| **needed** | `mm_txt_A4-C3-fbSun_en_beginning.mp3` | No new genes. | A4 · A4-s08 (A4-C3) choice feedback |
+| **needed** | `mm_txt_A4-C4-prompt_en_beginning.mp3` | Slide X has 14 dividing cells. Slide Y has 2. Which is growing faster? | A4 · A4-s09 (A4-C4) |
+| **needed** | `mm_txt_A4-C4-fbX_en_beginning.mp3` | More dividing cells: faster growth. | A4 · A4-s09 (A4-C4) choice feedback |
+| **needed** | `mm_txt_A4-C4-fbY_en_beginning.mp3` | Fewer dividing cells: slower. | A4 · A4-s09 (A4-C4) choice feedback |
+| **needed** | `mm_txt_A4-C4-fbSame_en_beginning.mp3` | The counts are different. | A4 · A4-s09 (A4-C4) choice feedback |
+| **needed** | `mm_txt_A4-C4-fbNeither_en_beginning.mp3` | Skin cells divide. | A4 · A4-s09 (A4-C4) choice feedback |
+| **needed** | `mm_txt_A4-C5-prompt_en_beginning.mp3` | How does a body grow back a part? Use: mitosis, DNA, genes. | A4 · A4-s10 (A4-C5) |
+| **needed** | `mm_txt_A4-end-body1_en_beginning.mp3` | You used a model to explain growth and repair. | A4 · A4-s11 |
+| **needed** | `mm_txt_A4-end-body2_en_beginning.mp3` | Models leave things out. | A4 · A4-s11 |
+| **needed** | `mm_txt_A-end-body1_en_beginning.mp3` | Mitosis makes all of Fig's body cells. They have the same DNA. | A-end · Aend-s01 |
+| **needed** | `mm_txt_A-end-body2_en_beginning.mp3` | The grey part comes next, in Part B. | A-end · Aend-s01 |
+| **needed** | `mm_txt_A-end-done-body1_en_beginning.mp3` | Every cell in Fig has the same DNA. | A-end · Aend-s02 |
+| **needed** | `mm_txt_A-end-done-body2_en_beginning.mp3` | In Part B: a surprise about Fig's babies. | A-end · Aend-s02 |
 
 ## Always read by the browser voice
 

@@ -30,6 +30,8 @@ const MODULES: Record<string, () => Promise<BeatModule>> = {
   'A2-copy-a-cell': () => import('../modules/A2-copy-a-cell/index'),
   'A2b-clock-the-cycle': () => import('../modules/A2b-clock-the-cycle/index'),
   'A3-build-a-body': () => import('../modules/A3-build-a-body/index'),
+  'A4-model-limits': () => import('../modules/A4-model-limits/index'),
+  'A-end-hook': () => import('../modules/A-end-hook/index'),
 };
 
 /** Settings that change what the panel shows; the step re-renders. */
@@ -316,7 +318,7 @@ export class App {
       const items = step.body.map((k) => paragraph(k));
       items.forEach((it) => this.body.appendChild(it.el));
       if (step.type === 'summary') {
-        const ids = beat.steps.flatMap((s) => (s.type === 'task' ? [this.resolveTask(s)!] : [])).filter((tk) => tk.phase === 'checkpoint');
+        const ids = beat.steps.flatMap((s) => (s.type === 'task' ? [this.resolveTask(s)!] : [])).filter((tk) => tk.phase === 'checkpoint' && tk.kind !== 'predict');
         const n = ids.filter((tk) => progress().results[tk.id]?.firstTryCorrect).length;
         const score = paragraph('ui.summary.score', { n, total: ids.length });
         score.el.style.fontWeight = '700';
