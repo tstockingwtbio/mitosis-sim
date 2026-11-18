@@ -911,5 +911,376 @@
   "mis.daughtersDiffer": "The two new cells get different genes.",
   "mis.daughtersKeepX": "The new cells keep whole X-shaped chromosomes.",
   "ui.phase.attempt": "Try it first",
-  "A2.ui.undo": "Undo"
+  "A2.ui.undo": "Undo",
+  "A2b.phase.interphase": "Interphase",
+  "A2b.phase.interphase.short": "I",
+  "A2b.phase.interphase.look": "Round nucleus; no chromosomes you can see.",
+  "A2b.phase.interphase.seen": "a round, dark nucleus and no separate chromosomes",
+  "A2b.phase.prophase": "Prophase",
+  "A2b.phase.prophase.short": "P",
+  "A2b.phase.prophase.look": "Paler nucleus with short threads inside.",
+  "A2b.phase.prophase.seen": "a pale nucleus with short dark threads inside",
+  "A2b.phase.metaphase": "Metaphase",
+  "A2b.phase.metaphase.short": "M",
+  "A2b.phase.metaphase.look": "Chromosomes in a line across the middle.",
+  "A2b.phase.metaphase.seen": "short dark chromosomes lined up across the middle",
+  "A2b.phase.anaphase": "Anaphase",
+  "A2b.phase.anaphase.short": "A",
+  "A2b.phase.anaphase.look": "Two sets of chromosomes pulling apart.",
+  "A2b.phase.anaphase.seen": "two groups of chromosomes moving to opposite ends",
+  "A2b.phase.telophase": "Telophase",
+  "A2b.phase.telophase.short": "T",
+  "A2b.phase.telophase.look": "Two new nuclei; the cell pinching in two.",
+  "A2b.phase.telophase.seen": "a cell pinching in two, with a small nucleus at each end",
+  "A2b.cards.label": "Reference cards",
+  "A2b.cards.pick": "Choose a phase card, then click every cell that matches it.",
+  "A2b.cards.demo": "Reference cards: these stay on screen the whole time.",
+  "A2b.cell.aria": "Cell {n}: {look}",
+  "A2b.cell.sortedAs": "Sorted as {phase}",
+  "A2b.tally.title": "Your counts so far",
+  "A2b.tally.left": "{n} cells in this step still to sort.",
+  "A2b.tally.done": "Every cell in this step is sorted.",
+  "A2b.timing.phase": "Phase",
+  "A2b.timing.count": "Cells",
+  "A2b.timing.percent": "Share of cells",
+  "A2b.timing.hours": "Hours",
+  "A2b.cycle.centre": "One cycle: 24 hours",
+  "A2b.R1.prompt": {
+    "building": "What happens to every chromosome before a cell divides?",
+    "beginning": "What happens to chromosomes before a cell divides?"
+  },
+  "A2b.R1.answer": "It is copied: each one becomes an X.",
+  "A2b.R2.prompt": {
+    "building": "After mitosis, how do the two new cells compare with the parent cell?",
+    "beginning": "How are the new cells and the parent the same?"
+  },
+  "A2b.R2.answer": "They have the same chromosomes and the same DNA.",
+  "A2b.R3.prompt": {
+    "building": "What is a gene?",
+    "beginning": "What is a gene?"
+  },
+  "A2b.R3.answer": "A section of a chromosome.",
+  "A2b.R4.prompt": {
+    "building": "What does the nucleus of a cell hold?",
+    "beginning": "What is in the nucleus?"
+  },
+  "A2b.R4.answer": "The chromosomes (the cell's DNA).",
+  "A2b.cycle.title": "The cell cycle",
+  "A2b.cycle.body1": {
+    "building": "A dividing cell goes round and round a cycle. The slices show how much of the cycle each part takes: interphase is most of it.",
+    "beginning": "A cell grows, copies, and divides, again and again."
+  },
+  "A2b.cycle.body2": {
+    "building": "The cycle is continuous: one part flows into the next. The five names are lines that scientists drew to talk about it; the cell does not stop between them.",
+    "beginning": "The parts flow into each other. The names help us talk about them."
+  },
+  "A2b.slide.title": "A slice of the new tail",
+  "A2b.slide.body": {
+    "building": "Each cell on the slide was caught at one moment of its cycle. If you count how many cells are in each part, you can work out how long each part takes.",
+    "beginning": "Each cell is at one stage. Count the cells in each stage."
+  },
+  "A2b.W1.prompt": {
+    "building": "Watch the first three cells being sorted. The cards show what to look for.",
+    "beginning": "Watch. Sort the first three cells."
+  },
+  "A2b.W1.step1": {
+    "building": "Cell 1: a round, dark nucleus and no chromosomes you can see. That is interphase.",
+    "beginning": "Cell 1: round nucleus. Interphase."
+  },
+  "A2b.W1.step2": {
+    "building": "Cell 2: chromosomes lined up across the middle. That is metaphase.",
+    "beginning": "Cell 2: chromosomes in a line. Metaphase."
+  },
+  "A2b.W1.step3": {
+    "building": "Cell 3: two sets of chromosomes pulling apart. That is anaphase.",
+    "beginning": "Cell 3: two sets pulling apart. Anaphase."
+  },
+  "A2b.G1.prompt": {
+    "building": "Now you sort the six cells in rings. Choose a card, click the cells that match, then check.",
+    "beginning": "Sort the six cells in rings. Then check."
+  },
+  "A2b.I1.prompt": {
+    "building": "Sort the rest of the slide on your own. Then check: your counts go into the next step.",
+    "beginning": "Sort all the other cells. Then check."
+  },
+  "A2b.hint.sort1": {
+    "building": "Look for a nucleus first. A round, dark nucleus with no threads: interphase. A paler nucleus with threads: prophase.",
+    "beginning": "Round nucleus: interphase. Threads: prophase."
+  },
+  "A2b.hint.sort2": {
+    "building": "No nucleus? Look at the chromosomes: one line in the middle is metaphase; two sets moving apart is anaphase; two new nuclei is telophase.",
+    "beginning": "One line: metaphase. Two sets: anaphase. Two nuclei: telophase."
+  },
+  "A2b.fb.unsorted": {
+    "building": "{n} cells in this step are not sorted yet. Sort them all, then check.",
+    "beginning": "{n} cells are not sorted yet."
+  },
+  "A2b.fb.allRight": {
+    "building": "All {n} cells match the answer key.",
+    "beginning": "All {n} match."
+  },
+  "A2b.T1.prompt": {
+    "building": "Use your counts. For each phase, work out its share of the cells (%), then its hours out of a {hours}-hour cycle.",
+    "beginning": "For each phase: what share of the cells? How many hours?"
+  },
+  "A2b.T1.step1": {
+    "building": "Example: if 3 of 36 cells are in metaphase, the share is 3 ÷ 36 = about 8%.",
+    "beginning": "3 out of 36 is about 8%."
+  },
+  "A2b.T1.step2": {
+    "building": "The share of cells is the share of time. 8% of 24 hours is 0.08 × 24 = about 2 hours.",
+    "beginning": "8% of 24 hours is about 2 hours."
+  },
+  "A2b.T1.step3": {
+    "building": "Do the same for every phase. Your counts may differ from a classmate's: each slide is different.",
+    "beginning": "Do the same for each phase."
+  },
+  "A2b.hint.time1": {
+    "building": "Share of cells = cells in the phase ÷ all cells, × 100.",
+    "beginning": "Cells in the phase ÷ all cells."
+  },
+  "A2b.hint.time2": {
+    "building": "Hours = share × 24. Check: all the hours together should add up to about 24.",
+    "beginning": "Share × 24 = hours."
+  },
+  "A2b.T1.fb.correct": {
+    "building": "Your table is right. Interphase takes most of the day; the parts of mitosis take an hour or two each.",
+    "beginning": "Right. Interphase takes the most time."
+  },
+  "A2b.fb.percent-is-count": {
+    "building": "For {phase}, you wrote the number of cells, not their share. Divide {count} by {total}, then × 100.",
+    "beginning": "Divide by {total}, then × 100."
+  },
+  "A2b.fb.hours-is-percent": {
+    "building": "For {phase}, the hours are the same number as the percent. Hours are the share of {hours} hours, not of 100.",
+    "beginning": "Hours are a share of {hours}."
+  },
+  "A2b.fb.hours-not-scaled": {
+    "building": "For {phase}, the share is right but the hours are not. Multiply the share (as a decimal) by {hours}.",
+    "beginning": "Share × {hours} = hours."
+  },
+  "A2b.fb.percent-not-of-total": {
+    "building": "For {phase}, check the share: {count} cells out of {total}, × 100.",
+    "beginning": "{count} out of {total}, × 100."
+  },
+  "A2b.I2.prompt": {
+    "building": "In your slide, which phase takes the longest? How do you know?",
+    "beginning": "Which phase takes the longest?"
+  },
+  "A2b.I2.hint": {
+    "building": "More cells caught in a phase means cells spend more time in it.",
+    "beginning": "More cells means more time."
+  },
+  "A2b.I2.optFewest": "The phase with the fewest cells, because those cells finished fast",
+  "A2b.I2.optMost": "The phase with the most cells, because cells spend longest there",
+  "A2b.I2.optSame": "They all take the same time; the slide is random",
+  "A2b.I2.optResting": "Interphase, because the cell is resting",
+  "A2b.I2.fbFewest": {
+    "building": "Few cells in a phase means cells pass through it quickly, so it is short.",
+    "beginning": "Few cells means a short phase."
+  },
+  "A2b.I2.fbMost": {
+    "building": "A phase with more cells lasts longer: a cell is more likely to be caught in it.",
+    "beginning": "More cells means a longer phase."
+  },
+  "A2b.I2.fbSame": {
+    "building": "If every phase took the same time, the counts would be about equal. They are not.",
+    "beginning": "The counts are not equal."
+  },
+  "A2b.I2.fbResting": {
+    "building": "Interphase is longest, but not because the cell rests: it grows and copies its DNA then.",
+    "beginning": "In interphase, the cell copies its DNA."
+  },
+  "A2b.GF.prompt": {
+    "building": "A chemical stops cells from moving past metaphase. After a few hours, what happens to the counts on a slide?",
+    "beginning": "A chemical stops cells at metaphase. What happens to the counts?"
+  },
+  "A2b.GF.hint": {
+    "building": "Cells keep arriving at metaphase, but none leave.",
+    "beginning": "Cells arrive but do not leave."
+  },
+  "A2b.GF.optPile": "Metaphase cells pile up, and anaphase and telophase cells disappear",
+  "A2b.GF.optNone": "Nothing changes; each phase is separate",
+  "A2b.GF.optSame": "All five counts stay the same",
+  "A2b.GF.optInter": "Interphase disappears, because metaphase is now faster",
+  "A2b.GF.fbPile": {
+    "building": "Cells flow into metaphase and get stuck, so they pile up there. Controlling when cells move on is how bodies control growth.",
+    "beginning": "Cells pile up at metaphase."
+  },
+  "A2b.GF.fbNone": {
+    "building": "The phases are connected: blocking one backs up the cells behind it.",
+    "beginning": "The phases are connected."
+  },
+  "A2b.GF.fbSame": {
+    "building": "Cells still flow in, but none flow out, so the metaphase count grows.",
+    "beginning": "More cells get stuck."
+  },
+  "A2b.GF.fbInter": {
+    "building": "Cells still leave interphase as usual; they just cannot get past metaphase.",
+    "beginning": "They get stuck at metaphase."
+  },
+  "A2b.O1.prompt": {
+    "building": "This slide comes from Fig's old tail. Sort every cell, then check.",
+    "beginning": "Sort every cell. Then check."
+  },
+  "A2b.O2.prompt": {
+    "building": "Almost every cell in the old tail is in interphase. Why?",
+    "beginning": "Why are most old-tail cells in interphase?"
+  },
+  "A2b.O2.hint": {
+    "building": "Compare with the new tail tip: which one is still growing?",
+    "beginning": "Which tail is still growing?"
+  },
+  "A2b.O2.optDone": "The old tail has finished growing, so few cells are dividing",
+  "A2b.O2.optDead": "Cells in interphase are resting and not doing anything",
+  "A2b.O2.optFast": "Interphase is very fast in old tissue",
+  "A2b.O2.optDiffDna": "Old-tail cells have different DNA from new-tail cells",
+  "A2b.O2.fbDone": {
+    "building": "Finished tissue does its job instead of growing, so most cells stay in interphase. The growing tip has more dividing cells.",
+    "beginning": "The old tail is done growing."
+  },
+  "A2b.O2.fbDead": {
+    "building": "Interphase cells are busy: they do their jobs, and they grow and copy their DNA when they are getting ready to divide.",
+    "beginning": "Interphase cells are busy."
+  },
+  "A2b.O2.fbFast": {
+    "building": "If interphase were fast, few cells would be caught in it. Almost all are.",
+    "beginning": "Lots of cells means a long time."
+  },
+  "A2b.O2.fbDiffDna": {
+    "building": "Every cell in Fig has the same DNA, made by mitosis.",
+    "beginning": "All the cells have the same DNA."
+  },
+  "A2b.onion.title": "Same count, different organism",
+  "A2b.onion.body": {
+    "building": "Onion root tips grow fast, like Fig's new tail. Count a slice of root tip the same way.",
+    "beginning": "Count cells from an onion root."
+  },
+  "A2b.N1.prompt": {
+    "building": "Sort every cell in the onion root tip, then check.",
+    "beginning": "Sort every cell. Then check."
+  },
+  "A2b.N2.prompt": {
+    "building": "Using your onion counts and a {hours}-hour cycle, work out the share and the hours for interphase and metaphase.",
+    "beginning": "Work out the share and the hours."
+  },
+  "A2b.N2.fb.correct": {
+    "building": "Right. The same method works for any growing tissue.",
+    "beginning": "Right."
+  },
+  "A2b.check.title": "Checkpoint",
+  "A2b.check.body": {
+    "building": "Three questions about the cell cycle. Show what you know on your own: hints are off.",
+    "beginning": "Three questions. Work on your own."
+  },
+  "A2b.C1.prompt": {
+    "building": "In a slice of a growing leaf, 30 of 36 cells are in interphase. What does this tell you?",
+    "beginning": "30 of 36 cells are in interphase. What does this mean?"
+  },
+  "A2b.C1.optFast": "Interphase is the fastest phase",
+  "A2b.C1.optRest": "Most of these cells are resting and doing nothing",
+  "A2b.C1.optLong": "Cells spend most of their cycle in interphase",
+  "A2b.C1.optBroken": "The leaf cells cannot divide",
+  "A2b.C1.fbFast": {
+    "building": "More cells in a phase means a longer phase, not a faster one.",
+    "beginning": "More cells means longer."
+  },
+  "A2b.C1.fbRest": {
+    "building": "Interphase cells grow, work and copy their DNA.",
+    "beginning": "Interphase cells are busy."
+  },
+  "A2b.C1.fbLong": {
+    "building": "Most cells are caught in interphase because it takes most of the cycle.",
+    "beginning": "Interphase takes most of the time."
+  },
+  "A2b.C1.fbBroken": {
+    "building": "6 cells are dividing, so the leaf cells can divide.",
+    "beginning": "6 cells are dividing."
+  },
+  "A2b.C2.prompt": {
+    "building": "In a slice of root tip, 6 of 48 cells are in metaphase. The cycle takes 24 hours. About how long is metaphase?",
+    "beginning": "6 of 48 cells are in metaphase. The cycle is 24 hours. How long is metaphase?"
+  },
+  "A2b.C2.opt6": "6 hours",
+  "A2b.C2.opt3": "3 hours",
+  "A2b.C2.opt12": "12.5 hours",
+  "A2b.C2.opt8": "8 hours",
+  "A2b.C2.fb6": {
+    "building": "6 is the number of cells. 6 ÷ 48 is the share: one eighth.",
+    "beginning": "6 is the number of cells."
+  },
+  "A2b.C2.fb3": {
+    "building": "6 ÷ 48 = one eighth, and one eighth of 24 hours is 3 hours.",
+    "beginning": "One eighth of 24 is 3."
+  },
+  "A2b.C2.fb12": {
+    "building": "12.5 is the percent. Hours are 12.5% of 24, not of 100.",
+    "beginning": "12.5 is the percent."
+  },
+  "A2b.C2.fb8": {
+    "building": "Check the share: 6 ÷ 48 is one eighth, so one eighth of 24 hours.",
+    "beginning": "One eighth of 24."
+  },
+  "A2b.C3.prompt": {
+    "building": "On one slide, phase A has 9 cells and phase B has 2 cells. Which phase lasts longer?",
+    "beginning": "Phase A has 9 cells. Phase B has 2. Which is longer?"
+  },
+  "A2b.C3.optA": "Phase A",
+  "A2b.C3.optB": "Phase B",
+  "A2b.C3.optSame": "They last the same time",
+  "A2b.C3.optCannot": "You cannot tell from a slide",
+  "A2b.C3.fbA": {
+    "building": "More cells caught in a phase means cells spend longer in it.",
+    "beginning": "More cells, longer phase."
+  },
+  "A2b.C3.fbB": {
+    "building": "Fewer cells means cells pass through quickly: phase B is shorter.",
+    "beginning": "Fewer cells, shorter phase."
+  },
+  "A2b.C3.fbSame": {
+    "building": "Equal times would give about equal counts.",
+    "beginning": "The counts are not equal."
+  },
+  "A2b.C3.fbCannot": {
+    "building": "A slide is a snapshot of many cells at once, so the counts estimate the times.",
+    "beginning": "The counts show the times."
+  },
+  "A2b.end.title": "Clock the cycle: done",
+  "A2b.end.body1": {
+    "building": "The cell cycle is continuous. Cells spend most of it in interphase, growing, working and copying their DNA; mitosis is the short part.",
+    "beginning": "Cells spend most of their time in interphase."
+  },
+  "A2b.end.body2": {
+    "building": "Growing tissue has more dividing cells than finished tissue, and the share of cells in a phase estimates the share of time. Next: same DNA, different cells.",
+    "beginning": "Growing tissue has more dividing cells."
+  },
+  "mis.interphaseResting": "Interphase is a resting phase.",
+  "mis.phasesByShape": "You can tell the phase from the cell's size or outline.",
+  "mis.moreCellsFaster": "A phase with more cells is a faster phase.",
+  "mis.phasesEqual": "Every phase takes the same amount of time.",
+  "mis.phasesSeparate": "The phases are separate steps that don't affect each other.",
+  "mis.percentIsCount": "The number of cells is the same as the share of cells.",
+  "mis.hoursIsPercent": "The percent is the number of hours.",
+  "mis.hoursNotScaled": "The hours don't depend on the length of the cycle.",
+  "mis.percentNotOfTotal": "The share can be found without dividing by the total.",
+  "A2b.fb.look.interphase": {
+    "building": "{right} of {total} match the answer key. Look again at cell {n}: round nucleus; no chromosomes you can see means interphase.",
+    "beginning": "Look again at cell {n}. It is interphase."
+  },
+  "A2b.fb.look.prophase": {
+    "building": "{right} of {total} match the answer key. Look again at cell {n}: paler nucleus with short threads inside means prophase.",
+    "beginning": "Look again at cell {n}. It is prophase."
+  },
+  "A2b.fb.look.metaphase": {
+    "building": "{right} of {total} match the answer key. Look again at cell {n}: chromosomes in a line across the middle means metaphase.",
+    "beginning": "Look again at cell {n}. It is metaphase."
+  },
+  "A2b.fb.look.anaphase": {
+    "building": "{right} of {total} match the answer key. Look again at cell {n}: two sets of chromosomes pulling apart means anaphase.",
+    "beginning": "Look again at cell {n}. It is anaphase."
+  },
+  "A2b.fb.look.telophase": {
+    "building": "{right} of {total} match the answer key. Look again at cell {n}: two new nuclei; the cell pinching in two means telophase.",
+    "beginning": "Look again at cell {n}. It is telophase."
+  }
 }

@@ -40,4 +40,6 @@ export type SceneFactory = (ctx: StepContext) => StepView;
 
 export interface BeatModule {
   scenes: Record<string, SceneFactory>;
+  /** Task renderers for task kinds that only this beat uses. */
+  tasks?: Record<string, (ctx: StepContext, task: Task, content: PartContent) => StepView>;
 }

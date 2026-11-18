@@ -37,6 +37,8 @@ interface TaskBase {
   goFurther?: string;
   /** True for a Go further variant (only shown in place of its core task). */
   isGoFurther?: boolean;
+  /** Narrated lines (voice-over IDs) shown as captions with this task. */
+  lines?: string[];
 }
 
 export interface RecallTask extends TaskBase {
@@ -117,7 +119,25 @@ export interface DivideTask extends TaskBase, Supports {
   feedback: FeedbackRule[];
 }
 
-export type Task = RecallTask | CountTask | PairTask | ChoiceTask | PredictTask | DivideTask;
+export type FieldKind = 'tip' | 'old' | 'onion';
+
+/** Sort cells on a stained slide into phases (A2b). Cells [from, to) of the field. */
+export interface SortTask extends TaskBase, Supports {
+  kind: 'sort';
+  field: FieldKind;
+  range: [number, number];
+}
+
+/** Turn phase counts into a share of the cycle and hours (A2b). */
+export interface TimingTask extends TaskBase, Supports {
+  kind: 'timing';
+  field: FieldKind;
+  rows: ('interphase' | 'prophase' | 'metaphase' | 'anaphase' | 'telophase')[];
+  cycleHours: number;
+  feedback: FeedbackRule[];
+}
+
+export type Task = RecallTask | CountTask | PairTask | ChoiceTask | PredictTask | DivideTask | SortTask | TimingTask;
 
 export interface NarrationLine {
   /** Voice-over ID from the story bible, e.g. VO-A04. */

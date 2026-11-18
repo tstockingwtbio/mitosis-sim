@@ -4,57 +4,14 @@ import * as THREE from 'three';
 import { h } from '../../engine/dom';
 import { t } from '../../i18n';
 import { getSettings } from '../../engine/settings';
-import { PALETTE, easeInOut, paper, roundRectShape, setOpacity } from '../../engine/stage/paper';
+import { PALETTE, paper, roundRectShape, setOpacity } from '../../engine/stage/paper';
 import { assetSlot } from '../../engine/stage/placeholder';
 import { VIEW_HEIGHT, label } from '../../engine/stage/stage';
 import { Timeline } from '../../engine/stage/timeline';
-import { playLoop, playSfx } from '../../engine/sfx';
+import { playSfx } from '../../engine/sfx';
 import type { BeatModule, StepContext, StepView } from '../../engine/types';
 
-type Panels = { asset: string; line?: number; sfx?: string }[];
-
-interface ExplainStep {
-  lines: string[];
-  panels?: Panels;
-  ambience?: string;
-  sfx?: string[];
-}
-
-function stepOf(ctx: StepContext): ExplainStep {
-  return ctx.step as unknown as ExplainStep;
-}
-
-/** A full-stage picture: the art if it exists, else a plain paper card (asset ID shown in dev mode). */
-function panel(ctx: StepContext, id: string, crop?: [number, number, number, number], scale = 0.96): THREE.Group {
-  const w = ctx.stage.viewWidth * scale;
-  const hh = VIEW_HEIGHT * scale;
-  const card = paper(roundRectShape(w * 0.9, hh * 0.9, 0.3), { color: PALETTE.cream, outline: 0.06 });
-  const g = assetSlot(id, card, { size: { w, h: hh }, crop }, () => ctx.stage.invalidate());
-  ctx.stage.scene.add(g);
-  return g;
-}
-
-/** Cross-fade from one picture to another (a cut with Reduce motion). */
-function crossFade(ctx: StepContext, from: THREE.Group | null, to: THREE.Group): void {
-  to.visible = true;
-  if (!from || from === to || getSettings().reducedMotion) {
-    if (from && from !== to) from.visible = false;
-    setOpacity(to, 1);
-    ctx.stage.invalidate();
-    return;
-  }
-  to.position.z = from.position.z + 0.01;
-  let p = 0;
-  ctx.stage.addTick((dt) => {
-    p = Math.min(1, p + dt / 0.45);
-    setOpacity(to, easeInOut(p));
-    if (p >= 1) {
-      from.visible = false;
-      return false;
-    }
-    return true;
-  });
-}
+import { panel, stepOf, storyScene } from '../../engine/stage/story';
 
 /** Title card: the art has a plain top 40% for the title, which is added here in code. */
 function titleScene(ctx: StepContext): StepView {
@@ -68,31 +25,6 @@ function titleScene(ctx: StepContext): StepView {
   g.add(label(title, { x: 0, y: (w / aspect) * 0.3, z: 0.2 }));
   ctx.stage.invalidate();
   return { dispose: () => title.remove() };
-}
-
-/** Story panels that follow the narration: each caption line shows its picture. */
-function storyScene(ctx: StepContext): StepView {
-  const s = stepOf(ctx);
-  const panels = (s.panels ?? []).map((p) => ({ ...p, group: panel(ctx, p.asset) }));
-  panels.forEach((p, i) => (p.group.visible = i === 0));
-  let shown = panels[0]?.group ?? null;
-  const show = (line: number, sound: boolean) => {
-    const match = [...panels].reverse().find((p) => (p.line ?? 0) <= line) ?? panels[0];
-    if (!match || match.group === shown) return;
-    crossFade(ctx, shown, match.group);
-    shown = match.group;
-    if (sound && match.sfx) playSfx(match.sfx);
-  };
-  const stopAmbience = s.ambience ? playLoop(s.ambience) : () => undefined;
-  ctx.captions.setLines(s.lines, { autoAdvance: true, autoplay: getSettings().readAloud });
-  const off = ctx.captions.onChange((i) => show(i, true));
-  show(ctx.captions.current(), false);
-  return {
-    dispose: () => {
-      off();
-      stopAmbience();
-    },
-  };
 }
 
 /**

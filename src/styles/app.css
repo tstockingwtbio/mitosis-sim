@@ -681,3 +681,45 @@ fieldset.seg legend { font-weight: 700; padding: 0; margin-bottom: 4px; }
 }
 .story-title h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.8rem); line-height: 1.1; }
 .story-title p { margin: 6px 0 0; font-size: 1.1rem; font-weight: 700; }
+
+/* ---------- A2b: reference cards, tally, timing table, slide tags ---------- */
+.cards-hint { margin: 0; font-weight: 700; }
+.phase-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px; }
+.phase-card {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  grid-template-rows: auto auto;
+  gap: 2px 8px;
+  align-items: center;
+  text-align: start;
+  min-height: var(--target);
+  padding: 6px 8px;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  background: #fff;
+  font: inherit;
+  color: inherit;
+}
+button.phase-card { cursor: pointer; }
+.phase-card.picked { border-width: var(--border); box-shadow: inset 0 0 0 3px var(--teal); background: var(--card-2); }
+.phase-art { grid-row: span 2; width: 56px; height: 45px; }
+.phase-name { display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; }
+.phase-tag { font-size: 0.8rem; border: 1.5px solid var(--ink); border-radius: 6px; padding: 0 5px; }
+.phase-look { font-size: 0.82rem; color: var(--muted); }
+.tally-row { display: flex; flex-wrap: wrap; gap: 4px 12px; font-variant-numeric: tabular-nums; }
+.cell-tag {
+  font: 700 11px/1 'Atkinson Hyperlegible', sans-serif;
+  padding: 2px 5px;
+  border: 1.5px solid var(--ink);
+  border-radius: 5px;
+  background: #fff;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.cell-tag.wrong { background: var(--warn-bg); border-style: dashed; }
+table.timing { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+table.timing th, table.timing td { border-bottom: 1.5px solid var(--edge, #d8c9a8); padding: 6px 4px; text-align: start; }
+table.timing th[scope='row'] { display: flex; align-items: center; gap: 6px; font-weight: 700; }
+.mini-art { display: inline-block; width: 36px; height: 29px; }
+.num-in { width: 5ch; min-height: 36px; text-align: center; border: 2px solid var(--ink); border-radius: 8px; background: #fff; font-weight: 700; }
+.row-mark { font-weight: 700; margin-inline-start: 4px; }

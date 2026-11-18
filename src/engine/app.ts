@@ -28,6 +28,7 @@ const MODULES: Record<string, () => Promise<BeatModule>> = {
   'A0-cold-open': () => import('../modules/A0-cold-open/index'),
   'A1-chromosome-primer': () => import('../modules/A1-chromosome-primer/index'),
   'A2-copy-a-cell': () => import('../modules/A2-copy-a-cell/index'),
+  'A2b-clock-the-cycle': () => import('../modules/A2b-clock-the-cycle/index'),
 };
 
 /** Settings that change what the panel shows; the step re-renders. */
@@ -200,6 +201,7 @@ export class App {
   private layoutFor(step: Step, task?: Task): { stage: boolean; counts: boolean } {
     if (step.type === 'explain') return { stage: true, counts: COUNT_SCENES.includes(step.scene) };
     if (step.type === 'task' && task && (task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide')) return { stage: true, counts: true };
+    if (step.type === 'task' && task?.kind === 'sort') return { stage: true, counts: false };
     return { stage: false, counts: false };
   }
 
@@ -288,6 +290,9 @@ export class App {
       else if (task.kind === 'choice') this.view = choiceTask(ctx, task, this.content);
       else if (task.kind === 'predict') this.view = predictTask(ctx, task);
       else if (task.kind === 'divide') this.view = divideTask(ctx, task, this.content);
+      else if (this.module?.tasks?.[task.kind]) this.view = this.module.tasks[task.kind](ctx, task, this.content);
+      // Narrated lines that go with a task (captions; read aloud when that setting is on).
+      if (task.lines?.length && !this.captions.lineKeys().length) this.captions.setLines(task.lines, { autoplay: focus && getSettings().readAloud });
     } else if (step.type === 'explain') {
       const items = step.body.map((k) => paragraph(k));
       items.forEach((it) => this.body.appendChild(it.el));

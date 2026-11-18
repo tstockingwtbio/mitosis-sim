@@ -19,7 +19,16 @@
     "split-by-parent": "mis.splitByParent",
     "mitosis-halves": "mis.mitosisHalves",
     "daughters-differ": "mis.daughtersDiffer",
-    "daughters-keep-x": "mis.daughtersKeepX"
+    "daughters-keep-x": "mis.daughtersKeepX",
+    "interphase-resting": "mis.interphaseResting",
+    "phases-by-shape": "mis.phasesByShape",
+    "more-cells-faster": "mis.moreCellsFaster",
+    "phases-equal": "mis.phasesEqual",
+    "phases-separate": "mis.phasesSeparate",
+    "percent-is-count": "mis.percentIsCount",
+    "hours-is-percent": "mis.hoursIsPercent",
+    "hours-not-scaled": "mis.hoursNotScaled",
+    "percent-not-of-total": "mis.percentNotOfTotal"
   },
   "beats": [
     {
@@ -570,8 +579,154 @@
       "title": "beat.A2b.title",
       "module": "A2b-clock-the-cycle",
       "standard": "SC.HS.6.1.d",
-      "built": false,
-      "steps": []
+      "built": true,
+      "steps": [
+        {
+          "id": "A2b-s01",
+          "type": "retrieve",
+          "tasks": [
+            "A2b-R1",
+            "A2b-R2",
+            "A2b-R3",
+            "A2b-R4"
+          ]
+        },
+        {
+          "id": "A2b-s02",
+          "type": "explain",
+          "scene": "cycle",
+          "title": "A2b.cycle.title",
+          "body": [
+            "A2b.cycle.body1",
+            "A2b.cycle.body2"
+          ],
+          "lines": [
+            "VO-A16"
+          ]
+        },
+        {
+          "id": "A2b-s03",
+          "type": "explain",
+          "scene": "panel",
+          "title": "A2b.slide.title",
+          "body": [
+            "A2b.slide.body"
+          ],
+          "lines": [
+            "VO-A17"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-P10"
+            }
+          ],
+          "assets": [
+            "IMG-P10"
+          ],
+          "sfx": [
+            "SFX-28",
+            "SFX-29"
+          ]
+        },
+        {
+          "id": "A2b-s04",
+          "type": "task",
+          "task": "A2b-W1"
+        },
+        {
+          "id": "A2b-s05",
+          "type": "task",
+          "task": "A2b-G1"
+        },
+        {
+          "id": "A2b-s06",
+          "type": "task",
+          "task": "A2b-I1"
+        },
+        {
+          "id": "A2b-s07",
+          "type": "task",
+          "task": "A2b-T1"
+        },
+        {
+          "id": "A2b-s08",
+          "type": "task",
+          "task": "A2b-I2"
+        },
+        {
+          "id": "A2b-s09",
+          "type": "task",
+          "task": "A2b-O1"
+        },
+        {
+          "id": "A2b-s10",
+          "type": "task",
+          "task": "A2b-O2"
+        },
+        {
+          "id": "A2b-s11",
+          "type": "explain",
+          "scene": "panel",
+          "title": "A2b.onion.title",
+          "body": [
+            "A2b.onion.body"
+          ],
+          "lines": [
+            "VO-A21"
+          ],
+          "panels": [
+            {
+              "asset": "IMG-P11"
+            }
+          ],
+          "assets": [
+            "IMG-P11"
+          ]
+        },
+        {
+          "id": "A2b-s12",
+          "type": "task",
+          "task": "A2b-N1"
+        },
+        {
+          "id": "A2b-s13",
+          "type": "task",
+          "task": "A2b-N2"
+        },
+        {
+          "id": "A2b-s14",
+          "type": "intro",
+          "title": "A2b.check.title",
+          "body": [
+            "A2b.check.body"
+          ]
+        },
+        {
+          "id": "A2b-s15",
+          "type": "task",
+          "task": "A2b-C1"
+        },
+        {
+          "id": "A2b-s16",
+          "type": "task",
+          "task": "A2b-C2"
+        },
+        {
+          "id": "A2b-s17",
+          "type": "task",
+          "task": "A2b-C3"
+        },
+        {
+          "id": "A2b-s18",
+          "type": "summary",
+          "title": "A2b.end.title",
+          "body": [
+            "A2b.end.body1",
+            "A2b.end.body2"
+          ]
+        }
+      ],
+      "sequencing": "explicit-first"
     },
     {
       "id": "A3",
@@ -2219,6 +2374,430 @@
           "text": "A2.C3.opt12and12",
           "misconception": "x-is-two-chromosomes",
           "feedback": "A2.C3.fb12and12"
+        }
+      ]
+    },
+    "A2b-R1": {
+      "id": "A2b-R1",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "A2b.R1.prompt",
+      "answer": "A2b.R1.answer"
+    },
+    "A2b-R2": {
+      "id": "A2b-R2",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "A2b.R2.prompt",
+      "answer": "A2b.R2.answer"
+    },
+    "A2b-R3": {
+      "id": "A2b-R3",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "A2b.R3.prompt",
+      "answer": "A2b.R3.answer"
+    },
+    "A2b-R4": {
+      "id": "A2b-R4",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "A2b.R4.prompt",
+      "answer": "A2b.R4.answer"
+    },
+    "A2b-W1": {
+      "id": "A2b-W1",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "worked",
+      "status": "draft",
+      "kind": "sort",
+      "field": "tip",
+      "range": [
+        0,
+        3
+      ],
+      "prompt": "A2b.W1.prompt",
+      "worked": [
+        "A2b.W1.step1",
+        "A2b.W1.step2",
+        "A2b.W1.step3"
+      ],
+      "lines": [
+        "VO-A18"
+      ]
+    },
+    "A2b-G1": {
+      "id": "A2b-G1",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "sort",
+      "field": "tip",
+      "range": [
+        3,
+        9
+      ],
+      "prompt": "A2b.G1.prompt",
+      "hints": [
+        "A2b.hint.sort1",
+        "A2b.hint.sort2"
+      ]
+    },
+    "A2b-I1": {
+      "id": "A2b-I1",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "sort",
+      "field": "tip",
+      "range": [
+        9,
+        36
+      ],
+      "prompt": "A2b.I1.prompt",
+      "hints": [
+        "A2b.hint.sort1",
+        "A2b.hint.sort2"
+      ]
+    },
+    "A2b-T1": {
+      "id": "A2b-T1",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "timing",
+      "field": "tip",
+      "rows": [
+        "interphase",
+        "prophase",
+        "metaphase",
+        "anaphase",
+        "telophase"
+      ],
+      "cycleHours": 24,
+      "prompt": "A2b.T1.prompt",
+      "lines": [
+        "VO-A19"
+      ],
+      "worked": [
+        "A2b.T1.step1",
+        "A2b.T1.step2",
+        "A2b.T1.step3"
+      ],
+      "hints": [
+        "A2b.hint.time1",
+        "A2b.hint.time2"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A2b.T1.fb.correct"
+        }
+      ]
+    },
+    "A2b-I2": {
+      "id": "A2b-I2",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A2b.I2.prompt",
+      "goFurther": "A2b-I2-GF",
+      "hints": [
+        "A2b.I2.hint"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A2b.I2.optFewest",
+          "misconception": "more-cells-faster",
+          "feedback": "A2b.I2.fbFewest"
+        },
+        {
+          "id": "b",
+          "text": "A2b.I2.optMost",
+          "correct": true,
+          "feedback": "A2b.I2.fbMost"
+        },
+        {
+          "id": "c",
+          "text": "A2b.I2.optSame",
+          "misconception": "phases-equal",
+          "feedback": "A2b.I2.fbSame"
+        },
+        {
+          "id": "d",
+          "text": "A2b.I2.optResting",
+          "removable": true,
+          "misconception": "interphase-resting",
+          "feedback": "A2b.I2.fbResting"
+        }
+      ]
+    },
+    "A2b-I2-GF": {
+      "id": "A2b-I2-GF",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "isGoFurther": true,
+      "prompt": "A2b.GF.prompt",
+      "hints": [
+        "A2b.GF.hint"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A2b.GF.optPile",
+          "correct": true,
+          "feedback": "A2b.GF.fbPile"
+        },
+        {
+          "id": "b",
+          "text": "A2b.GF.optNone",
+          "misconception": "phases-separate",
+          "feedback": "A2b.GF.fbNone"
+        },
+        {
+          "id": "c",
+          "text": "A2b.GF.optSame",
+          "misconception": "phases-separate",
+          "feedback": "A2b.GF.fbSame"
+        },
+        {
+          "id": "d",
+          "text": "A2b.GF.optInter",
+          "removable": true,
+          "misconception": "more-cells-faster",
+          "feedback": "A2b.GF.fbInter"
+        }
+      ]
+    },
+    "A2b-O1": {
+      "id": "A2b-O1",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "sort",
+      "field": "old",
+      "range": [
+        0,
+        36
+      ],
+      "prompt": "A2b.O1.prompt",
+      "lines": [
+        "VO-A20"
+      ],
+      "hints": [
+        "A2b.hint.sort1"
+      ]
+    },
+    "A2b-O2": {
+      "id": "A2b-O2",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A2b.O2.prompt",
+      "hints": [
+        "A2b.O2.hint"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A2b.O2.optDone",
+          "correct": true,
+          "feedback": "A2b.O2.fbDone"
+        },
+        {
+          "id": "b",
+          "text": "A2b.O2.optDead",
+          "misconception": "interphase-resting",
+          "feedback": "A2b.O2.fbDead"
+        },
+        {
+          "id": "c",
+          "text": "A2b.O2.optFast",
+          "misconception": "more-cells-faster",
+          "feedback": "A2b.O2.fbFast"
+        },
+        {
+          "id": "d",
+          "text": "A2b.O2.optDiffDna",
+          "removable": true,
+          "misconception": "daughters-differ",
+          "feedback": "A2b.O2.fbDiffDna"
+        }
+      ]
+    },
+    "A2b-N1": {
+      "id": "A2b-N1",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "sort",
+      "field": "onion",
+      "range": [
+        0,
+        36
+      ],
+      "prompt": "A2b.N1.prompt",
+      "hints": [
+        "A2b.hint.sort1"
+      ]
+    },
+    "A2b-N2": {
+      "id": "A2b-N2",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "timing",
+      "field": "onion",
+      "rows": [
+        "interphase",
+        "metaphase"
+      ],
+      "cycleHours": 24,
+      "prompt": "A2b.N2.prompt",
+      "hints": [
+        "A2b.hint.time1",
+        "A2b.hint.time2"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A2b.N2.fb.correct"
+        }
+      ]
+    },
+    "A2b-C1": {
+      "id": "A2b-C1",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A2b.C1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A2b.C1.optFast",
+          "misconception": "more-cells-faster",
+          "feedback": "A2b.C1.fbFast"
+        },
+        {
+          "id": "b",
+          "text": "A2b.C1.optRest",
+          "misconception": "interphase-resting",
+          "feedback": "A2b.C1.fbRest"
+        },
+        {
+          "id": "c",
+          "text": "A2b.C1.optLong",
+          "correct": true,
+          "feedback": "A2b.C1.fbLong"
+        },
+        {
+          "id": "d",
+          "text": "A2b.C1.optBroken",
+          "misconception": "phases-equal",
+          "feedback": "A2b.C1.fbBroken"
+        }
+      ]
+    },
+    "A2b-C2": {
+      "id": "A2b-C2",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A2b.C2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A2b.C2.opt6",
+          "misconception": "percent-is-count",
+          "feedback": "A2b.C2.fb6"
+        },
+        {
+          "id": "b",
+          "text": "A2b.C2.opt3",
+          "correct": true,
+          "feedback": "A2b.C2.fb3"
+        },
+        {
+          "id": "c",
+          "text": "A2b.C2.opt12",
+          "misconception": "hours-is-percent",
+          "feedback": "A2b.C2.fb12"
+        },
+        {
+          "id": "d",
+          "text": "A2b.C2.opt8",
+          "misconception": "hours-not-scaled",
+          "feedback": "A2b.C2.fb8"
+        }
+      ]
+    },
+    "A2b-C3": {
+      "id": "A2b-C3",
+      "beat": "A2b",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A2b.C3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A2b.C3.optA",
+          "correct": true,
+          "feedback": "A2b.C3.fbA"
+        },
+        {
+          "id": "b",
+          "text": "A2b.C3.optB",
+          "misconception": "more-cells-faster",
+          "feedback": "A2b.C3.fbB"
+        },
+        {
+          "id": "c",
+          "text": "A2b.C3.optSame",
+          "misconception": "phases-equal",
+          "feedback": "A2b.C3.fbSame"
+        },
+        {
+          "id": "d",
+          "text": "A2b.C3.optCannot",
+          "misconception": "phases-separate",
+          "feedback": "A2b.C3.fbCannot"
         }
       ]
     }
