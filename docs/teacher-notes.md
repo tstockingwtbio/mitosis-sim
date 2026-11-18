@@ -15,7 +15,7 @@ Notes for the teacher and for comparing pilot results. Students never see this f
 | A4 | Model limits; independent evidence for 6.1.d | Checkpoint | Explicit first | Limits card, two questions on it, then the unit checkpoint (supports off, unfamiliar cases, one written explanation). |
 | A-end | Plants the rule Part B breaks | Story | Phenomenon | VO-A15 and the life-cycle diagram (meiosis half greyed). |
 
-## A0: Cold open (SC.HS.6.1.d)
+## A0: The Heron Heist (cold open, SC.HS.6.1.d)
 
 **Status: draft text.** Narration is VO-A01 to A03 from the bible; the title, step text and prediction prompt are drafts for your review.
 
