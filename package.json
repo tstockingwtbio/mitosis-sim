@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run --passWithNoTests",
     "check:content": "vitest run tests/content.test.ts",
-    "audio:list": "node scripts/read-aloud-list.mjs"
+    "audio:list": "node scripts/read-aloud-list.mjs",
+    "audio:tag": "node scripts/tag-recordings.mjs"
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "^5.3.0",

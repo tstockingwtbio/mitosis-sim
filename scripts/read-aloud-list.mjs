@@ -16,11 +16,17 @@ const text = (entry, level) => (typeof entry === 'string' ? entry : entry[level]
 
 /** Keys in the order a student meets them, with where each is used. */
 const seen = new Map();
+const dynamic = [];
 const add = (key, where) => {
   if (!(key in en)) throw new Error(`missing key ${key}`);
+  // Text with numbers filled in for each student cannot be pre-recorded.
+  const plain = typeof en[key] === 'string' ? en[key] : en[key].building;
+  if (/\{\w+\}/.test(plain)) {
+    dynamic.push([key, where]);
+    return;
+  }
   if (!seen.has(key)) seen.set(key, where);
 };
-const dynamic = [];
 
 const ZOOM = ['fig', 'tissue', 'cell', 'nucleus', 'chromosome', 'gene', 'dna'];
 // Shared feedback pieces.

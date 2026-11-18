@@ -29,8 +29,17 @@ function pickVoice(lang: string): SpeechSynthesisVoice | undefined {
   const exact = voices.filter((v) => v.lang.toLowerCase().replace('_', '-') === lower);
   const near = voices.filter((v) => v.lang.toLowerCase().startsWith(base));
   const pool = exact.length ? exact : near;
-  // Local voices send word-boundary events; network voices often do not.
-  return pool.find((v) => v.localService) ?? pool[0];
+  // Prefer natural-sounding voices (closest to the recorded narrator), then
+  // local ones (they send word-boundary events for highlighting; the
+  // highlighter falls back to timing when they don't).
+  const natural = /natural|neural|online|google|enhanced|premium|siri|samantha/i;
+  const male = /\b(male|guy|david|mark|james|daniel|aaron|andrew|brian|christopher|eric|guy|roger|steffan)\b/i;
+  return (
+    pool.find((v) => natural.test(v.name) && male.test(v.name)) ??
+    pool.find((v) => natural.test(v.name)) ??
+    pool.find((v) => v.localService) ??
+    pool[0]
+  );
 }
 
 let token = 0;
