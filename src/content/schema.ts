@@ -23,7 +23,7 @@ export interface CellSpec {
   chromosomes: ChromSpec[];
 }
 
-export type Phase = 'retrieve' | 'predict' | 'worked' | 'guided' | 'independent' | 'checkpoint';
+export type Phase = 'retrieve' | 'predict' | 'attempt' | 'worked' | 'guided' | 'independent' | 'checkpoint';
 export type Status = 'draft' | 'approved';
 
 interface TaskBase {
@@ -49,7 +49,11 @@ export type FeedbackWhen =
   | 'correct'
   | 'other'
   | { chromosomes?: number; dnaMolecules?: number }
-  | { pair: 'same-parent' | 'different-genes' };
+  | { pair: 'same-parent' | 'different-genes' }
+  | { divide: DivideError };
+
+/** What went wrong when a cell was divided. */
+export type DivideError = 'missing' | 'extra' | 'mixed';
 
 export interface FeedbackRule {
   when: FeedbackWhen;
@@ -102,7 +106,18 @@ export interface PredictTask extends TaskBase, Supports {
   kind: 'predict';
 }
 
-export type Task = RecallTask | CountTask | PairTask | ChoiceTask | PredictTask;
+/**
+ * Divide a cell: move every chromosome (or each half of every X) into two new
+ * cells. The goal: both new cells hold the same information as the parent.
+ */
+export interface DivideTask extends TaskBase, Supports {
+  kind: 'divide';
+  /** The parent cell, before copying (all chromosomes unreplicated). */
+  cell: CellSpec;
+  feedback: FeedbackRule[];
+}
+
+export type Task = RecallTask | CountTask | PairTask | ChoiceTask | PredictTask | DivideTask;
 
 export interface NarrationLine {
   /** Voice-over ID from the story bible, e.g. VO-A04. */

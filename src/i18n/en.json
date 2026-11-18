@@ -656,5 +656,260 @@
   "bank.predict": "cells, instructions, copy, grow, divide, DNA",
   "settings.sec.teacher": "For teachers",
   "settings.teacher": "Teacher mode",
-  "settings.teacher.desc": "Shows each step's task ID, its standard, and which text is still a draft."
+  "settings.teacher.desc": "Shows each step's task ID, its standard, and which text is still a draft.",
+  "A2.cell.parent": "Parent cell",
+  "A2.cell.one": "New cell 1",
+  "A2.cell.two": "New cell 2",
+  "A2.ui.copy": "Copy the chromosomes",
+  "A2.ui.toOne": "Put in new cell 1",
+  "A2.ui.toTwo": "Put in new cell 2",
+  "A2.ui.reset": "Start again",
+  "A2.ui.divide": "Divide the cell",
+  "A2.ui.left": "{n} left in the parent cell. Select one.",
+  "A2.ui.pickCell": "Now choose new cell 1 or new cell 2.",
+  "A2.ui.ready": "The parent cell is empty. Divide the cell.",
+  "A2.ui.divided": "Divided. Compare each new cell with the parent.",
+  "A2.ui.show": "Show {name}",
+  "A2.R1.prompt": {
+    "building": "How many DNA molecules are in one X-shaped chromosome?",
+    "beginning": "One X has how many DNA molecules?"
+  },
+  "A2.R1.answer": "Two: one in each half of the X.",
+  "A2.R2.prompt": {
+    "building": "Where do the two chromosomes in a pair come from?",
+    "beginning": "Where does each chromosome in a pair come from?"
+  },
+  "A2.R2.answer": "One from the mother and one from the father.",
+  "A2.R3.prompt": {
+    "building": "What is a gene?",
+    "beginning": "What is a gene?"
+  },
+  "A2.R3.answer": "A section of a chromosome.",
+  "A2.R4.prompt": {
+    "building": "Name one reason a living thing needs to make new cells.",
+    "beginning": "Why does a body make new cells?"
+  },
+  "A2.R4.answer": "To grow, to repair damage (like Fig's tail), or to replace old cells.",
+  "A2.intro.title": "Your turn: copy a cell",
+  "A2.intro.body1": {
+    "building": "Fig's tail grows back because cells divide: one cell becomes two. Each new cell needs exactly what the parent cell had.",
+    "beginning": "One cell becomes two. Each new cell needs all the chromosomes."
+  },
+  "A2.intro.body2": {
+    "building": "Next, try it your way. You can copy the chromosomes first, or not. Mistakes are fine: you will see what happens.",
+    "beginning": "Try it your way. Mistakes are OK."
+  },
+  "A2.T1.prompt": {
+    "building": "Give each new cell everything the parent cell had. Select a chromosome, then a new cell. When the parent cell is empty, divide it.",
+    "beginning": "Move the chromosomes into the new cells. Then divide."
+  },
+  "A2.T1.fb.correct": {
+    "building": "Both new cells match the parent. How did you get there? Next, watch how real cells do it.",
+    "beginning": "Both new cells match the parent."
+  },
+  "A2.fb.missing": {
+    "building": "A new cell is missing a chromosome. Without copying first, there is only one of each chromosome to share, so one cell has to go without.",
+    "beginning": "A new cell is missing a chromosome. Copy first."
+  },
+  "A2.fb.extra": {
+    "building": "A new cell has an extra chromosome, and the other is missing it. Both halves of one X went to the same cell: send one half to each.",
+    "beginning": "One cell got both halves of an X. Send one half to each cell."
+  },
+  "A2.fb.mixed": {
+    "building": "The new cells don't match the parent: some chromosomes are doubled and some are missing. Each new cell needs one copy of every chromosome.",
+    "beginning": "Each new cell needs one of every chromosome."
+  },
+  "A2.mitosis.title": "How a cell copies itself",
+  "A2.mitosis.body1": {
+    "building": "Step through and watch the count strip. First, every chromosome is copied: each one becomes an X, with two identical halves.",
+    "beginning": "First, the cell copies every chromosome."
+  },
+  "A2.mitosis.body2": {
+    "building": "Then the Xs line up, and fibres pull the two halves of every X to opposite ends. One half of each X goes to each new cell.",
+    "beginning": "Then each X is pulled apart. One half goes to each new cell."
+  },
+  "A2.mitosis.body3": {
+    "building": "That is why the copy comes first: without it, there would be only one of each chromosome to share. This whole process is called mitosis.",
+    "beginning": "This is called mitosis. The two new cells are the same as the parent."
+  },
+  "A2.mitosis.s0": "The parent cell",
+  "A2.mitosis.s1": "Copy every chromosome",
+  "A2.mitosis.s2": "Line up in the middle",
+  "A2.mitosis.s3": "Pull the halves apart",
+  "A2.mitosis.s4": "Two new cells",
+  "A2.G1.prompt": {
+    "building": "Now divide this cell the way real cells do. Copy first, then send one half of each X to each new cell.",
+    "beginning": "Copy first. Then send one half of each X to each cell."
+  },
+  "A2.G1.step1": {
+    "building": "Press \"Copy the chromosomes\". Every chromosome becomes an X.",
+    "beginning": "Copy the chromosomes."
+  },
+  "A2.G1.step2": {
+    "building": "Select an X and put it in new cell 1: one half goes there, and the other half stays to be placed.",
+    "beginning": "Put one half of the X in new cell 1."
+  },
+  "A2.G1.step3": {
+    "building": "Put that other half in new cell 2. Do the same for every X, then divide.",
+    "beginning": "Put the other half in new cell 2."
+  },
+  "A2.hint1": {
+    "building": "Copy before you divide: each new cell needs its own copy of every chromosome.",
+    "beginning": "Copy first."
+  },
+  "A2.hint2": {
+    "building": "Each X gives one half to each new cell. Never send both halves to the same cell.",
+    "beginning": "One half to each cell."
+  },
+  "A2.G1.fb.correct": {
+    "building": "Each new cell has one copy of every chromosome: the same information as the parent.",
+    "beginning": "Both cells are the same as the parent."
+  },
+  "frame.divide": {
+    "building": "Each new cell has the same chromosomes as the parent because ___.",
+    "beginning": "Each new cell has ___ chromosomes."
+  },
+  "bank.divide": "copy, X, half, each, same, mitosis",
+  "A2.I1.prompt": {
+    "building": "This cell is from a different animal, with three pairs. Divide it so both new cells match the parent.",
+    "beginning": "Divide this cell. Both new cells must match the parent."
+  },
+  "A2.I1.fb.correct": {
+    "building": "Six chromosomes in each new cell, one copy of each, just like the parent.",
+    "beginning": "Both cells match the parent."
+  },
+  "A2.GF.prompt": {
+    "building": "A human skin cell has 46 chromosomes. It divides by mitosis. What do the two new cells have?",
+    "beginning": "A skin cell has 46 chromosomes. It divides. What do the new cells have?"
+  },
+  "A2.GF.hint": {
+    "building": "Mitosis gives each new cell the same information as the parent.",
+    "beginning": "The new cells are the same as the parent."
+  },
+  "A2.GF.opt23": "23 chromosomes each",
+  "A2.GF.opt92": "92 chromosomes each",
+  "A2.GF.opt46": "46 chromosomes each, the same as the parent",
+  "A2.GF.opt46diff": "46 chromosomes each, but different genes",
+  "A2.GF.fb23": {
+    "building": "Halving happens when eggs and sperm are made, not in mitosis. Mitosis keeps the full set.",
+    "beginning": "Mitosis keeps all 46."
+  },
+  "A2.GF.fb92": {
+    "building": "The copy is shared between the two cells, so the number does not double.",
+    "beginning": "The copies are shared. Each cell gets 46."
+  },
+  "A2.GF.fb46": {
+    "building": "Mitosis copies all 46, then shares them: each new cell gets the full set.",
+    "beginning": "Each new cell has 46, the same as the parent."
+  },
+  "A2.GF.fb46diff": {
+    "building": "Each half of an X is an exact copy, so both cells carry the same genes.",
+    "beginning": "The genes are the same."
+  },
+  "A2.I2.prompt": {
+    "building": "A cell divides. One new cell gets 3 chromosomes; the other gets 5. The parent had 4. What went wrong?",
+    "beginning": "One new cell has 3. One has 5. What went wrong?"
+  },
+  "A2.I2.hint": {
+    "building": "3 + 5 = 8: the cell did copy. Where did the halves of the Xs go?",
+    "beginning": "Look at where the halves went."
+  },
+  "A2.I2.optNoCopy": "The cell forgot to copy its chromosomes.",
+  "A2.I2.optBoth": "Both halves of one X went into the same cell.",
+  "A2.I2.optExtraCopy": "The cell copied one chromosome twice.",
+  "A2.I2.optNormal": "Nothing; new cells are often different.",
+  "A2.I2.fbNoCopy": {
+    "building": "Without copying there would be only 4 chromosomes to share, not 8.",
+    "beginning": "There were 8. It did copy."
+  },
+  "A2.I2.fbBoth": {
+    "building": "One X sent both halves to one cell: that cell got an extra, and the other is missing one.",
+    "beginning": "Both halves went to one cell."
+  },
+  "A2.I2.fbExtraCopy": {
+    "building": "Then there would be 9 halves, not 8. The count is right; the sharing went wrong.",
+    "beginning": "The count is 8. The sharing went wrong."
+  },
+  "A2.I2.fbNormal": {
+    "building": "Mitosis makes two cells that match the parent. A cell missing a chromosome has a problem.",
+    "beginning": "New cells should match the parent."
+  },
+  "A2.check.title": "Checkpoint",
+  "A2.check.body": {
+    "building": "Three questions about cells dividing. Show what you know on your own: hints and worked steps are off.",
+    "beginning": "Three questions. Work on your own."
+  },
+  "A2.C1.prompt": {
+    "building": "Divide this cell from a different animal so both new cells match the parent.",
+    "beginning": "Divide this cell. Both new cells must match the parent."
+  },
+  "A2.C1.fb.correct": {
+    "building": "Both new cells match the parent.",
+    "beginning": "Both cells match."
+  },
+  "A2.C2.prompt": {
+    "building": "After mitosis, how does the DNA in each new cell compare with the parent cell's DNA?",
+    "beginning": "How is the DNA in the new cells?"
+  },
+  "A2.C2.optHalf": "Each new cell has half of the parent's DNA.",
+  "A2.C2.optDiffer": "The two new cells have different genes.",
+  "A2.C2.optDouble": "Each new cell has twice as many chromosomes.",
+  "A2.C2.optSame": "Each new cell has the same DNA as the parent.",
+  "A2.C2.fbHalf": {
+    "building": "Mitosis copies first, so each cell gets a full set.",
+    "beginning": "Each cell gets a full set."
+  },
+  "A2.C2.fbDiffer": {
+    "building": "The two halves of each X are exact copies, so both cells get the same genes.",
+    "beginning": "Both cells get the same genes."
+  },
+  "A2.C2.fbDouble": {
+    "building": "The copies are shared out, one half to each cell, so the number stays the same.",
+    "beginning": "The number stays the same."
+  },
+  "A2.C2.fbSame": {
+    "building": "Same DNA, same chromosomes: two identical copies of the parent cell.",
+    "beginning": "Same DNA as the parent."
+  },
+  "A2.C3.prompt": {
+    "building": "Before dividing, a cell has 6 chromosomes, and each one is an X. After mitosis, what does each new cell have?",
+    "beginning": "A cell has 6 X-shaped chromosomes. It divides. What does each new cell have?"
+  },
+  "A2.C3.opt6and6": "6 chromosomes, 6 DNA molecules",
+  "A2.C3.opt3and6": "3 chromosomes, 6 DNA molecules",
+  "A2.C3.opt6and12": "6 chromosomes, 12 DNA molecules",
+  "A2.C3.opt12and12": "12 chromosomes, 12 DNA molecules",
+  "A2.C3.fb6and6": {
+    "building": "Each new cell gets one half of each X: 6 single chromosomes, 6 DNA molecules.",
+    "beginning": "6 and 6."
+  },
+  "A2.C3.fb3and6": {
+    "building": "Mitosis does not halve the chromosomes: every new cell gets one of each of the 6.",
+    "beginning": "Each cell gets all 6."
+  },
+  "A2.C3.fb6and12": {
+    "building": "The Xs are pulled apart, so the new cells get single halves, not whole Xs.",
+    "beginning": "The Xs are pulled apart."
+  },
+  "A2.C3.fb12and12": {
+    "building": "An X is one chromosome, copied. Its halves are shared between the two cells.",
+    "beginning": "An X is one chromosome."
+  },
+  "A2.end.title": "Copy a cell: done",
+  "A2.end.body1": {
+    "building": "Mitosis copies every chromosome, then pulls the copies apart so each new cell gets one of each.",
+    "beginning": "Mitosis copies, then shares. Each new cell gets one of every chromosome."
+  },
+  "A2.end.body2": {
+    "building": "The two new cells have the same DNA as each other and as the parent. Next: how long does each part of this take?",
+    "beginning": "The new cells have the same DNA as the parent."
+  },
+  "mis.divideWithoutCopy": "A cell can divide without copying first.",
+  "mis.bothHalvesOneCell": "Both halves of an X can go to the same new cell.",
+  "mis.splitByParent": "One new cell gets the mother's chromosomes and the other gets the father's.",
+  "mis.mitosisHalves": "Mitosis halves the number of chromosomes.",
+  "mis.daughtersDiffer": "The two new cells get different genes.",
+  "mis.daughtersKeepX": "The new cells keep whole X-shaped chromosomes.",
+  "ui.phase.attempt": "Try it first",
+  "A2.ui.undo": "Undo"
 }

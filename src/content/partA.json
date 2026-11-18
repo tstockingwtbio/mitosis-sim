@@ -13,7 +13,13 @@
     "gene-is-chromosome": "mis.geneIsChromosome",
     "gene-is-chromatid": "mis.geneIsChromatid",
     "gene-is-cell": "mis.geneIsCell",
-    "copy-doubles-chromosomes": "mis.copyDoublesChromosomes"
+    "copy-doubles-chromosomes": "mis.copyDoublesChromosomes",
+    "divide-without-copy": "mis.divideWithoutCopy",
+    "both-halves-one-cell": "mis.bothHalvesOneCell",
+    "split-by-parent": "mis.splitByParent",
+    "mitosis-halves": "mis.mitosisHalves",
+    "daughters-differ": "mis.daughtersDiffer",
+    "daughters-keep-x": "mis.daughtersKeepX"
   },
   "beats": [
     {
@@ -369,8 +375,195 @@
       "title": "beat.A2.title",
       "module": "A2-copy-a-cell",
       "standard": "SC.HS.6.1.d",
-      "built": false,
-      "steps": []
+      "built": true,
+      "steps": [
+        {
+          "id": "A2-s01",
+          "type": "retrieve",
+          "tasks": [
+            "A2-R1",
+            "A2-R2",
+            "A2-R3",
+            "A2-R4"
+          ]
+        },
+        {
+          "id": "A2-s02",
+          "type": "explain",
+          "scene": "parent",
+          "title": "A2.intro.title",
+          "body": [
+            "A2.intro.body1",
+            "A2.intro.body2"
+          ],
+          "lines": [
+            "VO-A09"
+          ],
+          "cell": {
+            "chromosomes": [
+              {
+                "id": "1M",
+                "pair": 1,
+                "parent": "M",
+                "state": "unreplicated",
+                "length": "long",
+                "alleles": [
+                  "A",
+                  "D"
+                ]
+              },
+              {
+                "id": "1P",
+                "pair": 1,
+                "parent": "P",
+                "state": "unreplicated",
+                "length": "long",
+                "alleles": [
+                  "a",
+                  "D"
+                ]
+              },
+              {
+                "id": "2M",
+                "pair": 2,
+                "parent": "M",
+                "state": "unreplicated",
+                "length": "short",
+                "alleles": [
+                  "B"
+                ]
+              },
+              {
+                "id": "2P",
+                "pair": 2,
+                "parent": "P",
+                "state": "unreplicated",
+                "length": "short",
+                "alleles": [
+                  "b"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "A2-s03",
+          "type": "task",
+          "task": "A2-T1"
+        },
+        {
+          "id": "A2-s04",
+          "type": "explain",
+          "scene": "mitosis",
+          "title": "A2.mitosis.title",
+          "body": [
+            "A2.mitosis.body1",
+            "A2.mitosis.body2",
+            "A2.mitosis.body3"
+          ],
+          "lines": [
+            "VO-A11"
+          ],
+          "sfx": [
+            "SFX-11",
+            "SFX-12"
+          ],
+          "cell": {
+            "chromosomes": [
+              {
+                "id": "1M",
+                "pair": 1,
+                "parent": "M",
+                "state": "unreplicated",
+                "length": "long",
+                "alleles": [
+                  "A",
+                  "D"
+                ]
+              },
+              {
+                "id": "1P",
+                "pair": 1,
+                "parent": "P",
+                "state": "unreplicated",
+                "length": "long",
+                "alleles": [
+                  "a",
+                  "D"
+                ]
+              },
+              {
+                "id": "2M",
+                "pair": 2,
+                "parent": "M",
+                "state": "unreplicated",
+                "length": "short",
+                "alleles": [
+                  "B"
+                ]
+              },
+              {
+                "id": "2P",
+                "pair": 2,
+                "parent": "P",
+                "state": "unreplicated",
+                "length": "short",
+                "alleles": [
+                  "b"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "A2-s05",
+          "type": "task",
+          "task": "A2-G1"
+        },
+        {
+          "id": "A2-s06",
+          "type": "task",
+          "task": "A2-I1"
+        },
+        {
+          "id": "A2-s07",
+          "type": "task",
+          "task": "A2-I2"
+        },
+        {
+          "id": "A2-s08",
+          "type": "intro",
+          "title": "A2.check.title",
+          "body": [
+            "A2.check.body"
+          ]
+        },
+        {
+          "id": "A2-s09",
+          "type": "task",
+          "task": "A2-C1"
+        },
+        {
+          "id": "A2-s10",
+          "type": "task",
+          "task": "A2-C2"
+        },
+        {
+          "id": "A2-s11",
+          "type": "task",
+          "task": "A2-C3"
+        },
+        {
+          "id": "A2-s12",
+          "type": "summary",
+          "title": "A2.end.title",
+          "body": [
+            "A2.end.body1",
+            "A2.end.body2"
+          ]
+        }
+      ],
+      "sequencing": "attempt-first"
     },
     {
       "id": "A2b",
@@ -1453,6 +1646,581 @@
       "prompt": "A0.P1.prompt",
       "frames": "frame.predict",
       "wordBank": "bank.predict"
+    },
+    "A2-R1": {
+      "id": "A2-R1",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "A2.R1.prompt",
+      "answer": "A2.R1.answer"
+    },
+    "A2-R2": {
+      "id": "A2-R2",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "A2.R2.prompt",
+      "answer": "A2.R2.answer"
+    },
+    "A2-R3": {
+      "id": "A2-R3",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "A2.R3.prompt",
+      "answer": "A2.R3.answer"
+    },
+    "A2-R4": {
+      "id": "A2-R4",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "A2.R4.prompt",
+      "answer": "A2.R4.answer"
+    },
+    "A2-T1": {
+      "id": "A2-T1",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "attempt",
+      "status": "draft",
+      "kind": "divide",
+      "prompt": "A2.T1.prompt",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "A",
+              "D"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "a",
+              "D"
+            ]
+          },
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "B"
+            ]
+          },
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "b"
+            ]
+          }
+        ]
+      },
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A2.T1.fb.correct"
+        },
+        {
+          "when": {
+            "divide": "missing"
+          },
+          "misconception": "divide-without-copy",
+          "text": "A2.fb.missing"
+        },
+        {
+          "when": {
+            "divide": "extra"
+          },
+          "misconception": "both-halves-one-cell",
+          "text": "A2.fb.extra"
+        },
+        {
+          "when": {
+            "divide": "mixed"
+          },
+          "misconception": "split-by-parent",
+          "text": "A2.fb.mixed"
+        }
+      ]
+    },
+    "A2-G1": {
+      "id": "A2-G1",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "divide",
+      "prompt": "A2.G1.prompt",
+      "worked": [
+        "A2.G1.step1",
+        "A2.G1.step2",
+        "A2.G1.step3"
+      ],
+      "hints": [
+        "A2.hint1",
+        "A2.hint2"
+      ],
+      "frames": "frame.divide",
+      "wordBank": "bank.divide",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "b"
+            ]
+          },
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "A",
+              "D"
+            ]
+          },
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "B"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "a",
+              "D"
+            ]
+          }
+        ]
+      },
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A2.G1.fb.correct"
+        },
+        {
+          "when": {
+            "divide": "missing"
+          },
+          "misconception": "divide-without-copy",
+          "text": "A2.fb.missing"
+        },
+        {
+          "when": {
+            "divide": "extra"
+          },
+          "misconception": "both-halves-one-cell",
+          "text": "A2.fb.extra"
+        },
+        {
+          "when": {
+            "divide": "mixed"
+          },
+          "misconception": "split-by-parent",
+          "text": "A2.fb.mixed"
+        }
+      ]
+    },
+    "A2-I1": {
+      "id": "A2-I1",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "divide",
+      "prompt": "A2.I1.prompt",
+      "goFurther": "A2-I1-GF",
+      "hints": [
+        "A2.hint1",
+        "A2.hint2"
+      ],
+      "frames": "frame.divide",
+      "wordBank": "bank.divide",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "E"
+            ]
+          },
+          {
+            "id": "3P",
+            "pair": 3,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "g"
+            ]
+          },
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "F"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "e"
+            ]
+          },
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "F"
+            ]
+          },
+          {
+            "id": "3M",
+            "pair": 3,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "G"
+            ]
+          }
+        ]
+      },
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A2.I1.fb.correct"
+        },
+        {
+          "when": {
+            "divide": "missing"
+          },
+          "misconception": "divide-without-copy",
+          "text": "A2.fb.missing"
+        },
+        {
+          "when": {
+            "divide": "extra"
+          },
+          "misconception": "both-halves-one-cell",
+          "text": "A2.fb.extra"
+        },
+        {
+          "when": {
+            "divide": "mixed"
+          },
+          "misconception": "split-by-parent",
+          "text": "A2.fb.mixed"
+        }
+      ]
+    },
+    "A2-I1-GF": {
+      "id": "A2-I1-GF",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "isGoFurther": true,
+      "prompt": "A2.GF.prompt",
+      "hints": [
+        "A2.GF.hint"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A2.GF.opt23",
+          "misconception": "mitosis-halves",
+          "feedback": "A2.GF.fb23"
+        },
+        {
+          "id": "b",
+          "text": "A2.GF.opt92",
+          "misconception": "copy-doubles-chromosomes",
+          "feedback": "A2.GF.fb92"
+        },
+        {
+          "id": "c",
+          "text": "A2.GF.opt46",
+          "correct": true,
+          "feedback": "A2.GF.fb46"
+        },
+        {
+          "id": "d",
+          "text": "A2.GF.opt46diff",
+          "removable": true,
+          "misconception": "daughters-differ",
+          "feedback": "A2.GF.fb46diff"
+        }
+      ]
+    },
+    "A2-I2": {
+      "id": "A2-I2",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A2.I2.prompt",
+      "hints": [
+        "A2.I2.hint"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A2.I2.optNoCopy",
+          "misconception": "divide-without-copy",
+          "feedback": "A2.I2.fbNoCopy"
+        },
+        {
+          "id": "b",
+          "text": "A2.I2.optBoth",
+          "correct": true,
+          "feedback": "A2.I2.fbBoth"
+        },
+        {
+          "id": "c",
+          "text": "A2.I2.optExtraCopy",
+          "removable": true,
+          "misconception": "copy-doubles-chromosomes",
+          "feedback": "A2.I2.fbExtraCopy"
+        },
+        {
+          "id": "d",
+          "text": "A2.I2.optNormal",
+          "misconception": "daughters-differ",
+          "feedback": "A2.I2.fbNormal"
+        }
+      ]
+    },
+    "A2-C1": {
+      "id": "A2-C1",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "divide",
+      "prompt": "A2.C1.prompt",
+      "cell": {
+        "chromosomes": [
+          {
+            "id": "3M",
+            "pair": 3,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "G"
+            ]
+          },
+          {
+            "id": "2P",
+            "pair": 2,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "F"
+            ]
+          },
+          {
+            "id": "1P",
+            "pair": 1,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "e"
+            ]
+          },
+          {
+            "id": "2M",
+            "pair": 2,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "medium",
+            "alleles": [
+              "F"
+            ]
+          },
+          {
+            "id": "3P",
+            "pair": 3,
+            "parent": "P",
+            "state": "unreplicated",
+            "length": "short",
+            "alleles": [
+              "g"
+            ]
+          },
+          {
+            "id": "1M",
+            "pair": 1,
+            "parent": "M",
+            "state": "unreplicated",
+            "length": "long",
+            "alleles": [
+              "E"
+            ]
+          }
+        ]
+      },
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A2.C1.fb.correct"
+        },
+        {
+          "when": {
+            "divide": "missing"
+          },
+          "misconception": "divide-without-copy",
+          "text": "A2.fb.missing"
+        },
+        {
+          "when": {
+            "divide": "extra"
+          },
+          "misconception": "both-halves-one-cell",
+          "text": "A2.fb.extra"
+        },
+        {
+          "when": {
+            "divide": "mixed"
+          },
+          "misconception": "split-by-parent",
+          "text": "A2.fb.mixed"
+        }
+      ]
+    },
+    "A2-C2": {
+      "id": "A2-C2",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A2.C2.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A2.C2.optHalf",
+          "misconception": "mitosis-halves",
+          "feedback": "A2.C2.fbHalf"
+        },
+        {
+          "id": "b",
+          "text": "A2.C2.optDiffer",
+          "misconception": "daughters-differ",
+          "feedback": "A2.C2.fbDiffer"
+        },
+        {
+          "id": "c",
+          "text": "A2.C2.optDouble",
+          "misconception": "copy-doubles-chromosomes",
+          "feedback": "A2.C2.fbDouble"
+        },
+        {
+          "id": "d",
+          "text": "A2.C2.optSame",
+          "correct": true,
+          "feedback": "A2.C2.fbSame"
+        }
+      ]
+    },
+    "A2-C3": {
+      "id": "A2-C3",
+      "beat": "A2",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A2.C3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A2.C3.opt6and6",
+          "correct": true,
+          "feedback": "A2.C3.fb6and6"
+        },
+        {
+          "id": "b",
+          "text": "A2.C3.opt3and6",
+          "misconception": "mitosis-halves",
+          "feedback": "A2.C3.fb3and6"
+        },
+        {
+          "id": "c",
+          "text": "A2.C3.opt6and12",
+          "misconception": "daughters-keep-x",
+          "feedback": "A2.C3.fb6and12"
+        },
+        {
+          "id": "d",
+          "text": "A2.C3.opt12and12",
+          "misconception": "x-is-two-chromosomes",
+          "feedback": "A2.C3.fb12and12"
+        }
+      ]
     }
   }
 }

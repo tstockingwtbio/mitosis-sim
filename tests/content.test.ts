@@ -17,7 +17,7 @@ function keysOfTask(task: Task): string[] {
   if ('hints' in task && task.hints) keys.push(...task.hints);
   if ('frames' in task && task.frames) keys.push(task.frames);
   if ('wordBank' in task && task.wordBank) keys.push(task.wordBank);
-  if (task.kind === 'count' || task.kind === 'pair') keys.push(...task.feedback.map((f) => f.text));
+  if (task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide') keys.push(...task.feedback.map((f) => f.text));
   if (task.kind === 'choice') for (const o of task.options) keys.push(o.text, o.feedback);
   return keys;
 }
@@ -130,6 +130,17 @@ describe('partA.json', () => {
     }
   });
 
+  it('divide tasks start from an uncopied cell of complete pairs', () => {
+    for (const task of Object.values(part.tasks)) {
+      if (task.kind !== 'divide') continue;
+      for (const c of task.cell.chromosomes) expect(c.state, task.id).toBe('unreplicated');
+      const pairs = new Map<number, string[]>();
+      for (const c of task.cell.chromosomes) pairs.set(c.pair, [...(pairs.get(c.pair) ?? []), c.parent]);
+      for (const [, ps] of pairs) expect(ps.sort(), task.id).toEqual(['M', 'P']);
+      expect(task.feedback.some((r) => r.when === 'correct'), task.id).toBe(true);
+    }
+  });
+
   it('choice items have exactly one correct answer that is never removable', () => {
     for (const task of Object.values(part.tasks)) {
       if (task.kind !== 'choice') continue;
@@ -142,7 +153,7 @@ describe('partA.json', () => {
 
   it('every wrong-answer feedback names a known misconception', () => {
     for (const task of Object.values(part.tasks)) {
-      const rules = task.kind === 'count' || task.kind === 'pair' ? task.feedback : [];
+      const rules = task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide' ? task.feedback : [];
       for (const r of rules) if (r.misconception) expect(part.misconceptions[r.misconception], r.misconception).toBeDefined();
       if (task.kind === 'choice')
         for (const o of task.options) if (o.misconception) expect(part.misconceptions[o.misconception]).toBeDefined();

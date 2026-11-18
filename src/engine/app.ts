@@ -19,13 +19,15 @@ import { countTask } from './tasks/count';
 import { pairTask } from './tasks/pair';
 import { choiceTask } from './tasks/choice';
 import { predictTask } from './tasks/predict';
+import { divideTask } from './tasks/divide';
 
 /** Explain scenes that show a chromosome model, so the count strip appears. */
-const COUNT_SCENES = ['pairs', 'replicate'];
+const COUNT_SCENES = ['pairs', 'replicate', 'parent', 'mitosis'];
 
 const MODULES: Record<string, () => Promise<BeatModule>> = {
   'A0-cold-open': () => import('../modules/A0-cold-open/index'),
   'A1-chromosome-primer': () => import('../modules/A1-chromosome-primer/index'),
+  'A2-copy-a-cell': () => import('../modules/A2-copy-a-cell/index'),
 };
 
 /** Settings that change what the panel shows; the step re-renders. */
@@ -197,7 +199,7 @@ export class App {
   /** Which parts of the workspace a step needs. */
   private layoutFor(step: Step, task?: Task): { stage: boolean; counts: boolean } {
     if (step.type === 'explain') return { stage: true, counts: COUNT_SCENES.includes(step.scene) };
-    if (step.type === 'task' && task && (task.kind === 'count' || task.kind === 'pair')) return { stage: true, counts: true };
+    if (step.type === 'task' && task && (task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide')) return { stage: true, counts: true };
     return { stage: false, counts: false };
   }
 
@@ -285,6 +287,7 @@ export class App {
       else if (task.kind === 'pair') this.view = pairTask(ctx, task, this.content);
       else if (task.kind === 'choice') this.view = choiceTask(ctx, task, this.content);
       else if (task.kind === 'predict') this.view = predictTask(ctx, task);
+      else if (task.kind === 'divide') this.view = divideTask(ctx, task, this.content);
     } else if (step.type === 'explain') {
       const items = step.body.map((k) => paragraph(k));
       items.forEach((it) => this.body.appendChild(it.el));
