@@ -1282,5 +1282,257 @@
   "A2b.fb.look.telophase": {
     "building": "{right} of {total} match the answer key. Look again at cell {n}: two new nuclei; the cell pinching in two means telophase.",
     "beginning": "Look again at cell {n}. It is telophase."
-  }
+  },
+  "A3.gene.bone": "Bone gene",
+  "A3.gene.muscle": "Muscle gene",
+  "A3.gene.skin": "Skin gene",
+  "A3.gene.bone.tab": "bone",
+  "A3.gene.muscle.tab": "muscle",
+  "A3.gene.skin.tab": "skin",
+  "A3.kind.undecided": "Undecided cell",
+  "A3.kind.mixed": "Mixed-up cell",
+  "A3.kind.bone": "Bone cell",
+  "A3.kind.muscle": "Muscle cell",
+  "A3.kind.skin": "Skin cell",
+  "A3.ui.nowA": "This cell is now: {kind}.",
+  "A3.ui.chromosomes": "This cell's chromosomes",
+  "A3.ui.everyCell": "Every cell in the lump has these chromosomes",
+  "A3.ui.sameDna": "Same chromosomes in all three cells",
+  "A3.R1.prompt": {
+    "building": "In a slice of a growing tail tip, why are more cells dividing than in an old tail?",
+    "beginning": "Why are more cells dividing in a growing tail?"
+  },
+  "A3.R1.answer": "The tip is still growing; the old tail has finished growing.",
+  "A3.R2.prompt": {
+    "building": "After mitosis, how does the DNA in the two new cells compare with the parent?",
+    "beginning": "How is the DNA in the new cells?"
+  },
+  "A3.R2.answer": "It is the same: each new cell gets one copy of every chromosome.",
+  "A3.R3.prompt": {
+    "building": "What is a gene?",
+    "beginning": "What is a gene?"
+  },
+  "A3.R3.answer": "A section of a chromosome: one \"recipe\" in the cookbook.",
+  "A3.R4.prompt": {
+    "building": "Name two kinds of tissue in Fig's tail.",
+    "beginning": "Name two tissues in Fig's tail."
+  },
+  "A3.R4.answer": "Any two of: skin, muscle, bone.",
+  "A3.stump.title": "A lump of undecided cells",
+  "A3.stump.body1": {
+    "building": "At the stump, cells divide by mitosis and make a lump of new cells. Every one of them has exactly the same chromosomes.",
+    "beginning": "New cells grow at the stump. They all have the same chromosomes."
+  },
+  "A3.stump.body2": {
+    "building": "Look at the count strip: same information as the parent. So how do some become bone and others skin?",
+    "beginning": "How can they become different?"
+  },
+  "A3.T1.prompt": {
+    "building": "Here is one cell from the lump. Try to make it into a bone cell. Switch genes on and off, then check.",
+    "beginning": "Make a bone cell. Switch genes on or off. Then check."
+  },
+  "A3.T1.fb.correct": {
+    "building": "A bone cell: only the bone gene is switched on. The chromosomes did not change at all.",
+    "beginning": "Bone cell! Only the bone gene is on."
+  },
+  "A3.fb.none": {
+    "building": "No genes are switched on, so the cell is still undecided. Switch on the gene for the kind of cell you want.",
+    "beginning": "Switch on a gene."
+  },
+  "A3.fb.wrong": {
+    "building": "That gene makes a different kind of cell. Every cell has all three genes: choose which one to switch on.",
+    "beginning": "That is a different gene."
+  },
+  "A3.fb.extra": {
+    "building": "More than one gene is switched on, so the cell is mixed up. A finished cell uses only the genes for its own job.",
+    "beginning": "Too many genes are on."
+  },
+  "A3.trick.title": "Same cookbook, different pages",
+  "A3.trick.body1": {
+    "building": "Every cell in Fig has every gene. A bone cell switches on the bone gene; a muscle cell, the muscle gene; a skin cell, the skin gene.",
+    "beginning": "Every cell has the same genes. Each kind of cell turns on different genes."
+  },
+  "A3.trick.body2": {
+    "building": "Look at the chromosomes under each cell: they are identical. Only the switched-on gene (glowing) is different.",
+    "beginning": "The chromosomes are the same. Only the glowing gene is different."
+  },
+  "A3.G1.prompt": {
+    "building": "Make this cell into a muscle cell.",
+    "beginning": "Make a muscle cell."
+  },
+  "A3.G1.step1": {
+    "building": "Find the muscle gene and switch it on.",
+    "beginning": "Switch on the muscle gene."
+  },
+  "A3.G1.step2": {
+    "building": "Make sure the other genes are switched off, then check.",
+    "beginning": "Switch the other genes off."
+  },
+  "A3.hint1": {
+    "building": "Each kind of cell uses the gene for its own job.",
+    "beginning": "Use the gene for the job."
+  },
+  "A3.hint2": {
+    "building": "Only one tissue gene should be on. Switching a gene does not add or remove any DNA.",
+    "beginning": "Only one gene on."
+  },
+  "A3.G1.fb.correct": {
+    "building": "A muscle cell: same chromosomes, with the muscle gene switched on.",
+    "beginning": "Muscle cell!"
+  },
+  "A3.I1.prompt": {
+    "building": "Make this cell into a skin cell, with Fig's orange colour.",
+    "beginning": "Make a skin cell."
+  },
+  "A3.I1.fb.correct": {
+    "building": "A skin cell. Three cell types so far, all from the same chromosomes.",
+    "beginning": "Skin cell!"
+  },
+  "A3.I2.prompt": {
+    "building": "Compare the DNA in one of Fig's skin cells and one of her bone cells.",
+    "beginning": "How is the DNA in a skin cell and a bone cell?"
+  },
+  "A3.I2.hint": {
+    "building": "Both cells came from the same lump, by mitosis.",
+    "beginning": "Both came from the same cells."
+  },
+  "A3.I2.optDiffDna": "Different DNA: skin DNA and bone DNA",
+  "A3.I2.optSame": "The same DNA, with different genes switched on",
+  "A3.I2.optLost": "The skin cell lost its bone genes",
+  "A3.I2.optHalf": "Each has half of Fig's DNA",
+  "A3.I2.fbDiffDna": {
+    "building": "Mitosis copies the DNA exactly, so every cell has the same DNA.",
+    "beginning": "All cells have the same DNA."
+  },
+  "A3.I2.fbSame": {
+    "building": "Same DNA in every cell; what differs is which genes are switched on.",
+    "beginning": "Same DNA. Different genes on."
+  },
+  "A3.I2.fbLost": {
+    "building": "The bone gene is still there in a skin cell, just switched off.",
+    "beginning": "The gene is still there."
+  },
+  "A3.I2.fbHalf": {
+    "building": "Mitosis gives every cell a full set.",
+    "beginning": "Every cell has a full set."
+  },
+  "A3.GF.prompt": {
+    "building": "Does a muscle cell in Fig's tail still have the skin gene?",
+    "beginning": "Does a muscle cell have the skin gene?"
+  },
+  "A3.GF.hint": {
+    "building": "Think about what mitosis copies.",
+    "beginning": "What does mitosis copy?"
+  },
+  "A3.GF.optGone": "No, it was removed when the cell became muscle",
+  "A3.GF.optThere": "Yes, but it is switched off",
+  "A3.GF.optOther": "No, muscle cells have muscle DNA",
+  "A3.GF.optMutant": "Only if the cell has a mutation",
+  "A3.GF.fbGone": {
+    "building": "Nothing is removed. The skin gene is still on the chromosome, switched off.",
+    "beginning": "It is still there."
+  },
+  "A3.GF.fbThere": {
+    "building": "Every cell keeps every gene. A muscle cell just doesn't use the skin gene.",
+    "beginning": "Yes. It is switched off."
+  },
+  "A3.GF.fbOther": {
+    "building": "All of Fig's cells have the same DNA.",
+    "beginning": "All cells have the same DNA."
+  },
+  "A3.GF.fbMutant": {
+    "building": "No mutation is needed: the gene is there in every cell.",
+    "beginning": "Every cell has the gene."
+  },
+  "A3.regrow.title": "Rebuilding the tail",
+  "A3.regrow.body": {
+    "building": "Mitosis made enough cells; switching genes on made them bone, muscle and skin. Step through the regrowth again.",
+    "beginning": "Mitosis makes the cells. Genes make them different."
+  },
+  "A3.P1.prompt": {
+    "building": "In the cold open, you predicted where Fig's body got the instructions to build a new tail. Read your prediction. What would you change or add now?",
+    "beginning": "Read your idea. What do you know now?"
+  },
+  "ui.predict.earlier": "Your earlier prediction",
+  "ui.predict.noEarlier": "(No prediction saved.)",
+  "frame.revise": {
+    "building": "Now I think the instructions came from ___, and the cells became different because ___.",
+    "beginning": "The instructions are in the ___."
+  },
+  "bank.revise": "DNA, chromosomes, genes, mitosis, switched on, same",
+  "A3.check.title": "Checkpoint",
+  "A3.check.body": {
+    "building": "Three questions about how cells become different. Show what you know on your own: hints are off.",
+    "beginning": "Three questions. Work on your own."
+  },
+  "A3.C1.prompt": {
+    "building": "A person's liver cell and nerve cell look and act very differently. Which is true about their genes?",
+    "beginning": "A liver cell and a nerve cell. Which is true?"
+  },
+  "A3.C1.optLiverMore": "The liver cell has extra genes the nerve cell does not",
+  "A3.C1.optDifferent": "They have completely different DNA",
+  "A3.C1.optSame": "They have the same genes, but use different ones",
+  "A3.C1.optNoGenes": "The nerve cell has no genes left",
+  "A3.C1.fbLiverMore": {
+    "building": "Every cell has the same genes; none gets extra.",
+    "beginning": "Same genes."
+  },
+  "A3.C1.fbDifferent": {
+    "building": "Cells in one body have the same DNA, made by mitosis.",
+    "beginning": "Same DNA."
+  },
+  "A3.C1.fbSame": {
+    "building": "Same genes in both; each switches on the ones for its job.",
+    "beginning": "Same genes. Different ones on."
+  },
+  "A3.C1.fbNoGenes": {
+    "building": "Every cell keeps all its genes.",
+    "beginning": "Every cell keeps its genes."
+  },
+  "A3.C2.prompt": {
+    "building": "Make this cell into a skin cell.",
+    "beginning": "Make a skin cell."
+  },
+  "A3.C2.fb.correct": {
+    "building": "Skin gene on, the others off.",
+    "beginning": "Skin cell!"
+  },
+  "A3.C3.prompt": {
+    "building": "Why is a muscle cell not a skin cell?",
+    "beginning": "Why is a muscle cell not a skin cell?"
+  },
+  "A3.C3.optSwitched": "It has the muscle gene switched on and the skin gene switched off",
+  "A3.C3.optMutation": "A mutation turned its skin gene into a muscle gene",
+  "A3.C3.optFewer": "It has fewer chromosomes than a skin cell",
+  "A3.C3.optParent": "It came from a different parent cell with different DNA",
+  "A3.C3.fbSwitched": {
+    "building": "Same genes, different ones switched on.",
+    "beginning": "Different genes are on."
+  },
+  "A3.C3.fbMutation": {
+    "building": "No mutation is needed: both genes are in every cell.",
+    "beginning": "Every cell has both genes."
+  },
+  "A3.C3.fbFewer": {
+    "building": "Mitosis gives every cell the same chromosomes.",
+    "beginning": "Same chromosomes."
+  },
+  "A3.C3.fbParent": {
+    "building": "All the cells came from the same lump, with the same DNA.",
+    "beginning": "Same DNA."
+  },
+  "A3.end.title": "Build a body: done",
+  "A3.end.body1": {
+    "building": "Every cell has the same DNA, copied by mitosis. Cells become bone, muscle or skin by switching on different genes.",
+    "beginning": "Same DNA in every cell. Different genes are on."
+  },
+  "A3.end.body2": {
+    "building": "That is how Fig rebuilt her tail. Next: where this model is wrong.",
+    "beginning": "Next: what this model leaves out."
+  },
+  "mis.undecidedIsDone": "A cell with no tissue genes switched on is finished.",
+  "mis.genesAdded": "A cell becomes a new type by gaining new genes.",
+  "mis.allGenesOn": "A cell switches on all of its genes.",
+  "mis.differentDnaPerTissue": "Each kind of tissue has its own DNA.",
+  "mis.genesLost": "Cells lose the genes they don't use."
 }

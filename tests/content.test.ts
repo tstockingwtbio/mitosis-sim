@@ -17,7 +17,7 @@ function keysOfTask(task: Task): string[] {
   if ('hints' in task && task.hints) keys.push(...task.hints);
   if ('frames' in task && task.frames) keys.push(task.frames);
   if ('wordBank' in task && task.wordBank) keys.push(task.wordBank);
-  if (task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide') keys.push(...task.feedback.map((f) => f.text));
+  if (task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide' || task.kind === 'switch' || task.kind === 'timing') keys.push(...task.feedback.map((f) => f.text));
   if (task.kind === 'choice') for (const o of task.options) keys.push(o.text, o.feedback);
   return keys;
 }

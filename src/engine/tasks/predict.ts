@@ -22,6 +22,12 @@ export function predictTask(ctx: StepContext, task: PredictTask): StepView {
   const readables = [prompt];
   ctx.body.appendChild(prompt.el);
 
+  if (task.showEarlier) {
+    const earlier = progress().responses[task.showEarlier];
+    ctx.body.appendChild(
+      h('div', { class: 'card' }, h('h3', {}, t('ui.predict.earlier')), h('p', { class: 'earlier', dir: 'auto' }, earlier?.trim() ? earlier : t('ui.predict.noEarlier'))),
+    );
+  }
   const card = h('div', { class: 'card' });
   const id = `predict-${task.id}`;
   card.appendChild(h('label', { for: id, style: { fontWeight: '700' } }, t('ui.predict.label')));

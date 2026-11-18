@@ -22,13 +22,14 @@ import { predictTask } from './tasks/predict';
 import { divideTask } from './tasks/divide';
 
 /** Explain scenes that show a chromosome model, so the count strip appears. */
-const COUNT_SCENES = ['pairs', 'replicate', 'parent', 'mitosis'];
+const COUNT_SCENES = ['pairs', 'replicate', 'parent', 'mitosis', 'stump', 'three-cells'];
 
 const MODULES: Record<string, () => Promise<BeatModule>> = {
   'A0-cold-open': () => import('../modules/A0-cold-open/index'),
   'A1-chromosome-primer': () => import('../modules/A1-chromosome-primer/index'),
   'A2-copy-a-cell': () => import('../modules/A2-copy-a-cell/index'),
   'A2b-clock-the-cycle': () => import('../modules/A2b-clock-the-cycle/index'),
+  'A3-build-a-body': () => import('../modules/A3-build-a-body/index'),
 };
 
 /** Settings that change what the panel shows; the step re-renders. */
@@ -202,6 +203,7 @@ export class App {
     if (step.type === 'explain') return { stage: true, counts: COUNT_SCENES.includes(step.scene) };
     if (step.type === 'task' && task && (task.kind === 'count' || task.kind === 'pair' || task.kind === 'divide')) return { stage: true, counts: true };
     if (step.type === 'task' && task?.kind === 'sort') return { stage: true, counts: false };
+    if (step.type === 'task' && task?.kind === 'switch') return { stage: true, counts: true };
     return { stage: false, counts: false };
   }
 

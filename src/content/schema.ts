@@ -52,7 +52,8 @@ export type FeedbackWhen =
   | 'other'
   | { chromosomes?: number; dnaMolecules?: number }
   | { pair: 'same-parent' | 'different-genes' }
-  | { divide: DivideError };
+  | { divide: DivideError }
+  | { switch: 'none' | 'wrong' | 'extra' };
 
 /** What went wrong when a cell was divided. */
 export type DivideError = 'missing' | 'extra' | 'mixed';
@@ -106,6 +107,17 @@ export interface ChoiceTask extends TaskBase, Supports {
 /** Open prediction before instruction (OBSERVE): saved, not graded. */
 export interface PredictTask extends TaskBase, Supports {
   kind: 'predict';
+  /** Show the student's answer to an earlier prediction (task ID) to revise. */
+  showEarlier?: string;
+}
+
+export type GeneName = 'bone' | 'muscle' | 'skin';
+
+/** Switch genes on and off to make one kind of cell (A3). */
+export interface SwitchTask extends TaskBase, Supports {
+  kind: 'switch';
+  target: GeneName;
+  feedback: FeedbackRule[];
 }
 
 /**
@@ -137,7 +149,7 @@ export interface TimingTask extends TaskBase, Supports {
   feedback: FeedbackRule[];
 }
 
-export type Task = RecallTask | CountTask | PairTask | ChoiceTask | PredictTask | DivideTask | SortTask | TimingTask;
+export type Task = RecallTask | CountTask | PairTask | ChoiceTask | PredictTask | DivideTask | SortTask | TimingTask | SwitchTask;
 
 export interface NarrationLine {
   /** Voice-over ID from the story bible, e.g. VO-A04. */

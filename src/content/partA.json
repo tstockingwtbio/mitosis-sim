@@ -28,7 +28,12 @@
     "percent-is-count": "mis.percentIsCount",
     "hours-is-percent": "mis.hoursIsPercent",
     "hours-not-scaled": "mis.hoursNotScaled",
-    "percent-not-of-total": "mis.percentNotOfTotal"
+    "percent-not-of-total": "mis.percentNotOfTotal",
+    "undecided-is-done": "mis.undecidedIsDone",
+    "genes-added": "mis.genesAdded",
+    "all-genes-on": "mis.allGenesOn",
+    "different-dna-per-tissue": "mis.differentDnaPerTissue",
+    "genes-lost": "mis.genesLost"
   },
   "beats": [
     {
@@ -733,8 +738,128 @@
       "title": "beat.A3.title",
       "module": "A3-build-a-body",
       "standard": "SC.HS.6.1.d",
-      "built": false,
-      "steps": []
+      "built": true,
+      "steps": [
+        {
+          "id": "A3-s01",
+          "type": "retrieve",
+          "tasks": [
+            "A3-R1",
+            "A3-R2",
+            "A3-R3",
+            "A3-R4"
+          ]
+        },
+        {
+          "id": "A3-s02",
+          "type": "explain",
+          "scene": "stump",
+          "title": "A3.stump.title",
+          "body": [
+            "A3.stump.body1",
+            "A3.stump.body2"
+          ],
+          "lines": [
+            "VO-A12"
+          ]
+        },
+        {
+          "id": "A3-s03",
+          "type": "task",
+          "task": "A3-T1"
+        },
+        {
+          "id": "A3-s04",
+          "type": "explain",
+          "scene": "three-cells",
+          "title": "A3.trick.title",
+          "body": [
+            "A3.trick.body1",
+            "A3.trick.body2"
+          ],
+          "lines": [
+            "VO-A13"
+          ],
+          "sfx": [
+            "SFX-13",
+            "SFX-14"
+          ]
+        },
+        {
+          "id": "A3-s05",
+          "type": "task",
+          "task": "A3-G1"
+        },
+        {
+          "id": "A3-s06",
+          "type": "task",
+          "task": "A3-I1"
+        },
+        {
+          "id": "A3-s07",
+          "type": "task",
+          "task": "A3-I2"
+        },
+        {
+          "id": "A3-s08",
+          "type": "explain",
+          "scene": "regrow",
+          "title": "A3.regrow.title",
+          "body": [
+            "A3.regrow.body"
+          ],
+          "lines": [],
+          "panels": [
+            {
+              "asset": "IMG-C03"
+            }
+          ],
+          "assets": [
+            "IMG-C03"
+          ],
+          "sfx": [
+            "SFX-20"
+          ]
+        },
+        {
+          "id": "A3-s09",
+          "type": "task",
+          "task": "A3-P1"
+        },
+        {
+          "id": "A3-s10",
+          "type": "intro",
+          "title": "A3.check.title",
+          "body": [
+            "A3.check.body"
+          ]
+        },
+        {
+          "id": "A3-s11",
+          "type": "task",
+          "task": "A3-C1"
+        },
+        {
+          "id": "A3-s12",
+          "type": "task",
+          "task": "A3-C2"
+        },
+        {
+          "id": "A3-s13",
+          "type": "task",
+          "task": "A3-C3"
+        },
+        {
+          "id": "A3-s14",
+          "type": "summary",
+          "title": "A3.end.title",
+          "body": [
+            "A3.end.body1",
+            "A3.end.body2"
+          ]
+        }
+      ],
+      "sequencing": "attempt-first"
     },
     {
       "id": "A4",
@@ -2798,6 +2923,372 @@
           "text": "A2b.C3.optCannot",
           "misconception": "phases-separate",
           "feedback": "A2b.C3.fbCannot"
+        }
+      ]
+    },
+    "A3-R1": {
+      "id": "A3-R1",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-module",
+      "prompt": "A3.R1.prompt",
+      "answer": "A3.R1.answer"
+    },
+    "A3-R2": {
+      "id": "A3-R2",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "A3.R2.prompt",
+      "answer": "A3.R2.answer"
+    },
+    "A3-R3": {
+      "id": "A3-R3",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "last-week",
+      "prompt": "A3.R3.prompt",
+      "answer": "A3.R3.answer"
+    },
+    "A3-R4": {
+      "id": "A3-R4",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "retrieve",
+      "status": "draft",
+      "kind": "recall",
+      "source": "prior-unit",
+      "prompt": "A3.R4.prompt",
+      "answer": "A3.R4.answer"
+    },
+    "A3-T1": {
+      "id": "A3-T1",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "attempt",
+      "status": "draft",
+      "kind": "switch",
+      "target": "bone",
+      "prompt": "A3.T1.prompt",
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A3.T1.fb.correct"
+        },
+        {
+          "when": {
+            "switch": "none"
+          },
+          "misconception": "undecided-is-done",
+          "text": "A3.fb.none"
+        },
+        {
+          "when": {
+            "switch": "wrong"
+          },
+          "misconception": "genes-added",
+          "text": "A3.fb.wrong"
+        },
+        {
+          "when": {
+            "switch": "extra"
+          },
+          "misconception": "all-genes-on",
+          "text": "A3.fb.extra"
+        }
+      ]
+    },
+    "A3-G1": {
+      "id": "A3-G1",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "guided",
+      "status": "draft",
+      "kind": "switch",
+      "target": "muscle",
+      "prompt": "A3.G1.prompt",
+      "worked": [
+        "A3.G1.step1",
+        "A3.G1.step2"
+      ],
+      "hints": [
+        "A3.hint1",
+        "A3.hint2"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A3.G1.fb.correct"
+        },
+        {
+          "when": {
+            "switch": "none"
+          },
+          "misconception": "undecided-is-done",
+          "text": "A3.fb.none"
+        },
+        {
+          "when": {
+            "switch": "wrong"
+          },
+          "misconception": "genes-added",
+          "text": "A3.fb.wrong"
+        },
+        {
+          "when": {
+            "switch": "extra"
+          },
+          "misconception": "all-genes-on",
+          "text": "A3.fb.extra"
+        }
+      ]
+    },
+    "A3-I1": {
+      "id": "A3-I1",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "switch",
+      "target": "skin",
+      "prompt": "A3.I1.prompt",
+      "hints": [
+        "A3.hint1",
+        "A3.hint2"
+      ],
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A3.I1.fb.correct"
+        },
+        {
+          "when": {
+            "switch": "none"
+          },
+          "misconception": "undecided-is-done",
+          "text": "A3.fb.none"
+        },
+        {
+          "when": {
+            "switch": "wrong"
+          },
+          "misconception": "genes-added",
+          "text": "A3.fb.wrong"
+        },
+        {
+          "when": {
+            "switch": "extra"
+          },
+          "misconception": "all-genes-on",
+          "text": "A3.fb.extra"
+        }
+      ]
+    },
+    "A3-I2": {
+      "id": "A3-I2",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A3.I2.prompt",
+      "goFurther": "A3-I2-GF",
+      "hints": [
+        "A3.I2.hint"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A3.I2.optDiffDna",
+          "misconception": "different-dna-per-tissue",
+          "feedback": "A3.I2.fbDiffDna"
+        },
+        {
+          "id": "b",
+          "text": "A3.I2.optSame",
+          "correct": true,
+          "feedback": "A3.I2.fbSame"
+        },
+        {
+          "id": "c",
+          "text": "A3.I2.optLost",
+          "misconception": "genes-lost",
+          "feedback": "A3.I2.fbLost"
+        },
+        {
+          "id": "d",
+          "text": "A3.I2.optHalf",
+          "removable": true,
+          "misconception": "mitosis-halves",
+          "feedback": "A3.I2.fbHalf"
+        }
+      ]
+    },
+    "A3-I2-GF": {
+      "id": "A3-I2-GF",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "choice",
+      "isGoFurther": true,
+      "prompt": "A3.GF.prompt",
+      "hints": [
+        "A3.GF.hint"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A3.GF.optGone",
+          "misconception": "genes-lost",
+          "feedback": "A3.GF.fbGone"
+        },
+        {
+          "id": "b",
+          "text": "A3.GF.optThere",
+          "correct": true,
+          "feedback": "A3.GF.fbThere"
+        },
+        {
+          "id": "c",
+          "text": "A3.GF.optOther",
+          "misconception": "different-dna-per-tissue",
+          "feedback": "A3.GF.fbOther"
+        },
+        {
+          "id": "d",
+          "text": "A3.GF.optMutant",
+          "removable": true,
+          "misconception": "genes-added",
+          "feedback": "A3.GF.fbMutant"
+        }
+      ]
+    },
+    "A3-P1": {
+      "id": "A3-P1",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "independent",
+      "status": "draft",
+      "kind": "predict",
+      "prompt": "A3.P1.prompt",
+      "showEarlier": "A0-P1",
+      "frames": "frame.revise",
+      "wordBank": "bank.revise"
+    },
+    "A3-C1": {
+      "id": "A3-C1",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A3.C1.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A3.C1.optLiverMore",
+          "misconception": "genes-added",
+          "feedback": "A3.C1.fbLiverMore"
+        },
+        {
+          "id": "b",
+          "text": "A3.C1.optDifferent",
+          "misconception": "different-dna-per-tissue",
+          "feedback": "A3.C1.fbDifferent"
+        },
+        {
+          "id": "c",
+          "text": "A3.C1.optSame",
+          "correct": true,
+          "feedback": "A3.C1.fbSame"
+        },
+        {
+          "id": "d",
+          "text": "A3.C1.optNoGenes",
+          "misconception": "genes-lost",
+          "feedback": "A3.C1.fbNoGenes"
+        }
+      ]
+    },
+    "A3-C2": {
+      "id": "A3-C2",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "switch",
+      "target": "skin",
+      "prompt": "A3.C2.prompt",
+      "feedback": [
+        {
+          "when": "correct",
+          "text": "A3.C2.fb.correct"
+        },
+        {
+          "when": {
+            "switch": "none"
+          },
+          "misconception": "undecided-is-done",
+          "text": "A3.fb.none"
+        },
+        {
+          "when": {
+            "switch": "wrong"
+          },
+          "misconception": "genes-added",
+          "text": "A3.fb.wrong"
+        },
+        {
+          "when": {
+            "switch": "extra"
+          },
+          "misconception": "all-genes-on",
+          "text": "A3.fb.extra"
+        }
+      ]
+    },
+    "A3-C3": {
+      "id": "A3-C3",
+      "beat": "A3",
+      "standard": "SC.HS.6.1.d",
+      "phase": "checkpoint",
+      "status": "draft",
+      "kind": "choice",
+      "prompt": "A3.C3.prompt",
+      "options": [
+        {
+          "id": "a",
+          "text": "A3.C3.optSwitched",
+          "correct": true,
+          "feedback": "A3.C3.fbSwitched"
+        },
+        {
+          "id": "b",
+          "text": "A3.C3.optMutation",
+          "misconception": "genes-added",
+          "feedback": "A3.C3.fbMutation"
+        },
+        {
+          "id": "c",
+          "text": "A3.C3.optFewer",
+          "misconception": "genes-lost",
+          "feedback": "A3.C3.fbFewer"
+        },
+        {
+          "id": "d",
+          "text": "A3.C3.optParent",
+          "misconception": "different-dna-per-tissue",
+          "feedback": "A3.C3.fbParent"
         }
       ]
     }
