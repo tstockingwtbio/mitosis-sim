@@ -97,63 +97,64 @@ The narrator voices every story line; characters speak only in on-screen speech 
 
 ### Narrator voice
 
-- **English (Building):** warm, dry, curious documentary narrator in mid-life; unhurried; amused rather than jokey. Eleven v3, stability around 50%. Direction tags in brackets go into the text exactly as written.
-- **Other languages (Beginning):** a native-speaker voice from the Voice Library for each language, same warm and clear delivery, slower pace, no audio tags.
+- **English (Building):** warm, dry, curious narrator in their late 40s with a clear General American accent; calm natural pace; amused rather than jokey. Eleven v3.
+- **Direction tags:** type them into the text exactly as written. One emotion tag at the start of the words it colors; [pause] right before a punchline or a key term; at most 3 or 4 tags per line, or v3 starts to sound erratic. If a take reads a tag aloud, regenerate it.
+- **Other languages (Beginning):** a native-speaker voice from the Voice Library for each language, same warm and clear delivery, slower pace, [pause] tags only.
 - **Dari and Farsi** get separate scripts and, if possible, separate voices. Have a Dari speaker check that the Dari audio doesn't sound Iranian.
 
 ### Part A
 
 | ID | Beat | Building (English) | Beginning (translate) |
 | --- | --- | --- | --- |
-| VO-A01 | A0 | \[dry\] This is Fig. Fig is an ember newt, and Fig is not impressed. \[pause\] She is about to have a very bad Tuesday. | This is Fig. Fig is a newt. |
-| VO-A02 | A0 | Herons are patient, elegant, and roughly as merciful as a stapler. \[beat\] This one leaves with half of Fig's tail. | A bird bites Fig. Fig loses half of her tail. |
-| VO-A03 | A0 | \[curious\] Six weeks later, the tail is back. Bone, muscle, skin, even the stripes. Nobody sent Fig instructions. \[pause\] Or did they? | Six weeks later, Fig has a new tail. How? |
-| VO-A04 | A1 | Let's go inside. Fig is built from cells, and every one of them keeps a copy of the instructions in its nucleus. | Fig's body is made of cells. Each cell has a nucleus. The nucleus holds the instructions. |
-| VO-A05 | A1 | The instructions are written in DNA, wound up into chromosomes. Unwound, the DNA in one of your cells would stretch about two meters. Wound up, it fits somewhere you'd need a microscope to find. | DNA is wound up into chromosomes. |
-| VO-A06 | A1 | A gene is a section of a chromosome. If a chromosome is a cookbook, genes are the recipes. | A gene is a part of a chromosome. |
-| VO-A07 | A1 | Chromosomes come in pairs: one from mom, one from dad. Same genes, sometimes different versions. Our model newt has two pairs. \[amused\] Real newts have more. Ours is the budget edition. | Chromosomes come in pairs. One comes from the mother. One comes from the father. |
-| VO-A08 | A1 | Before a cell divides, it copies every chromosome. The copy stays stuck to the original in the middle, which is where the famous X shape comes from. \[firm\] An X is one chromosome, copied. Not two. | The cell copies each chromosome. The X shape is one chromosome and its copy. |
-| VO-A09 | A2 | Your turn. One cell has to become two, and each new cell needs exactly what the old one had. No more, no less. Cells are fussy about this. | Make two cells. Each new cell needs all of the chromosomes. |
-| VO-A10 | A2 | \[gently\] That cell is missing a chromosome. It will not be building any tails. Try again. | This cell is missing a chromosome. Try again. |
-| VO-A11 | A2 | Two cells, identical to each other and to the parent. That's mitosis: a copy machine with very high standards. | Two cells. They are the same. This is mitosis. |
-| VO-A12 | A3 | At the stump, a lump of cells grows that hasn't decided what to be yet. Every one has the full set of instructions. \[curious\] So how does one become bone and another become skin? | New cells grow. They all have the same DNA. Some become bone. Some become skin. How? |
-| VO-A13 | A3 | Here's the trick. Every cell has every gene, but each cell only uses some of them. Bone cells switch on bone genes; skin cells switch on skin genes. Same cookbook, different pages open. | Every cell has the same genes. Each kind of cell turns on different genes. |
-| VO-A14 | A4 | \[confiding\] A confession: this model is wrong in several ways. Real cells don't wait for you to drag anything, and real newts have far more chromosomes. Models are useful because they leave things out. | This model is simple. Real cells are different in some ways. |
-| VO-A15 | A-end | Breeding season is next month. Ada isn't worried: every cell in Fig has the same DNA, which makes the paperwork easy. \[pause\] \[dry\] Hold that thought. | Next month, Fig will have babies. Remember: every cell in Fig has the same DNA. |
+| VO-A01 | A0 | [proud] This [pause] is Fig. [pause, curious] Fig is an ember newt, and Fig [pause] is not impressed. [pause] She's about to have a very bad Tuesday. | This is Fig. Fig is a newt. |
+| VO-A02 | A0 | Herons are patient, elegant, [drawn out] and [deadpan] about as merciful as a pop quiz on a Monday. [pause] This one [pause] leaves with half of Fig's tail. | A bird bites Fig. Fig loses half of her tail. |
+| VO-A03 | A0 | Six weeks later, [pause, amazed] the tail's back. Bone, muscle, skin, even the stripes. [curious] Nobody sent Fig any instructions. [pause] [mysteriously] Or did they? | Six weeks later, Fig has a new tail. How? |
+| VO-A04 | A1 | [warm] Let's take a look inside. Fig's built from cells, and every one of them keeps a copy of the instructions tucked away in its nucleus. | Fig's body is made of cells. Each cell has a nucleus. The nucleus holds the instructions. |
+| VO-A05 | A1 | Those instructions are written in DNA, coiled up into chromosomes. [impressed] Stretch out the DNA from [drawn out] just one of your cells, and it'd reach about [pause] two meters. Coiled up, it fits somewhere you'd need a microscope to find. | DNA is wound up into chromosomes. |
+| VO-A06 | A1 | A gene is just a [emphasis] section of a chromosome. [pause] Think of a chromosome as a cookbook, and the genes are its recipes. | A gene is a part of a chromosome. |
+| VO-A07 | A1 | Chromosomes come in pairs: one from mom, [pause] one from dad. Within each set the same genes, but [curious] sometimes different versions. Our [emphasis] model newt has just [emphasis] two pairs. [amused] Real newts have a lot more. [deadpan] Ours [pause] is the budget edition. | Chromosomes come in pairs. One comes from the mother. One comes from the father. |
+| VO-A08 | A1 | Before a cell divides, it copies [emphasis]every single chromosome. The copy stays stuck to the original in the middle - that's where the famous X shape comes from. [pause] [kind but pointed] An X is one chromosome, [pause] copied. [curious emphasis] Not two. | The cell copies each chromosome. The X shape is one chromosome and its copy. |
+| VO-A09 | A2 | [encouraging] Your turn. One cell has to become two, and each new cell needs [emphasis]exactly what the old one had. [pause] No more, no less. [dry humor] Cells are very fussy about this. | Make two cells. Each new cell needs all of the chromosomes. |
+| VO-A10 | A2 | [kindly] That cell's missing a chromosome. [dry] It won't be building any tails. [encouraging] Try again. | This cell is missing a chromosome. Try again. |
+| VO-A11 | A2 | [pleased] Two cells, identical to each other [emphasis]and to the parent. [pause] [proud]That's mitosis: a copy machine with very high standards. | Two cells. They are the same. This is mitosis. |
+| VO-A12 | A3 | [curious and intriguied] At the stump, a [slight emphasis] little lump of cells starts to grow. They haven't yet decided what to be, but [subtle emphasis] every one of them has the full set of instructions. [pause] [curious] So [long pause]] how does one turn into bone, [pause] and another turn into skin? | New cells grow. They all have the same DNA. Some become bone. Some become skin. How? |
+| VO-A13 | A3 | [proud] Here's the trick. Every cell has every gene, but each one only uses some of them. Bone cells switch on the bone genes, and skin cells switch on the skin genes. [pause] Same cookbook, [pause] different recipes. | Every cell has the same genes. Each kind of cell turns on different genes. |
+| VO-A14 | A4 | [confiding] Okay, confession time: this model gets a few things wrong. Real cells don't wait around for you to drag anything, and real newts have way more chromosomes. [pause] But that's the point of a model. It's useful because it leaves things out. | This model is simple. Real cells are different in some ways. |
+| VO-A15 | A-end | Breeding season's next month, and Ada isn't worried. Every cell in Fig has the same DNA, so the paperwork should be easy... [pause] [dry humor, drawn out] Hold that thought. | Next month, Fig will have babies. Remember: every cell in Fig has the same DNA. |
 
 ### Part A: Clock the cycle (A2b)
 
 | ID | Beat | Building (English) | Beginning (translate) |
 | --- | --- | --- | --- |
-| VO-A16 | A2b | Mitosis looks dramatic, but it's the short part. Most of a cell's life is spent growing, working and copying its DNA. That stretch is called interphase, and despite the name, nothing about it is restful. | Most of the time, a cell grows and copies its DNA. This is called interphase. |
-| VO-A17 | A2b | Ada has photographed a slice of Fig's new tail tip, frozen mid-growth. Every cell was caught at a different moment, like a crowd photo at a marathon. | This is a photo of cells from Fig's new tail. Each cell is at a different stage. |
-| VO-A18 | A2b | Watch me sort the first three. Round nucleus, no visible chromosomes: interphase. Chromosomes lined up across the middle: metaphase. Two sets pulling apart: anaphase. | Look at this cell. The chromosomes are in a line in the middle. This is metaphase. |
-| VO-A19 | A2b | Here's the clever bit. If 3 cells out of 36 are in metaphase, a cell spends about 3/36 of its cycle in metaphase. Count the crowd, and you can time the race. | More cells in a stage means the stage takes more time. |
-| VO-A20 | A2b | Now a slice of Fig's old tail, the part the heron left alone. Almost every cell is in interphase. These cells finished growing and have jobs to do. | In the old tail, most cells are not dividing. They have jobs. |
-| VO-A21 | A2b | Same count, different organism. Noor's lunch onion has been growing roots in a jar on the windowsill, and root tips grow too. \[dry\] The onion is also unimpressed. | Now count cells from an onion root. |
+| VO-A16 | A2b | Mitosis gets all the attention, but it's actually the short part. A cell spends most of its life growing, working, and copying its DNA. That stretch is called [brief pause] interphase, [dry humor] and no, it is not a nap. | Most of the time, a cell grows and copies its DNA. This is called interphase. |
+| VO-A17 | A2b | Ada's taken a photo of a thin slice of Fig's new tail tip, frozen mid-growth. [curious] Every cell got caught at a different moment, kind of like a crowd photo at a school dance. | This is a photo of cells from Fig's new tail. Each cell is at a different stage. |
+| VO-A18 | A2b | [teacherly] Watch me sort the first three. Round nucleus, no chromosomes you can see? [pause] That's interphase. Chromosomes lined up across the middle? [pause] Metaphase. Two sets pulling apart? [pause] Anaphase. | Look at this cell. The chromosomes are in a line in the middle. This is metaphase. |
+| VO-A19 | A2b | [calmly excited] Now here's the clever part. If 3 out of 36 cells are in metaphase, then a cell spends about [pause, sound of a few presses on a calculator] one-twelfth of its cycle there. [pause] It's like that dance photo from earlier: if most people are huddled awkwardly together and, well, not dancing, then that's probably where most of the night went. | More cells in a stage means the stage takes more time. |
+| VO-A20 | A2b | Now let's look at Fig's old tail, the part the heron left alone. [surprised] Almost every cell's in interphase. [warm] These cells are done growing, and they've got jobs to do. | In the old tail, most cells are not dividing. They have jobs. |
+| VO-A21 | A2b | Same count, different organism. Noor's lunch onion has been sprouting roots in a jar on the windowsill, and root tips grow fast. [pause] [dry] The onion's also unimpressed. | Now count cells from an onion root. |
 
 ### Part B
 
 | ID | Beat | Building (English) | Beginning (translate) |
 | --- | --- | --- | --- |
-| VO-B01 | B0 | Breeding season. Barty has grown a crest the size of his ego, which for a newt is considerable. Fig lays her eggs, and six hatchlings emerge. | Fig lays eggs. Six babies hatch. |
-| VO-B02 | B0 | For the breeding records, Ada runs a routine DNA test on a tiny tail clip. The father is Barty. The mother is \[pause\] not Fig. | Ada tests the DNA. Barty is the father. The test says Fig is not the mother. |
-| VO-B03 | B0 | Tomás is certain someone swapped the eggs. Noor suspects the paperwork. \[dry\] Fig suspects nothing, because she is a newt. | Tomás thinks someone changed the eggs. |
-| VO-B04 | B1 | Before we accuse anyone, let's check what we already know. | What do you remember? |
-| VO-B05 | B2 | Eggs and sperm are made differently from tail cells. Each gets half the chromosomes, one from every pair, so egg plus sperm adds up to a full set again. | Eggs and sperm have half of the chromosomes. Egg plus sperm makes a full set. |
-| VO-B06 | B2 | Which chromosome from each pair lands in an egg is down to chance. And before they separate, partner chromosomes swap sections. Less a copy machine, more a card shuffle. | The chromosomes mix. Each egg is different. |
-| VO-B07 | B2 | That's why no two hatchlings look alike. Same parents, different shuffle. | Brothers and sisters are different because of this mixing. |
-| VO-B08 | B3 | Side by side, then. Mitosis copies everything and makes two identical cells. Meiosis halves and shuffles, and makes cells that are each one of a kind. | Mitosis makes cells that are the same. Meiosis makes different cells with half of the chromosomes. |
-| VO-B09 | B4 | Three tanks, three ways new variation turns up. Your job: find out which ones reach the next generation. | Test three tanks. Which changes go to the babies? |
-| VO-B10 | B4 | Hatchling 5 has a white tail tip, and neither parent has one. Somewhere in an egg-making cell, a copy went slightly wrong, and the mistake was passed on. | Baby 5 has a white tail tip. A copying mistake in an egg made this. |
-| VO-B11 | B4 | This newt spent too long under the old UV lamp, and a patch of her skin changed. Her babies' skin did not. \[beat\] Skin cells, it turns out, don't make babies. | UV light changed this newt's skin. Her babies did not get the change. |
-| VO-B12 | B4 | So, the rule: only changes in egg-making or sperm-making cells get passed on. \[pause\] Which brings us back to Fig. | Only changes in egg cells or sperm cells go to the babies. |
-| VO-B13 | B5 | Fig laid those eggs; there's camera footage. The test says she isn't their mother. One of these facts is going to have to give. | The camera shows Fig laid the eggs. But the DNA does not match. Why? |
-| VO-B14 | B5 | Ada can test any tissue you choose. Choose carefully. \[dry\] Newts are not fond of being sampled. | Choose which parts of Fig to test. |
-| VO-B15 | B5 | Tail, skin, blood: all one DNA. Egg cells: a different DNA, and a perfect match for the hatchlings. \[pause\] \[quietly amazed\] Fig is two newts in one body. | Fig's tail, skin and blood have one DNA. Fig's egg cells have a different DNA. The egg cells match the babies. |
-| VO-B16 | B5 | Long before she hatched, two embryos fused into one. Each kept copying itself faithfully by mitosis. One built her tail and skin; the other built the cells that make her eggs. The test sampled the wrong Fig. | Two embryos joined together. One made her skin. One made her egg cells. |
-| VO-B17 | B6 | Now make your case. Tomás still thinks the eggs were swapped. Convince him. | Write your claim. Use evidence. |
-| VO-B18 | B7 | Fig, it turns out, is technically her own aunt. \[pause\] \[dry\] She remains unimpressed. | Fig is the mother. She is still not impressed. |
+| VO-B01 | B0 | [cheerful] It's breeding season. Barty over here has grown a crest the size of his ego to impress the ladies, [pause, dry humor] which, for a newt, is considerable. Fig lays her eggs, and six hatchlings wriggle out. | Fig lays eggs. Six babies hatch. |
+| VO-B02 | B0 | For the breeding records, Ada runs a routine DNA test on a tiny tail clip. The father's Barty. [pause] The mother is... [pause, confused] not Fig. | Ada tests the DNA. Barty is the father. The test says Fig is not the mother. |
+| VO-B03 | B0 | [exasperated] Tomás is sure someone swapped the eggs. Noor blames the paperwork. [pause] [dry] Fig suspects nothing, [pause] because she's a newt. | Tomás thinks someone changed the eggs. |
+| VO-B04 | B1 | [trying to calm others down] Before we accuse anybody, let's check what we already know. | What do you remember? |
+| VO-B05 | B2 | Eggs and sperm aren't made the way tail cells are. Each one gets half the chromosomes, [pause] one from every pair, so when egg meets sperm, you're back to a full set. | Eggs and sperm have half of the chromosomes. Egg plus sperm makes a full set. |
+| VO-B06 | B2 | Which chromosome from each pair ends up in an egg? [pause] That's down to chance. And before they split up, partner chromosomes trade sections. [amused] It's less of a copy machine and more of a card shuffle. | The chromosomes mix. Each egg is different. |
+| VO-B07 | B2 | That's why no two hatchlings look alike. [pause] Same parents, different shuffle. | Brothers and sisters are different because of this mixing. |
+| VO-B08 | B3 | Let's put them side by side. Mitosis copies everything and makes two identical cells. [pause] Meiosis halves and shuffles, and every cell it makes is one of a kind. | Mitosis makes cells that are the same. Meiosis makes different cells with half of the chromosomes. |
+| VO-B09 | B4 | [brisk] Three tanks, three ways new variation shows up. Your job? [pause] Figure out which ones make it to the next generation. | Test three tanks. Which changes go to the babies? |
+| VO-B10 | B4 | Hatchling 5 has a white tail tip, and neither parent has one. [curious] Somewhere in an egg-making cell, a copy went a little bit wrong, [pause] and the mistake got passed on. | Baby 5 has a white tail tip. A copying mistake in an egg made this. |
+| VO-B11 | B4 | This newt spent way too long under the old UV lamp, and a patch of her skin changed. Her babies' skin [pause] didn't. [dry] Turns out skin cells [pause, dry humor]don't make babies. | UV light changed this newt's skin. Her babies did not get the change. |
+| VO-B12 | B4 | [teacherly] So here's the rule: only changes in egg-making or sperm-making cells get passed on. [pause] [mysterious] Which brings us back to Fig the newt. | Only changes in egg cells or sperm cells go to the babies. |
+| VO-B13 | B5 | Fig laid those eggs. There's camera footage. [pause] But the test says [pause] she is [subtle emphasis] not the mother. [serious] One of those facts has got to give. | The camera shows Fig laid the eggs. But the DNA does not match. Why? |
+| VO-B14 | B5 | Ada can test any tissue you pick, so pick carefully. [dry] Newts aren't big fans of being sampled. | Choose which parts of Fig to test. |
+| VO-B15 | B5 | Tail, skin, blood: [pause] all the same DNA. Egg cells? [pause] Different DNA, and a perfect match for the hatchlings... [pause, quietly amazed] Fig is two newts [pause] in one body. | Fig's tail, skin and blood have one DNA. Fig's egg cells have a different DNA. The egg cells match the babies. |
+| VO-B16 | B5 | [warm] Long before she hatched, two embryos fused into one. Each one kept copying itself perfectly, by mitosis. One built her tail and skin. The other built the cells that make her eggs. [pause] [dry humor] The test just sampled the wrong Fig. | Two embryos joined together. One made her skin. One made her egg cells. |
+| VO-B17 | B6 | [encouraging] Now make your case. Tomás still thinks the eggs were swapped. [pause] Convince him. | Write your claim. Use evidence. |
+| VO-B18 | B7 | So Fig, it turns out, [pause] is technically her own aunt... [pause] [dry] She's still not impressed. | Fig is the mother. She is still not impressed. |
 
 ## 4. Sound-effect prompts (ElevenLabs)
 
@@ -167,7 +168,7 @@ The narrator voices every story line; characters speak only in on-screen speech 
 | SFX-02 | Panel opens | A sheet of stiff paper sliding quickly across a wooden desk and stopping with a clear papery flick, close-mic'd, dry. | 0.6 s | No |
 | SFX-03 | Panel closes | A thick paper card snapping shut against another card, crisp and present, close-mic'd, dry room. | 0.4 s | No |
 | SFX-04 | Correct answer | A bright, clear two-note wooden marimba chime, rising, warm and present, short tail. | 0.8 s | No |
-| SFX-05 | Try again | A quick, clear paper crumple followed by a short low wooden knock, playful not harsh, close-mic'd. | 0.7 s | No |
+| SFX-05 | Try again | A bright, clear two singular note wooden marimba chime, falling (wah wah), warm and present, short tail. | 0.7 s | No |
 | SFX-06 | Footnote pops open | A crisp paper tab flipping up with a small, clear pop, close-mic'd, dry. | 0.4 s | No |
 | SFX-07 | Hint revealed | A pencil making a quick, clear scribble on paper, then a light tap, close-mic'd. | 0.8 s | No |
 | SFX-08 | Evidence card filed | A rubber stamp landing firmly on a paper card with a clear thump, then the card dropping into a wooden box. | 1.0 s | No |

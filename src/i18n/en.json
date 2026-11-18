@@ -1,9 +1,11 @@
 {
-  "_meta": { "lang": "en", "dir": "ltr", "name": "English" },
-
+  "_meta": {
+    "lang": "en",
+    "dir": "ltr",
+    "name": "English"
+  },
   "app.title": "The Mother Who Didn't Match",
   "app.part": "Part A",
-
   "beat.A0.title": "Cold open",
   "beat.A1.title": "Meet the chromosomes",
   "beat.A2.title": "Copy a cell",
@@ -11,7 +13,6 @@
   "beat.A3.title": "Build a body",
   "beat.A4.title": "Model limits",
   "beat.Aend.title": "What's next",
-
   "ui.chapters": "Chapters",
   "ui.comingSoon": "Coming soon",
   "ui.settings": "Settings",
@@ -23,7 +24,6 @@
   "ui.loading": "Loading…",
   "ui.devId": "Asset",
   "ui.restartBeat": "Start this chapter again",
-
   "ui.count.region": "Counts for the cell on screen",
   "ui.count.chromosomes": "Chromosomes",
   "ui.count.dna": "DNA molecules",
@@ -33,7 +33,6 @@
   "ui.count.none": "No parent cell yet",
   "ui.count.hidden": "Count to find out",
   "ui.count.announce": "Chromosomes: {c}. DNA molecules: {d}.",
-
   "ui.cap.region": "Captions",
   "ui.cap.read": "Read this line aloud",
   "ui.cap.stop": "Stop reading",
@@ -41,14 +40,12 @@
   "ui.cap.next": "Next line",
   "ui.cap.lineOf": "Line {n} of {total}",
   "ui.readPanel": "Read this text aloud",
-
   "ui.anim.region": "Animation controls",
   "ui.anim.play": "Play",
   "ui.anim.pause": "Pause",
   "ui.anim.replay": "Replay",
   "ui.anim.step": "Next stage",
   "ui.anim.stageOf": "Stage {n} of {total}",
-
   "ui.phase.retrieve": "Warm-up",
   "ui.phase.explain": "Learn",
   "ui.phase.worked": "Watch how",
@@ -56,7 +53,6 @@
   "ui.phase.independent": "On your own",
   "ui.phase.checkpoint": "Checkpoint",
   "ui.phase.goFurther": "Go further",
-
   "ui.retrieve.title": "Warm-up: what do you remember?",
   "ui.retrieve.intro": "Write what you remember. Then show the answer and check yourself.",
   "ui.retrieve.write": "Your answer",
@@ -65,7 +61,6 @@
   "ui.retrieve.got": "I remembered it",
   "ui.retrieve.notYet": "Not yet",
   "ui.retrieve.itemOf": "Question {n} of {total}",
-
   "ui.task.check": "Check",
   "ui.task.correct": "Correct!",
   "ui.task.notYet": "Not yet.",
@@ -88,12 +83,16 @@
   "ui.task.undo": "Undo last pair",
   "ui.task.pairSlot": "Pair {n}",
   "ui.task.supportsOff": "Supports are off for the checkpoint.",
-  "ui.task.revealCount": { "building": "Here is the answer: {c} chromosomes and {d} DNA molecules. The numbers on the model show how to count them.", "beginning": "The answer: {c} chromosomes. {d} DNA molecules." },
-  "ui.task.revealPairs": { "building": "Here are the pairs. Each pair is the same length with the same gene letters: one M and one P.", "beginning": "Here are the pairs. One M and one P." },
+  "ui.task.revealCount": {
+    "building": "Here is the answer: {c} chromosomes and {d} DNA molecules. The numbers on the model show how to count them.",
+    "beginning": "The answer: {c} chromosomes. {d} DNA molecules."
+  },
+  "ui.task.revealPairs": {
+    "building": "Here are the pairs. Each pair is the same length with the same gene letters: one M and one P.",
+    "beginning": "Here are the pairs. One M and one P."
+  },
   "ui.task.firstTry": "Saved: your first answer counts for the checkpoint.",
-
   "ui.summary.score": "Checkpoint: {n} of {total} right on the first try.",
-
   "model.parent.M": "M",
   "model.parent.P": "P",
   "model.aria.chrom": "{length} chromosome from the {parent}, {state}, gene letters {alleles}",
@@ -109,7 +108,6 @@
   "model.legend.M": "Solid paper, M: from the mother",
   "model.legend.P": "Striped paper, P: from the father",
   "model.centromere": "centromere",
-
   "settings.title": "Settings",
   "settings.intro": "These tools are for everyone. Change them any time.",
   "settings.sec.reading": "Reading and listening",
@@ -165,7 +163,6 @@
   "settings.reset.done": "Progress erased.",
   "settings.on": "On",
   "settings.off": "Off",
-
   "glossary.title": "Word meaning",
   "glossary.cell": "The smallest unit of life. Fig's body is made of millions of cells.",
   "glossary.tissue": "A group of cells that work together, like muscle or skin.",
@@ -177,7 +174,6 @@
   "glossary.centromere": "The pinched point where the two halves of a copied chromosome are joined.",
   "glossary.copy": "Before a cell divides, it makes a copy of each chromosome. The copy stays joined to the original.",
   "glossary.version": "Different forms of the same gene, like A and a.",
-
   "glossary.words.cell": "cell|cells",
   "glossary.words.tissue": "tissue|tissues",
   "glossary.words.nucleus": "nucleus",
@@ -188,29 +184,90 @@
   "glossary.words.centromere": "centromere|centromeres",
   "glossary.words.copy": "copied|copies|copy",
   "glossary.words.version": "version|versions",
-
-  "vo.VO-A01": { "building": "[dry] This is Fig. Fig is an ember newt, and Fig is not impressed. [pause] She is about to have a very bad Tuesday.", "beginning": "This is Fig. Fig is a newt." },
-  "vo.VO-A02": { "building": "Herons are patient, elegant, and roughly as merciful as a stapler. [beat] This one leaves with half of Fig's tail.", "beginning": "A bird bites Fig. Fig loses half of her tail." },
-  "vo.VO-A03": { "building": "[curious] Six weeks later, the tail is back. Bone, muscle, skin, even the stripes. Nobody sent Fig instructions. [pause] Or did they?", "beginning": "Six weeks later, Fig has a new tail. How?" },
-  "vo.VO-A04": { "building": "Let's go inside. Fig is built from cells, and every one of them keeps a copy of the instructions in its nucleus.", "beginning": "Fig's body is made of cells. Each cell has a nucleus. The nucleus holds the instructions." },
-  "vo.VO-A05": { "building": "The instructions are written in DNA, wound up into chromosomes. Unwound, the DNA in one of your cells would stretch about two meters. Wound up, it fits somewhere you'd need a microscope to find.", "beginning": "DNA is wound up into chromosomes." },
-  "vo.VO-A06": { "building": "A gene is a section of a chromosome. If a chromosome is a cookbook, genes are the recipes.", "beginning": "A gene is a part of a chromosome." },
-  "vo.VO-A07": { "building": "Chromosomes come in pairs: one from mom, one from dad. Same genes, sometimes different versions. Our model newt has two pairs. [amused] Real newts have more. Ours is the budget edition.", "beginning": "Chromosomes come in pairs. One comes from the mother. One comes from the father." },
-  "vo.VO-A08": { "building": "Before a cell divides, it copies every chromosome. The copy stays stuck to the original in the middle, which is where the famous X shape comes from. [firm] An X is one chromosome, copied. Not two.", "beginning": "The cell copies each chromosome. The X shape is one chromosome and its copy." },
-  "vo.VO-A09": { "building": "Your turn. One cell has to become two, and each new cell needs exactly what the old one had. No more, no less. Cells are fussy about this.", "beginning": "Make two cells. Each new cell needs all of the chromosomes." },
-  "vo.VO-A10": { "building": "[gently] That cell is missing a chromosome. It will not be building any tails. Try again.", "beginning": "This cell is missing a chromosome. Try again." },
-  "vo.VO-A11": { "building": "Two cells, identical to each other and to the parent. That's mitosis: a copy machine with very high standards.", "beginning": "Two cells. They are the same. This is mitosis." },
-  "vo.VO-A12": { "building": "At the stump, a lump of cells grows that hasn't decided what to be yet. Every one has the full set of instructions. [curious] So how does one become bone and another become skin?", "beginning": "New cells grow. They all have the same DNA. Some become bone. Some become skin. How?" },
-  "vo.VO-A13": { "building": "Here's the trick. Every cell has every gene, but each cell only uses some of them. Bone cells switch on bone genes; skin cells switch on skin genes. Same cookbook, different pages open.", "beginning": "Every cell has the same genes. Each kind of cell turns on different genes." },
-  "vo.VO-A14": { "building": "[confiding] A confession: this model is wrong in several ways. Real cells don't wait for you to drag anything, and real newts have far more chromosomes. Models are useful because they leave things out.", "beginning": "This model is simple. Real cells are different in some ways." },
-  "vo.VO-A15": { "building": "Breeding season is next month. Ada isn't worried: every cell in Fig has the same DNA, which makes the paperwork easy. [pause] [dry] Hold that thought.", "beginning": "Next month, Fig will have babies. Remember: every cell in Fig has the same DNA." },
-  "vo.VO-A16": { "building": "Mitosis looks dramatic, but it's the short part. Most of a cell's life is spent growing, working and copying its DNA. That stretch is called interphase, and despite the name, nothing about it is restful.", "beginning": "Most of the time, a cell grows and copies its DNA. This is called interphase." },
-  "vo.VO-A17": { "building": "Ada has photographed a slice of Fig's new tail tip, frozen mid-growth. Every cell was caught at a different moment, like a crowd photo at a marathon.", "beginning": "This is a photo of cells from Fig's new tail. Each cell is at a different stage." },
-  "vo.VO-A18": { "building": "Watch me sort the first three. Round nucleus, no visible chromosomes: interphase. Chromosomes lined up across the middle: metaphase. Two sets pulling apart: anaphase.", "beginning": "Look at this cell. The chromosomes are in a line in the middle. This is metaphase." },
-  "vo.VO-A19": { "building": "Here's the clever bit. If 3 cells out of 36 are in metaphase, a cell spends about 3/36 of its cycle in metaphase. Count the crowd, and you can time the race.", "beginning": "More cells in a stage means the stage takes more time." },
-  "vo.VO-A20": { "building": "Now a slice of Fig's old tail, the part the heron left alone. Almost every cell is in interphase. These cells finished growing and have jobs to do.", "beginning": "In the old tail, most cells are not dividing. They have jobs." },
-  "vo.VO-A21": { "building": "Same count, different organism. Noor's lunch onion has been growing roots in a jar on the windowsill, and root tips grow too. [dry] The onion is also unimpressed.", "beginning": "Now count cells from an onion root." },
-
+  "vo.VO-A01": {
+    "building": "[proud] This [pause] is Fig. [pause, curious] Fig is an ember newt, and Fig [pause] is not impressed. [pause] She's about to have a very bad Tuesday.",
+    "beginning": "This is Fig. Fig is a newt."
+  },
+  "vo.VO-A02": {
+    "building": "Herons are patient, elegant, [drawn out] and [deadpan] about as merciful as a pop quiz on a Monday. [pause] This one [pause] leaves with half of Fig's tail.",
+    "beginning": "A bird bites Fig. Fig loses half of her tail."
+  },
+  "vo.VO-A03": {
+    "building": "Six weeks later, [pause, amazed] the tail's back. Bone, muscle, skin, even the stripes. [curious] Nobody sent Fig any instructions. [pause] [mysteriously] Or did they?",
+    "beginning": "Six weeks later, Fig has a new tail. How?"
+  },
+  "vo.VO-A04": {
+    "building": "[warm] Let's take a look inside. Fig's built from cells, and every one of them keeps a copy of the instructions tucked away in its nucleus.",
+    "beginning": "Fig's body is made of cells. Each cell has a nucleus. The nucleus holds the instructions."
+  },
+  "vo.VO-A05": {
+    "building": "Those instructions are written in DNA, coiled up into chromosomes. [impressed] Stretch out the DNA from [drawn out] just one of your cells, and it'd reach about [pause] two meters. Coiled up, it fits somewhere you'd need a microscope to find.",
+    "beginning": "DNA is wound up into chromosomes."
+  },
+  "vo.VO-A06": {
+    "building": "A gene is just a [emphasis] section of a chromosome. [pause] Think of a chromosome as a cookbook, and the genes are its recipes.",
+    "beginning": "A gene is a part of a chromosome."
+  },
+  "vo.VO-A07": {
+    "building": "Chromosomes come in pairs: one from mom, [pause] one from dad. Within each set the same genes, but [curious] sometimes different versions. Our [emphasis] model newt has just [emphasis] two pairs. [amused] Real newts have a lot more. [deadpan] Ours [pause] is the budget edition.",
+    "beginning": "Chromosomes come in pairs. One comes from the mother. One comes from the father."
+  },
+  "vo.VO-A08": {
+    "building": "Before a cell divides, it copies [emphasis]every single chromosome. The copy stays stuck to the original in the middle - that's where the famous X shape comes from. [pause] [kind but pointed] An X is one chromosome, [pause] copied. [curious emphasis] Not two.",
+    "beginning": "The cell copies each chromosome. The X shape is one chromosome and its copy."
+  },
+  "vo.VO-A09": {
+    "building": "[encouraging] Your turn. One cell has to become two, and each new cell needs [emphasis]exactly what the old one had. [pause] No more, no less. [dry humor] Cells are very fussy about this.",
+    "beginning": "Make two cells. Each new cell needs all of the chromosomes."
+  },
+  "vo.VO-A10": {
+    "building": "[kindly] That cell's missing a chromosome. [dry] It won't be building any tails. [encouraging] Try again.",
+    "beginning": "This cell is missing a chromosome. Try again."
+  },
+  "vo.VO-A11": {
+    "building": "[pleased] Two cells, identical to each other [emphasis]and to the parent. [pause] [proud]That's mitosis: a copy machine with very high standards.",
+    "beginning": "Two cells. They are the same. This is mitosis."
+  },
+  "vo.VO-A12": {
+    "building": "[curious and intriguied] At the stump, a [slight emphasis] little lump of cells starts to grow. They haven't yet decided what to be, but [subtle emphasis] every one of them has the full set of instructions. [pause] [curious] So [long pause]] how does one turn into bone, [pause] and another turn into skin?",
+    "beginning": "New cells grow. They all have the same DNA. Some become bone. Some become skin. How?"
+  },
+  "vo.VO-A13": {
+    "building": "[proud] Here's the trick. Every cell has every gene, but each one only uses some of them. Bone cells switch on the bone genes, and skin cells switch on the skin genes. [pause] Same cookbook, [pause] different recipes.",
+    "beginning": "Every cell has the same genes. Each kind of cell turns on different genes."
+  },
+  "vo.VO-A14": {
+    "building": "[confiding] Okay, confession time: this model gets a few things wrong. Real cells don't wait around for you to drag anything, and real newts have way more chromosomes. [pause] But that's the point of a model. It's useful because it leaves things out.",
+    "beginning": "This model is simple. Real cells are different in some ways."
+  },
+  "vo.VO-A15": {
+    "building": "Breeding season's next month, and Ada isn't worried. Every cell in Fig has the same DNA, so the paperwork should be easy... [pause] [dry humor, drawn out] Hold that thought.",
+    "beginning": "Next month, Fig will have babies. Remember: every cell in Fig has the same DNA."
+  },
+  "vo.VO-A16": {
+    "building": "Mitosis gets all the attention, but it's actually the short part. A cell spends most of its life growing, working, and copying its DNA. That stretch is called [brief pause] interphase, [dry humor] and no, it is not a nap.",
+    "beginning": "Most of the time, a cell grows and copies its DNA. This is called interphase."
+  },
+  "vo.VO-A17": {
+    "building": "Ada's taken a photo of a thin slice of Fig's new tail tip, frozen mid-growth. [curious] Every cell got caught at a different moment, kind of like a crowd photo at a school dance.",
+    "beginning": "This is a photo of cells from Fig's new tail. Each cell is at a different stage."
+  },
+  "vo.VO-A18": {
+    "building": "[teacherly] Watch me sort the first three. Round nucleus, no chromosomes you can see? [pause] That's interphase. Chromosomes lined up across the middle? [pause] Metaphase. Two sets pulling apart? [pause] Anaphase.",
+    "beginning": "Look at this cell. The chromosomes are in a line in the middle. This is metaphase."
+  },
+  "vo.VO-A19": {
+    "building": "[calmly excited] Now here's the clever part. If 3 out of 36 cells are in metaphase, then a cell spends about [pause, sound of a few presses on a calculator] one-twelfth of its cycle there. [pause] It's like that dance photo from earlier: if most people are huddled awkwardly together and, well, not dancing, then that's probably where most of the night went.",
+    "beginning": "More cells in a stage means the stage takes more time."
+  },
+  "vo.VO-A20": {
+    "building": "Now let's look at Fig's old tail, the part the heron left alone. [surprised] Almost every cell's in interphase. [warm] These cells are done growing, and they've got jobs to do.",
+    "beginning": "In the old tail, most cells are not dividing. They have jobs."
+  },
+  "vo.VO-A21": {
+    "building": "Same count, different organism. Noor's lunch onion has been sprouting roots in a jar on the windowsill, and root tips grow fast. [pause] [dry] The onion's also unimpressed.",
+    "beginning": "Now count cells from an onion root."
+  },
   "mis.xIsTwoChromosomes": "An X is two chromosomes.",
   "mis.xIsOneDna": "An X is one DNA molecule.",
   "mis.pairsCountedAsOne": "A pair counts as one chromosome.",
@@ -223,36 +280,85 @@
   "mis.geneIsChromatid": "A gene is one half of an X.",
   "mis.geneIsCell": "A gene is a kind of cell.",
   "mis.copyDoublesChromosomes": "Copying doubles the number of chromosomes.",
-
-  "fb.recount": { "building": "Count again. Touch each centromere (the dot) once for chromosomes. Then count every rod or half of an X for DNA molecules.", "beginning": "Count again. Count the dots. Then count the rods." },
-  "fb.pairsCountedAsOne": { "building": "You counted pairs. A pair is two chromosomes, so count every rod or X on its own.", "beginning": "A pair is two chromosomes. Count each one." },
-  "fb.dnaDoublesAlways": { "building": "These rods have not been copied yet. One single rod is one DNA molecule.", "beginning": "These are not copied. One rod is one DNA molecule." },
-  "fb.xIsTwoChromosomes": { "building": "You counted each half of an X as a chromosome. An X is one chromosome, copied: count centromeres, not arms.", "beginning": "One X is one chromosome. Count the dots." },
-  "fb.xIsOneDna": { "building": "Each X holds two DNA molecules, one in each half. Count the halves.", "beginning": "One X has two DNA molecules. Count each half." },
-  "fb.pairSameParent": { "building": "Those two both came from the same parent. A pair is one from the mother (M) and one from the father (P).", "beginning": "A pair has one M and one P." },
-  "fb.pairByLook": { "building": "Those two carry different genes: look at the length and the letters. Partners are the same length with the same gene letters, even if the versions differ (A and a).", "beginning": "Partners are the same length. They have the same letters." },
-
-  "hint.pair1": { "building": "Partners are the same length, have the same pattern of light bands, and carry the same genes (the same letter, capital or small).", "beginning": "Find two that are the same length." },
-  "hint.pair2": { "building": "Each pair has one M (solid paper) and one P (striped paper).", "beginning": "Each pair has one M and one P." },
-  "hint.x1": { "building": "An X is one chromosome that has been copied. It has one centromere.", "beginning": "One X is one chromosome." },
-  "hint.x2": { "building": "Each X has two halves. Each half is one DNA molecule.", "beginning": "One X has two DNA molecules." },
-
-  "frame.count": { "building": "There are ___ chromosomes because ___. There are ___ DNA molecules because ___.", "beginning": "I count ___ chromosomes. I count ___ DNA molecules." },
+  "fb.recount": {
+    "building": "Count again. Touch each centromere (the dot) once for chromosomes. Then count every rod or half of an X for DNA molecules.",
+    "beginning": "Count again. Count the dots. Then count the rods."
+  },
+  "fb.pairsCountedAsOne": {
+    "building": "You counted pairs. A pair is two chromosomes, so count every rod or X on its own.",
+    "beginning": "A pair is two chromosomes. Count each one."
+  },
+  "fb.dnaDoublesAlways": {
+    "building": "These rods have not been copied yet. One single rod is one DNA molecule.",
+    "beginning": "These are not copied. One rod is one DNA molecule."
+  },
+  "fb.xIsTwoChromosomes": {
+    "building": "You counted each half of an X as a chromosome. An X is one chromosome, copied: count centromeres, not arms.",
+    "beginning": "One X is one chromosome. Count the dots."
+  },
+  "fb.xIsOneDna": {
+    "building": "Each X holds two DNA molecules, one in each half. Count the halves.",
+    "beginning": "One X has two DNA molecules. Count each half."
+  },
+  "fb.pairSameParent": {
+    "building": "Those two both came from the same parent. A pair is one from the mother (M) and one from the father (P).",
+    "beginning": "A pair has one M and one P."
+  },
+  "fb.pairByLook": {
+    "building": "Those two carry different genes: look at the length and the letters. Partners are the same length with the same gene letters, even if the versions differ (A and a).",
+    "beginning": "Partners are the same length. They have the same letters."
+  },
+  "hint.pair1": {
+    "building": "Partners are the same length, have the same pattern of light bands, and carry the same genes (the same letter, capital or small).",
+    "beginning": "Find two that are the same length."
+  },
+  "hint.pair2": {
+    "building": "Each pair has one M (solid paper) and one P (striped paper).",
+    "beginning": "Each pair has one M and one P."
+  },
+  "hint.x1": {
+    "building": "An X is one chromosome that has been copied. It has one centromere.",
+    "beginning": "One X is one chromosome."
+  },
+  "hint.x2": {
+    "building": "Each X has two halves. Each half is one DNA molecule.",
+    "beginning": "One X has two DNA molecules."
+  },
+  "frame.count": {
+    "building": "There are ___ chromosomes because ___. There are ___ DNA molecules because ___.",
+    "beginning": "I count ___ chromosomes. I count ___ DNA molecules."
+  },
   "bank.count": "centromere, X, half, copied, single rod, pair",
-  "frame.pair": { "building": "These two are partners because ___.", "beginning": "These two are the same ___." },
+  "frame.pair": {
+    "building": "These two are partners because ___.",
+    "beginning": "These two are the same ___."
+  },
   "bank.pair": "same length, same genes, mother, father, M, P",
-
-  "A1.R1.prompt": { "building": "What is the smallest unit that is alive?", "beginning": "What is the smallest living part?" },
+  "A1.R1.prompt": {
+    "building": "What is the smallest unit that is alive?",
+    "beginning": "What is the smallest living part?"
+  },
   "A1.R1.answer": "A cell.",
-  "A1.R2.prompt": { "building": "Name one part that plant cells have and animal cells do not.", "beginning": "Plant cells have a part that animal cells do not. Name it." },
+  "A1.R2.prompt": {
+    "building": "Name one part that plant cells have and animal cells do not.",
+    "beginning": "Plant cells have a part that animal cells do not. Name it."
+  },
   "A1.R2.answer": "A cell wall, chloroplasts, or a large central vacuole.",
-  "A1.R3.prompt": { "building": "What does the cell membrane do?", "beginning": "What does the cell membrane do?" },
+  "A1.R3.prompt": {
+    "building": "What does the cell membrane do?",
+    "beginning": "What does the cell membrane do?"
+  },
   "A1.R3.answer": "It controls what goes into and out of the cell.",
-  "A1.R4.prompt": { "building": "In the story, what grew back after the heron's attack?", "beginning": "What grew back on Fig?" },
+  "A1.R4.prompt": {
+    "building": "In the story, what grew back after the heron's attack?",
+    "beginning": "What grew back on Fig?"
+  },
   "A1.R4.answer": "Fig's tail: bone, muscle, skin and even the stripes.",
-
   "A1.zoom.title": "Zoom into Fig",
-  "A1.zoom.body": { "building": "Use the zoom buttons to go from Fig down to her DNA, one level at a time.", "beginning": "Press Zoom in. Go inside Fig." },
+  "A1.zoom.body": {
+    "building": "Use the zoom buttons to go from Fig down to her DNA, one level at a time.",
+    "beginning": "Press Zoom in. Go inside Fig."
+  },
   "A1.zoom.in": "Zoom in",
   "A1.zoom.out": "Zoom out",
   "A1.zoom.levels": "Zoom levels",
@@ -263,12 +369,30 @@
   "A1.zoom.chromosome": "Chromosome",
   "A1.zoom.gene": "Gene",
   "A1.zoom.dna": "DNA",
-  "A1.zoom.fig.text": { "building": "This is Fig. Her new tail is where we are going.", "beginning": "This is Fig." },
-  "A1.zoom.tissue.text": { "building": "A slice of tail: skin on the outside, muscle, and bone in the middle. Each layer is a tissue made of cells.", "beginning": "The tail has skin, muscle and bone. They are made of cells." },
-  "A1.zoom.cell.text": { "building": "One tail cell. The big round part in the middle is the nucleus.", "beginning": "This is one cell. The middle part is the nucleus." },
-  "A1.zoom.nucleus.text": { "building": "Inside the nucleus are the chromosomes. Most of the time they are long, loose threads, tangled together. Our model newt has four.", "beginning": "The nucleus has chromosomes inside. They look like long threads." },
-  "A1.zoom.chromosome.text": { "building": "One chromosome: a long piece of DNA. Before a cell divides, each thread coils up tight into a short, thick chromosome like this one.", "beginning": "This is one chromosome. It is DNA, wound up tight." },
-  "A1.zoom.gene.text": { "building": "The highlighted band is one gene. One chromosome carries many genes.", "beginning": "This band is a gene." },
+  "A1.zoom.fig.text": {
+    "building": "This is Fig. Her new tail is where we are going.",
+    "beginning": "This is Fig."
+  },
+  "A1.zoom.tissue.text": {
+    "building": "A slice of tail: skin on the outside, muscle, and bone in the middle. Each layer is a tissue made of cells.",
+    "beginning": "The tail has skin, muscle and bone. They are made of cells."
+  },
+  "A1.zoom.cell.text": {
+    "building": "One tail cell. The big round part in the middle is the nucleus.",
+    "beginning": "This is one cell. The middle part is the nucleus."
+  },
+  "A1.zoom.nucleus.text": {
+    "building": "Inside the nucleus are the chromosomes. Most of the time they are long, loose threads, tangled together. Our model newt has four.",
+    "beginning": "The nucleus has chromosomes inside. They look like long threads."
+  },
+  "A1.zoom.chromosome.text": {
+    "building": "One chromosome: a long piece of DNA. Before a cell divides, each thread coils up tight into a short, thick chromosome like this one.",
+    "beginning": "This is one chromosome. It is DNA, wound up tight."
+  },
+  "A1.zoom.gene.text": {
+    "building": "The highlighted band is one gene. One chromosome carries many genes.",
+    "beginning": "This band is a gene."
+  },
   "A1.zoom.target.tissue": "Into the tail",
   "A1.zoom.target.cell": "One cell",
   "A1.zoom.target.nucleus": "The nucleus",
@@ -282,85 +406,222 @@
   "A1.zoom.scale.chromosome": "Real size: a few µm long when coiled up",
   "A1.zoom.scale.gene": "Not to scale: genes vary a lot in length",
   "A1.zoom.scale.dna": "Real size: 2 nm wide (0.000002 mm)",
-  "A1.zoom.dna.text": { "building": "Unwind the chromosome and you find DNA: two long strands twisted round each other, joined by pairs that fit together like puzzle pieces.", "beginning": "This is DNA." },
-
+  "A1.zoom.dna.text": {
+    "building": "Unwind the chromosome and you find DNA: two long strands twisted round each other, joined by pairs that fit together like puzzle pieces.",
+    "beginning": "This is DNA."
+  },
   "A1.pairs.title": "Chromosomes come in pairs",
-  "A1.pairs.body1": { "building": "The two long chromosomes are one pair. The two short ones are the other pair. In each pair, M (solid paper) came from the mother and P (striped paper) came from the father.", "beginning": "Two long ones are a pair. Two short ones are a pair. M is from the mother. P is from the father." },
-  "A1.pairs.body2": { "building": "Partners carry the same genes in the same places, and they share the same pattern of light bands. The letters show versions: A and a are two versions of the same gene.", "beginning": "Partners have the same genes. A and a are versions of one gene." },
+  "A1.pairs.body1": {
+    "building": "The two long chromosomes are one pair. The two short ones are the other pair. In each pair, M (solid paper) came from the mother and P (striped paper) came from the father.",
+    "beginning": "Two long ones are a pair. Two short ones are a pair. M is from the mother. P is from the father."
+  },
+  "A1.pairs.body2": {
+    "building": "Partners carry the same genes in the same places, and they share the same pattern of light bands. The letters show versions: A and a are two versions of the same gene.",
+    "beginning": "Partners have the same genes. A and a are versions of one gene."
+  },
   "A1.pairs.show": "Show the pairs",
   "A1.pairs.hide": "Hide the pairs",
-
   "A1.copy.title": "Copying makes the X",
-  "A1.copy.body1": { "building": "Before a cell divides, it copies every chromosome. Step through the copying and watch the count strip.", "beginning": "The cell copies each chromosome. Watch the numbers." },
-  "A1.copy.body2": { "building": "The number of chromosomes stays at 4. The number of DNA molecules goes from 4 to 8.", "beginning": "Chromosomes: still 4. DNA molecules: 4 to 8." },
-
-  "A1.W1.prompt": { "building": "Watch how to count chromosomes and DNA molecules in a cell that has copied its DNA.", "beginning": "Watch. Count chromosomes and DNA molecules." },
-  "A1.W1.step1": { "building": "Find the centromeres: the dot where the two halves of each X are joined. Each centromere marks one chromosome.", "beginning": "Find the dots. One dot is one chromosome." },
-  "A1.W1.step2": { "building": "Count them: 1, 2, 3, 4. This cell has 4 chromosomes.", "beginning": "1, 2, 3, 4. There are 4 chromosomes." },
-  "A1.W1.step3": { "building": "Now count the halves of the Xs. Each half is one DNA molecule.", "beginning": "Count the halves. One half is one DNA molecule." },
-  "A1.W1.step4": { "building": "4 chromosomes with 2 halves each make 8 DNA molecules.", "beginning": "4 times 2 is 8. There are 8 DNA molecules." },
-
-  "A1.G1.prompt": { "building": "This cell has not copied its DNA yet. Count the chromosomes and the DNA molecules.", "beginning": "This cell is not copied. Count chromosomes. Count DNA molecules." },
-  "A1.G1.step1": { "building": "Count the centromeres (the dots) to count chromosomes.", "beginning": "Count the dots." },
-  "A1.G1.step2": { "building": "Each single rod is one DNA molecule.", "beginning": "One rod is one DNA molecule." },
-  "A1.G1.hint1": { "building": "Each chromosome has one centromere (the dot).", "beginning": "One dot is one chromosome." },
-  "A1.G1.hint2": { "building": "A single rod has not been copied, so it is one DNA molecule.", "beginning": "One rod is one DNA molecule." },
-  "A1.G1.fb.correct": { "building": "4 chromosomes, 4 DNA molecules. Before copying, the two counts match.", "beginning": "4 and 4." },
-
-  "A1.G2.prompt": { "building": "Match each chromosome with its partner. Select one, then select its partner.", "beginning": "Find the pairs. Select one. Then select its partner." },
-  "A1.G2.step1": { "building": "Look for two chromosomes that are the same length and carry the same gene letters.", "beginning": "Find two that are the same length." },
-  "A1.G2.fb.correct": { "building": "Both pairs matched: same genes, one from each parent.", "beginning": "Each pair has one M and one P." },
-
-  "A1.G3.prompt": { "building": "These chromosomes have been copied. Count the chromosomes and the DNA molecules.", "beginning": "These are copied. Count chromosomes. Count DNA molecules." },
-  "A1.G3.step1": { "building": "Count centromeres for chromosomes.", "beginning": "Count the dots." },
-  "A1.G3.step2": { "building": "Count the halves of the Xs for DNA molecules.", "beginning": "Count the halves." },
-  "A1.G3.fb.correct": { "building": "4 chromosomes, 8 DNA molecules. Copying doubles the DNA, not the number of chromosomes.", "beginning": "4 chromosomes. 8 DNA molecules." },
-
-  "A1.I1.prompt": { "building": "Count the chromosomes and the DNA molecules in this cell.", "beginning": "Count chromosomes. Count DNA molecules." },
-  "A1.I1.fb.correct": { "building": "4 chromosomes and 8 DNA molecules, however they are turned.", "beginning": "4 and 8." },
-
-  "A1.I1GF.prompt": { "building": "A cell has 12 DNA molecules, and every chromosome in it is an X. How many chromosomes does it have?", "beginning": "A cell has 12 DNA molecules. All chromosomes are X shapes. How many chromosomes?" },
+  "A1.copy.body1": {
+    "building": "Before a cell divides, it copies every chromosome. Step through the copying and watch the count strip.",
+    "beginning": "The cell copies each chromosome. Watch the numbers."
+  },
+  "A1.copy.body2": {
+    "building": "The number of chromosomes stays at 4. The number of DNA molecules goes from 4 to 8.",
+    "beginning": "Chromosomes: still 4. DNA molecules: 4 to 8."
+  },
+  "A1.W1.prompt": {
+    "building": "Watch how to count chromosomes and DNA molecules in a cell that has copied its DNA.",
+    "beginning": "Watch. Count chromosomes and DNA molecules."
+  },
+  "A1.W1.step1": {
+    "building": "Find the centromeres: the dot where the two halves of each X are joined. Each centromere marks one chromosome.",
+    "beginning": "Find the dots. One dot is one chromosome."
+  },
+  "A1.W1.step2": {
+    "building": "Count them: 1, 2, 3, 4. This cell has 4 chromosomes.",
+    "beginning": "1, 2, 3, 4. There are 4 chromosomes."
+  },
+  "A1.W1.step3": {
+    "building": "Now count the halves of the Xs. Each half is one DNA molecule.",
+    "beginning": "Count the halves. One half is one DNA molecule."
+  },
+  "A1.W1.step4": {
+    "building": "4 chromosomes with 2 halves each make 8 DNA molecules.",
+    "beginning": "4 times 2 is 8. There are 8 DNA molecules."
+  },
+  "A1.G1.prompt": {
+    "building": "This cell has not copied its DNA yet. Count the chromosomes and the DNA molecules.",
+    "beginning": "This cell is not copied. Count chromosomes. Count DNA molecules."
+  },
+  "A1.G1.step1": {
+    "building": "Count the centromeres (the dots) to count chromosomes.",
+    "beginning": "Count the dots."
+  },
+  "A1.G1.step2": {
+    "building": "Each single rod is one DNA molecule.",
+    "beginning": "One rod is one DNA molecule."
+  },
+  "A1.G1.hint1": {
+    "building": "Each chromosome has one centromere (the dot).",
+    "beginning": "One dot is one chromosome."
+  },
+  "A1.G1.hint2": {
+    "building": "A single rod has not been copied, so it is one DNA molecule.",
+    "beginning": "One rod is one DNA molecule."
+  },
+  "A1.G1.fb.correct": {
+    "building": "4 chromosomes, 4 DNA molecules. Before copying, the two counts match.",
+    "beginning": "4 and 4."
+  },
+  "A1.G2.prompt": {
+    "building": "Match each chromosome with its partner. Select one, then select its partner.",
+    "beginning": "Find the pairs. Select one. Then select its partner."
+  },
+  "A1.G2.step1": {
+    "building": "Look for two chromosomes that are the same length and carry the same gene letters.",
+    "beginning": "Find two that are the same length."
+  },
+  "A1.G2.fb.correct": {
+    "building": "Both pairs matched: same genes, one from each parent.",
+    "beginning": "Each pair has one M and one P."
+  },
+  "A1.G3.prompt": {
+    "building": "These chromosomes have been copied. Count the chromosomes and the DNA molecules.",
+    "beginning": "These are copied. Count chromosomes. Count DNA molecules."
+  },
+  "A1.G3.step1": {
+    "building": "Count centromeres for chromosomes.",
+    "beginning": "Count the dots."
+  },
+  "A1.G3.step2": {
+    "building": "Count the halves of the Xs for DNA molecules.",
+    "beginning": "Count the halves."
+  },
+  "A1.G3.fb.correct": {
+    "building": "4 chromosomes, 8 DNA molecules. Copying doubles the DNA, not the number of chromosomes.",
+    "beginning": "4 chromosomes. 8 DNA molecules."
+  },
+  "A1.I1.prompt": {
+    "building": "Count the chromosomes and the DNA molecules in this cell.",
+    "beginning": "Count chromosomes. Count DNA molecules."
+  },
+  "A1.I1.fb.correct": {
+    "building": "4 chromosomes and 8 DNA molecules, however they are turned.",
+    "beginning": "4 and 8."
+  },
+  "A1.I1GF.prompt": {
+    "building": "A cell has 12 DNA molecules, and every chromosome in it is an X. How many chromosomes does it have?",
+    "beginning": "A cell has 12 DNA molecules. All chromosomes are X shapes. How many chromosomes?"
+  },
   "A1.I1GF.opt12": "12",
   "A1.I1GF.opt6": "6",
   "A1.I1GF.opt3": "3",
   "A1.I1GF.opt24": "24",
-  "A1.I1GF.fb12": { "building": "12 is the number of DNA molecules. Each X holds 2 of them, so there are fewer chromosomes than that.", "beginning": "Each X has 2 DNA molecules." },
-  "A1.I1GF.fb6": { "building": "12 DNA molecules ÷ 2 per X = 6 chromosomes.", "beginning": "12 ÷ 2 = 6." },
-  "A1.I1GF.fb3": { "building": "3 is the number of pairs. Each pair is 2 chromosomes.", "beginning": "A pair is 2 chromosomes." },
-  "A1.I1GF.fb24": { "building": "Copying doubles the DNA, not the chromosomes. Divide by 2 instead.", "beginning": "Divide by 2." },
-
-  "A1.I2.prompt": { "building": "These chromosomes have been copied. Match each one with its partner.", "beginning": "These are copied. Find the pairs." },
-  "A1.I2.fb.correct": { "building": "Matched. Copied or not, partners have the same genes and come from different parents.", "beginning": "Each pair has one M and one P." },
-
-  "A1.I3.prompt": { "building": "Which of these is a gene?", "beginning": "What is a gene?" },
-  "A1.I3.hint1": { "building": "Think back to the zoom: chromosome, then gene, then DNA.", "beginning": "Remember the zoom." },
+  "A1.I1GF.fb12": {
+    "building": "12 is the number of DNA molecules. Each X holds 2 of them, so there are fewer chromosomes than that.",
+    "beginning": "Each X has 2 DNA molecules."
+  },
+  "A1.I1GF.fb6": {
+    "building": "12 DNA molecules ÷ 2 per X = 6 chromosomes.",
+    "beginning": "12 ÷ 2 = 6."
+  },
+  "A1.I1GF.fb3": {
+    "building": "3 is the number of pairs. Each pair is 2 chromosomes.",
+    "beginning": "A pair is 2 chromosomes."
+  },
+  "A1.I1GF.fb24": {
+    "building": "Copying doubles the DNA, not the chromosomes. Divide by 2 instead.",
+    "beginning": "Divide by 2."
+  },
+  "A1.I2.prompt": {
+    "building": "These chromosomes have been copied. Match each one with its partner.",
+    "beginning": "These are copied. Find the pairs."
+  },
+  "A1.I2.fb.correct": {
+    "building": "Matched. Copied or not, partners have the same genes and come from different parents.",
+    "beginning": "Each pair has one M and one P."
+  },
+  "A1.I3.prompt": {
+    "building": "Which of these is a gene?",
+    "beginning": "What is a gene?"
+  },
+  "A1.I3.hint1": {
+    "building": "Think back to the zoom: chromosome, then gene, then DNA.",
+    "beginning": "Remember the zoom."
+  },
   "A1.I3.optChromosome": "A whole chromosome",
   "A1.I3.optChromatid": "One half of an X",
   "A1.I3.optSection": "A section of a chromosome",
   "A1.I3.optCell": "A type of cell",
-  "A1.I3.fbChromosome": { "building": "A chromosome holds many genes. A gene is only one section of it.", "beginning": "A chromosome has many genes." },
-  "A1.I3.fbChromatid": { "building": "Each half of an X is a whole DNA molecule with many genes on it.", "beginning": "Half of an X has many genes." },
-  "A1.I3.fbSection": { "building": "A gene is a section of a chromosome, like one recipe in a cookbook.", "beginning": "A gene is a part of a chromosome." },
-  "A1.I3.fbCell": { "building": "Cells hold chromosomes, and genes are sections of chromosomes.", "beginning": "Genes are in chromosomes." },
-
+  "A1.I3.fbChromosome": {
+    "building": "A chromosome holds many genes. A gene is only one section of it.",
+    "beginning": "A chromosome has many genes."
+  },
+  "A1.I3.fbChromatid": {
+    "building": "Each half of an X is a whole DNA molecule with many genes on it.",
+    "beginning": "Half of an X has many genes."
+  },
+  "A1.I3.fbSection": {
+    "building": "A gene is a section of a chromosome, like one recipe in a cookbook.",
+    "beginning": "A gene is a part of a chromosome."
+  },
+  "A1.I3.fbCell": {
+    "building": "Cells hold chromosomes, and genes are sections of chromosomes.",
+    "beginning": "Genes are in chromosomes."
+  },
   "A1.check.title": "Checkpoint",
-  "A1.check.body": { "building": "Three questions about cells from a different animal. Show what you know on your own: hints and worked steps are off.", "beginning": "Three questions. Work on your own." },
-
-  "A1.C1.prompt": { "building": "This cell comes from a different animal. Count its chromosomes and DNA molecules.", "beginning": "This is a different animal. Count chromosomes. Count DNA molecules." },
-  "A1.C1.fb.correct": { "building": "6 chromosomes, 12 DNA molecules.", "beginning": "6 and 12." },
-  "A1.C2.prompt": { "building": "Match the chromosomes from this animal into pairs.", "beginning": "Find the pairs." },
-  "A1.C2.fb.correct": { "building": "All three pairs matched.", "beginning": "Three pairs." },
-  "A1.C3.prompt": { "building": "What is true about the two chromosomes in a pair?", "beginning": "What is true about a pair?" },
+  "A1.check.body": {
+    "building": "Three questions about cells from a different animal. Show what you know on your own: hints and worked steps are off.",
+    "beginning": "Three questions. Work on your own."
+  },
+  "A1.C1.prompt": {
+    "building": "This cell comes from a different animal. Count its chromosomes and DNA molecules.",
+    "beginning": "This is a different animal. Count chromosomes. Count DNA molecules."
+  },
+  "A1.C1.fb.correct": {
+    "building": "6 chromosomes, 12 DNA molecules.",
+    "beginning": "6 and 12."
+  },
+  "A1.C2.prompt": {
+    "building": "Match the chromosomes from this animal into pairs.",
+    "beginning": "Find the pairs."
+  },
+  "A1.C2.fb.correct": {
+    "building": "All three pairs matched.",
+    "beginning": "Three pairs."
+  },
+  "A1.C3.prompt": {
+    "building": "What is true about the two chromosomes in a pair?",
+    "beginning": "What is true about a pair?"
+  },
   "A1.C3.optCopies": "They are exact copies of each other.",
   "A1.C3.optMother": "Both of them come from the mother.",
   "A1.C3.optDifferent": "They carry completely different genes.",
   "A1.C3.optSame": "They carry the same genes, but versions can differ.",
-  "A1.C3.fbCopies": { "building": "Exact copies are the two halves of an X. Partners come from two parents, so their versions can differ.", "beginning": "Partners come from two parents." },
-  "A1.C3.fbMother": { "building": "One partner comes from the mother and one from the father.", "beginning": "One is from the mother. One is from the father." },
-  "A1.C3.fbDifferent": { "building": "Partners carry the same genes in the same places.", "beginning": "Partners have the same genes." },
-  "A1.C3.fbSame": { "building": "Same genes, and the versions can differ (like A and a).", "beginning": "Same genes. Versions can be different." },
-
+  "A1.C3.fbCopies": {
+    "building": "Exact copies are the two halves of an X. Partners come from two parents, so their versions can differ.",
+    "beginning": "Partners come from two parents."
+  },
+  "A1.C3.fbMother": {
+    "building": "One partner comes from the mother and one from the father.",
+    "beginning": "One is from the mother. One is from the father."
+  },
+  "A1.C3.fbDifferent": {
+    "building": "Partners carry the same genes in the same places.",
+    "beginning": "Partners have the same genes."
+  },
+  "A1.C3.fbSame": {
+    "building": "Same genes, and the versions can differ (like A and a).",
+    "beginning": "Same genes. Versions can be different."
+  },
   "A1.end.title": "Meet the chromosomes: done",
-  "A1.end.body1": { "building": "Genes are sections of chromosomes. Chromosomes come in pairs, one from each parent.", "beginning": "Genes are on chromosomes. Chromosomes come in pairs." },
-  "A1.end.body2": { "building": "An X is one chromosome, copied: 1 chromosome, 2 DNA molecules. Next: how does one cell become two?", "beginning": "An X is one chromosome with 2 DNA molecules." }
+  "A1.end.body1": {
+    "building": "Genes are sections of chromosomes. Chromosomes come in pairs, one from each parent.",
+    "beginning": "Genes are on chromosomes. Chromosomes come in pairs."
+  },
+  "A1.end.body2": {
+    "building": "An X is one chromosome, copied: 1 chromosome, 2 DNA molecules. Next: how does one cell become two?",
+    "beginning": "An X is one chromosome with 2 DNA molecules."
+  }
 }

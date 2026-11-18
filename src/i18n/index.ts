@@ -108,7 +108,12 @@ export function tEn(key: string, vars?: Record<string, string | number>): string
 
 /** Voice-over direction tags like [dry] or [pause] are for the recording only. */
 export function stripTags(text: string): string {
-  return text.replace(/\s*\[[^\]]+\]\s*/g, ' ').replace(/\s{2,}/g, ' ').trim();
+  // `\]+` also drops a doubled closing bracket, e.g. "[long pause]]".
+  return text
+    .replace(/\s*\[[^\]]*\]+\s*/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([.,;:!?])/g, '$1')
+    .trim();
 }
 
 export function voKey(voId: string): string {
