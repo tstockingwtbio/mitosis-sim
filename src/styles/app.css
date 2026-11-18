@@ -357,6 +357,9 @@ p, h1, h2, h3, label, legend, .label, .text, .stage-of, .line-of { unicode-bidi:
   gap: var(--gap);
 }
 .panel-head { display: flex; flex-direction: column; gap: 6px; }
+/* Reading steps beside a model: panel only as tall as its text (scrolls if it outgrows the column). */
+.workspace.fit-panel .panel { align-self: start; max-height: 100%; }
+.workspace.fit-panel .panel-body { flex: 0 1 auto; }
 .panel-head .row { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
 .badge {
   display: inline-flex;

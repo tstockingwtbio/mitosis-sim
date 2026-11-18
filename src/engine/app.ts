@@ -172,7 +172,8 @@ export class App {
   }
 
   private go(i: number): void {
-    if (i > this.stepIndex && !this.done) return;
+    // Teacher mode can move on without answering.
+    if (i > this.stepIndex && !this.done && !getSettings().teacherMode) return;
     if (i >= this.beat.steps.length) {
       // Past the last step: open the next built chapter.
       const next = this.nextBeat();
@@ -229,6 +230,8 @@ export class App {
     const layout = this.layoutFor(step, task);
     this.workspace.classList.toggle('no-stage', !layout.stage);
     this.workspace.classList.toggle('no-counts', !layout.counts);
+    // Short reading steps: the panel shrinks to its text instead of filling the column.
+    this.workspace.classList.toggle('fit-panel', layout.stage && (step.type === 'explain' || step.type === 'intro' || step.type === 'summary'));
     const memoKey = `${step.id}:${task?.id ?? ''}`;
     let memo = this.memos.get(memoKey);
     if (!memo) this.memos.set(memoKey, (memo = {}));
@@ -330,7 +333,7 @@ export class App {
     this.done = d;
     const last = this.stepIndex >= this.beat.steps.length - 1;
     const next = last ? this.nextBeat() : undefined;
-    this.nextBtn.disabled = !d || (last && !next);
+    this.nextBtn.disabled = (!d && !getSettings().teacherMode) || (last && !next);
     this.nextBtn.replaceChildren(t(last && next ? 'ui.nextChapter' : 'ui.next'), h('span', { class: 'ico flip', 'aria-hidden': 'true' }, '→'));
   }
 
