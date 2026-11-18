@@ -52,7 +52,8 @@ describe('partA.json', () => {
     for (const b of part.beats)
       for (const s of b.steps) {
         if (s.type !== 'explain') continue;
-        for (const id of [...s.lines, ...(s.sfx ?? []), ...(s.assets ?? [])])
+        const panelIds = (s.panels ?? []).flatMap((p) => [p.asset, ...(p.sfx ? [p.sfx] : [])]);
+        for (const id of [...s.lines, ...(s.sfx ?? []), ...(s.assets ?? []), ...panelIds, ...(s.ambience ? [s.ambience] : [])])
           expect(bible.includes(`| ${id} |`), id).toBe(true);
       }
   });
@@ -94,7 +95,8 @@ describe('partA.json', () => {
   });
 
   it('built beats open with >= 3 retrieve items and end with an independent checkpoint', () => {
-    for (const b of part.beats.filter((x) => x.built)) {
+    // Story openers (kind: observe) are phenomenon-first: no Retrieve block or checkpoint.
+    for (const b of part.beats.filter((x) => x.built && x.kind !== 'observe')) {
       const first = b.steps[0];
       expect(first.type).toBe('retrieve');
       if (first.type === 'retrieve') expect(first.tasks.length).toBeGreaterThanOrEqual(3);

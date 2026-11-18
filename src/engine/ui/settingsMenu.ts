@@ -183,6 +183,7 @@ export class SettingsMenu {
       toggle('reducedMotion', t('settings.motion'), t('settings.motion.desc')),
       toggle('largeButtons', t('settings.bigButtons')),
       toggle('sfx', t('settings.sfx')),
+      toggle('ambience', t('settings.ambience')),
       toggle('captions', t('settings.captions')),
     );
 

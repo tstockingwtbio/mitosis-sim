@@ -4,7 +4,7 @@ import type { CountStrip } from './ui/countStrip';
 import type { Captions } from './ui/captions';
 import type { Spoken } from './ui/text';
 
-export type PhaseLabel = 'retrieve' | 'explain' | 'worked' | 'guided' | 'independent' | 'checkpoint';
+export type PhaseLabel = 'retrieve' | 'predict' | 'explain' | 'worked' | 'guided' | 'independent' | 'checkpoint';
 
 export interface StepContext {
   content: PartContent;

@@ -6,8 +6,20 @@ Notes for the teacher and for comparing pilot results. Students never see this f
 
 | Module | Learning target | Type | Sequencing | Why |
 | --- | --- | --- | --- | --- |
+| A0 | The phenomenon: a lost tail grows back | Phenomenon (OBSERVE) | Phenomenon first | Story and time-lapse, then every student writes a prediction before any instruction. A1 to A3 answer it. |
 | A1 | Chromosome structure: an X is one chromosome with two DNA molecules | New representation | Explicit first | New vocabulary (centromere, chromatid) and a new counting procedure. Order: zoom ladder, pairs, copying animation, worked example, guided practice, independent practice. |
 | A1 | Genes are sections of chromosomes; chromosomes come in pairs (one from each parent) | New vocabulary and representation | Explicit first | Students need the model (lengths, gene letters, solid M and striped P) before they can reason with it. |
+
+## A0: Cold open (SC.HS.6.1.d)
+
+**Status: draft text.** Narration is VO-A01 to A03 from the bible; the title, step text and prediction prompt are drafts for your review.
+
+1. Title card (IMG-P09) with the title added in code.
+2. At the pond: IMG-P01 then IMG-P02, following the narration (VO-A01, A02). The heron sound (SFX-19) plays with P02; the pond ambience (SFX-26) loops quietly. Settings › Background sounds mutes it.
+3. Six weeks later: the four stages of IMG-C03 cross-fade one at a time (play, pause, replay or step), with SFX-20, then IMG-P03 (VO-A03).
+4. Predict: "Where do you think her body got the instructions to build it?" Written, or "I'm not sure yet". Saved in the browser, not graded.
+
+**Framework note:** A0 is a story opener (OBSERVE), so it has no Retrieve block or checkpoint. The rule "every module opens with Retrieve" is met by A1, which follows straight after and recalls A0 in its warm-up. Say if you want a Retrieve block inside A0 instead.
 
 ## A1: Meet the chromosomes (chromosome primer, SC.HS.6.1.d)
 

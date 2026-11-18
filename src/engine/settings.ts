@@ -19,6 +19,7 @@ export interface Settings {
   reducedMotion: boolean;
   largeButtons: boolean;
   sfx: boolean;
+  ambience: boolean;
   captions: boolean;
 }
 
@@ -51,6 +52,7 @@ export function defaults(): Settings {
     reducedMotion: prefersReducedMotion(),
     largeButtons: false,
     sfx: true,
+    ambience: true,
     captions: true,
   };
 }

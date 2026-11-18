@@ -623,5 +623,35 @@
   "A1.end.body2": {
     "building": "An X is one chromosome, copied: 1 chromosome, 2 DNA molecules. Next: how does one cell become two?",
     "beginning": "An X is one chromosome with 2 DNA molecules."
-  }
+  },
+  "ui.nextChapter": "Next chapter",
+  "ui.phase.predict": "Predict",
+  "ui.predict.label": "Your prediction",
+  "ui.predict.notSure": "I'm not sure yet",
+  "ui.predict.saved": "Saved. You will come back to this idea later.",
+  "settings.ambience": "Background sounds",
+  "A0.title.title": "The Mother Who Didn't Match",
+  "A0.title.body": {
+    "building": "A story about a newt who regrows her tail, and what that tells us about every cell in her body. Press Next to begin.",
+    "beginning": "A story about a newt and her tail. Press Next."
+  },
+  "A0.story.title": "At the pond",
+  "A0.story.body": {
+    "building": "Listen to the story, or read the captions. The arrows on the caption bar go line by line.",
+    "beginning": "Listen or read. Use the arrows to go on."
+  },
+  "A0.regrow.title": "Six weeks later",
+  "A0.regrow.body": {
+    "building": "Step through the weeks and watch the tail come back: stump, bud, half a tail, the whole tail.",
+    "beginning": "Press Next stage. Watch the tail grow back."
+  },
+  "A0.P1.prompt": {
+    "building": "Fig's new tail has bone, muscle, skin and even the stripes. Where do you think her body got the instructions to build it? Write your prediction.",
+    "beginning": "Fig grew a new tail. How did her body know how to make it? Write your idea."
+  },
+  "frame.predict": {
+    "building": "I think Fig's body knew how to build the tail because ___.",
+    "beginning": "I think ___."
+  },
+  "bank.predict": "cells, instructions, copy, grow, divide, DNA"
 }

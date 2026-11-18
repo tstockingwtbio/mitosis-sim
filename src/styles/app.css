@@ -658,3 +658,15 @@ fieldset.seg legend { font-weight: 700; padding: 0; margin-bottom: 4px; }
   :root { --pad: 10px; --gap: 10px; }
   .count-cell .value { font-size: 1.25rem; }
 }
+
+/* ---------- Story title card (A0) ---------- */
+.story-title {
+  text-align: center;
+  width: max-content;
+  max-width: 90%;
+  color: #fff8ea;
+  text-shadow: 0 2px 0 var(--ink);
+  pointer-events: none;
+}
+.story-title h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.8rem); line-height: 1.1; }
+.story-title p { margin: 6px 0 0; font-size: 1.1rem; font-weight: 700; }

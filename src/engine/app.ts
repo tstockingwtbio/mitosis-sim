@@ -18,8 +18,13 @@ import { retrieveStep } from './tasks/retrieve';
 import { countTask } from './tasks/count';
 import { pairTask } from './tasks/pair';
 import { choiceTask } from './tasks/choice';
+import { predictTask } from './tasks/predict';
+
+/** Explain scenes that show a chromosome model, so the count strip appears. */
+const COUNT_SCENES = ['pairs', 'replicate'];
 
 const MODULES: Record<string, () => Promise<BeatModule>> = {
+  'A0-cold-open': () => import('../modules/A0-cold-open/index'),
   'A1-chromosome-primer': () => import('../modules/A1-chromosome-primer/index'),
 };
 
@@ -167,8 +172,14 @@ export class App {
   }
 
   private go(i: number): void {
-    if (i < 0 || i >= this.beat.steps.length) return;
     if (i > this.stepIndex && !this.done) return;
+    if (i >= this.beat.steps.length) {
+      // Past the last step: open the next built chapter.
+      const next = this.nextBeat();
+      if (next) void this.openBeat(next.id, 0);
+      return;
+    }
+    if (i < 0) return;
     playSfx('SFX-01');
     this.stepIndex = i;
     saveProgress({ step: { ...progress().step, [this.beat.id]: i } });
@@ -184,7 +195,7 @@ export class App {
 
   /** Which parts of the workspace a step needs. */
   private layoutFor(step: Step, task?: Task): { stage: boolean; counts: boolean } {
-    if (step.type === 'explain') return { stage: true, counts: step.scene !== 'zoom-ladder' };
+    if (step.type === 'explain') return { stage: true, counts: COUNT_SCENES.includes(step.scene) };
     if (step.type === 'task' && task && (task.kind === 'count' || task.kind === 'pair')) return { stage: true, counts: true };
     return { stage: false, counts: false };
   }
@@ -269,6 +280,7 @@ export class App {
       if (task.kind === 'count') this.view = countTask(ctx, task, this.content);
       else if (task.kind === 'pair') this.view = pairTask(ctx, task, this.content);
       else if (task.kind === 'choice') this.view = choiceTask(ctx, task, this.content);
+      else if (task.kind === 'predict') this.view = predictTask(ctx, task);
     } else if (step.type === 'explain') {
       const items = step.body.map((k) => paragraph(k));
       items.forEach((it) => this.body.appendChild(it.el));
@@ -307,10 +319,18 @@ export class App {
     if (focus) this.stepTitle.focus({ preventScroll: true });
   }
 
+  /** The next chapter after this one that is built, if any. */
+  private nextBeat(): Beat | undefined {
+    const i = this.content.beats.findIndex((b) => b.id === this.beat.id);
+    return this.content.beats.slice(i + 1).find((b) => b.built);
+  }
+
   private setDone(d: boolean): void {
     this.done = d;
     const last = this.stepIndex >= this.beat.steps.length - 1;
-    this.nextBtn.disabled = !d || last;
+    const next = last ? this.nextBeat() : undefined;
+    this.nextBtn.disabled = !d || (last && !next);
+    this.nextBtn.replaceChildren(t(last && next ? 'ui.nextChapter' : 'ui.next'), h('span', { class: 'ico flip', 'aria-hidden': 'true' }, '→'));
   }
 
   private setReadBtn(): void {

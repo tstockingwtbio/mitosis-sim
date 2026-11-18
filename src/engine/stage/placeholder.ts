@@ -17,6 +17,8 @@ export interface SlotOptions {
   align?: { image: [number, number]; local: THREE.Vector2 };
   /** Turn the image a quarter turn clockwise (a portrait image shown landscape). */
   rotate90?: boolean;
+  /** Make near-white pixels transparent (for art saved on a white background). */
+  knockoutWhite?: boolean;
 }
 
 /**
@@ -37,7 +39,9 @@ export function assetSlot(id: string, placeholder: THREE.Group, opts: SlotOption
   if (url) {
     void fileExists(url, 'image').then((ok) => {
       if (!ok) return;
-      new THREE.TextureLoader().load(url, (tex) => {
+      new THREE.TextureLoader().load(url, (loaded) => {
+        let tex: THREE.Texture = loaded;
+        if (opts.knockoutWhite) tex = knockOutWhite(tex);
         tex.colorSpace = THREE.SRGBColorSpace;
         tex.anisotropy = 4;
         const [l, t, r, b] = opts.crop ?? [0, 0, 1, 1];
@@ -66,4 +70,26 @@ export function assetSlot(id: string, placeholder: THREE.Group, opts: SlotOption
     });
   }
   return group;
+}
+
+/** Copy the image into a canvas texture with white turned transparent (soft edge). */
+function knockOutWhite(tex: THREE.Texture): THREE.Texture {
+  const img = tex.image as HTMLImageElement;
+  const c = document.createElement('canvas');
+  c.width = img.width;
+  c.height = img.height;
+  const g = c.getContext('2d', { willReadFrequently: true })!;
+  g.drawImage(img, 0, 0);
+  const data = g.getImageData(0, 0, c.width, c.height);
+  const px = data.data;
+  for (let i = 0; i < px.length; i += 4) {
+    const min = Math.min(px[i], px[i + 1], px[i + 2]);
+    const max = Math.max(px[i], px[i + 1], px[i + 2]);
+    // Near-white and nearly grey: fade out. Cream paper (#F3E6CC) stays.
+    if (min > 232 && max - min < 14) px[i + 3] = Math.round(255 * Math.max(0, (250 - min) / 18));
+  }
+  g.putImageData(data, 0, 0);
+  const out = new THREE.CanvasTexture(c);
+  tex.dispose();
+  return out;
 }

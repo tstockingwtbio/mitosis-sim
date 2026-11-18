@@ -20,7 +20,7 @@ export interface Progress {
 const KEY = 'mm.progress.v1';
 
 function blank(): Progress {
-  return { beat: 'A1', step: {}, results: {}, responses: {}, streak: 0, fade: 0 };
+  return { beat: 'A0', step: {}, results: {}, responses: {}, streak: 0, fade: 0 };
 }
 
 let state: Progress = { ...blank(), ...readJSON<Partial<Progress>>(KEY, {}) };

@@ -23,7 +23,7 @@ export interface CellSpec {
   chromosomes: ChromSpec[];
 }
 
-export type Phase = 'retrieve' | 'worked' | 'guided' | 'independent' | 'checkpoint';
+export type Phase = 'retrieve' | 'predict' | 'worked' | 'guided' | 'independent' | 'checkpoint';
 export type Status = 'draft' | 'approved';
 
 interface TaskBase {
@@ -97,7 +97,12 @@ export interface ChoiceTask extends TaskBase, Supports {
   options: ChoiceOption[];
 }
 
-export type Task = RecallTask | CountTask | PairTask | ChoiceTask;
+/** Open prediction before instruction (OBSERVE): saved, not graded. */
+export interface PredictTask extends TaskBase, Supports {
+  kind: 'predict';
+}
+
+export type Task = RecallTask | CountTask | PairTask | ChoiceTask | PredictTask;
 
 export interface NarrationLine {
   /** Voice-over ID from the story bible, e.g. VO-A04. */
@@ -116,6 +121,10 @@ export type Step =
       sfx?: string[];
       assets?: string[];
       cell?: CellSpec;
+      /** Story panels (image asset IDs); `line` is the narrated line that shows it. */
+      panels?: { asset: string; line?: number; sfx?: string }[];
+      /** Looping background sound (an ambience SFX ID). */
+      ambience?: string;
     }
   | { id: string; type: 'task'; task: string }
   | { id: string; type: 'intro'; title: string; body: string[] }
@@ -127,7 +136,9 @@ export interface Beat {
   module: string;
   standard: string;
   built: boolean;
-  sequencing?: 'explicit-first' | 'attempt-first';
+  sequencing?: 'explicit-first' | 'attempt-first' | 'phenomenon-first';
+  /** 'observe': a story/phenomenon opener (no Retrieve block or checkpoint). */
+  kind?: 'observe';
   steps: Step[];
 }
 
