@@ -8,7 +8,8 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run --passWithNoTests",
-    "check:content": "vitest run tests/content.test.ts"
+    "check:content": "vitest run tests/content.test.ts",
+    "audio:list": "node scripts/read-aloud-list.mjs"
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "^5.3.0",

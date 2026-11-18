@@ -232,7 +232,8 @@ export class SettingsMenu {
       status,
     );
 
-    this.body.append(reading, language, help, challenge, display, progressSec);
+    const teacher = section(t('settings.sec.teacher'), toggle('teacherMode', t('settings.teacher'), t('settings.teacher.desc')));
+    this.body.append(reading, language, help, challenge, display, progressSec, teacher);
   }
 
   private showLanguage(): void {

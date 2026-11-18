@@ -1,5 +1,5 @@
 import { h } from '../dom';
-import { stripTags, t, tEn, isTranslated, currentLang } from '../../i18n';
+import { stripTags, t, tEn, isTranslated, currentLang, currentLevel, getDict } from '../../i18n';
 import { getSettings } from '../settings';
 import { openGlossary } from './glossary';
 
@@ -15,6 +15,13 @@ export interface Spoken {
   text: string;
   spans: WordSpan[];
   lang: string;
+  /** Recorded file for this text, if one may exist (fixed text only, no {numbers}). */
+  audio?: string;
+}
+
+/** File name slot for recorded panel text: mm_txt_<key>_<lang>_<level>.mp3 */
+export function textAudioFile(key: string, lang: string, level: 'building' | 'beginning'): string {
+  return `mm_txt_${key.replace(/[^A-Za-z0-9]+/g, '-')}_${lang}_${level}.mp3`;
 }
 
 const GLOSSARY_TERMS = ['cell', 'tissue', 'nucleus', 'dna', 'chromosome', 'gene', 'pair', 'centromere', 'copy', 'version'];
@@ -78,5 +85,11 @@ export function paragraph(key: string, vars?: Record<string, string | number>, t
     spoken.el.appendChild(side);
   }
   spoken.el.setAttribute('lang', lang.code);
+  if (!vars) {
+    const entry = getDict('en')[key] as { beginning?: string } | string | undefined;
+    const hasBeginning = typeof entry === 'object' && !!entry.beginning;
+    const level = currentLevel() === 'beginning' && hasBeginning ? 'beginning' : 'building';
+    spoken.audio = `audio/txt/${textAudioFile(key, lang.code, level)}`;
+  }
   return spoken;
 }

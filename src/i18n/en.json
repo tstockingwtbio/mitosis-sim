@@ -653,5 +653,8 @@
     "building": "I think Fig's body knew how to build the tail because ___.",
     "beginning": "I think ___."
   },
-  "bank.predict": "cells, instructions, copy, grow, divide, DNA"
+  "bank.predict": "cells, instructions, copy, grow, divide, DNA",
+  "settings.sec.teacher": "For teachers",
+  "settings.teacher": "Teacher mode",
+  "settings.teacher.desc": "Shows each step's task ID, its standard, and which text is still a draft."
 }

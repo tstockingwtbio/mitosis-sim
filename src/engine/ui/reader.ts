@@ -19,7 +19,7 @@ export async function readAloud(items: Spoken[], audioUrls: (string | undefined)
     await speak(it.text, {
       lang: it.lang,
       rate: s.speechRate,
-      audioUrl: audioUrls[i],
+      audioUrl: audioUrls[i] ?? it.audio,
       onWord: s.highlightWords
         ? (start) => {
             const span = it.spans.find((w) => start >= w.start && start < w.end) ?? it.spans.find((w) => w.start >= start);

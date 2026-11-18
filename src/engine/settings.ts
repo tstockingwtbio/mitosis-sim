@@ -21,6 +21,8 @@ export interface Settings {
   sfx: boolean;
   ambience: boolean;
   captions: boolean;
+  /** Shows task IDs, standards and draft labels. */
+  teacherMode: boolean;
 }
 
 const KEY = 'mm.settings.v1';
@@ -54,6 +56,7 @@ export function defaults(): Settings {
     sfx: true,
     ambience: true,
     captions: true,
+    teacherMode: false,
   };
 }
 

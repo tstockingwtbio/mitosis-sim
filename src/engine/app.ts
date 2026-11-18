@@ -1,5 +1,5 @@
 import type { Beat, PartContent, Step, Task } from '../content/schema';
-import { DEV_MODE, clear, h } from './dom';
+import { clear, h } from './dom';
 import { t, voKey } from '../i18n';
 import { applySettings, getSettings, onSettings, type Settings } from './settings';
 import { progress, saveProgress } from './progress';
@@ -29,7 +29,7 @@ const MODULES: Record<string, () => Promise<BeatModule>> = {
 };
 
 /** Settings that change what the panel shows; the step re-renders. */
-const RERENDER: (keyof Settings)[] = ['lang', 'level', 'sideBySide', 'glossary', 'hints', 'worked', 'frames', 'fewerChoices', 'goFurther'];
+const RERENDER: (keyof Settings)[] = ['lang', 'level', 'sideBySide', 'glossary', 'hints', 'worked', 'frames', 'fewerChoices', 'goFurther', 'teacherMode'];
 
 export class App {
   private stage = new Stage();
@@ -237,9 +237,10 @@ export class App {
     clear(this.badges);
     this.badges.appendChild(h('span', { class: 'badge' }, t(`ui.phase.${phase}`)));
     if (task?.isGoFurther) this.badges.appendChild(h('span', { class: 'badge' }, `★ ${t('ui.phase.goFurther')}`));
-    if (DEV_MODE) {
+    // Task IDs, standards and draft labels: Teacher mode only.
+    if (getSettings().teacherMode) {
       const id = task?.id ?? step.id;
-      this.badges.appendChild(h('span', { class: 'badge draft', title: 'Visible in dev mode only' }, `${id} · ${task?.standard ?? beat.standard}${task?.status === 'draft' ? ' · draft' : ''}`));
+      this.badges.appendChild(h('span', { class: 'badge draft', title: t('settings.teacher') }, `${id} · ${task?.standard ?? beat.standard}${task?.status === 'draft' ? ' · draft' : ''}`));
     }
     clear(this.dots);
     this.dots.setAttribute('aria-label', t('ui.stepOf', { n: this.stepIndex + 1, total: beat.steps.length }));

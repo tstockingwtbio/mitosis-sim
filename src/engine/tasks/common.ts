@@ -3,7 +3,7 @@ import { clear, h } from '../dom';
 import { t } from '../../i18n';
 import { getSettings } from '../settings';
 import { progress, saveProgress } from '../progress';
-import { paragraph, renderWords, type Spoken } from '../ui/text';
+import { paragraph, type Spoken } from '../ui/text';
 import { readAloud } from '../ui/reader';
 import { playSfx } from '../sfx';
 import type { StepContext } from '../types';
@@ -29,16 +29,18 @@ export function feedback(
   const spoken: Spoken[] = [];
   const body = h('div', {});
   if (kind !== 'info') {
-    const lead = renderWords(kind === 'good' ? t('ui.task.correct') : t('ui.task.notYet'), 'p', false);
+    const lead = paragraph(kind === 'good' ? 'ui.task.correct' : 'ui.task.notYet');
     lead.el.style.fontWeight = '700';
     spoken.push(lead);
     body.appendChild(lead.el);
   }
   if (misconception && content.misconceptions[misconception]) {
-    const mix = renderWords(`${t('ui.task.mixup')} “${t(content.misconceptions[misconception])}”`, 'p', false);
-    mix.el.classList.add('mixup');
-    spoken.push(mix);
-    body.appendChild(mix.el);
+    // Two recorded pieces: the label, then the misconception itself.
+    const label = paragraph('ui.task.mixup', undefined, 'span');
+    const idea = paragraph(content.misconceptions[misconception], undefined, 'span');
+    idea.el.classList.add('mis-quote');
+    spoken.push(label, idea);
+    body.appendChild(h('p', { class: 'mixup' }, label.el, ' ', idea.el));
   }
   const main = paragraph(textKey, vars);
   spoken.push(main);

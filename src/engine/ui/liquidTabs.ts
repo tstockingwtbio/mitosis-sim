@@ -1,10 +1,11 @@
 import { h } from '../dom';
 import { getSettings } from '../settings';
 
-// "Liquid" tab highlight: one rounded blob sits behind the current tab. When
-// the current tab changes, the blob stretches toward the new tab like a drop
-// of water, then pulls in and settles there with a small wobble. With Reduce
-// motion it simply moves.
+// Sliding pill tab highlight. One gradient pill sits behind the current tab.
+// When the current tab changes, the pill springs to it: it stretches along
+// the direction of travel while it moves (faster = longer and a little
+// thinner) and settles with a small overshoot. Driven by a damped spring,
+// so a second tap mid-flight just retargets it. Reduce motion: it jumps.
 
 interface Box {
   x: number;
@@ -13,7 +14,13 @@ interface Box {
   h: number;
 }
 
-/** Last position per tab group, so a re-rendered group still animates from where it was. */
+const STIFFNESS = 340;
+const DAMPING = 26;
+/** Extra length per px/s of speed, and the most it may stretch (as a share of its width). */
+const STRETCH = 0.075;
+const MAX_STRETCH = 1.4;
+
+/** Last position per tab group, so a re-rendered group still springs from where it was. */
 const lastBox = new Map<string, Box>();
 
 export interface LiquidTabs {
@@ -22,57 +29,98 @@ export interface LiquidTabs {
 }
 
 /**
- * Wrap a tab list. `wrap` must be the list's parent; it becomes the blob's
- * positioning box. Tabs need the class that the CSS lifts above the blob.
+ * Wrap a tab list. `wrap` must be the list's parent; it becomes the pill's
+ * positioning box. Tabs sit above the pill (see .liquid-wrap in app.css).
  */
 export function liquidTabs(key: string, wrap: HTMLElement): LiquidTabs {
   wrap.classList.add('liquid-wrap');
-  const blob = h('span', { class: 'liquid-blob', 'aria-hidden': 'true' });
-  wrap.prepend(blob);
+  const pill = h('span', { class: 'liquid-blob', 'aria-hidden': 'true' });
+  wrap.prepend(pill);
   let current: HTMLElement | null = null;
+  // Spring state: position/size and their velocities.
+  let pos: Box | null = null;
+  const vel: Box = { x: 0, y: 0, w: 0, h: 0 };
+  let target: Box | null = null;
+  let raf = 0;
+  let last = 0;
 
   const boxOf = (el: HTMLElement): Box => {
     const a = el.getBoundingClientRect();
     const b = wrap.getBoundingClientRect();
-    return { x: a.left - b.left, y: a.top - b.top, w: a.width, h: a.height };
+    return { x: a.left - b.left + a.width / 2, y: a.top - b.top + a.height / 2, w: a.width, h: a.height };
   };
-  const css = (bx: Box) => ({ left: `${bx.x}px`, top: `${bx.y}px`, width: `${bx.w}px`, height: `${bx.h}px` });
-  const place = (bx: Box) => Object.assign(blob.style, css(bx));
+
+  const draw = (b: Box, vx: number, vy: number) => {
+    const speed = Math.hypot(vx, vy);
+    const stretch = Math.min(speed * STRETCH, b.w * MAX_STRETCH);
+    const horizontal = Math.abs(vx) >= Math.abs(vy);
+    const w = horizontal ? b.w + stretch : b.w;
+    const hgt = horizontal ? b.h * (1 - Math.min(0.14, stretch / (b.w * 10))) : b.h + stretch * 0.4;
+    pill.style.left = `${b.x - w / 2}px`;
+    pill.style.top = `${b.y - hgt / 2}px`;
+    pill.style.width = `${w}px`;
+    pill.style.height = `${hgt}px`;
+  };
+
+  const step = (now: number) => {
+    raf = 0;
+    if (!pos || !target) return;
+    const dt = Math.min(0.033, (now - last) / 1000 || 0.016);
+    last = now;
+    let settled = true;
+    for (const k of ['x', 'y', 'w', 'h'] as const) {
+      const a = STIFFNESS * (target[k] - pos[k]) - DAMPING * vel[k];
+      vel[k] += a * dt;
+      pos[k] += vel[k] * dt;
+      if (Math.abs(target[k] - pos[k]) > 0.3 || Math.abs(vel[k]) > 2) settled = false;
+    }
+    if (settled) {
+      pos = { ...target };
+      vel.x = vel.y = vel.w = vel.h = 0;
+      draw(pos, 0, 0);
+      return;
+    }
+    draw(pos, vel.x, vel.y);
+    raf = requestAnimationFrame(step);
+  };
+
+  const jump = (b: Box) => {
+    cancelAnimationFrame(raf);
+    raf = 0;
+    pos = { ...b };
+    target = { ...b };
+    vel.x = vel.y = vel.w = vel.h = 0;
+    draw(b, 0, 0);
+  };
 
   new ResizeObserver(() => {
     if (current && current.isConnected) {
-      const bx = boxOf(current);
-      place(bx);
-      lastBox.set(key, bx);
+      const b = boxOf(current);
+      lastBox.set(key, b);
+      // Mid-flight: just retarget (tabs change width as they switch). At rest: snap.
+      if (raf) target = b;
+      else jump(b);
     }
   }).observe(wrap);
 
   return {
     moveTo(tab, animate = true) {
       current = tab;
-      blob.hidden = !tab;
+      pill.hidden = !tab;
       if (!tab) return;
       const to = boxOf(tab);
-      const from = lastBox.get(key);
+      const from = pos ?? lastBox.get(key);
       lastBox.set(key, to);
-      place(to);
-      const same = from && Math.abs(from.x - to.x) < 1 && Math.abs(from.y - to.y) < 1;
-      if (!from || same || !animate || getSettings().reducedMotion || !blob.animate) return;
-      // Stretch to cover both tabs (thinner, like water pulled out), then
-      // pull in to the new tab with a slight overshoot.
-      const sameRow = Math.abs(from.y - to.y) < to.h / 2;
-      const left = Math.min(from.x, to.x);
-      const right = Math.max(from.x + from.w, to.x + to.w);
-      const thin = to.h * 0.78;
-      const mid: Box = sameRow
-        ? { x: left, y: to.y + (to.h - thin) / 2, w: right - left, h: thin }
-        : { x: (from.x + to.x) / 2, y: (from.y + to.y) / 2, w: (from.w + to.w) / 2 * 0.8, h: thin };
-      const dir = Math.sign(to.x - from.x) || 1;
-      const over: Box = { x: to.x + dir * 4 - 3, y: to.y + 1, w: to.w + 6, h: to.h - 2 };
-      blob.animate([css(from), { ...css(mid), offset: 0.42 }, { ...css(over), offset: 0.75 }, css(to)], {
-        duration: 560,
-        easing: 'cubic-bezier(0.45, 0, 0.25, 1)',
-      });
+      if (!from || !animate || getSettings().reducedMotion) {
+        jump(to);
+        return;
+      }
+      if (!pos) pos = { ...from };
+      target = to;
+      if (!raf) {
+        last = performance.now();
+        raf = requestAnimationFrame(step);
+      }
     },
   };
 }
